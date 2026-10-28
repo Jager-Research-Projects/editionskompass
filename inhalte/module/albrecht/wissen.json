@@ -1,0 +1,1529 @@
+{
+  "version": "0.4.1",
+  "id": "P02",
+  "date": "2026-10-21",
+  "persona": {
+    "title": "Ein Werk für Generationen",
+    "subtitle": "Viele Arbeitsstellen. Eine Edition. Und niemand bleibt für immer.",
+    "narrative": [
+      "Johann Friedrich Albrecht schrieb über beinahe alles, was seine Zeit bewegte. Seine Briefe, Werke und Notizen liegen heute in unterschiedlichen Sammlungen. Viele Texte werden kaum noch gelesen; ohne sorgfältige Erschließung bleiben ihre Verbindungen unsichtbar.",
+      "Ein Akademienverbund will dieses verstreute Werk als historisch-kritische Gesamtausgabe zugänglich machen. Die Beteiligten wissen: Sie werden das Vorhaben nicht allein abschließen. Andere Menschen werden ihre Entscheidungen verstehen, prüfen und weiterführen müssen.",
+      "Ein Verlag übernimmt die aufwendigen Buchbände. Eine spätere offene digitale Bereitstellung ist vereinbart, ihre Gegenstände und Bedingungen müssen genau unterschieden werden. Gleichzeitig wachsen Register, Kommentare und Querverweise mit jedem Band. Was anfangs überschaubar war, wird zu einem Geflecht.",
+      "Deshalb bewahrt die Edition auch ihr gemeinsames Arbeitswissen. Ein gepflegtes Handbuch hält Regeln, Beispiele und Zuständigkeiten fest – damit ein Personalwechsel nicht jedes Mal einen Neubeginn erzwingt."
+    ],
+    "question": "Wie erhalten wir wissenschaftlichen Zusammenhang, ohne notwendige Veränderung zu blockieren?",
+    "facts": {
+      "Vorhaben": "Werke, Briefe und Nachlass eines fiktiven Gelehrten",
+      "Zeithorizont": "Jahrzehnte und mehrere Projektgenerationen",
+      "Arbeitsweise": "Föderierte Gruppen mit eigenständigen Bandredaktionen",
+      "Publikation": "Verlagsbände und zeitlich differenzierte digitale Freigaben",
+      "Engpass": "Koordination, gemeinsame Daten und langfristige Verantwortung"
+    }
+  },
+  "roles": [
+    {
+      "id": "P02-A01",
+      "name": "Nora Seidel",
+      "role": "Bandherausgeberin",
+      "text": "Sie möchte die Überlieferung angemessen darstellen. Ein gemeinsames Schema soll ihre wissenschaftliche Entscheidung ermöglichen, nicht vorwegnehmen. Sie gibt fachliche Handbuchregeln frei."
+    },
+    {
+      "id": "P02-A02",
+      "name": "Samir Demir",
+      "role": "Wissenschaftlich-technische Redaktion",
+      "text": "Er verbindet Textmodell, Register, Prüfungen und Ausgaben. Eine kleine lokale Änderung kann viele andere Bände betreffen. Gemeinsam mit seiner technischen Vertretung pflegt er Handbuch, Arbeitsprofile und Tests."
+    },
+    {
+      "id": "P02-A03",
+      "name": "Eva Brandt",
+      "role": "Gesamtkoordination",
+      "text": "Sie braucht verlässliche Übergaben, erreichbare Entscheidungsträger und finanzierte Zeit für Nacharbeit und Wandel. Einführung und Regelpflege sind fest eingeplante Aufgaben."
+    },
+    {
+      "id": "P02-A04",
+      "name": "Eine externe gutachtende Person",
+      "role": "Begutachtung",
+      "text": "Sie braucht einen eindeutig bezeichneten, gut lesbaren Prüfstand und einen vertraulichen Rückkanal. Git-Kenntnisse sind keine Voraussetzung."
+    },
+    {
+      "id": "P02-A05",
+      "name": "Clara Winter",
+      "role": "Verlagslektorat",
+      "text": "Sie organisiert Redaktion und Buchproduktion. Verlässliche Abgaben und die wirtschaftliche Tragfähigkeit des vereinbarten Angebots sind berechtigte Interessen."
+    }
+  ],
+  "stories": [
+    {
+      "id": "P02-S01",
+      "title": "Das können wir doch genauer beschreiben",
+      "teaser": "Eine bessere Deutung verändert mehr als einen Tag im Text.",
+      "scene": [
+        "Nora stößt auf eine Briefstelle, die das bisherige Variantenmodell nur unzureichend erfasst. Sie möchte die Auszeichnung verändern. Nicht aus Freude am Umbau: Die neue Unterscheidung macht ihre wissenschaftliche Argumentation genauer.",
+        "Samir öffnet die Vorschau. Der neue Vorschlag betrifft auch Registerverweise, die Webdarstellung und den Satz. Frühere Bände wurden mit einer anderen Modellversion veröffentlicht. Die Frage ist nicht nur, ob Nora recht hat, sondern wie ihre Verbesserung in die Gesamtedition aufgenommen werden kann.",
+        "Die Kommission lässt einen begrenzten Versuch ausarbeiten. Das Team vergleicht Änderung nur für künftige Bände, rückwirkende Migration und parallele Modellversionen. Jede Variante bewahrt etwas und verursacht neue Arbeit.",
+        "Der beschlossene Modellwechsel wird in ODD, Beispielen und Handbuch mit Geltungsbereich dokumentiert. Alte Bandstände bleiben mit ihren damaligen Regeln nachvollziehbar."
+      ],
+      "dialog": "„Das Schema darf nicht entscheiden, was ich wissenschaftlich sagen kann.“ — „Einverstanden. Aber wir müssen auch wissen, wie wir diese Aussage in zehn Jahren noch ausgeben.“",
+      "git": "Ein Versuchszweig hält die neue Modellierung getrennt erprobbar. Versionierte Daten, Schemata und Migrationsskripte machen Unterschiede nachvollziehbar. Ein Git-Tag benennt einen bestimmten Stand; ein Bandrelease benötigt zusätzlich die passenden Register- und Softwarestände.",
+      "consider": "Welche Altbestände sind betroffen? Wer prüft die semantische Richtigkeit einer Migration? Reicht ein neues Schema oder muss sich auch der Editionsbericht ändern?",
+      "action": "Eine repräsentative Testpassage wählen, Auswirkungen und Pflegekosten dokumentieren, fachlich und technisch prüfen und die Entscheidung mit ihrem Geltungsbereich festhalten.",
+      "role": "Bandredaktion, wissenschaftlich-technische Redaktion und befugte Editionskommission",
+      "question": "Wer finanziert die Verbesserung einschließlich der Arbeit an früheren Bänden?",
+      "links": [
+        "P02-D03",
+        "P02-R01",
+        "P02-G03"
+      ],
+      "image": {
+        "src": "assets/quellen.webp",
+        "alt": "Illustration: Zwei Forschende vergleichen einen Brief mit einem aufgeschlagenen historischen Band.",
+        "caption": "Eine neue Deutung beginnt an einer konkreten Quelle."
+      }
+    },
+    {
+      "id": "P02-S02",
+      "title": "Das Gutachten ist da. Und jetzt?",
+      "teaser": "Eine fixierte Fassung ermöglicht ein Urteil. Sie beendet die Diskussion nicht.",
+      "scene": [
+        "Der Prüfstand ist verschickt, der Verlag hat ein Produktionsfenster vorgesehen. Dann trifft das externe Gutachten ein: Eine zentrale Textentscheidung sei noch nicht ausreichend begründet.",
+        "Nora übernimmt einen Hinweis, widerspricht einem zweiten und überarbeitet einen dritten Abschnitt. Eva organisiert, wer über die Antwort entscheidet und welche Veränderungen erneut begutachtet werden müssen. Die gutachtende Person soll weder das Git-System lernen noch die gesamte interne Arbeitsgeschichte sehen müssen.",
+        "Die Redaktion stellt einen lesbaren HTML- oder PDF-Abzug mit genauer Standkennung bereit. Rückmeldungen bleiben im vereinbarten vertraulichen Bereich. Das Ergebnis wird begründet dokumentiert; eine technische Prüfung allein entscheidet keine wissenschaftliche Streitfrage.",
+        "Das Handbuch legt fest, welcher Prüfstand und welche Regelversion zum Gutachten gehören. Die vertrauliche Rückmeldung liegt im gesonderten Reviewbereich; fachliche Antworten werden begründet dokumentiert."
+      ],
+      "dialog": "„Wir können nicht jede Kritik einfach einbauen.“ — „Nein. Aber wir müssen zeigen können, wie wir sie geprüft haben.“",
+      "git": "Ein eindeutig markierter Prüfstand und der Vergleich zur Revision verbinden Rückmeldung und Bearbeitung. Geschützte Prüfpakete können aus versionierten Quellen erzeugt werden.",
+      "consider": "Wer darf das Gutachten lesen? Welche Anonymität ist vereinbart? Welche Änderung verlangt eine erneute Prüfung? Branches sind keine verlässliche Trennung von Leseberechtigungen.",
+      "action": "Prüfstand, Rückkanal, zuständige Instanz und Umgang mit Überarbeitungen vereinbaren; Terminfolgen mit dem Verlag abstimmen.",
+      "role": "Gutachtende Person, Bandredaktion, Gesamtredaktion und Verlagslektorat",
+      "question": "Wer trägt zusätzliche Reviewzeit und entscheidet bei bleibendem Dissens?",
+      "links": [
+        "P02-R02",
+        "P02-G02"
+      ]
+    },
+    {
+      "id": "P02-S03",
+      "title": "Die Daten wären für unsere Forschung ideal",
+      "teaser": "Forschungsinteresse trifft auf eine bereits vereinbarte Publikationsstrategie.",
+      "scene": [
+        "Ein Forschungsteam möchte kommentierte Briefdaten für eine neue Netzwerkanalyse nutzen. Die Zusammenarbeit verspricht Erkenntnisse und macht die Edition früh sichtbar. Der betreffende Band ist aber noch nicht offen freigegeben.",
+        "Clara erinnert daran, dass der Verlag in Redaktion, Satz und Herstellung investiert. Die verzögerte digitale Bereitstellung war Teil der Vereinbarung. Eva will die Kooperation ermöglichen, ohne Zusagen zu übergehen.",
+        "Das Team trennt Metadaten, Text, Kommentar, Bilder und Verlags-PDF. Welche Nutzung ist bereits erlaubt, welche benötigt eine zusätzliche Vereinbarung? Eine Frist allein beantwortet diese Frage nicht. Der Fall setzt keine bestimmte Vertragslösung voraus.",
+        "Die Rechte-/Publikationsstelle nutzt das Freigabeverfahren aus dem Handbuch. Die Forschung an freigegebenen Briefdaten und ein späterer Zugang zur internen Entstehungsgeschichte sind unterschiedliche Anfragen."
+      ],
+      "dialog": "„Die Daten sind doch etwas anderes als das Buch.“ — „Sind sie das? Wir müssen wissen, was wir tatsächlich miteinander vereinbart haben.“",
+      "git": "Nach geklärter Freigabe kann ein kuratiertes Datenpaket exakt bezeichnet und im eigenen öffentlichen Repo veröffentlicht werden. Private Geschichte und vertrauliche Rückmeldungen werden nicht mitexportiert.",
+      "consider": "Welche Gegenstände umfasst der Vertrag? Welche Drittmaterialien haben eigene Bedingungen? Was ist nur zugänglich, was auch nachnutzbar? Wer darf verbindlich entscheiden?",
+      "action": "Konkrete Vereinbarungen prüfen, Datenarten trennen, gegebenenfalls zusätzlichen Zugang aushandeln und jede Freigabe nachvollziehbar dokumentieren.",
+      "role": "Projektleitung, zuständige Rechteberatung, berechtigte Stellen und Verlag",
+      "question": "Welche Unterstützung ermöglicht Forschung und eine tragfähige Publikation zugleich?",
+      "links": [
+        "P02-D04",
+        "P02-R03",
+        "P02-G04"
+      ],
+      "image": {
+        "src": "assets/redaktion.webp",
+        "alt": "Illustration: Herausgeberin, Verlagslektorin und Kolleg:innen diskutieren über Korrekturfahnen und einen Buchband.",
+        "caption": "Forschungsinteresse, Buchproduktion und Vereinbarungen gehören an einen Tisch."
+      }
+    },
+    {
+      "id": "P02-S04",
+      "title": "Band sieben, bitte noch einmal",
+      "teaser": "2055 ist der alte Host verschwunden. Der wissenschaftliche Zusammenhang soll bleiben.",
+      "scene": [
+        "Eine neue Arbeitsgruppe möchte einen älteren Band erneut ausgeben. Die damalige Datenbank ist nicht mehr im Betrieb, der ursprüngliche Git-Host existiert nicht mehr. Ein Buchband und ein Datenpaket sind erhalten.",
+        "Im Paket liegt ein Manifest: Es nennt Textstand, Schema, Register-Snapshot und Ausgabeprogramm. Die Gruppe prüft, ob diese Bestandteile tatsächlich vorhanden sind. Eine Liste allein ersetzt die Dateien nicht.",
+        "Wo sich die frühere Ausgabe rekonstruieren lässt, dokumentiert das Team den Weg. Wo etwas fehlt, kennzeichnet es die Lücke. Eine neue Ausgabe erhält einen eigenen verantworteten Stand. Die frühere Publikation wird nicht nachträglich als unverändert reproduziert ausgegeben.",
+        "Im Archivpaket findet die Gruppe auch das damalige Handbuch und die Profilbeschreibung. Erst damit wird verständlich, welche Prüfungen und Übergaben zu diesem Bandstand gehörten."
+      ],
+      "dialog": "„Wir haben die Texte.“ — „Gut. Aber haben wir auch das Register, auf das diese Texte verweisen?“",
+      "git": "Eine übertragbare Versionsgeschichte bewahrt Dateistände und ihre Beziehungen. Sie kann den Neustart erleichtern, ersetzt aber weder DB-Snapshots noch Kontext, Rechteentscheidungen und verfügbare Transformationen.",
+      "consider": "Was ist tatsächlich erhalten? Lassen sich Ausgabe und Verweise testen? Welche Plattformdaten wurden separat übernommen? Wer darf die neue Ausgabe freigeben?",
+      "action": "Archivpakete auf Vollständigkeit prüfen, Wiederherstellung regelmäßig erproben, fehlende Bestandteile dokumentieren und Übergaben institutionell absichern.",
+      "role": "Infrastrukturträger, Archivdienst und neue wissenschaftliche Redaktion",
+      "question": "Welche wiederkehrenden Tests hätten die Lücken früher sichtbar gemacht?",
+      "links": [
+        "P02-D05",
+        "P02-R04",
+        "P02-G03"
+      ]
+    },
+    {
+      "id": "P02-S05",
+      "title": "Die Satzprobe war doch schon geprüft",
+      "teaser": "Eine beliebte neue Oberfläche erleichtert die Kommentierung. Samir entdeckt, wie ihr Rückweg bereits geprüfte Arbeit wieder verändert.",
+      "scene": [
+        "Mal stimmt ein Abstand nicht, mal ein Strich, mal ein Registerverweis. Zunächst wirkt jeder Befund für sich klein. Zusammen bringen sie die Buchproduktion ins Stocken. Der Verlag hat eine Werbekampagne bezahlt; ausgerechnet im Albrecht-Jubiläumsjahr droht wieder ein Band auszufallen. Clara macht dem Satzdienstleister Vorwürfe.",
+        "Der widerspricht: Die angelieferten Daten sähen schlampig aus. Unzählige Kleinigkeiten würden im Satz sogar stillschweigend verbessert. „Kann den Editoren niemand erklären, was ein geschütztes Leerzeichen ist?“",
+        "Die Redaktion ist empört. Sie hat Abstände und Stricharten sorgfältig markiert und die betreffenden Stellen unmittelbar danach geprüft. Nora erinnert sich genau an eine Korrektur, die in der Fahne wieder falsch ist. Aus Sicht der Redaktion muss der Fehler beim Satz hineingekommen sein.",
+        "Samir hört sich den Streit an. Er verspricht, sich die Vorgeschichte der betroffenen Stellen anzusehen: Vielleicht lässt sich herausfinden, wann und auf welchem Weg die Fehler zurückgekommen sind.",
+        "Samir erklärt, wie er begonnen hat: „Ich habe alle erst spät korrigierten Stellen zusammengestellt. Dann habe ich nachgesehen: Was waren die letzten Änderungen vor der Korrektur? Und welche Bearbeitungen liegen zwischen dem ersten Auftreten des Fehlers und seiner Behebung? Was haben diese Wege gemeinsam?“",
+        "In seiner Auswahl liegen die zugehörigen Zeitstempel mehrheitlich spät in der Nacht. Er zeigt einige Einträge. „Und überhaupt: Je näher die Deadline rückt, desto weiter reichen die Einträge in die Nacht. Zuerst dachte ich, wir hätten ein Konzentrationsproblem und sollten vielleicht etwas an unseren Biorhythmen ändern.“ Einige lachen.",
+        "„Aber das war es nicht“, fährt er fort. „Die späten Zeitstempel haben die Ursache nicht erklärt. Ich musste mir die Stellen selbst und ihre Vorgeschichte genauer ansehen.“ Mit git blame findet er einen Einstieg in die zugeordnete Änderung; mit git show und dem Vergleich zweier Fassungen liest er weiter zurück. Zeichen, Annotation und Prüfabzug betrachtet er zusammen.",
+        "Die Redaktion erinnert sich richtig: Die besonderen Abstände und der richtige Strich waren schon korrekt gespeichert. Samir wechselt zwischen dieser Nahlektüre und dem Vergleich vieler Fälle. Im Überblick findet er einen gemeinsamen Bearbeitungsweg. In den einzelnen Fassungen sieht er, was auf diesem Weg verloren geht.",
+        "Seit einiger Zeit gibt es eine neue Oberfläche für Kommentare, die mit dem Register abgeglichen werden müssen. Links steht der lesbare Kommentar, rechts erscheinen passende Personen-, Orts- und Werkdatensätze. Die Bearbeitenden können Treffer vergleichen und die richtige Verknüpfung auswählen, ohne ständig zwischen XML-Dateien und Registerlisten zu wechseln.",
+        "Alle bestätigen den Gewinn. Die Arbeit geht leichter von der Hand, Verwechslungen lassen sich unmittelbar klären. „Diese Oberfläche möchten wir auf jeden Fall behalten“, sagt Nora. Niemand möchte zur mühsamen früheren Arbeitsweise zurück.",
+        "Genau in diesem erfolgreichen neuen Weg findet Samir aber die Ursache. Bei seiner Einbindung ins Projekt werden Kommentare in die Arbeitsansicht übertragen und anschließend zurückgespielt. Der Rückimport vereinfacht bestimmte besondere Abstände und Striche. Außerdem führt die Anbindung bestehende Datumsauszeichnungen nicht verlustfrei mit: Sie rekonstruiert sie anschließend mit der Zahlenerkennung aus dem zurückgegebenen Text.",
+        "Damit hängen zwei Dinge zusammen, die in der bequemen Oberfläche unsichtbar bleiben: Ein sorgfältig gesetzter Bereichsstrich wird verändert – und die daraus erneut berechnete Auszeichnung sagt nun etwas anderes aus. Die Oberfläche ist eine echte Hilfe. Ihr Rückweg braucht eine Reparatur.",
+        "Die übrigen Kommentare werden weiterhin im bisherigen XML-Werkzeug bearbeitet. Nur die Kommentare mit Registerabgleich nehmen den Weg durch die neue Oberfläche. Deshalb tauchen die Fehler nicht überall auf.",
+        "Auch unter diesen Kommentaren bleiben viele unauffällig: Wer keinen der betroffenen Abstände oder Striche enthält, kann den problematischen Rückweg ohne sichtbaren Unfall passieren. Erst das Zusammentreffen von Bearbeitungsweg und relevanten Zeichen löst die beschriebene Kette aus.",
+        "Samir kann nun die vielen Einzelbefunde erklären. „Achtet genauer auf eure Zeichen“ hatte die Redaktion längst getan. Die Marker waren geprüft worden – vor dem späteren Schritt, der sie wieder vereinfachte.",
+        "An einem kleinen Beispiel wird die Folge sichtbar. Im Kommentar steht „1848–1849“, ausgezeichnet als zusammenhängender Zeitraum. Ein automatisierter Schritt erkennt solche Zeitangaben und fügt eine Annotationsschicht für das Register ein. Dabei nutzt die projektinterne Zahlenerkennung auch den Bereichsstrich. Nach dem Rückweg steht dort „1848-1849“: Beim erneuten Aufbau der Schicht erzeugt die Regel nun zwei einzelne Jahresnennungen. Die vorherige Zeitraum-Auszeichnung wird nicht erhalten.",
+        "Die Regel erzeugt formal erlaubte, aber sachlich anders zugeordnete Daten. Registereinträge und das Web-Findemittel werden daraus abgeleitet. Zugleich können verlorene geschützte Abstände den Umbruch ändern. In der Fahne findet jemand den falschen Strich und repariert ihn. Ein zuvor schon für den Satz freigegebenes Register passt nun nicht mehr zum korrigierten Text- und Ausgabestand.",
+        "Nicht nur die Fahne ist betroffen. Auch das separate Web-Findemittel, Registerauszüge und bereits vorbereitete Registerbände müssen auf die betroffenen Änderungen geprüft und gegebenenfalls neu erzeugt werden. Stabile IDs verhindern manche Verweisverschiebung, aber keine falsche zeitliche Annotation oder einen veralteten Seitenverweis.",
+        "Die Abhängigkeit liegt hier in den vereinbarten Projektregeln und Ausgabewegen. Weder ein gewöhnlicher Strich noch TEI führen von sich aus zu dieser Interpretation. Genau diese Regeln muss Samir mitprüfen.",
+        "Besonders deutlich wird es an einem Kommentar von Lukas. Der falsche Strich war bereits entdeckt und repariert worden. Die Korrektur war in den maßgeblichen Datenbestand zurückgeführt; das Register war erneut geprüft und für den Satz freigegeben.",
+        "Dann liest Lukas die nächste Fahne und entdeckt einen wirklichen eigenen Fehler: Er hat den Empfänger eines Briefs verwechselt. Er öffnet den Kommentar in der vertrauten neuen Oberfläche, berichtigt den Empfänger und wählt den passenden Personeneintrag aus dem Register. Eine richtige und notwendige Korrektur.",
+        "Nach dem Zurückspielen ist der schon einmal reparierte Bereichsstrich wieder zum einfachen „-“ geworden. Lukas hat die betreffende Zeitangabe gar nicht angefasst. Trotzdem berechnet die Anbindung ihre Annotation neu. Zeitraum und Registerzuordnung stimmen erneut nicht; die Kaskade erreicht wieder Satz, Web-Findemittel und Registerausgaben.",
+        "„Aber ich habe doch nur den Empfänger korrigiert!“, sagt Lukas. Genau das macht den Fall für Samir so aufschlussreich. Nicht die neue fachliche Korrektur war falsch. Sie hat denselben fehlerhaften Rückweg noch einmal ausgelöst. Der scheinbar wieder unachtsame Verursacher hat den Mechanismus unabsichtlich reproduziert.",
+        "Samir unterscheidet den verlustbehafteten Übertragungsweg, die ungünstige Abfolge von Prüfung und späterer Veränderung, die Weitergabe in abhängige Ausgaben und die wiederholte Reparatur nur sichtbarer Symptome. Solche Schwächen können zusammenwirken; nicht jeder Fehler hat dieselbe Ursache.",
+        "Die sofortige Gegenmaßnahme liegt nach dem Rückimport: Die Redaktion prüft dort gezielt Zeichen, Annotation und Ausgabe. Diese Zusatzkontrolle wird sofort im Handbuch festgehalten. Parallel wird die fehlerhafte Anbindung des Kommentartools überarbeitet – damit die geprüften Inhalte künftig den ganzen Weg unverändert überstehen.",
+        "Fachliche Korrekturen gehen in den maßgeblichen Datenbestand zurück. Daraus werden betroffene Annotationen und Ausgaben kontrolliert neu abgeleitet. Ein Freigabestand dokumentiert gemeinsam Text, Register, Regeln und Ausgabeweg. Stille Satzreparaturen ohne Rückführung dürfen nicht zum dauerhaften zweiten Datenbestand werden.",
+        "Die technische Ursache, die schnelle Absicherung und die Überarbeitung des Tools sind besprochen. Samir kommt auf seinen Einstieg zurück: „Trotzdem: Sollten wir vielleicht einmal über unsere Arbeitszeiten sprechen? Vor der Deadline wurde es schon ziemlich spät. Und wir könnten regelmäßig verfolgen, wie lange Korrekturen liegen bleiben.“",
+        "„Über die Deadline gern“, sagt eine Kollegin. „Aber ich teile mir meine Zeit selbst ein. Manchmal arbeite ich lieber nachts und mache dafür am Nachmittag etwas anderes. Ich möchte jetzt nicht an Sollzeiten für Kommentare gemessen werden. Wir sind schließlich nicht in der Softwareindustrie.“",
+        "Eva nickt: „Wann du am besten arbeitest, ist deine Sache. Wenn wir vor jeder Abgabe solche Nächte brauchen, sollten wir aber über Termine und Unterstützung sprechen. Das gehört zu meiner Verantwortung.“",
+        "„Einverstanden. Unsere Vereinbarung beschreibt die Fehlersuche. Gehört so eine regelmäßige Auswertung auch dazu?“ Samir schüttelt den Kopf. „Nein. Und aus den nächtlichen Einträgen hätte ich keine Konzentrationsgeschichte machen sollen. Bevor wir daraus eine Routine machen, müssen wir Frage und Grenzen gemeinsam klären.“ Seine Zeitstempel sind kein Arbeitszeitnachweis.",
+        "Die Mitarbeitervereinbarung war beim Einstieg erläutert worden. Sie regelt Beiträge, Zugänge und den Schutz der Arbeitsgeschichte. Samirs neue Auswertung ist dadurch nicht pauschal erlaubt. Das Team grenzt den technischen Auftrag ab: Welche Übergabe verändert die Daten? Eine regelmäßige Beobachtung von Tageszeiten gehört nicht dazu.",
+        "Es empfiehlt sich, auch die Maßstäbe für Fortschritt und Qualität gemeinsam zu entwickeln. In der Softwareentwicklung ist eine solche gemeinsame Verständigung etwa in Scrum üblich: Das Team prüft seinen Arbeitsablauf und vereinbart Verbesserungen. Für die Edition könnten verlässliche Übergaben, fachlich geprüfte Bearbeitungsstände und weniger wiederholte Nachkorrekturen zählen. Welche Messwerte dazu passen, lässt sich aus den Aufgaben der Edition ableiten; individuelle Sollzeiten für wissenschaftliche Kommentare folgen daraus nicht.",
+        "Ein langlebiges Projekt wird seine Abläufe weiter verändern müssen. Gemeinsam geklärte Zwecke, Zugriffe und Grenzen erleichtern diese Anpassungen. So können Samirs präzise Einblicke sowohl technische Verbesserungen als auch ein sachliches Gespräch über Planung und Entlastung ermöglichen. Rechtliche und ethische Grenzen bleiben dabei verbindlich."
+      ],
+      "dialog": "„Zuerst dachte ich, wir hätten ein Konzentrationsproblem.“ — Später: „Trotzdem: Sollten wir vielleicht einmal über unsere Arbeitszeiten sprechen?“",
+      "git": "Nahlektüre einzelner Stände mit git blame, git show und Vergleichen rekonstruiert die Veränderung einer Stelle. Analysen vieler Stellen zeigen die Häufung nach einem selektiven Registerabgleich. Zusammen erlauben sie präzises Monitoring; die technische Änderungszuordnung ist kein Schuldbeweis.",
+      "consider": "Die Mitarbeitervereinbarung regelt gewöhnliche Fehlersuche, Rechte und Schutz. Neue umfassendere Auswertungen benötigen eine gesonderte Klärung. Wissenschaftliche Zeiteinteilung bleibt im vereinbarten Rahmen selbstständig; Speicherzeiten sind kein Arbeitszeitnachweis.",
+      "action": "Die Übergangsprüfung H06 sofort freigeben, das Kommentartool parallel überarbeiten und den Rückweg mit Regressionstest abnehmen. Danach die Handbuchregel erneut prüfen. Neue Prozessanalysen nach Mitarbeitervereinbarung und Analyseblatt vorab klären.",
+      "role": "Redaktion, Mitarbeitende und gegebenenfalls ihre Vertretungen, Koordination, technische und rechtlich zuständige Stellen",
+      "question": "Welche Regeln, Ressourcen und gemeinsamen Maßstäbe braucht das Projekt, damit Prozesssteuerung und das Gespräch über Belastung fair stattfinden können?",
+      "links": [
+        "P02-D06",
+        "P02-R05",
+        "P02-G05"
+      ],
+      "sections": [
+        {
+          "title": "„Das haben wir doch längst korrigiert!“",
+          "paragraphs": [
+            "Mal stimmt ein Abstand nicht, mal ein Strich, mal ein Registerverweis. Zunächst wirkt jeder Befund für sich klein. Zusammen bringen sie die Buchproduktion ins Stocken. Der Verlag hat eine Werbekampagne bezahlt; ausgerechnet im Albrecht-Jubiläumsjahr droht wieder ein Band auszufallen. Clara macht dem Satzdienstleister Vorwürfe.",
+            "Der widerspricht: Die angelieferten Daten sähen schlampig aus. Unzählige Kleinigkeiten würden im Satz sogar stillschweigend verbessert. „Kann den Editoren niemand erklären, was ein geschütztes Leerzeichen ist?“",
+            "Die Redaktion ist empört. Sie hat Abstände und Stricharten sorgfältig markiert und die betreffenden Stellen unmittelbar danach geprüft. Nora erinnert sich genau an eine Korrektur, die in der Fahne wieder falsch ist. Aus Sicht der Redaktion muss der Fehler beim Satz hineingekommen sein.",
+            "Samir hört sich den Streit an. Er verspricht, sich die Vorgeschichte der betroffenen Stellen anzusehen: Vielleicht lässt sich herausfinden, wann und auf welchem Weg die Fehler zurückgekommen sind."
+          ]
+        },
+        {
+          "title": "Samirs erste Spur: die späten Bearbeitungen",
+          "paragraphs": [
+            "Samir erklärt, wie er begonnen hat: „Ich habe alle erst spät korrigierten Stellen zusammengestellt. Dann habe ich nachgesehen: Was waren die letzten Änderungen vor der Korrektur? Und welche Bearbeitungen liegen zwischen dem ersten Auftreten des Fehlers und seiner Behebung? Was haben diese Wege gemeinsam?“",
+            "In seiner Auswahl liegen die zugehörigen Zeitstempel mehrheitlich spät in der Nacht. Er zeigt einige Einträge. „Und überhaupt: Je näher die Deadline rückt, desto weiter reichen die Einträge in die Nacht. Zuerst dachte ich, wir hätten ein Konzentrationsproblem und sollten vielleicht etwas an unseren Biorhythmen ändern.“ Einige lachen.",
+            "„Aber das war es nicht“, fährt er fort. „Die späten Zeitstempel haben die Ursache nicht erklärt. Ich musste mir die Stellen selbst und ihre Vorgeschichte genauer ansehen.“ Mit git blame findet er einen Einstieg in die zugeordnete Änderung; mit git show und dem Vergleich zweier Fassungen liest er weiter zurück. Zeichen, Annotation und Prüfabzug betrachtet er zusammen.",
+            "Die Redaktion erinnert sich richtig: Die besonderen Abstände und der richtige Strich waren schon korrekt gespeichert. Samir wechselt zwischen dieser Nahlektüre und dem Vergleich vieler Fälle. Im Überblick findet er einen gemeinsamen Bearbeitungsweg. In den einzelnen Fassungen sieht er, was auf diesem Weg verloren geht."
+          ],
+          "links": [
+            [
+              "Git: blame",
+              "https://git-scm.com/docs/git-blame"
+            ],
+            [
+              "Git: show",
+              "https://git-scm.com/docs/git-show"
+            ],
+            [
+              "Git: Unterschiede vergleichen",
+              "https://git-scm.com/docs/git-diff"
+            ]
+          ],
+          "timestamps": true,
+          "commands": true
+        },
+        {
+          "title": "Die neue Kommentaroberfläche: eine große Erleichterung",
+          "paragraphs": [
+            "Seit einiger Zeit gibt es eine neue Oberfläche für Kommentare, die mit dem Register abgeglichen werden müssen. Links steht der lesbare Kommentar, rechts erscheinen passende Personen-, Orts- und Werkdatensätze. Die Bearbeitenden können Treffer vergleichen und die richtige Verknüpfung auswählen, ohne ständig zwischen XML-Dateien und Registerlisten zu wechseln.",
+            "Alle bestätigen den Gewinn. Die Arbeit geht leichter von der Hand, Verwechslungen lassen sich unmittelbar klären. „Diese Oberfläche möchten wir auf jeden Fall behalten“, sagt Nora. Niemand möchte zur mühsamen früheren Arbeitsweise zurück.",
+            "Genau in diesem erfolgreichen neuen Weg findet Samir aber die Ursache. Bei seiner Einbindung ins Projekt werden Kommentare in die Arbeitsansicht übertragen und anschließend zurückgespielt. Der Rückimport vereinfacht bestimmte besondere Abstände und Striche. Außerdem führt die Anbindung bestehende Datumsauszeichnungen nicht verlustfrei mit: Sie rekonstruiert sie anschließend mit der Zahlenerkennung aus dem zurückgegebenen Text.",
+            "Damit hängen zwei Dinge zusammen, die in der bequemen Oberfläche unsichtbar bleiben: Ein sorgfältig gesetzter Bereichsstrich wird verändert – und die daraus erneut berechnete Auszeichnung sagt nun etwas anderes aus. Die Oberfläche ist eine echte Hilfe. Ihr Rückweg braucht eine Reparatur."
+          ],
+          "spotlight": true
+        },
+        {
+          "title": "Warum es nur manche Kommentare trifft",
+          "paragraphs": [
+            "Die übrigen Kommentare werden weiterhin im bisherigen XML-Werkzeug bearbeitet. Nur die Kommentare mit Registerabgleich nehmen den Weg durch die neue Oberfläche. Deshalb tauchen die Fehler nicht überall auf.",
+            "Auch unter diesen Kommentaren bleiben viele unauffällig: Wer keinen der betroffenen Abstände oder Striche enthält, kann den problematischen Rückweg ohne sichtbaren Unfall passieren. Erst das Zusammentreffen von Bearbeitungsweg und relevanten Zeichen löst die beschriebene Kette aus.",
+            "Samir kann nun die vielen Einzelbefunde erklären. „Achtet genauer auf eure Zeichen“ hatte die Redaktion längst getan. Die Marker waren geprüft worden – vor dem späteren Schritt, der sie wieder vereinfachte."
+          ]
+        },
+        {
+          "title": "Aus einem Strich wird eine Registerkaskade",
+          "paragraphs": [
+            "An einem kleinen Beispiel wird die Folge sichtbar. Im Kommentar steht „1848–1849“, ausgezeichnet als zusammenhängender Zeitraum. Ein automatisierter Schritt erkennt solche Zeitangaben und fügt eine Annotationsschicht für das Register ein. Dabei nutzt die projektinterne Zahlenerkennung auch den Bereichsstrich. Nach dem Rückweg steht dort „1848-1849“: Beim erneuten Aufbau der Schicht erzeugt die Regel nun zwei einzelne Jahresnennungen. Die vorherige Zeitraum-Auszeichnung wird nicht erhalten.",
+            "Die Regel erzeugt formal erlaubte, aber sachlich anders zugeordnete Daten. Registereinträge und das Web-Findemittel werden daraus abgeleitet. Zugleich können verlorene geschützte Abstände den Umbruch ändern. In der Fahne findet jemand den falschen Strich und repariert ihn. Ein zuvor schon für den Satz freigegebenes Register passt nun nicht mehr zum korrigierten Text- und Ausgabestand.",
+            "Nicht nur die Fahne ist betroffen. Auch das separate Web-Findemittel, Registerauszüge und bereits vorbereitete Registerbände müssen auf die betroffenen Änderungen geprüft und gegebenenfalls neu erzeugt werden. Stabile IDs verhindern manche Verweisverschiebung, aber keine falsche zeitliche Annotation oder einen veralteten Seitenverweis.",
+            "Die Abhängigkeit liegt hier in den vereinbarten Projektregeln und Ausgabewegen. Weder ein gewöhnlicher Strich noch TEI führen von sich aus zu dieser Interpretation. Genau diese Regeln muss Samir mitprüfen."
+          ],
+          "example": true,
+          "tei": true
+        },
+        {
+          "title": "Lukas korrigiert einen Sachfehler – und löst den Rückfall aus",
+          "paragraphs": [
+            "Besonders deutlich wird es an einem Kommentar von Lukas. Der falsche Strich war bereits entdeckt und repariert worden. Die Korrektur war in den maßgeblichen Datenbestand zurückgeführt; das Register war erneut geprüft und für den Satz freigegeben.",
+            "Dann liest Lukas die nächste Fahne und entdeckt einen wirklichen eigenen Fehler: Er hat den Empfänger eines Briefs verwechselt. Er öffnet den Kommentar in der vertrauten neuen Oberfläche, berichtigt den Empfänger und wählt den passenden Personeneintrag aus dem Register. Eine richtige und notwendige Korrektur.",
+            "Nach dem Zurückspielen ist der schon einmal reparierte Bereichsstrich wieder zum einfachen „-“ geworden. Lukas hat die betreffende Zeitangabe gar nicht angefasst. Trotzdem berechnet die Anbindung ihre Annotation neu. Zeitraum und Registerzuordnung stimmen erneut nicht; die Kaskade erreicht wieder Satz, Web-Findemittel und Registerausgaben.",
+            "„Aber ich habe doch nur den Empfänger korrigiert!“, sagt Lukas. Genau das macht den Fall für Samir so aufschlussreich. Nicht die neue fachliche Korrektur war falsch. Sie hat denselben fehlerhaften Rückweg noch einmal ausgelöst. Der scheinbar wieder unachtsame Verursacher hat den Mechanismus unabsichtlich reproduziert."
+          ],
+          "incident": true
+        },
+        {
+          "title": "Was für ein Workflow-Problem ist das?",
+          "paragraphs": [
+            "Samir unterscheidet den verlustbehafteten Übertragungsweg, die ungünstige Abfolge von Prüfung und späterer Veränderung, die Weitergabe in abhängige Ausgaben und die wiederholte Reparatur nur sichtbarer Symptome. Solche Schwächen können zusammenwirken; nicht jeder Fehler hat dieselbe Ursache.",
+            "Die sofortige Gegenmaßnahme liegt nach dem Rückimport: Die Redaktion prüft dort gezielt Zeichen, Annotation und Ausgabe. Diese Zusatzkontrolle wird sofort im Handbuch festgehalten. Parallel wird die fehlerhafte Anbindung des Kommentartools überarbeitet – damit die geprüften Inhalte künftig den ganzen Weg unverändert überstehen.",
+            "Fachliche Korrekturen gehen in den maßgeblichen Datenbestand zurück. Daraus werden betroffene Annotationen und Ausgaben kontrolliert neu abgeleitet. Ein Freigabestand dokumentiert gemeinsam Text, Register, Regeln und Ausgabeweg. Stille Satzreparaturen ohne Rückführung dürfen nicht zum dauerhaften zweiten Datenbestand werden."
+          ],
+          "patterns": true,
+          "tools": true,
+          "metrics": true,
+          "reading": true,
+          "ruleChange": true
+        },
+        {
+          "title": "„Trotzdem sollten wir über unsere Arbeitszeiten sprechen“",
+          "paragraphs": [
+            "Die technische Ursache, die schnelle Absicherung und die Überarbeitung des Tools sind besprochen. Samir kommt auf seinen Einstieg zurück: „Trotzdem: Sollten wir vielleicht einmal über unsere Arbeitszeiten sprechen? Vor der Deadline wurde es schon ziemlich spät. Und wir könnten regelmäßig verfolgen, wie lange Korrekturen liegen bleiben.“",
+            "„Über die Deadline gern“, sagt eine Kollegin. „Aber ich teile mir meine Zeit selbst ein. Manchmal arbeite ich lieber nachts und mache dafür am Nachmittag etwas anderes. Ich möchte jetzt nicht an Sollzeiten für Kommentare gemessen werden. Wir sind schließlich nicht in der Softwareindustrie.“",
+            "Eva nickt: „Wann du am besten arbeitest, ist deine Sache. Wenn wir vor jeder Abgabe solche Nächte brauchen, sollten wir aber über Termine und Unterstützung sprechen. Das gehört zu meiner Verantwortung.“",
+            "„Einverstanden. Unsere Vereinbarung beschreibt die Fehlersuche. Gehört so eine regelmäßige Auswertung auch dazu?“ Samir schüttelt den Kopf. „Nein. Und aus den nächtlichen Einträgen hätte ich keine Konzentrationsgeschichte machen sollen. Bevor wir daraus eine Routine machen, müssen wir Frage und Grenzen gemeinsam klären.“ Seine Zeitstempel sind kein Arbeitszeitnachweis."
+          ],
+          "privacy": true
+        },
+        {
+          "title": "Gemeinsame Verantwortung braucht geklärte Maßstäbe",
+          "paragraphs": [
+            "Die Mitarbeitervereinbarung war beim Einstieg erläutert worden. Sie regelt Beiträge, Zugänge und den Schutz der Arbeitsgeschichte. Samirs neue Auswertung ist dadurch nicht pauschal erlaubt. Das Team grenzt den technischen Auftrag ab: Welche Übergabe verändert die Daten? Eine regelmäßige Beobachtung von Tageszeiten gehört nicht dazu.",
+            "Es empfiehlt sich, auch die Maßstäbe für Fortschritt und Qualität gemeinsam zu entwickeln. In der Softwareentwicklung ist eine solche gemeinsame Verständigung etwa in Scrum üblich: Das Team prüft seinen Arbeitsablauf und vereinbart Verbesserungen. Für die Edition könnten verlässliche Übergaben, fachlich geprüfte Bearbeitungsstände und weniger wiederholte Nachkorrekturen zählen. Welche Messwerte dazu passen, lässt sich aus den Aufgaben der Edition ableiten; individuelle Sollzeiten für wissenschaftliche Kommentare folgen daraus nicht.",
+            "Ein langlebiges Projekt wird seine Abläufe weiter verändern müssen. Gemeinsam geklärte Zwecke, Zugriffe und Grenzen erleichtern diese Anpassungen. So können Samirs präzise Einblicke sowohl technische Verbesserungen als auch ein sachliches Gespräch über Planung und Entlastung ermöglichen. Rechtliche und ethische Grenzen bleiben dabei verbindlich."
+          ],
+          "links": [
+            [
+              "Scrum Guide: gemeinsame Verbesserung in der Retrospektive",
+              "https://scrumguides.org/scrum-guide.html#sprint-retrospective"
+            ]
+          ]
+        }
+      ],
+      "image": {
+        "src": "assets/detektiv.webp",
+        "alt": "Illustration: Samir vergleicht markierte Korrekturfahnen mit einer abstrakten Übersicht auf seinem Laptop.",
+        "caption": "Samir sucht Verbindungen zwischen Änderungen, Ausgaben und wiederholten Korrekturen. Die Abbildung zeigt keine echte Softwareoberfläche."
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "P02-D01",
+      "key": "org",
+      "label": "Wie arbeiten die Redaktionen zusammen?",
+      "options": {
+        "federated": "Föderierte Gruppen",
+        "autonomous": "Autonome Bandredaktionen",
+        "central": "Zentrale Redaktion"
+      }
+    },
+    {
+      "id": "P02-D02",
+      "key": "data",
+      "label": "Wo werden die Daten maßgeblich gepflegt?",
+      "options": {
+        "hybrid": "Hybrid mit klaren Zuständigkeiten",
+        "git": "Git-zentriert",
+        "db": "Datenbank-zentriert"
+      }
+    },
+    {
+      "id": "P02-D03",
+      "key": "model",
+      "label": "Wie reagieren wir auf ein neues Editionsmodell?",
+      "options": {
+        "future": "Nur künftige Bände",
+        "migrate": "Altbestände migrieren",
+        "parallel": "Modelle parallel unterstützen",
+        "core": "Semantischer Kern, mehrere Repräsentationen"
+      }
+    },
+    {
+      "id": "P02-D04",
+      "key": "rights",
+      "label": "Ist das öffentliche Datenpaket freigegeben?",
+      "options": {
+        "unknown": "Noch ungeklärt",
+        "embargo": "Noch unter Embargo",
+        "approved": "Fachlich und rechtlich freigegeben"
+      }
+    },
+    {
+      "id": "P02-D05",
+      "key": "archive",
+      "label": "Ist der Band wiederherstellbar?",
+      "options": {
+        "unknown": "Noch nicht geprüft",
+        "complete": "Bestandteile erhalten und Wiederaufbau geprüft",
+        "missing": "Register-Snapshot fehlt"
+      }
+    },
+    {
+      "id": "P02-D06",
+      "key": "analysis",
+      "label": "Wie ist die Prozessanalyse geregelt?",
+      "options": {
+        "new": "Nach Jahren neu eingeführt",
+        "agreed": "Vorab geregelt, mit Einspruchsweg",
+        "expanded": "Zweck oder Tiefe wird erweitert"
+      }
+    },
+    {
+      "id": "P02-D07",
+      "key": "host",
+      "label": "Wer trägt die Git-Infrastruktur?",
+      "options": {
+        "academy": "Gemeinsamer Akademieträger",
+        "uni": "Federführende Universität",
+        "external": "Externer Dienst"
+      }
+    },
+    {
+      "id": "P02-D08",
+      "key": "repos",
+      "label": "Wie schneiden wir die Arbeitsrepos zu?",
+      "options": {
+        "hybrid": "Bereichsrepos plus gemeinsame Standards",
+        "mono": "Ein Gesamtrepo",
+        "volumes": "Band-/Paketrepos"
+      }
+    },
+    {
+      "id": "P02-D09",
+      "key": "stack",
+      "label": "Welchen Datenbank-/Ausgabeweg erproben wir?",
+      "options": {
+        "xml": "XML-Weg: eXist-db / TEI Publisher",
+        "relational": "Relationaler Registerweg: PostgreSQL",
+        "graph": "Beziehungsanalyse: Graphdatenbank"
+      }
+    }
+  ],
+  "entries": [
+    {
+      "id": "P02-R01",
+      "title": "Methodenwechsel",
+      "story": "P02-S01",
+      "type": "Chance und Risiko",
+      "before": "Hohe Bedeutung über Jahrzehnte",
+      "measure": "Modelländerung fachlich beschließen, finanzieren und in Regelwerk/Handbuch mit Geltungsbereich freigeben"
+    },
+    {
+      "id": "P02-R02",
+      "title": "Begutachtung",
+      "story": "P02-S02",
+      "type": "Qualität und Koordination",
+      "before": "Fachlicher Gewinn; zusätzlicher Zeitbedarf offen",
+      "measure": "Fixierter Prüfstand, vertraulicher Rückkanal und geregelte Nachprüfung"
+    },
+    {
+      "id": "P02-R03",
+      "title": "Forschung und Verlag",
+      "story": "P02-S03",
+      "type": "Chance und Freigabefrage",
+      "before": "Kooperation möglich; Rechte ungeklärt",
+      "measure": "Gegenstände und konkrete Vereinbarungen prüfen"
+    },
+    {
+      "id": "P02-R04",
+      "title": "Wiederherstellung",
+      "story": "P02-S04",
+      "type": "Langfristige Kontinuität",
+      "before": "Ohne Test ungeklärt",
+      "measure": "Vollständige Pakete einschließlich Handbuch-/Profilfassung und regelmäßiger Neuaufbau"
+    },
+    {
+      "id": "P02-R05",
+      "title": "Prozesslernen und Kontrolle",
+      "story": "P02-S05",
+      "type": "Optimierung und Personenbezug",
+      "before": "Präzise Analyse möglich; Bedingungen klären",
+      "measure": "Mitarbeitervereinbarung, konkretes Analyseblatt und dokumentierte Handbuchänderung"
+    }
+  ],
+  "metrics": [
+    {
+      "title": "Späte Fehler nach einem Arbeitsschritt",
+      "text": "Bestätigte Fehler, die erst nach einer Übergabe oder Satzprobe auffallen, im Verhältnis zum vergleichbar geprüften Umfang. Gleichbleibende Fehlerklassen und Prüfdichte sind wichtig."
+    },
+    {
+      "title": "Zeit von Meldung bis geprüfter Behebung",
+      "text": "Beginn: dokumentierte Fehlermeldung. Ende: fachlich geprüfte Korrektur. Wartezeiten, Schwierigkeit und Zuständigkeit mitführen; weder individuelle Arbeitszeit noch automatisch eine Fristverletzung."
+    },
+    {
+      "title": "Erneut geöffnete Korrekturen",
+      "text": "Welche zunächst erledigten Meldungen müssen wieder geöffnet werden? Zusammengehörige Folgefehler gruppieren, damit dieselbe Kette nicht als viele unabhängige Probleme erscheint."
+    },
+    {
+      "title": "Änderung ohne erneute Bezugsprüfung",
+      "text": "Nach einer relevanten Text-/Kommentaränderung: Gibt es einen Nachweis, dass Ziel und aktuelle Ausgabe zusammen geprüft wurden? Prüfnachweise sind zusätzliche Daten, keine aus Git ablesbare Wahrheit."
+    },
+    {
+      "title": "Gemeinsam geänderte Bereiche",
+      "text": "Welche Dateien oder Bereiche werden häufig zusammen geändert? Das kann eine Abhängigkeit oder bloß eine gemeinsame Formatierung anzeigen. Eine auffällige Kopplung ist ein Anlass zum Nachsehen, kein Fehlerbeweis."
+    },
+    {
+      "title": "Änderungen an TEI-Strukturen",
+      "text": "Welche Elemente, Attribute und Beziehungen werden tatsächlich geändert? Mechanische Formatierung und Massenänderungen getrennt betrachten. Ein strukturbezogener Vergleich erkennt noch nicht automatisch einen Bedeutungswandel."
+    },
+    {
+      "title": "Persistenz formaler Probleme",
+      "text": "Wie lange bleibt ein erkanntes Schema- oder Referenzproblem bestehen? Prüfzeitpunkte und die jeweils gültigen Regelversionen dokumentieren; eine später verschärfte Regel nicht unbemerkt auf frühere Arbeit als damaligen Fehler zurückprojizieren."
+    },
+    {
+      "title": "Kodierung vergleichbarer Fälle",
+      "text": "Wo weichen vergleichbare Stellen von den dokumentierten Konventionen ab? Materialtyp und Projektphase berücksichtigen. Fachlich begründete Ausnahmen von unbeabsichtigten Inkonsistenzen unterscheiden."
+    }
+  ],
+  "glossary": [
+    {
+      "id": "tei",
+      "title": "TEI und XML: Was wird eigentlich gespeichert?",
+      "paragraphs": [
+        "XML kennzeichnet Bestandteile eines Dokuments durch benannte Elemente und Attribute. TEI ist ein gemeinsames Vokabular und Regelwerk dafür: etwa für Text, Varianten, editorische Eingriffe, Personenbezüge und Verantwortung. Es ist kein fertiges Layout und keine Datenbank.",
+        "Im Projekt wird ein begrenztes, dokumentiertes TEI-Modell vereinbart. Eine Struktur kann technisch gültig sein und dennoch eine falsche Lesart ausdrücken. Fachliche Entscheidungen bleiben bei der Redaktion."
+      ],
+      "links": [
+        [
+          "TEI: Einführung in XML",
+          "https://tei-c.org/release/doc/tei-p5-doc/en/html/SG.html"
+        ]
+      ]
+    },
+    {
+      "id": "oxygen",
+      "title": "oXygen Author: Schreiben und prüfen",
+      "paragraphs": [
+        "oXygen XML Author ist ein XML-Bearbeitungswerkzeug mit einer konfigurierbaren Autorenansicht. Eine vorbereitete Umgebung kann Eingaben, Schema-Prüfung und eine lesbare Darstellung verbinden. Das Projekt braucht passende Einstellungen, Schulung und geklärte Lizenzen.",
+        "Alternative: XML-Editoren oder eine betreute Browseroberfläche. Entscheidend ist, dass das gemeinsame Modell, Rückmeldungen und Exporte unterstützt werden. Eine Lizenz darf nicht das einzige Tor zu den wissenschaftlichen Daten sein.",
+        "Die Albrecht-Edition verwendet ein versioniertes, vor Freigabe mit Diff-Tests geprüftes Projektprofil. Unbeabsichtigte Komplettformatierung wird nicht mit einer Sachkorrektur vermischt."
+      ],
+      "links": [
+        [
+          "Hersteller: Oxygen XML Author",
+          "https://www.oxygenxml.com/xml_author.html"
+        ]
+      ]
+    },
+    {
+      "id": "schema",
+      "title": "Schema, ODD und zusätzliche Prüfregeln",
+      "paragraphs": [
+        "Ein Schema legt erlaubte Strukturen fest. In einer TEI-ODD dokumentiert und beschreibt das Projekt seine Anpassungen; daraus können Schemata und Dokumentation entstehen. Schematron kann zusätzliche prüfbare Bedingungen ausdrücken, etwa Beziehungen zwischen Angaben.",
+        "Wohlgeformt heißt: XML ist syntaktisch korrekt. Schemagültig heißt: Die Struktur erfüllt das gewählte Schema. Beides garantiert keine richtige Interpretation. Modell und Prüfregeln erhalten eigene Versionen."
+      ],
+      "links": [
+        [
+          "TEI: Anpassung und Verwendung",
+          "https://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html"
+        ]
+      ]
+    },
+    {
+      "id": "git",
+      "title": "Git, Hosting, Branches und Reviews",
+      "paragraphs": [
+        "Git bewahrt gespeicherte Dateistände und ihre Beziehungen. GitLab oder GitHub ergänzen Hosting, Rechteverwaltung, Diskussionen und Prüfabläufe. Wer den Server betreibt, entscheidet damit noch nicht über wissenschaftliche Inhalte.",
+        "Branches erlauben parallele Bearbeitung. Ein Merge-/Pull-Request bündelt einen Änderungsvorschlag zur Prüfung. Tags benennen bestimmte Stände und müssen mitübertragen werden. Branches sind keine sichere Grenze zwischen unterschiedlichen Lesekreisen."
+      ],
+      "links": [
+        [
+          "Git: Grundlagen",
+          "https://git-scm.com/book/de/v2"
+        ]
+      ]
+    },
+    {
+      "id": "ci",
+      "title": "CI: Gemeinsame Prüfungen automatisch ausführen",
+      "paragraphs": [
+        "Continuous Integration bedeutet hier: Änderungen werden regelmäßig zusammengeführt und mit vereinbarten Prüfungen untersucht. Der Ablauf kann XML prüfen, Referenzen testen und Vorschauen erzeugen. Fehler erscheinen früh und für alle nachvollziehbar.",
+        "Eine grüne Prüfung ist nur so aussagekräftig wie die enthaltenen Regeln. Fachliche Begutachtung und rechtliche Freigabe werden dadurch nicht ersetzt. Auch das Prüfprogramm selbst muss versioniert und gepflegt werden."
+      ],
+      "links": []
+    },
+    {
+      "id": "xml-db",
+      "title": "XML-Datenbank: eXist-db oder BaseX",
+      "paragraphs": [
+        "Eine XML-Datenbank speichert und durchsucht strukturierte Dokumente. Mit XQuery lassen sich etwa alle Briefe mit einer bestimmten Person oder bestimmte Varianten über das Korpus hinweg abfragen.",
+        "eXist-db verbindet XML-Datenhaltung mit Möglichkeiten zum Aufbau von Webanwendungen. BaseX ist eine weitere XML-Datenbank mit XQuery und Werkzeugen zur Erkundung. Beide brauchen sachkundigen Betrieb, Sicherung und einen getesteten Export. Sie ersetzen Git-Versionierung nicht automatisch."
+      ],
+      "links": [
+        [
+          "eXist-db: Anwendungen entwickeln",
+          "https://www.exist-db.org/exist/apps/doc/development-starter"
+        ],
+        [
+          "BaseX: Dokumentation",
+          "https://docs.basex.org/main/Main_Page"
+        ]
+      ]
+    },
+    {
+      "id": "publisher",
+      "title": "TEI Publisher: Eine Editionsanwendung aufbauen",
+      "paragraphs": [
+        "TEI Publisher bietet eine Umgebung für die Darstellung und Publikation von Editionen. Die Demo zeigt unter anderem Textansichten, Register und Korrespondenznavigation. Es ist ein konkreter Prüfpfad für den XML-Weg, kein bereits beschlossenes Gesamtsystem.",
+        "Das Team testet an einer schwierigen Passage, ob Varianten, Kommentar, Suche und Ausgabe passen. Anpassung, Betrieb und die Verbindung zum Verlagssatz bleiben Projektaufgaben."
+      ],
+      "links": [
+        [
+          "TEI Publisher: Dokumentation und Demos ausprobieren",
+          "https://tei-publisher.org/index.html"
+        ]
+      ]
+    },
+    {
+      "id": "other-db",
+      "title": "Andere Datenbanken: Register und Beziehungsnetze",
+      "paragraphs": [
+        "Eine relationale Datenbank wie PostgreSQL kann klar strukturierte gemeinsame Register führen. Eine Graphdatenbank wie Neo4j stellt Beziehungen in den Mittelpunkt – etwa Korrespondenznetze. Das sind unterschiedliche Aufgaben und Modellierungen.",
+        "Das Projekt muss nicht alle Systeme einsetzen. Ein Graph kann aus TEI und Registern abgeleitet werden. Für jede Information wird festgelegt, wo sie maßgeblich bearbeitet wird; unabhängig gepflegte Doppelbestände erzeugen Konflikte."
+      ],
+      "links": [
+        [
+          "PostgreSQL: Überblick",
+          "https://www.postgresql.org/about/"
+        ],
+        [
+          "Neo4j: Was ist eine Graphdatenbank?",
+          "https://neo4j.com/docs/getting-started/graph-database/"
+        ]
+      ]
+    },
+    {
+      "id": "release",
+      "title": "Release, Manifest und Archivpaket",
+      "paragraphs": [
+        "Ein Release ist ein bewusst freigegebener Stand. Das Manifest nennt die zusammengehörenden Daten-, Schema-, Register- und Softwareversionen sowie passende Freigabeinformationen. Ein Tag in nur einem Repo erfasst diese Kombination nicht vollständig.",
+        "Ein Archivpaket enthält die benötigten Bestandteile und Dokumentation. Ein Git-Mirror allein bewahrt meist weder Datenbankstände noch sämtliche Plattformdiskussionen, Prüfabzüge und Kontextinformationen. Wiederherstellung wird praktisch getestet.",
+        "Das Manifest nennt auch die gültige Handbuch- und Profilversion. Publikationspaket und geschützte Prozessgeschichte werden getrennt bewahrt."
+      ],
+      "links": []
+    },
+    {
+      "id": "fair",
+      "title": "FAIR, Offenheit und Moving Wall",
+      "paragraphs": [
+        "FAIR richtet den Blick auf Auffindbarkeit, Zugänglichkeit, Interoperabilität und Nachnutzung. Es bedeutet nicht, jede Datei sofort offen ins Netz zu stellen. Metadaten, IDs und verständliche Zugangsbedingungen sind auch bei begrenztem Zugang wichtig.",
+        "Eine Moving Wall verschiebt eine vereinbarte öffentliche Freigabe. Gegenstand, Fristbeginn, Dauer und weitere Bedingungen werden konkret festgelegt. Textdaten, Kommentar, Bilder und Verlags-PDF können unterschiedliche Regeln haben."
+      ],
+      "links": [
+        [
+          "GO FAIR: Prinzipien und Zugang",
+          "https://www.gofair.foundation/fair-principles"
+        ]
+      ]
+    },
+    {
+      "id": "analysis-tools",
+      "title": "CodeScene, Code Maat und DevOps",
+      "paragraphs": [
+        "CodeScene visualisiert Aspekte einer Versionsgeschichte, darunter häufig veränderte Bereiche. Code Maat bietet offen verfügbares Repository-Mining, etwa für Änderungsfrequenz und gemeinsam geänderte Dateien. Keines der Werkzeuge erkennt damit automatisch die wissenschaftliche Richtigkeit einer TEI-Passage.",
+        "DevOps verbindet Entwicklung und Betrieb mit kurzen Rückmeldeschleifen. DORA-Messgrößen beziehen sich auf Softwareauslieferung. Für die Edition entwickeln wir begründete eigene Messfragen; die Korrekturzeit einer Note wird nicht einfach zur DORA-Kennzahl erklärt.",
+        "Für einen begrenzten Einstieg kommen Git Quick Stats und gezielt konfigurierte Gitinspector-Berichte infrage. PyDriller verbindet historische Dateiinhalte mit eigenen XML-Prüfungen. Gource macht Entwicklung anschaulich; GrimoireLab ist ein möglicher späterer Schritt für mehrere Datenquellen. Den konkreten Werkzeugkasten finden Sie in Samirs Fallgeschichte und als Pilotblatt bei den Materialien."
+      ],
+      "links": [
+        [
+          "CodeScene: Verhaltensanalyse",
+          "https://codescene.com/product/behavioral-code-analysis"
+        ],
+        [
+          "Code Maat: Beispiele und Quellcode",
+          "https://github.com/adamtornhill/code-maat"
+        ],
+        [
+          "DORA: Messgrößen und ihre Definitionen",
+          "https://dora.dev/guides/dora-metrics/"
+        ],
+        [
+          "Samirs Werkzeugpilot als PDF",
+          "assets/pilot.pdf"
+        ]
+      ]
+    }
+  ],
+  "inventory": [
+    {
+      "source_id": "R-AK-01",
+      "title": "Methodenwechsel und Schemaänderung",
+      "meaning": "hochrelevantes Langzeitrisiko und Innovationschance",
+      "git": "Branches, Versionierung, Migrationstests",
+      "measure": "Governance, Migrationsfinanzierung; betrifft ältere Bände und Builds"
+    },
+    {
+      "source_id": "R-AK-02",
+      "title": "Leitungs-/Personalwechsel",
+      "meaning": "hohes Kontinuitätsrisiko",
+      "git": "Übertragbare Daten, Historie",
+      "measure": "dokumentierte Entscheidungsrechte, Nachfolge, Wissenstransfer"
+    },
+    {
+      "source_id": "R-AK-03",
+      "title": "Ausfall einer Arbeitsstelle",
+      "meaning": "hohes organisatorisches Risiko",
+      "git": "Übergabe von Repos/Arbeitspaketen",
+      "measure": "gemeinsame Standards, Vertretungen"
+    },
+    {
+      "source_id": "R-AK-04",
+      "title": "Heterogene Editionsabteilungen",
+      "meaning": "hohes Integrationsrisiko",
+      "git": "gemeinsame Prüfpipelines",
+      "measure": "Schemata, IDs, Integrationsinstanz; Autonomie erhöht Koordinationsbedarf"
+    },
+    {
+      "source_id": "R-AK-05",
+      "title": "Embargo-/Verlagskonflikt",
+      "meaning": "hohes rechtliches und publizistisches Risiko",
+      "git": "kontrollierte Freigaben",
+      "measure": "Vertrag, Rechteverwaltung; öffentliche Geschichte darf kein Schutzmaterial enthalten"
+    },
+    {
+      "source_id": "R-AK-06",
+      "title": "Vertrauliche Gutachten in Git",
+      "meaning": "hohes Vertraulichkeitsrisiko",
+      "git": "Git allein ungeeignet zur Anonymisierung",
+      "measure": "separate vertrauliche Reviewverfahren"
+    },
+    {
+      "source_id": "R-AK-07",
+      "title": "Review-Verzögerungen",
+      "meaning": "Termin-/Koordinationsrisiko",
+      "git": "fixierte Stände, Status, Änderungsverfolgung",
+      "measure": "Fristen, Ressourcen, Verantwortliche"
+    },
+    {
+      "source_id": "R-AK-08",
+      "title": "Arbeitslast-Engpässe",
+      "meaning": "Managementrisiko und Optimierungschance",
+      "git": "paketbezogene Auswertungen",
+      "measure": "kein Individualranking, zusätzlicher Kontext"
+    },
+    {
+      "source_id": "R-AK-09",
+      "title": "Aktivitätsprofile von Mitarbeitenden",
+      "meaning": "Datenschutz-/Fairnessrisiko",
+      "git": "durch Git verstärkbar",
+      "measure": "klare Zugriff-, Auswertungs- und Publikationsregeln"
+    },
+    {
+      "source_id": "R-AK-10",
+      "title": "Technologischer/Hosting-Wandel",
+      "meaning": "langfristiges Abhängigkeitsrisiko",
+      "git": "portierbare Repositories",
+      "measure": "Export von Plattformdaten, DB-Snapshots, Tests"
+    },
+    {
+      "source_id": "R-AK-11",
+      "title": "Neue Forschungsfragen",
+      "meaning": "erhebliche Nachnutzungschance",
+      "git": "zitierfähige Versionen",
+      "measure": "offene, semantisch erschlossene Daten, APIs/DB"
+    },
+    {
+      "source_id": "R-AK-12",
+      "title": "Internationale Kooperation",
+      "meaning": "Forschungsmöglichkeit und Governanceaufwand",
+      "git": "gemeinsame versionierte Workflows",
+      "measure": "Rollen, Berechtigungen, Datenschutz, Verträge"
+    },
+    {
+      "source_id": "R-AK-13",
+      "title": "Förderung endet vor Fertigstellung",
+      "meaning": "hoher möglicher Schaden",
+      "git": "archivierte Zwischenstände",
+      "measure": "geordnete Teilpublikation, Übernahme und Rechteklärung"
+    },
+    {
+      "source_id": "R-AK-14",
+      "title": "Geänderter Registereintrag betrifft viele Bände",
+      "meaning": "Integrations- und Qualitätsrisiko",
+      "git": "nachvollziehbare Massenkorrektur",
+      "measure": "stabile Identifikatoren, DB und Tests"
+    },
+    {
+      "source_id": "R-AK-15",
+      "title": "Verlagskorrekturen nicht zurückgeführt",
+      "meaning": "widersprüchliche Fassungen",
+      "git": "versionierte Übergabe und Diff",
+      "measure": "definierter Rückmeldekanal"
+    },
+    {
+      "source_id": "R-AK-16",
+      "title": "Veröffentlichungsfristen laufen ab",
+      "meaning": "OA-Chance und Freigaberisiko",
+      "git": "versionierte Publikationspakete, Automatisierung",
+      "measure": "vertraglich geprüfte Freigabe, Kontrolle von Drittmaterial"
+    }
+  ],
+  "analysisTools": [
+    {
+      "name": "Git blame, show und diff",
+      "phase": "Eine Stelle genau untersuchen",
+      "purpose": "Die Zeilenhistorie liefert einen Einstieg in die letzte zugeordnete Änderung. Frühere Stände und Unterschiede lassen sich anschließend gezielt lesen und mit Annotation, Prüfabzug und Korrekturvermerk verbinden.",
+      "limit": "Keine automatische Ursachenermittlung. Gelöschte oder ersetzte Zeilen und frühere Veränderungen benötigen weitere Vergleiche. Der zugeordnete Name ist kein Beweis individueller Schuld.",
+      "links": [
+        [
+          "git blame",
+          "https://git-scm.com/docs/git-blame"
+        ],
+        [
+          "git show",
+          "https://git-scm.com/docs/git-show"
+        ],
+        [
+          "git diff",
+          "https://git-scm.com/docs/git-diff"
+        ]
+      ]
+    },
+    {
+      "name": "Git Quick Stats",
+      "phase": "Erster Überblick",
+      "purpose": "Zeigt Statistiken über Commits, Dateien und Aktivität. Samir prüft damit zunächst, welche Bereiche und Zeiträume einen genaueren Blick verdienen.",
+      "limit": "Keine TEI-Semantik. Importe, Bots, Umbenennungen und Massenformatierungen können das Bild prägen; Statistiken erklären ihre Ursachen nicht.",
+      "links": [
+        [
+          "Projekt und Anwendungsbeispiele",
+          "https://github.com/git-quick-stats/git-quick-stats"
+        ]
+      ]
+    },
+    {
+      "name": "Gitinspector",
+      "phase": "Gezielter Bericht",
+      "purpose": "Erstellt historische Repository-Berichte und kann auf ausgewählte Dateitypen eingegrenzt werden. Für TEI-Dateien muss Samir XML ausdrücklich in den Dateifilter aufnehmen.",
+      "limit": "Standardberichte sind personenorientiert, XML ist im voreingestellten Dateifilter nicht enthalten. Eine XML-Ausgabedatei des Berichts ist keine Analyse der TEI-Bedeutung. Auswahl und Zugriff vorab klären.",
+      "links": [
+        [
+          "Projekt und Dokumentation",
+          "https://github.com/ejwa/gitinspector"
+        ]
+      ]
+    },
+    {
+      "name": "Gource",
+      "phase": "Im Team ansehen",
+      "purpose": "Visualisiert die Entwicklung eines Repositories als bewegten Dateibaum. Für einen Workshop kann das Wachstum und Wechsel der Bearbeitung anschaulich werden.",
+      "limit": "Eine anschauliche Animation ist kein Qualitätsnachweis. Namen und Aktivität können sichtbar werden; auch die gemeinsame Vorführung benötigt einen geklärten Umfang.",
+      "links": [
+        [
+          "Projekt, Beispiele und Einrichtung",
+          "https://gource.io/"
+        ]
+      ]
+    },
+    {
+      "name": "PyDriller",
+      "phase": "Git und TEI verbinden",
+      "purpose": "Eine Python-Bibliothek zum Durchlaufen von Commits und geänderten Dateien. Samir kann frühere und spätere Dateiinhalte mit eigenen XML-Prüfungen verbinden.",
+      "limit": "Eigene Skripte und fachliche Definitionen nötig. Eingebaute Code-/Methodenmetriken sind keine TEI-Qualitätsmessung. Fehlende Inhalte, Umbenennungen und Merge-Strategie berücksichtigen.",
+      "links": [
+        [
+          "Dokumentation zu geänderten Dateien",
+          "https://pydriller.readthedocs.io/en/latest/modifiedfile.html"
+        ],
+        [
+          "Projekt und Einstieg",
+          "https://github.com/ishepard/pydriller"
+        ]
+      ]
+    },
+    {
+      "name": "Jing, Schematron, XPath und XSLT",
+      "phase": "Die XML-Seite prüfen",
+      "purpose": "Jing prüft gegen ein RELAX-NG-Schema. Schematron formuliert zusätzliche Regeln. XPath wählt Elemente und Attribute aus; XSLT kann strukturierte Vergleiche, Berichte und Ausgaben erzeugen.",
+      "limit": "Das sind unterschiedliche Werkzeuge und Sprachen. Regelversion, Kontext und Prüflauf werden dokumentiert. Ein formal gültiger Bezug kann auf die fachlich falsche Stelle zeigen.",
+      "links": [
+        [
+          "Jing",
+          "https://github.com/relaxng/jing-trang"
+        ],
+        [
+          "Schematron",
+          "https://schematron.com/"
+        ],
+        [
+          "XPath",
+          "https://www.w3.org/TR/xpath-31/"
+        ]
+      ]
+    },
+    {
+      "name": "CodeScene / Code Maat",
+      "phase": "Muster ergänzend erkunden",
+      "purpose": "Hotspots beziehungsweise gemeinsam geänderte Dateien liefern Suchrichtungen. Samir vergleicht diese mit den fachlich eingeordneten Korrekturfällen.",
+      "limit": "Code-Health-Bewertungen nicht auf TEI übertragen. Ein häufig geänderter Bereich kann intensive wissenschaftliche Arbeit statt schlechter Qualität zeigen.",
+      "links": [
+        [
+          "CodeScene: Produkt und Tour",
+          "https://codescene.com/product/behavioral-code-analysis"
+        ],
+        [
+          "Code Maat",
+          "https://github.com/adamtornhill/code-maat"
+        ]
+      ]
+    },
+    {
+      "name": "GrimoireLab",
+      "phase": "Bei größerem Bedarf",
+      "purpose": "Kann Daten aus Git, Vorgängen und Review-Systemen zusammenführen und als Dashboards erschließen. Interessant, wenn ein Pilot einen begründeten dauerhaften Bedarf ergibt.",
+      "limit": "Mehr Einrichtung und Pflege; die verknüpften Daten ermöglichen auch tiefere personenbezogene Einsichten. Nicht vorsorglich alle verfügbaren Quellen sammeln.",
+      "links": [
+        [
+          "Projekt, unterstützte Quellen und Einstieg",
+          "https://chaoss.github.io/grimoirelab/"
+        ]
+      ]
+    }
+  ],
+  "analysisPilot": [
+    {
+      "title": "1. Inventur und klare Frage",
+      "text": "Ein bis drei geeignete Repositories und vergleichbare Zeiträume wählen. Mit einem kleinen Überblick beginnen und Importe, Bots, Umbenennungen sowie geänderte Commit-Praxis kennzeichnen. Vor der Auswertung Zweck, Datenumfang und Zugriff klären."
+    },
+    {
+      "title": "2. Git- und TEI-Befunde verbinden",
+      "text": "Dieselben Teilbestände gegen das passende Schema und Projektregeln prüfen. Historische Stände mit PyDriller und XML-Auswertungen untersuchen. Bekannte Problemfälle mit vergleichbaren stabilen Bereichen abgleichen; fachliche Entscheidungen von Fehlerkorrekturen unterscheiden."
+    },
+    {
+      "title": "3. Maßnahmen und Frühindikatoren erproben",
+      "text": "Drei bis fünf Auffälligkeiten mit alternativen Erklärungen und priorisierten Maßnahmen festhalten. Verbesserungen gezielt testen. Einen möglichen Frühindikator erst an späteren, nicht für seine Entwicklung verwendeten Zeiträumen prüfen; Fehlalarme und übersehene Probleme erfassen. Kein pauschaler Edition-Health-Score."
+    }
+  ],
+  "workflowPatterns": [
+    {
+      "id": "P02-WF01",
+      "title": "Fehler im Übertragungsweg",
+      "text": "Ein Export oder Rückimport verändert relevante Zeichen oder Strukturen. Prüfen, ob der vereinbarte Inhalt den Weg unverändert übersteht; nicht nur die Ausgangsdatei betrachten."
+    },
+    {
+      "id": "P02-WF02",
+      "title": "Problematische Abfolge",
+      "text": "Eine gründliche Prüfung liegt vor einem späteren verändernden Schritt. Ihre Aussage gilt für den alten Stand; anschließend ist eine gezielte neue Kontrolle nötig."
+    },
+    {
+      "id": "P02-WF03",
+      "title": "Übergabe mit Verlust",
+      "text": "Zwischen Werkzeugen, Teams oder Verarbeitungsschritten ändern sich Annahmen und Formate. Jede Übergabe ist ein möglicher Prüfpunkt, nicht automatisch ein nachgewiesener Fehler."
+    },
+    {
+      "id": "P02-WF04",
+      "title": "Fehlerkaskade",
+      "text": "Eine frühe Veränderung beeinflusst Zahlenerkennung, Register und mehrere Ausgaben. Die sichtbare Korrektur an einer Stelle kann weitere Revisionen erforderlich machen."
+    },
+    {
+      "id": "P02-WF05",
+      "title": "Eingefahrenes Antipattern",
+      "text": "Ein problematisches Vorgehen wird zur Gewohnheit: nur in der Fahne reparieren, Änderungen nicht zurückführen, wiederholt zur Sorgfalt mahnen, ohne den Übertragungsweg zu untersuchen."
+    }
+  ],
+  "readingModes": [
+    {
+      "title": "Close Reading: den Vorgang verstehen",
+      "text": "Text, Zeichen, Annotation und frühere Fassungen einer Stelle genau lesen. git blame weist zur letzten zugeordneten Zeilenänderung; git show und Vergleiche erschließen weitere Stände. Technische Zuordnung allein erklärt weder Ursache noch Verantwortung."
+    },
+    {
+      "title": "Distant Reading: das Muster erkennen",
+      "text": "Viele Fälle nach Bearbeitungsweg, Zeitpunkt und Änderungstyp vergleichen. Häufungen, stabile Gegenbeispiele und wiederkehrende Korrekturschleifen zeigen, wo genauer nachzusehen ist."
+    },
+    {
+      "title": "Zusammen: aussagekräftiges Monitoring",
+      "text": "Vom Muster zurück zur Stelle und von der erklärten Stelle zu weiteren Fällen wechseln. Daraus gezielte Prüfungen entwickeln und Verbesserungen verfolgen. Die mögliche Tiefe individueller Einsichten erfordert transparente Regeln."
+    }
+  ],
+  "cascadeExample": {
+    "title": "Ein selektiver Umweg, mehrere abhängige Ausgaben",
+    "intro": "Die neue Oberfläche erleichtert den Registerabgleich. Nur ein Teil der Kommentare durchläuft sie. Der Rückweg verändert bestimmte Marker und rekonstruiert Datumsannotation aus dem Text; genau diese Kombination löst den Fehler aus.",
+    "stages": [
+      {
+        "label": "1. Geprüfter Ausgangsstand",
+        "title": "Marker und Zeitraum stimmen",
+        "text": "„1848–1849“ ist als Zeitraum erkannt. Typografische Marker sind geprüft; das Register passt zu diesem Datenstand."
+      },
+      {
+        "label": "2. Registerabgleich",
+        "title": "Der Rückweg verändert die Zeichen",
+        "text": "Nur registerbezogene Kommentare nehmen den Weg durch die neue Oberfläche. Beim Rückimport wird „1848–1849“ zu „1848-1849“. Die frühere Datumsauszeichnung wird nicht erhalten; die anschließende Projektregel erzeugt zwei einzelne Jahresnennungen statt des Zeitraums."
+      },
+      {
+        "label": "3. Korrektur und Rückfall",
+        "title": "Richtig korrigiert – später wieder falsch",
+        "text": "Eine Satzkorrektur stellt den Strich wieder her; Register, Web-Findemittel und Registerbände müssen erneut abgestimmt werden. Bei einer späteren berechtigten Kommentarkorrektur führt derselbe Registerweg den Zeichenverlust erneut ein."
+      }
+    ],
+    "action": "Rückweg reparieren; nach dem Abgleich die betroffenen Marker, Annotationen und Ausgaben prüfen. Korrekturen im maßgeblichen Bestand halten und abhängige Stände gemeinsam neu erzeugen."
+  },
+  "interfaceFocus": {
+    "eyebrow": "DIE SCHLÜSSELSTELLE IM WORKFLOW",
+    "title": "Bequemer kommentieren. Beim Zurückspielen geht Information verloren.",
+    "lead": "Der Fortschritt ist unstrittig: Kommentar und passende Registerdaten stehen nebeneinander. Der Fehler steckt in der Einbindung dieses neuen Arbeitswegs.",
+    "quote": "„Diese Oberfläche möchten wir auf jeden Fall behalten.“",
+    "comment": "Albrechts Briefwechsel entwickelte sich 1848–1849 in enger Verbindung mit seinem Bruder.",
+    "register": [
+      "Person: Albrechts Bruder",
+      "Zeitraum: 1848–1849",
+      "Abgleich direkt am Kommentar"
+    ],
+    "stages": [
+      {
+        "title": "1. Geprüfte TEI-Daten",
+        "text": "Marker und Zeitraum sind bereits korrekt gespeichert."
+      },
+      {
+        "title": "2. Lesbare Kommentaransicht",
+        "text": "Nur für Kommentare mit Registerabgleich. Die fachliche Bearbeitung wird leichter."
+      },
+      {
+        "title": "3. Fehlerhafter Rückweg",
+        "text": "Zeichen werden vereinfacht; Datumsauszeichnungen aus dem Text neu berechnet."
+      }
+    ],
+    "conclusion": "Vor dem Export richtig – nach dem Rückimport verändert. Eine frühere Prüfung kann diesen späteren Verlust nicht verhindern."
+  },
+  "teiExample": {
+    "title": "So wird aus einem Zeitraum etwas anderes",
+    "beforeLabel": "Vor dem Bearbeitungsweg: ein Zeitraum",
+    "before": "<date from=\"1848\" to=\"1849\">1848–1849</date>",
+    "beforeText": "from und to beschreiben Anfang und Ende des zusammengehörenden Zeitraums.",
+    "afterLabel": "Nach dem fehlerhaften Rückweg und der Neuauszeichnung",
+    "after": "<date when=\"1848\">1848</date>-<date when=\"1849\">1849</date>",
+    "afterText": "when bezeichnet hier jeweils ein einzelnes Jahr. Die Verbindung als Zeitraum fehlt. Beide Fragmente können als Struktur erlaubt sein; die Aussage ist nicht dieselbe.",
+    "why": "Eine bloße Ersetzung des sichtbaren Strichs innerhalb der ursprünglichen date-Auszeichnung würde from und to nicht löschen. Im Fall führt die fehlerhafte Anbindung die ursprüngliche Annotation nicht verlustfrei mit und baut sie aus dem vereinfachten Text neu auf. Deshalb muss Samir auch Export, Import und Zahlenerkennung zusammen prüfen.",
+    "link": [
+      "TEI erklärt date und Datumsattribute",
+      "https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html"
+    ]
+  },
+  "recurrence": {
+    "title": "Die richtige Korrektur nimmt erneut den falschen Weg",
+    "steps": [
+      {
+        "title": "Bereits repariert",
+        "text": "Strich und Zeitraum stimmen wieder; Register und Satzstand sind geprüft."
+      },
+      {
+        "title": "Lukas entdeckt einen Sachfehler",
+        "text": "Er korrigiert den Briefempfänger und gleicht den Kommentar erneut mit dem Register ab."
+      },
+      {
+        "title": "Unberührte Zeitangabe verändert",
+        "text": "Der Rückimport vereinfacht den Strich und erzeugt die Datumsauszeichnung erneut."
+      },
+      {
+        "title": "Die Kaskade ist zurück",
+        "text": "Register, Satz, Web-Findemittel und Registerbände müssen wieder zusammen geprüft werden."
+      }
+    ]
+  },
+  "workflowBridge": {
+    "id": "P02-B01",
+    "eyebrow": "ZWISCHEN SITUATION 04 UND 05",
+    "title": "Die Edition lernt mit jedem Band dazu",
+    "paragraphs": [
+      "Über Jahrzehnte bleiben die Arbeitsabläufe einer Edition nicht stehen. Wiederkehrende Schritte lassen sich mit Erfahrung besser organisieren; zugleich machen wachsende Register und immer mehr Querverweise neue Lösungen nötig. Die Redaktion erprobt Routinen, übernimmt Bewährtes und bessert nach. Jede eingeführte Änderung erhält eine passende Handbuchfassung; Nacharbeit an älteren Beständen wird als eigener Auftrag dokumentiert.",
+      "Auch technische Fortschritte fließen ein: OCR kann Vorlagen vorerschließen, LLM können etwa Vorschläge für Annotationen liefern. Solche Ergebnisse werden fachlich geprüft. Neue Regeln sollen außerdem auf ältere Daten anwendbar werden, ohne bereits geleistete Arbeit unbemerkt zu überschreiben.",
+      "Git hilft, Daten, Regeln und Verarbeitungsskripte in passenden Ständen zusammenzuhalten. Die Redaktion kann eine Änderung zunächst getrennt erproben, Ergebnisse vergleichen und nachvollziehen, welche Altdaten schon nachgezogen wurden. Ob die Verbesserung fachlich stimmt und die Übergaben funktionieren, muss sie weiterhin prüfen. Genau darum geht es in der nächsten Situation."
+    ]
+  },
+  "nightEntries": [
+    {
+      "date": "04.06.",
+      "time": "00:27",
+      "text": "Kommentar mit Register abgeglichen"
+    },
+    {
+      "date": "06.06.",
+      "time": "00:37",
+      "text": "Überarbeitete Kommentare zurückgespielt"
+    },
+    {
+      "date": "08.06.",
+      "time": "02:30",
+      "text": "Registerabgleich abgeschlossen"
+    },
+    {
+      "date": "09.06.",
+      "time": "03:35",
+      "text": "Korrekturen für die nächste Fahne übernommen"
+    }
+  ],
+  "gitCommands": [
+    {
+      "id": "blame",
+      "name": "git blame",
+      "title": "Welche Änderung steckt hinter dieser Zeile?",
+      "paragraphs": [
+        "git blame ordnet jeder Zeile einer ausgewählten Dateifassung die Änderung zu, die sie zuletzt verändert hat. Samir bekommt so eine Commit-Kennung und kann die zugehörige Änderung öffnen.",
+        "Das ist ein Einstieg in die Vorgeschichte: Eine spätere Neuformatierung kann ebenfalls als letzte Änderung erscheinen. Der Befehl erklärt weder die fachliche Ursache noch eine persönliche Verantwortung. Deshalb liest Samir mit git show und Fassungsvergleichen weiter."
+      ],
+      "example": "git blame -L 42,48 -- kommentare.xml",
+      "explanation": "Zeigt die Änderungszuordnung für die Zeilen 42 bis 48 der Datei kommentare.xml.",
+      "link": [
+        "Git-Dokumentation: blame",
+        "https://git-scm.com/docs/git-blame"
+      ]
+    },
+    {
+      "id": "show",
+      "name": "git show",
+      "title": "Was wurde in diesem Schritt verändert?",
+      "paragraphs": [
+        "git show öffnet einen ausgewählten Commit: seine Beschreibung und bei einem gewöhnlichen Commit die Änderungen gegenüber dem Vorgänger. Samir sieht, welche Dateien und Textstellen gemeinsam verändert wurden.",
+        "Mit der Commit-Kennung aus git blame verfolgt er so den Rückimport. Für den direkten Vergleich zweier ausgewählter Fassungen nutzt er zusätzlich git diff. Das fachliche Lesen der XML-Stellen bleibt Teil der Untersuchung."
+      ],
+      "example": "git show a1b2c3d -- kommentare.xml",
+      "explanation": "a1b2c3d steht hier beispielhaft für eine Commit-Kennung. Angezeigt wird die Änderung an kommentare.xml.",
+      "link": [
+        "Git-Dokumentation: show",
+        "https://git-scm.com/docs/git-show"
+      ]
+    }
+  ],
+  "gitAgreement": {
+    "id": "P02-M10",
+    "title": "Anlage: Prozessanalysen mit Git",
+    "intro": "Diese Anlage konkretisiert Abschnitt 5 der Mitarbeitervereinbarung. Sie regelt Untersuchungen zur Verbesserung der Arbeitsabläufe. Eine neue regelmäßige Analyse beginnt erst nach dokumentierter Frage, Information und erforderlicher Freigabe.",
+    "fields": [
+      "Verantwortlich: Gesamtkoordination Eva Brandt",
+      "Technische Durchführung: Samir Demir und benannte Vertretung",
+      "Fachliche Prüfung: zuständige Bandredaktion",
+      "Einwände und Datenschutz: Datenschutzstelle des Akademienverbunds / Mitarbeitendenvertretung",
+      "Überprüfung: halbjährlich sowie vor jeder Zweck- oder Methodenerweiterung"
+    ],
+    "sections": [
+      {
+        "id": "A01",
+        "title": "1. Frage und Umfang",
+        "kind": "Regel",
+        "paragraphs": [
+          "Eine Analyse beschreibt Arbeitsschritte und Fehlerklassen. Rohdaten werden nur im erforderlichen Umfang gelesen. Berichte enthalten keine personenbezogenen Ranglisten. Die Rekonstruktion einzelner Änderungen wird nicht als vollständiger Nachweis von Ursache oder Verantwortung ausgegeben."
+        ]
+      },
+      {
+        "id": "A02",
+        "title": "2. Zugriff, Weitergabe und Fristen",
+        "kind": "Regel",
+        "paragraphs": [
+          "Samir und seine Vertretung bearbeiten die freigegebenen Untersuchungsdaten in der geschützten Arbeitsumgebung. Nora prüft die fachliche Einordnung. Eva und die betroffenen Fachredaktionen erhalten den auf Prozessbefunde begrenzten Bericht. Verlag und Gutachtende erhalten keine personenbezogenen Rohdaten.",
+          "Analyseexporte werden 90 Tage nach Abschluss gelöscht. Der fachlich geprüfte Prozessbericht wird zwei Jahre vorgehalten und dann auf weiteren Bedarf geprüft. Wissenschaftliche Quellhistorien unterliegen dem gesonderten Archivkonzept. Gesetzlich erforderliche abweichende Aufbewahrung wird getrennt dokumentiert."
+        ]
+      },
+      {
+        "id": "A03",
+        "title": "3. Ausgeschlossene Nutzungen",
+        "kind": "Regel",
+        "paragraphs": [
+          "Individuelle Arbeitszeiten, Leistungsrankings und automatische Personalentscheidungen werden nicht abgeleitet. Zeitstempel dürfen in der hier freigegebenen Fehlersuche die Reihenfolge rekonstruieren; eine neue Auswertung von Tageszeiten oder individuellen Arbeitsmustern ist dadurch nicht erlaubt. Pseudonyme Daten werden nicht als anonym behandelt."
+        ]
+      },
+      {
+        "id": "A04",
+        "title": "4. Änderung, Einwände und Altdaten",
+        "kind": "Regel",
+        "paragraphs": [
+          "Neue Methoden, Empfänger oder Zwecke werden vorab mit dem Team besprochen und institutionell geprüft. Ältere Daten werden nur nach gesonderter Prüfung von Zweck, Notwendigkeit und Informationspflichten einbezogen. Diese Anlage erteilt keine rückwirkende Zustimmung. Strittige neue Auswertungen werden bis zur Klärung ausgesetzt."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Analyseblatt BUG-58: Der fehlerhafte Rückimport",
+      "items": [
+        "Frage: Verändert die Kommentaroberfläche geprüfte Zeichen und Zeitraumauszeichnungen?",
+        "Daten: die betroffenen Kommentare und passende Gegenbeispiele des aktuellen Bandes; Fassungen vor und nach Rückimport, Schema-/Registerregel und Prüfabzug.",
+        "Methode: git blame/show und Fassungsvergleiche; Vergleich nach Bearbeitungsweg und Fehlerklasse. Tageszeiten und individuelle Arbeitsmuster werden nicht ausgewertet.",
+        "Durchführung: Samir und technische Vertretung; fachliche Abnahme: Nora. Eva und die betroffenen Redaktionen erhalten den Prozessbericht.",
+        "Umgebung: institutionelles GitLab und lokale XML-Auswertung; kein Upload an externe Analyse- oder KI-Dienste. Exportlöschung 90 Tage nach Abschluss, Berichtprüfung nach zwei Jahren.",
+        "Maßnahmen: Übergangsprüfung H06 sofort anwenden, das Kommentartool parallel überarbeiten und den Rückweg mit Regressionstest abnehmen; anschließend das Handbuch erneut prüfen. Die frühere Nachtbeobachtung wird nicht zur Routine und ist kein Bestandteil dieses Analyseauftrags."
+      ]
+    },
+    "links": [
+      [
+        "EDSA: Grundsätze für die Verarbeitung",
+        "https://www.edpb.europa.eu/topics/key-gdpr-concepts/basic-principles_de"
+      ],
+      [
+        "EDSA: Rechtsgrundlagen und Einwilligung",
+        "https://www.edpb.europa.eu/sme/be-compliant/process-personal-data-lawfully_en"
+      ],
+      [
+        "Österreichisches Beispiel: § 96 ArbVG",
+        "https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40123095/NOR40123095.html"
+      ]
+    ]
+  },
+  "handbook": {
+    "id": "P02-H01",
+    "title": "Git-Handbuch der Albrecht-Edition",
+    "version": "1.1",
+    "status": "Freigegebene Projektregelung",
+    "date": "21. Oktober 2026",
+    "nextReview": "21. April 2027",
+    "owner": "Samir Demir · wissenschaftlich-technische Redaktion",
+    "approval": "Nora Seidel für die Fachredaktionen · Eva Brandt für die Gesamtkoordination",
+    "intro": "Dieses Handbuch gilt für alle Arbeitsgruppen der Albrecht-Edition. Es beschreibt die verbindliche gemeinsame Praxis und kennzeichnet Empfehlungen ausdrücklich. Die jeweils gültige Fassung liegt im geschützten Repository standards unter governance/git-handbuch.md. Neue Mitarbeitende erhalten eine Einführung vor dem ersten produktiven Commit.",
+    "sections": [
+      {
+        "id": "H00",
+        "title": "0. Soforthilfe: nichts überstürzt überschreiben",
+        "kind": "Regel",
+        "paragraphs": [
+          "Bei unklarem Stand: Arbeit sichern, git status und git diff ansehen und die wissenschaftlich-technische Redaktion ansprechen. Keine unklaren Konflikte durch blindes Übernehmen einer Seite lösen. Bei versehentlich eingebrachten Geheimnissen oder vertraulichen Angaben sofort IT und Redaktion verständigen – auch wenn die aktuelle Datei schon korrigiert wurde.",
+          "Niemand schreibt geteilte oder archivierte Historien eigenmächtig um. Die Redaktion koordiniert notwendige Eingriffe mit IT und den zuständigen Stellen. Kompromittierte Zugangsdaten werden gesperrt; eine Dateilöschung allein genügt nicht."
+        ]
+      },
+      {
+        "id": "H01",
+        "title": "1. Geltung und Pflege",
+        "kind": "Regel",
+        "paragraphs": [
+          "Die Arbeitsgruppen pflegen Texte in Bereichsrepos. Das gemeinsame Standards-Repo enthält Handbuch, Editionsrichtlinien, Schema/ODD, Prüfregeln, Profil- und Transformationsdokumentation. Das zentrale Register wird in der Registerdatenbank gepflegt. Seine freigegebenen Snapshots werden eindeutig mit den Textständen verbunden.",
+          "Samir betreut das Handbuch gemeinsam mit einer benannten technischen Vertretung. Fachredaktionen prüfen fachliche Regeln; Eva sichert Mandat und Pflegezeit. Zum 21. April und 21. Oktober wird das Handbuch durchgesehen, außerdem nach Vorfällen sowie Modell- und Werkzeugwechseln.",
+          "Änderungsvorschläge erhalten ein GOV-Ticket mit Anlass, betroffenen Abschnitten und Geltungsbereich. Fachliches und technisches Review gehen der Freigabe voraus. Die freigegebene Fassung wird getaggt, im Team erläutert und schriftlich angekündigt. Frühere Fassungen bleiben intern erreichbar. Das Handbuch erweitert keine Rechte oder Analysezwecke der Mitarbeitervereinbarung."
+        ]
+      },
+      {
+        "id": "H02",
+        "title": "2. Zuständigkeit und Zuschreibung",
+        "kind": "Regel",
+        "paragraphs": [
+          "Jeder Auftrag benennt Ausführung, wissenschaftliche Verantwortung und fachliche Prüfung. Eine Hilfskraft kann eine von Nora verantwortete Entscheidung umsetzen; ihre technische Bearbeitung und Noras wissenschaftliche Verantwortung werden getrennt dokumentiert. Neue Lesarten oder unklare Zuordnungen werden fachlich entschieden, bevor sie als gesicherter Befund übernommen werden.",
+          "Persönliche Git-Kennungen wie alb-k7m42 bleiben stabil und werden nicht wiedervergeben. Autor- und Committer-Felder führen diese Kennungen mit einer technischen Projektadresse. Das getrennte institutionelle Identitätsregister verwaltet die Zuordnung. Bots haben eigene Kennungen. Wissenschaftliche Beiträge und Verantwortung werden namentlich in TEI-Metadaten und Beitragsnachweisen ausgewiesen. Diese Angaben können Rückschlüsse erlauben; pseudonyme Historien bleiben geschützt."
+        ]
+      },
+      {
+        "id": "H03",
+        "title": "3. Geräte und Zugänge",
+        "kind": "Regel",
+        "paragraphs": [
+          "Arbeitsrepos werden ausschließlich auf institutionell verwalteten, verschlüsselten Geräten oder in der bereitgestellten Remote-Arbeitsumgebung geöffnet. Das gilt auch für externe Mitwirkende. Anmeldung erfolgt personenbezogen mit Mehrfaktorauthentifizierung; Schlüssel und Tokens werden nicht geteilt.",
+          "Private Git-Accounts, öffentliche Forks, persönliche Clouds und unregistrierte Spiegelungen sind für interne Bestände ausgeschlossen. IT führt das Geräte- und Berechtigungsverzeichnis. Der Entzug eines Serverzugangs löscht lokale Klone nicht; ihre Behandlung gehört zur dokumentierten Übergabe.",
+          "Vor dem Zugriff wird die Person im Beteiligungs- und Zugangsverzeichnis der passenden Aufgabe zugeordnet. Einführung, Vereinbarung, Gerätefreigabe und Berechtigungen werden bestätigt. Eine technische Git-Schulung einschließlich des eingesetzten oXygen-Git-Clients gehört dazu."
+        ]
+      },
+      {
+        "id": "H04",
+        "title": "4. Der tägliche Arbeitsweg",
+        "kind": "Regel",
+        "paragraphs": [
+          "Vor Beginn richtigen Arbeitsbereich, Branch und offenen Dateistand prüfen; den freigegebenen Stand abrufen und nach Projektverfahren abgleichen. Jede Aufgabe erhält ein ED-, DATA- oder BUG-Ticket. Kurze Arbeitszweige heißen beispielsweise ed/ED-142-registerbezug oder fix/BUG-58-zeitraum.",
+          "Vor dem Commit: Diff lesen, betroffene TEI-Dateien validieren, Dateimenge und vertrauliche Inhalte prüfen. Ein Commit enthält eine zusammenhängende prüfbare Änderung. Textkorrektur und globale Formatumstellung werden getrennt. Die Commitnachricht nennt Tätigkeit, Objekt, konkrete Änderung und Ticket, etwa: reg(Brief-017): Empfängerbezug berichtigen [ED-142].",
+          "Ein Merge Request bündelt Ziel, Ticket, fachliche Begründung, Prüfungen und offene Fragen. main ist geschützt. Inhaltliche Änderungen brauchen eine fachlich zuständige zweite Person; Änderungen an Modell, Schnittstelle oder Prüfablauf zusätzlich die technische Redaktion. Übernahme erfolgt mit Merge Commit. Abweichungen bedürfen einer dokumentierten Freigabe; bereits geteilte Beiträge werden nicht heimlich umgeschrieben."
+        ]
+      },
+      {
+        "id": "H05",
+        "title": "5. TEI und oXygen",
+        "kind": "Regel",
+        "paragraphs": [
+          "Die Redaktion verteilt das freigegebene oXygen-Projektprofil mit zugeordnetem Schema und dokumentierter Programmversion. Author Mode dient der regulären Bearbeitung; Text Mode der gezielten XML-Kontrolle. Nach beiden wird der Diff geprüft.",
+          "Bestehende Zeichen, Abstände, Einrückung und Zeilenenden bleiben erhalten, soweit die Aufgabe keine Änderung verlangt. Automatische Komplettformatierung und harte automatische Zeilenumbrüche sind für Editionsdateien deaktiviert. Visueller weicher Umbruch bleibt erlaubt. Profilwechsel werden an repräsentativen Dateien durch Öffnen, kleine Änderung, Speichern und Diff getestet.",
+          "Eine unbeabsichtigt neu formatierte Datei wird nicht pauschal übernommen. Gewollte Arbeit zunächst sichern und die Wiederherstellung mit der Redaktion abstimmen. Geplante Formatmigrationen erhalten einen isolierten Auftrag. Ein grüner Schematest ersetzt weder die Kontrolle der Zeichen noch die wissenschaftliche Prüfung."
+        ]
+      },
+      {
+        "id": "H06",
+        "title": "6. Übergangsregel: nach dem Registerabgleich erneut prüfen",
+        "kind": "Regel",
+        "paragraphs": [
+          "Nach dem Rückimport aus der Kommentaroberfläche werden die veränderten Kommentare gezielt auf erhaltene Striche, geschützte Abstände und Datumsannotation geprüft. Ein Zeitraum wie 1848–1849 muss als zusammengehörender Zeitraum erhalten bleiben. Die automatisch erzeugte Annotationsschicht für das Register wird vor der Freigabe kontrolliert.",
+          "Der Regressionstest enthält Bereichsstrich, geschützten Abstand, Zeitraumauszeichnung und eine sachliche Kommentarkorrektur ohne Änderung der Zeitangabe. Er prüft den gesamten Hin-und-zurück-Weg. Nora bestätigt die fachliche Erwartung; Samir verantwortet den Test.",
+          "Korrekturen gehen in den maßgeblichen Bestand zurück. Register-Snapshot, Satz, Web-Findemittel und betroffene Registerausgaben werden aus dem abgestimmten Stand neu abgeleitet und geprüft. Auch eine später rein sachliche Korrektur durchläuft diese Kontrolle. Stille Reparaturen ausschließlich in der Fahne sind keine abgeschlossene Korrektur.",
+          "H06 sichert die Zeit bis zur fachlich-technischen Abnahme des überarbeiteten Kommentartools ab. Die Tooländerung hat einen eigenen Auftrag und Regressionstest. Nach ihrer Bewährung wird die Notwendigkeit der Zusatzkontrolle neu bewertet und das Handbuch erneut angepasst."
+        ]
+      },
+      {
+        "id": "H07",
+        "title": "7. Prüfungen und fachliche Freigabe",
+        "kind": "Regel",
+        "paragraphs": [
+          "Vor jeder Integration laufen XML-Wohlgeformtheit, projektspezifisches Schema, zusätzliche Referenz-/Konsistenzregeln, Git-Kennungsprüfung und Sicherheitsprüfungen. Formatierungswarnungen werden geklärt. Die prüfende Person hält fest, was sie fachlich geprüft hat: Quelle, Identifikation, Interpretation oder Nebenwirkungen.",
+          "Ein technischer Prüferfolg erteilt keine wissenschaftliche oder rechtliche Freigabe. Blockierende Schutzprüfungen werden nicht routinemäßig übergangen. Notwendige Ausnahmen werden mit Begründung und zuständiger Freigabe dokumentiert."
+        ]
+      },
+      {
+        "id": "H08",
+        "title": "8. Neue Werkzeuge und Altdaten",
+        "kind": "Regel",
+        "paragraphs": [
+          "Neue Verfahren werden auf einem getrennten Testbestand erprobt. Der Auftrag dokumentiert Eingabe, Regel-/Programmversion, erwartete Ergebnisse, Rechte, Datenübertragung, Fehlerfälle und Rücknahmeweg. Das gilt auch für OCR und LLM. Geschützte Daten gehen nicht ohne Freigabe an externe Dienste.",
+          "Editorisch relevante Vorschläge werden vor der Übernahme fachlich geprüft. Bei geeigneten beaufsichtigten Verfahren bleiben Kontrolle und Rücknahme wirksam. Für Altdaten wird festgehalten, welche Bestände mit welcher Regelversion nachgezogen und welche Ausnahmen fachlich geprüft wurden. Neue Regeln gelten nicht stillschweigend als Maßstab früherer Arbeit."
+        ]
+      },
+      {
+        "id": "H09",
+        "title": "9. Integration, Publikation und Rechte",
+        "kind": "Regel",
+        "paragraphs": [
+          "Die Integration übernimmt geprüfte Datenpakete und ein internes Importmanifest mit Quellrepo, Quellcommit, Register-Snapshot, Prüfung und Rechtevermerk. Vollständige Arbeitsgeschichten bleiben in den geschützten Herkunftsrepos. Ein Datenpaket und eine Git-Historie sind verschiedene Übergabegegenstände.",
+          "Die Publikationsumgebung erzeugt aus freigegebenen Quellen einen eigenen öffentlichen Bestand mit eigener Geschichte. Sie übernimmt keine internen Commits. Nora verantwortet die wissenschaftliche Paketfreigabe; die Rechte-/Publikationsstelle prüft Materialrechte und Verlagsbedingungen. Clara wird in die vereinbarten Produktionsübergaben einbezogen.",
+          "Vor Veröffentlichung werden Daten, Metadaten, XML-Kommentare, Bilder, erzeugte Dateien sowie alle öffentlich erreichbaren Branches, Tags, Releases und Artefakte geprüft. Ein Embargoende löst die Gegenstandsprüfung aus. Freigegeben wird nur, was die dokumentierten Bedingungen erfüllt. Ein Dateiexport allein ist keine Rechteprüfung."
+        ]
+      },
+      {
+        "id": "H10",
+        "title": "10. Sicherung und Bewahrung",
+        "kind": "Regel",
+        "paragraphs": [
+          "IT sichert zentrale Repos und benötigte Plattformdaten täglich; wöchentlich entsteht eine institutionell getrennte Sicherung. Monatlich wird die Wiederherstellung einer wechselnden Stichprobe protokolliert, jährlich ein vollständiger Bandaufbau. Datenbank-Snapshots, zusätzliche Binärdateien und benötigte Softwarebestandteile gehören dazu.",
+          "Das Bandmanifest verbindet Text, Register, Schema, Transformationen, Handbuch- und Profilversionen sowie Freigaben. Das wissenschaftliche Archiv übernimmt zitierfähige Publikationspakete und geschützte Prozesspakete getrennt. Prozesspakete enthalten auch erforderliche Entscheidungs- und Verfahrensdokumentation; ihre Zugänge werden gesondert geregelt."
+        ]
+      },
+      {
+        "id": "H11",
+        "title": "11. Vorfälle, Ausscheiden und Rollenwechsel",
+        "kind": "Regel",
+        "paragraphs": [
+          "Fehler werden mit Repo und Standkennung gemeldet, sensible Angaben im vertraulichen Meldekanal. Meldungen dienen zuerst der Schadensbegrenzung. Fachliche Fehler werden nachvollziehbar korrigiert; notwendige Sicherheits- oder Datenschutzbereinigungen koordiniert die zuständige Stelle einschließlich kontrollierter Kopien.",
+          "Beim Ausscheiden werden Aufgaben und offene Entscheidungen übergeben, Zugänge gesperrt und lokale Kopien nach IT-Anweisung gelöscht oder institutionell übernommen. Beiträge bleiben nach den vereinbarten Anerkennungsregeln sichtbar. Datenschutzanträge werden gesondert geprüft; das Ausscheiden macht die Arbeitsgeschichte weder automatisch öffentlich noch automatisch gegenstandslos.",
+          "Lokale Git-Stände und das .git-Verzeichnis bleiben vor unbefugtem Zugriff geschützt. Geräteverlust, verlorene Datenträger, versehentliche Freigaben oder möglicherweise kopierte Daten werden unverzüglich gemeldet; ein nachgewiesener Datenabfluss wird nicht abgewartet.",
+          "Bei Rollen- und Institutionswechsel werden Aufgabe, Vereinbarung und benötigte Zugriffe vor der Weiterarbeit neu geprüft. Befristete Ausnahmen für verbleibende Zugänge oder Kopien brauchen dokumentierten Zweck, Umfang, Schutz, Ablaufdatum und Freigabe der Gesamtkoordination unter Beteiligung der zuständigen Stellen. IT dokumentiert die Umstellung und spätere Abschlusskontrolle."
+        ]
+      },
+      {
+        "id": "H12",
+        "title": "12. Empfehlungen und Kontaktwege",
+        "kind": "Empfehlung und Verzeichnis",
+        "paragraphs": [
+          "Empfehlung: häufig kleine verständliche Zwischenstände sichern und lange unsynchronisierte Arbeit vermeiden. Die Commitfrequenz ist kein Leistungsmaß. Bei Unsicherheit früh eine Fachperson einbeziehen.",
+          "Git, Profile und Übergaben: wissenschaftlich-technische Redaktion. Fachliche Entscheidungen: zuständige Bandredaktion. Rechte und Verlag: Rechte-/Publikationsstelle. Sicherheitsvorfälle: institutioneller IT-Service. Personenbezogene Daten und Einwände: Datenschutzstelle und Mitarbeitendenvertretung. Die aktuelle Kontaktliste liegt geschützt im Projektportal.",
+          "Verbindliche Anlagen: Zuständigkeitsmatrix, Editionsrichtlinie, ODD/Schema, Prüfregeln, oXygen-Profilbeschreibung, Reviewvorlage, Rechteverzeichnis, Sicherungs-/Archivprofil und Mitarbeitervereinbarung. Der freigegebene Stand jeder Anlage ist verzeichnet."
+        ]
+      }
+    ],
+    "changelog": [
+      {
+        "version": "1.0",
+        "text": "Erste gemeinsame Arbeitsordnung: Prüfung vor Übergaben, Review, Publikation und Sicherung."
+      },
+      {
+        "version": "1.1",
+        "text": "Nach BUG-58: sofortige Rückimportkontrolle H06 als Übergangsregel freigegeben; parallel Toolüberarbeitung und Regressionstest beauftragt. Nach Abnahme des Tools wird die Regel erneut geprüft."
+      }
+    ]
+  },
+  "employeeAgreement": {
+    "id": "P02-V01",
+    "title": "Mitarbeitervereinbarung der Albrecht-Edition",
+    "version": "1.1",
+    "status": "Projektvereinbarung",
+    "date": "21. Oktober 2026",
+    "owner": "Akademienverbund · Gesamtkoordination Eva Brandt",
+    "intro": "Diese Vereinbarung gilt für alle Mitwirkenden mit Zugang zu den internen Editionsbeständen. Sie beschreibt die Pflichten der Mitwirkenden und die Zusagen des Akademienverbunds. Die Datenschutzinformation, Rechteanlage und das Archivkonzept gehören dazu; sie werden vor Arbeitsbeginn zugänglich gemacht und erläutert.",
+    "sections": [
+      {
+        "id": "V01",
+        "title": "1. Gemeinsam arbeiten und die Entstehung bewahren",
+        "kind": "Regel",
+        "paragraphs": [
+          "Wir verwenden Git für Zusammenarbeit, nachvollziehbare Fassungen, Fehlersuche und geschützte Bewahrung unserer Arbeitsgeschichte. Zugänge zu Arbeitsbereichen, Integration, Publikation und Archiv werden getrennt vergeben. Vor dem ersten produktiven Beitrag werden der Arbeitsweg, die geltenden Regeln und Ansprechpartner erklärt.",
+          "Dateiinhalte, frühere Fassungen, Commit-Nachrichten, Kennungen und Zeitstempel können dauerhaft nachvollziehbar bleiben. Das Entfernen im aktuellen Text beseitigt ältere Fassungen nicht. Arbeitsgeschichte wird nicht mit dem Projektende automatisch öffentlich."
+        ]
+      },
+      {
+        "id": "V02",
+        "title": "2. Kennung, Beitrag und wissenschaftliche Verantwortung",
+        "kind": "Regel",
+        "paragraphs": [
+          "Sie arbeiten unter Ihrer eigenen, stabilen pseudonymen Projektkennung. Kennungen werden nicht weitergegeben oder wiederverwendet. Das institutionelle Identitätsregister wird getrennt geschützt verwaltet. Auch pseudonyme Historien bleiben personenbezogen; aus fachlichen Beiträgen können Zuordnungen erkennbar sein.",
+          "Die technische Ausführung wird von wissenschaftlicher Verantwortung und fachlicher Abnahme unterschieden. Ihre Beiträge werden nach den dokumentierten Tätigkeiten angemessen in TEI-Metadaten und Beitragsnachweisen ausgewiesen. Git-Author oder Git-Committer allein entscheiden nicht über wissenschaftliche Autorschaft."
+        ]
+      },
+      {
+        "id": "V03",
+        "title": "3. Beiträge, Nutzungsrechte und Verlagsbindungen",
+        "kind": "Regel",
+        "paragraphs": [
+          "Die Rechteanlage hält für jeden Beitrag fest, welche Bearbeitung, Integration, Archivierung und Veröffentlichung gestattet ist und welche Namensnennung gilt. Ein Commit erteilt keine allgemeine öffentliche Nutzungserlaubnis. Rechte Dritter werden nicht durch diese Vereinbarung eingeräumt.",
+          "Wer fremdes Material einbringt, nennt Quelle, bekannten Rechteinhaber und Bedingungen. Unklare Fälle bleiben im dafür vorgesehenen geschützten Bereich. Verlags-PDF, Kommentar, Textdaten und Bilder werden getrennt freigegeben. Niemand veröffentlicht interne Repos, Exporte oder Screenshots eigenmächtig."
+        ]
+      },
+      {
+        "id": "V04",
+        "title": "4. Sorgfalt und Hilfe",
+        "kind": "Regel",
+        "paragraphs": [
+          "Das freigegebene Git-Handbuch regelt die tägliche Arbeit. Prüfen Sie Änderungen vor dem Commit und nutzen Sie die vorgesehenen Reviews. Passwörter, private Nachrichten und Personalangelegenheiten gehören nicht in Git, Tickets oder XML-Kommentare. Fachlich notwendige schutzbedürftige Angaben erhalten einen geeigneten Zugriffsbereich.",
+          "Wenn versehentlich vertrauliche Daten hochgeladen wurden, melden Sie sich sofort beim zuständigen Service – auch wenn Sie die Datei schon geändert haben. Meldungen dienen zuerst der Schadensbegrenzung. Geteilte Historien werden nicht heimlich umgeschrieben oder Beiträge falsch zugeschrieben. Notwendige Eingriffe koordiniert die Redaktion mit den zuständigen Stellen.",
+          "Sie dürfen Unbefugten weder aktuelle Git-Stände noch die Git-Historie zugänglich machen. Schützen Sie lokale Repos einschließlich des .git-Verzeichnisses, Exporte und gespeicherte Zugangsdaten durch die freigegebene Geräteverschlüsselung, Bildschirmsperre und persönliche Zugänge. Nutzen Sie keine unfreigegebenen Freigaben oder Synchronisationsdienste.",
+          "Melden Sie einen möglichen unbefugten Zugriff unverzüglich an IT und Projektkoordination: etwa bei verlorenem Gerät oder Datenträger, offengelegtem Token, versehentlicher Ordnerfreigabe oder Verdacht auf eine kopierte Historie. Warten Sie nicht auf den Nachweis eines Datenabflusses. IT sperrt Zugänge und koordiniert mit den zuständigen Stellen die weiteren Maßnahmen."
+        ]
+      },
+      {
+        "id": "V05",
+        "title": "5. Fehlersuche, Prozessanalyse und freie Zeiteinteilung",
+        "kind": "Regel",
+        "paragraphs": [
+          "Die Rekonstruktion einer fehlerhaften Stelle gehört zur vereinbarten Fehlersuche. Eine neue regelmäßige oder umfassendere Analyse braucht zuvor ein schriftliches Analyseblatt, Information des Teams und die erforderliche institutionelle Prüfung und Beteiligung. Es benennt Frage, Daten, Methode, Zugriff, Empfänger, Fristen und ausgeschlossene Verwendungen.",
+          "Commitzahlen, Änderungsmengen und Tageszeiten werden nicht zur individuellen Leistungsbewertung, Anwesenheitskontrolle oder Rangbildung eingesetzt. Speicherzeiten sind kein Arbeitszeitnachweis.",
+          "Geeignete Qualitäts- und Fortschrittsmaßstäbe werden mit dem Team entwickelt. Aus Messwerten folgen keine automatischen personellen Entscheidungen. Sicherheits- oder Rechtsvorfälle laufen in einem getrennten, eng begrenzten Verfahren; sie erlauben keine allgemeine Personalüberwachung."
+        ]
+      },
+      {
+        "id": "V06",
+        "title": "6. Wer die Daten sieht",
+        "kind": "Regel",
+        "paragraphs": [
+          "Die Rollenübersicht nennt, wer die Historie lesen, administrieren, freigegebene Analysen ausführen und Berichte erhalten darf. Technischer Zugriff erteilt keine zusätzliche Auswertungserlaubnis. Gutachtende und Verlag erhalten die vereinbarten Prüfpakete bzw. Produktionsdaten, keine allgemeinen Zugänge zur internen Arbeitsgeschichte.",
+          "Neue Analysewerkzeuge und externe KI-/Cloud-Dienste werden vor Einbindung auf Rechte, Übertragung und Schutz geprüft. Diese Vereinbarung erlaubt keine vorsorgliche Übermittlung aller Repos an Drittdienste."
+        ]
+      },
+      {
+        "id": "V07",
+        "title": "7. Archivierung und spätere Forschung",
+        "kind": "Regel",
+        "paragraphs": [
+          "Der Akademienverbund übergibt freigegebene Ergebnisse und geschützte Arbeitsgeschichten getrennt an sein wissenschaftliches Archiv. Ergebnisdaten und Methoden werden im rechtlich freigegebenen Umfang öffentlich zugänglich. Für Prozessbestände gelten geschützte Zugänge.",
+          "Spätere Forschung an der Entstehung der Edition wird nach dokumentiertem Antrag, Rechtsprüfung und Schutzprüfung entschieden. Forschungszugang ist keine Freigabe zur Bewertung früherer Mitarbeitender oder zur Veröffentlichung personenbezogener Profile. Diese Vereinbarung enthält keine pauschale Einwilligung in jede künftige Forschungsnutzung."
+        ]
+      },
+      {
+        "id": "V08",
+        "title": "8. Rechte, Aufbewahrung und Einwände",
+        "kind": "Regel",
+        "paragraphs": [
+          "Die Datenschutzinformation nennt die verantwortlichen Einrichtungen, Rechtsgrundlagen, Empfänger, Aufbewahrungszwecke und Rechte. Anträge auf Auskunft, Berichtigung, Löschung oder Einschränkung werden von der Datenschutzstelle nach den gesetzlichen Voraussetzungen geprüft. Diese Rechte werden nicht durch eine Unterschrift aufgegeben.",
+          "Git-Klone, Sicherungen und Archivkopien werden bei der Umsetzung berücksichtigt. Technische Schwierigkeiten sind kein pauschaler Ablehnungsgrund. Maßnahmen, verbleibende Grenzen und Entscheidungen werden erklärt und dokumentiert.",
+          "Fragen und Einwände können ohne Benachteiligung an Eva, die Datenschutzstelle oder die Mitarbeitendenvertretung gerichtet werden. Der Eingang wird innerhalb von fünf Arbeitstagen bestätigt; gesetzliche Bearbeitungsfristen bleiben maßgeblich. Strittige neue Analysen ruhen bis zur Klärung."
+        ]
+      },
+      {
+        "id": "V09",
+        "title": "9. Ausscheiden, Rollenwechsel und Änderung der Regeln",
+        "kind": "Regel",
+        "paragraphs": [
+          "Beim Ausscheiden werden Aufgaben übergeben, Zugänge beendet und lokale Bestände unter Anleitung der IT gelöscht oder institutionell übernommen. Beiträge und rechtmäßig bewahrte Geschichte bleiben nach den jeweiligen Regeln erhalten; bestehende Rechte bleiben bestehen.",
+          "Der Wechsel vom Kernteam zu einer assoziierten Einrichtung oder in eine andere Aufgabe löst vor dem neuen Zugriff eine erneute Prüfung aus: Welche Verantwortung bleibt, welche Bestände werden benötigt und welche Vereinbarung gilt jetzt? Alte Rechte werden entzogen, bevor die passenden neuen Rechte eingerichtet werden. Eine Weiterarbeit mit dem bisherigen Konto-Umfang erfolgt nicht automatisch.",
+          "Eine befristete Ausnahme für weiter benötigte Zugänge oder lokale Kopien wird von der Gesamtkoordination dokumentiert, mit IT und den für Rechte und Datenschutz zuständigen Stellen abgestimmt und ausdrücklich freigegeben. Sie nennt Zweck, Bestände, Schutzmaßnahmen, verantwortliche Person, Ablaufdatum und Abschlusskontrolle. Gesetzliche und vertragliche Grenzen bleiben verbindlich; eine Ausnahme ist keine pauschale Erlaubnis zum Behalten aller Daten.",
+          "Handbuchänderungen werden angekündigt und erläutert. Sie erweitern keine vereinbarten Nutzungszwecke. Neue Zwecke oder weitergehende Datenzugriffe brauchen eine gesonderte Prüfung und Regelung. Kenntnisnahme bestätigt die Information; sie ersetzt keine erforderliche Rechtsgrundlage oder Beteiligung."
+        ]
+      }
+    ],
+    "attachments": [
+      {
+        "title": "Datenschutzinformation",
+        "text": "Die beteiligten Einrichtungen dokumentieren ihre Verantwortlichkeit, Rechtsgrundlagen je Zweck, Empfänger, Speicher- und Überprüfungsregeln sowie Betroffenenrechte und Beschwerdewege. Die Datenschutzstelle führt und aktualisiert diese Information."
+      },
+      {
+        "title": "Rechte- und Publikationsanlage",
+        "text": "Die Rechte-/Publikationsstelle führt den Beitrag, Rechteumfang, Quellen-/Drittrechte, Lizenz, Namensnennung und Verlagsbedingungen je Gegenstand. Fehlende Rechte blockieren die betreffende Freigabe."
+      },
+      {
+        "title": "Archiv- und Forschungszugangskonzept",
+        "text": "Das wissenschaftliche Archiv dokumentiert Übernahme, Schutzbedarf, Aufbewahrungsentscheidung, Zugangskriterien, Antragsverfahren und Behandlung späterer Betroffenenanliegen. Prozessbestände werden vor der Übernahme bewertet; Zugang bleibt zweckgebunden."
+      },
+      {
+        "title": "Analyseanlage und Git-Handbuch",
+        "text": "Die Analyseanlage konkretisiert jede freigegebene Untersuchung. Das Handbuch beschreibt die aktuelle tägliche Praxis; seine geltende Fassung und die Einführung werden dokumentiert."
+      }
+    ]
+  },
+  "handbookIntro": {
+    "title": "So arbeiten wir miteinander",
+    "paragraphs": [
+      "Am ersten Tag soll eine neue Kollegin nicht aus alten E-Mails erraten müssen, wie die Edition arbeitet. Nora öffnet mit ihr das Git-Handbuch. Samir richtet das freigegebene Arbeitsprofil ein. Wo beginnt ein Auftrag? Wer prüft eine Korrektur? Und wen fragt man, wenn eine Datei plötzlich ganz anders aussieht? Zur Einführung gehört auch eine praktische Git-Schulung: etwa Änderungen ansehen, committen und abgleichen mit dem Git-Client-Add-on in oXygen.",
+      "Die Antworten stehen im gemeinsamen Standards-Repository. Die freigegebene Fassung ist verbindlich; Empfehlungen sind erkennbar. Samir und seine Vertretung pflegen den technischen Teil, die Fachredaktionen verantworten die editorischen Regeln. Eva sorgt dafür, dass Pflege und Einführung Arbeitszeit bekommen.",
+      "Alle sechs Monate und nach wichtigen Änderungen wird das Handbuch geprüft. Vorschlag, fachlich-technisches Review, Freigabe und Bekanntgabe sind dokumentiert. Auch der Umgang mit Beiträgen und Arbeitsgeschichte ist vereinbart. Warum diese Vereinbarung wichtig wird, zeigt später Samirs Untersuchung."
+    ]
+  },
+  "ruleChange": {
+    "title": "Aus BUG-58 wird Handbuch 1.1",
+    "before": "Fassung 1.0: Zeichen und Zeitraum vor der Übergabe prüfen.",
+    "after": "Fassung 1.1 · H06: Nach dem Rückimport Zeichen UND Zeitraumauszeichnung kontrollieren; Registerannotation und abhängige Ausgaben aus demselben Stand prüfen.",
+    "steps": [
+      "Befund und Änderungsvorschlag",
+      "Fachliches und technisches Review",
+      "Freigabe und neuer Test",
+      "Bekanntgabe und Anwendung",
+      "Nächste gemeinsame Prüfung"
+    ],
+    "paragraphs": [
+      "Die Buchproduktion braucht jetzt eine verlässliche Übergabe. Samir schlägt deshalb eine sofort umsetzbare Zusatzkontrolle vor: Nach dem Rückimport werden die betroffenen Zeichen und Zeitraumauszeichnungen geprüft. Nora legt die fachlichen Kriterien fest. Eva gibt die Übergangsregel frei und erklärt sie in der Redaktionsrunde; im Handbuch steht sie ab sofort als H06.",
+      "Gleichzeitig beauftragt Eva die Überarbeitung des Kommentartools. Samir und die Entwicklung untersuchen Export und Rückimport, erhalten die ursprüngliche Annotation und ergänzen einen Regressionstest. Das braucht mehr Zeit als die zusätzliche Prüfung. Bis der neue Weg abgenommen ist, arbeitet die Redaktion mit der Übergangsregel weiter.",
+      "Später spielt Lukas seine Empfängerkorrektur im überarbeiteten Tool durch: Die unangetastete Zeitangabe bleibt erhalten. Nora und Samir nehmen den verbesserten Hin-und-zurück-Weg fachlich und technisch ab. Die Zusatzkontrolle hat die Zwischenzeit abgesichert; die Tooländerung beseitigt die Ursache. Beides wurde veranlasst und umgesetzt.",
+      "Damit wird auch die nächste Handbuchänderung fällig. Das Team prüft, welche zusätzliche Kontrolle nach der bewährten Tooländerung noch nötig ist. Eine Übergangsregel bleibt nicht allein deshalb für immer bestehen, weil sie einmal sinnvoll war."
+    ]
+  },
+  "transparency": [
+    {
+      "title": "Ergebnisse",
+      "text": "Freigegebene Editionsdaten und zitierfähige Publikationsstände werden nach den jeweiligen Rechten zugänglich."
+    },
+    {
+      "title": "Methoden",
+      "text": "Richtlinien, Datenmodelle und Verfahren werden im freigegebenen Umfang dokumentiert und geteilt."
+    },
+    {
+      "title": "Entstehungsprozess",
+      "text": "Arbeitsgeschichten bleiben geschützt. Spätere Forschung erhält geregelten Zugang nach gesonderter Prüfung."
+    }
+  ],
+  "privacyTurn": {
+    "eyebrow": "NEUER SCHWERPUNKT · DATENSCHUTZ",
+    "title": "Wenn die Analyse den Blick auf Menschen lenkt",
+    "text": "Bisher ging es um Fehleranalyse, Monitoring und die Verbesserung der Abläufe. Jetzt stellt sich eine andere Frage: Welche personenbezogenen Einsichten entstehen dabei – und wer darf sie wofür verwenden?"
+  },
+  "participation": {
+    "title": "Wer arbeitet sonst mit den Daten?",
+    "paragraphs": [
+      "Zur Edition gehören auch Beschäftigte des Satzdienstleisters, der IT und des Verlags sowie externe Gutachtende. Sie haben unterschiedliche Aufgaben und brauchen unterschiedliche Daten. Eine Mitarbeitervereinbarung für das Kernteam deckt diese Beziehungen nicht automatisch ab. Vereinbarungen können mit den beteiligten Einrichtungen oder Dienstleistern geschlossen werden; sie müssen deren berechtigte Mitwirkende und die zulässigen Nutzungen tatsächlich erfassen.",
+      "Albrecht führt deshalb ein Beteiligungs- und Zugangsverzeichnis. Für jede Partei stehen dort Institution, Aufgabe, verantwortlicher Kontakt, benötigte Repos oder Datenpakete, Zugriff auf Historien, lokale Kopien, geltende Vereinbarung und Ende bzw. Prüftermin. Parteien werden zu passenden Gruppen zusammengefasst; Berechtigungen werden trotzdem je Aufgabe und Person vergeben. Ein Vertrag mit einem Dienstleister bedeutet keinen allgemeinen Git-Zugang für dessen ganze Belegschaft.",
+      "Vor jedem Einstieg und bei Rollen- oder Institutionswechsel wird der Zugang neu abgeglichen. Das gilt auch beim Wechsel vom Kernteam zu einer assoziierten Einrichtung. Zuständigkeit, Vereinbarung, Schulung, freigegebene Geräte und Kopien müssen zur neuen Aufgabe passen. Die passende Vertrags- und Datenschutzregelung wird nach der tatsächlichen Beziehung festgelegt; nicht jeder externe Zugriff ist dieselbe Art von Dienstleistung."
+    ],
+    "groups": [
+      {
+        "group": "Kernteam / Bandredaktionen",
+        "access": "Benötigte Arbeitsrepos und zugehörige geschützte Geschichte",
+        "rule": "Mitarbeitervereinbarung, Handbuch und Rollenfreigabe"
+      },
+      {
+        "group": "Assoziierte Einrichtungen",
+        "access": "Abgegrenzte Arbeitsbereiche nach Kooperationsaufgabe",
+        "rule": "Kooperations- und Zugangsregelung; benannte Mitwirkende"
+      },
+      {
+        "group": "IT und technischer Betrieb",
+        "access": "Für Betrieb und Vorfälle erforderliche Systemrechte",
+        "rule": "Betriebs-/Dienstregelung, Vertraulichkeit und begrenzte Administrationsaufgaben"
+      },
+      {
+        "group": "Satzdienstleister",
+        "access": "Geprüfte Produktionspakete; kein allgemeiner Zugriff auf Arbeitsgeschichte",
+        "rule": "Vertragliche Übergabe-, Korrektur-, Sicherheits- und Kopienregelung"
+      },
+      {
+        "group": "Verlag / Lektorat",
+        "access": "Vereinbarte Lieferstände und Rückkanäle",
+        "rule": "Publikationsvertrag und ergänzende Daten-/Zugangsregelung"
+      },
+      {
+        "group": "Externe Gutachtende",
+        "access": "Fixierter Prüfabzug oder gesonderter geschützter Prüfbereich",
+        "rule": "Vertraulicher Reviewauftrag mit Umfang, Rückkanal und Zugangsende"
+      }
+    ],
+    "steps": [
+      "Aufgabe, Partei und benötigte Bestände erfassen",
+      "Passende Vereinbarung und Verantwortlichkeiten prüfen",
+      "Unterweisen: Git, Handbuch, Sicherheit und Meldewege",
+      "Personengebundene, begrenzte Rechte freigeben und dokumentieren",
+      "Bei Rollenwechsel, Fristende oder Austritt erneut prüfen, umstellen und abschließen"
+    ]
+  }
+}

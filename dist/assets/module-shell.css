@@ -1,0 +1,12 @@
+/* Portal chrome is isolated from each retained application's design and scripts. */
+.portal-frame,.portal-context,.portal-after{box-sizing:border-box!important;font:15px/1.6 'Segoe UI',Arial,sans-serif!important;color:#243d43!important;background:#f5f2e9!important;letter-spacing:normal!important;text-transform:none!important;text-align:left!important}
+.portal-frame{display:flex!important;align-items:center!important;justify-content:space-between!important;flex-wrap:wrap!important;gap:15px!important;padding:18px 5%!important;border-bottom:1px solid #b9c4b6!important;position:relative!important;z-index:30!important;margin:0!important;max-width:none!important;box-shadow:none!important}
+.portal-frame a,.portal-context a,.portal-after a{color:#243d43!important;text-decoration:underline!important;text-underline-offset:4px!important;background:none!important;border:0!important;box-shadow:none!important;white-space:normal!important;padding:6px!important;display:inline-block!important;font:14px/1.6 'Segoe UI',Arial,sans-serif!important;letter-spacing:normal!important;min-height:30px!important}
+.portal-frame .portal-brand{font-weight:700!important;font-size:19px!important;text-decoration:none!important}
+.portal-frame nav{display:flex!important;gap:8px!important;flex-wrap:wrap!important;margin:0!important;padding:0!important;background:none!important;position:static!important}
+.portal-frame a:focus-visible,.portal-context a:focus-visible,.portal-after a:focus-visible{outline:3px solid #a94a32!important;outline-offset:3px!important}
+.portal-context{display:flex!important;gap:10px 25px!important;align-items:center!important;flex-wrap:wrap!important;border-bottom:1px solid #b9c4b6!important;padding:14px 5%!important}
+.portal-context span{font-weight:600!important}.portal-after{padding:45px 6%!important;border-top:1px solid #b9c4b6!important;margin:0!important}.portal-after h2{font:30px/1.2 Georgia,serif!important;color:#243d43!important}.portal-after nav{display:flex!important;gap:12px!important;flex-wrap:wrap!important;margin-top:20px!important}.portal-after p{font:16px/1.6 'Segoe UI',Arial,sans-serif!important}
+@media(max-width:800px){.portal-frame nav{order:3!important;flex-basis:100%!important}.portal-frame{padding:12px 5%!important}}
+@media print{.portal-frame,.portal-context,.portal-after{display:none!important}}
+.portal-local-label{font:600 15px/1.5 Segoe UI,Arial,sans-serif;color:#243d43;max-width:390px}html[data-family-version] .hero h1{font-size:clamp(42px,6vw,86px)!important;line-height:1.1!important}

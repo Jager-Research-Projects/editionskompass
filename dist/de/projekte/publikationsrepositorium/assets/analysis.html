@@ -1,0 +1,32 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Editionskompass · raetselkorpus-prototyp · analysis</title><style>body{max-width:980px;margin:30px auto;padding:0 22px;font:18px/1.7 Arial,sans-serif;color:#243d43;background:#fffdf7}h1,h2,h3{font-family:Georgia,serif;line-height:1.25}h1{font-size:38px}h2{font-size:30px}h3{font-size:23px}img,svg{max-width:100%;height:auto}table{width:100%;border-collapse:collapse;table-layout:fixed}th,td{padding:10px;border:1px solid #87998d;vertical-align:top;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere}details{border-top:1px solid #b9c4b6;padding:12px 0}a:focus-visible,summary:focus-visible{outline:3px solid #a94a32;outline-offset:4px}.family-ai,.family-material-meta{font-size:14px}.family-home{display:block;margin-bottom:25px}.family-table-wrap{overflow:auto}@media(max-width:600px){h1{font-size:30px}table{font-size:14px}}</style></head><body><a class="family-home" href="../index.html#material">Zurück zum Fall</a><p class="family-material-meta">Editionskompass · Fall 03 · Rätselhaft! · Gemeinsamer Stand 1.1 · 27. Oktober 2026 · Material</p><h1>Eine Forschungsgrundlage bezeichnen</h1><p>Dieses Muster benennt eine künstliche Demonstration. Für eine reale Publikation sind konkrete Versions- und Werkzeugnachweise erforderlich.</p><pre><code>{
+  "id": "P03-DEMO-ANALYSE-01",
+  "status": "künstliche Demonstration; keine archivierte historische Datenpublikation",
+  "corpus": {
+    "release": "demo-v1.0",
+    "path": "versionsvergleich/v1.0/data",
+    "version_doi": null,
+    "git_commit": null
+  },
+  "selection": {
+    "book_ids": [
+      "book-a",
+      "book-b"
+    ],
+    "rule": "alle Rätsel der beiden genannten Beispielsammlungen"
+  },
+  "extraction": {
+    "file": "xslt/raetseltexte-v1.xsl",
+    "version": "demo-1",
+    "includes_solutions": false,
+    "includes_prefaces": false
+  },
+  "analysis": {
+    "file": "run_demo.py",
+    "measure": "Versrätsel / alle Rätsel",
+    "definition": "riddle-div mit direktem lg = Vers; p = Prosa",
+    "parameters": {
+      "rounding": "keine Rundung der Bestandszahlen"
+    }
+  },
+  "production_fields": "Bei einer tatsächlichen Forschungsanalyse werden konkrete Version-DOI, erhaltene Commitreferenz und archivierte Werkzeugstände ergänzt. Null ist hier ausdrücklich kein gültiges fertiges Forschungszitat."
+}</code></pre></body></html>

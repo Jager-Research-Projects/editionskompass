@@ -1,0 +1,262 @@
+{
+  "case": "P04",
+  "label": "Fall 04 · Die andere Stadt",
+  "project": "projekt",
+  "stories": "geschichten",
+  "materialTarget": "#materialien",
+  "strategy": [
+    "Das Team beginnt an einem kleinen Konvolut. oXygen mit Git-Client und ein kurzer gemeinsamer Ablauf ermöglichen selbstständige Korrekturen; die Technik unterstützt bei Konflikten.",
+    "Das Editionsrepo liegt in einer institutionellen GitLab-Projektgruppe. Zwei benannte Personen können Administration und Wiederherstellung veranlassen.",
+    "Eine geprüfte Basistranskription wird kontrolliert nach TEI übernommen. Danach ist diese Einheit im Editionsrepo die maßgebliche wissenschaftliche Arbeitsfassung.",
+    "Editionsdaten und Frontendcode liegen in getrennten Repos. Versionierte Konverter bleiben zunächst im Editionsrepo. Definierte Exporte liegen im Importarchiv.",
+    "Lukas entwickelt eine dauerhaft alternative Rekonstruktion auf einem bezeichneten Forschungsstand weiter. Nora pflegt zusätzliche Figurenrelationen in einem eigenen Annotationsrepo.",
+    "Veröffentlichungen verbinden freigegebene Daten, Schema, Frontend und Bildbezüge. Wissenschaftlich relevante Satzkorrekturen werden kontrolliert in die TEI zurückgeführt.",
+    "Vor Stellenende sind Forschungszugänge, lokale Datenkopien, Nachredaktion, institutionelle Verantwortung und Wiederherstellung geregelt."
+  ],
+  "storySelectors": [
+    "main>section.story"
+  ],
+  "architectureSelectors": [
+    "img[src*='architektur.svg']"
+  ],
+  "hideOriginal": [
+    "persona",
+    "strategy",
+    "graph",
+    "decisions",
+    "architecture",
+    "risks",
+    "stories",
+    "handbook",
+    "manual"
+  ],
+  "rules": [
+    [
+      "Arbeiten und prüfen",
+      "Änderungen in überschaubaren Schritten bearbeiten, vor dem Übertragen vergleichen und mit den vereinbarten Prüfregeln kontrollieren."
+    ],
+    [
+      "Bezeichnen und dokumentieren",
+      "Maßgebliche Daten, Regeln, Zuständigkeiten und zusammengehörende Ausgabestände nachvollziehbar benennen."
+    ],
+    [
+      "Zugriff und Weiterarbeit",
+      "Nur berechtigten Personen Zugriff geben; Beiträge, Freigaben, Rollenwechsel, Sicherung und Wiederherstellung entsprechend dem Projektumfang regeln."
+    ]
+  ],
+  "media": [
+    {
+      "file": "assets/forschung.webp",
+      "type": "KI-generierte Illustration",
+      "label": "Fiktive Szene · KI-generierte Illustration",
+      "provenance": "bildprompts.md",
+      "date": "Siehe ursprüngliche Bildnachweise; nicht nachträglich ergänzt."
+    },
+    {
+      "file": "assets/team.webp",
+      "type": "KI-generierte Illustration",
+      "label": "Fiktive Szene · KI-generierte Illustration",
+      "provenance": "bildprompts.md",
+      "date": "Siehe ursprüngliche Bildnachweise; nicht nachträglich ergänzt."
+    },
+    {
+      "file": "assets/uebergabe.webp",
+      "type": "KI-generierte Illustration",
+      "label": "Fiktive Szene · KI-generierte Illustration",
+      "provenance": "bildprompts.md",
+      "date": "Siehe ursprüngliche Bildnachweise; nicht nachträglich ergänzt."
+    }
+  ],
+  "ratingBasis": "Redaktionelle Ausgangseinordnung für den Modellfall vor zusätzlichen Maßnahmen. Plausibilität ist keine gemessene Wahrscheinlichkeit; Wirkung meint bei Chancen den Nutzen, bei Risiken eine unerwünschte Folge. Ungeklärte Bedingungen bleiben außerhalb der Quadranten. Die Erkundung und Themenkarten erläutern zusätzliche Abhängigkeiten.",
+  "ratings": [
+    {
+      "id": "P04-R01",
+      "title": "Gemeinsam arbeiten",
+      "type": "chance",
+      "p": "höher",
+      "w": "begrenzt",
+      "reason": "Mit Einführung und einem überschaubaren Ablauf ist ein Gewinn im Arbeitsalltag gut erreichbar. Er betrifft zunächst die Zusammenarbeit, nicht alle offenen Fragen des Projekts."
+    },
+    {
+      "id": "P04-R02",
+      "title": "Importverluste",
+      "type": "risk",
+      "p": "geringer",
+      "w": "weitreichend",
+      "reason": "Nach der vereinbarten Importabnahme sind neue Vollimporte seltener. Überschreibt einer genetische Auszeichnung, kann dennoch ein großer Teil der Editionsarbeit betroffen sein."
+    },
+    {
+      "id": "P04-R03",
+      "title": "Eigene Forschung",
+      "type": "chance",
+      "p": "höher",
+      "w": "weitreichend",
+      "reason": "Lukas und Nora arbeiten bereits an eigenen Fragen. Nachvollziehbare Forschungsstände können sowohl ihre Dissertationen als auch die gemeinsame Edition langfristig stärken."
+    },
+    {
+      "id": "P04-R04",
+      "title": "Neue Befunde",
+      "type": "chance",
+      "p": "geringer",
+      "w": "weitreichend",
+      "reason": "Eine grundlegend andere Chronologie ist offen. Tritt sie auf, kann sie Edition, Interpretation und Interface gleichzeitig verändern; der Folgeaufwand bleibt mitzudenken."
+    },
+    {
+      "id": "P04-R05",
+      "title": "Satzkorrekturen",
+      "type": "risk",
+      "p": "höher",
+      "w": "begrenzt",
+      "reason": "Einzelne Abweichungen zwischen Satz und Download sind im Korrekturprozess naheliegend. Ihr Umfang bleibt zunächst auf betroffene Stellen begrenzt; ohne geregelten Rückfluss können sie sich ausweiten."
+    },
+    {
+      "id": "P04-R06",
+      "title": "Veröffentlichung",
+      "type": "chance",
+      "p": "geringer",
+      "w": "weitreichend",
+      "reason": "Frühe Rückmeldungen können die Nutzbarkeit deutlich verbessern. Ob ein dafür geeigneter Bestand früh öffentlich werden kann, hängt noch von Verlag und Forschenden ab."
+    },
+    {
+      "id": "P04-R07",
+      "title": "Forschungszugang",
+      "type": "risk",
+      "p": "höher",
+      "w": "weitreichend",
+      "reason": "Die Stellen enden voraussichtlich vor den Dissertationen. Ohne Anschlussregelung ist eine Zugangsunterbrechung daher plausibel und kann die eigenständige Weiterarbeit erheblich beeinträchtigen."
+    },
+    {
+      "id": "P04-R08",
+      "title": "Technische Betreuung",
+      "type": "risk",
+      "p": "geringer",
+      "w": "weitreichend",
+      "reason": "Der Ausfall einer Schlüsselperson ist nicht absehbar. Ohne erprobte Vertretung kann er aber Import, Prüfungen und Frontendbetrieb zugleich treffen."
+    },
+    {
+      "id": "P04-R09",
+      "title": "Weiterarbeit",
+      "type": "risk",
+      "p": "höher",
+      "w": "weitreichend",
+      "reason": "Nach Förderende steht weniger gesicherte Arbeitszeit zur Verfügung. Fehlende Nachredaktion oder Betreuung kann deshalb mehrere Ausgaben und spätere Korrekturen betreffen."
+    }
+  ],
+  "riskTexts": {
+    "P04-R01": {
+      "situation": "Ein überschaubarer Ablauf ermöglicht selbstständige Mitarbeit.",
+      "git": "Git hält Veränderungen nachvollziehbar fest und unterstützt gemeinsame Prüfung.",
+      "consider": "Einführung, Zeit und Hilfe müssen erreichbar sein.",
+      "action": "Pilot gemeinsam durchführen und das Handbuch mit neuen Mitarbeitenden erproben.",
+      "owner": "Projektleitung und technisches Team"
+    },
+    "P04-R02": {
+      "situation": "Ein neuer Export kann inzwischen ergänzte genetische Auszeichnung überschreiben.",
+      "git": "Vergleich und Versionsgeschichte zeigen verlorene Strukturen.",
+      "consider": "Der bessere Textstand ist nicht automatisch die bessere Editionsdatei.",
+      "action": "Spätere Lesungskorrekturen gezielt übernehmen; bei systematischem Fehler den Konverter reparieren.",
+      "owner": "Importverantwortung und Fachredaktion"
+    },
+    "P04-R03": {
+      "situation": "Lukas und Nora gewinnen neue Einsichten, die über die gemeinsame Edition hinausgehen.",
+      "git": "Eigene referenzierte Forschungsbestände und Vergleiche halten den Bezug nachvollziehbar.",
+      "consider": "Langfristige Autonomie, Datenrechte und spätere Übernahmen brauchen Regeln.",
+      "action": "Basisrelease und stabile Kennungen festhalten; passende Forschungsrepos einrichten.",
+      "owner": "Promovierende und Projektleitung"
+    },
+    "P04-R04": {
+      "situation": "Eine andere Chronologie verändert Edition, Figureninterpretation und möglicherweise das Frontend.",
+      "git": "Alternative Stände lassen sich untersuchen und kontrolliert übernehmen.",
+      "consider": "Ein technisch konfliktfreier Merge entscheidet keine wissenschaftliche Frage.",
+      "action": "Befund fachlich diskutieren; Schema, Daten und Darstellung gemeinsam nachprüfen.",
+      "owner": "Fachredaktion, Forschende und Technik"
+    },
+    "P04-R05": {
+      "situation": "Das Buch enthält eine fachliche Korrektur, die im Download noch fehlt.",
+      "git": "Benannte Liefer- und Referenzstände dokumentieren den Rückfluss.",
+      "consider": "Fachliche und rein typografische Änderungen unterscheiden; Nachredaktion braucht Zeit.",
+      "action": "Korrekturpaket vereinbaren und fachliche Änderungen geprüft in TEI übernehmen.",
+      "owner": "Redaktion und Verlag"
+    },
+    "P04-R06": {
+      "situation": "Frühe Teilveröffentlichungen bringen Rückmeldungen, während das Team noch reagieren kann.",
+      "git": "Teilreleases verbinden genau bezeichnete Daten, Funktionen und Prüfstände.",
+      "consider": "Verlagsinteressen, eigene Forschung und kumulative Publikationswege beeinflussen den öffentlichen Umfang.",
+      "action": "Einen Freigabeplan mit Inhaltsumfang, Zuständigkeit, Betrieb und nächsten Ausgaben vereinbaren.",
+      "owner": "Fachredaktion, Forschende, Technik und Verlag"
+    },
+    "P04-R07": {
+      "situation": "Noras Account läuft aus, während ihre Dissertation weitergeht.",
+      "git": "Autorisierte Kopien und bezeichnete Basisstände ermöglichen unabhängige Weiterarbeit.",
+      "consider": "Eigene Forschungsnutzung und offizielle Schreibrechte sind verschiedene Befugnisse.",
+      "action": "Vor Stellenende die neue Rolle, erlaubte Kopien und Zugang praktisch prüfen.",
+      "owner": "Nora, Projektleitung und institutionelle Administration"
+    },
+    "P04-R08": {
+      "situation": "Eine einzelne Person kennt Import, Tests und Wiederherstellung.",
+      "git": "Versionierte Verfahren und Dokumentation machen Wissen übertragbar.",
+      "consider": "Ein Repo allein dokumentiert noch keine Serverkonfiguration oder Bildabhängigkeit.",
+      "action": "Vertretung einrichten und eine zweite Person die Wiederherstellung durchführen lassen.",
+      "owner": "Technisches Team und institutionelle Trägerschaft"
+    },
+    "P04-R09": {
+      "situation": "Förderende und spätere Korrekturen treffen auf weniger verfügbare Zeit.",
+      "git": "Geprüfte Stände begrenzen Nacharbeit und helfen bei der Übergabe.",
+      "consider": "Archivierung, Frontendbetrieb und wissenschaftliche Nachredaktion sind getrennte Leistungen.",
+      "action": "Aufgaben, Verantwortliche und realistische Nachförderkapazität früh vereinbaren.",
+      "owner": "Projektleitung mit Verlag und Bibliothek"
+    }
+  },
+  "materials": [
+    {
+      "kind": "persona",
+      "title": "Projektkarte",
+      "description": "Persona, Vorhaben und Ressourcen",
+      "pdf": "familie-projekt.pdf"
+    },
+    {
+      "kind": "family-strategy",
+      "title": "Musterstrategie",
+      "description": "Die empfohlene Ausgangslösung",
+      "pdf": "familie-strategie.pdf"
+    },
+    {
+      "kind": "graph",
+      "title": "Entscheidungsgraph",
+      "description": "Wege, Abhängigkeiten und Zusammenführungen",
+      "format": "A3",
+      "pdf": "familie-entscheidungen.pdf"
+    },
+    {
+      "kind": "family-architecture",
+      "title": "Architektur",
+      "description": "Arbeitsorte, Datenflüsse und Ausgaben",
+      "pdf": "familie-architektur.pdf"
+    },
+    {
+      "kind": "family-risks",
+      "title": "Chancen und Risiken",
+      "description": "Einordnungen, Maßnahmen und Zuständigkeiten",
+      "pdf": "familie-risiken.pdf"
+    },
+    {
+      "kind": "family-stories",
+      "title": "Situationen · Lesefassung",
+      "description": "Die Fallgeschichten zum Nachlesen",
+      "pdf": "familie-situationen.pdf"
+    },
+    {
+      "kind": "manual",
+      "title": "Handbuch und Arbeitsregeln",
+      "description": "Verbindliche Praxis im passenden Projektumfang",
+      "pdf": "familie-regeln.pdf"
+    }
+  ],
+  "riskTarget": ".risk-matrices",
+  "knowledge": [
+    {
+      "selector": ".workflow>div",
+      "text": "Vergleichen Sie vor dem nächsten Schritt den gespeicherten Stand mit Ihrer Änderung. Halten Sie fest, welche Prüfung erfolgt ist und wer eine Freigabe übernehmen darf."
+    }
+  ]
+}

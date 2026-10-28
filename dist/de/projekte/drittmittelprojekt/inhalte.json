@@ -1,0 +1,678 @@
+{
+  "id": "P04",
+  "version": "0.4.2",
+  "date": "2026-10-23",
+  "title": "Die andere Stadt",
+  "subtitle": "Ein Roman in vielen Fassungen. Ein Projekt mit vier Zeitplänen.",
+  "disclosure": "Die andere Stadt, Elise Hartmann und das Editionsteam sind fiktiv. Die Beispiele sind eigens angefertigtes Lehrmaterial.",
+  "persona": {
+    "id": "P04-PER01",
+    "name": "Das Editionsteam um Miriam Falk",
+    "text": "Elise Hartmann (1842–1901) arbeitete zwischen 1878 und 1886 an ihrem Roman Die andere Stadt. Darin verändert die Industrialisierung eine Stadt – und mit ihr die Lebenswege und Beziehungen ihrer Bewohner. Hartmann begann mehrfach neu, verschob Kapitel und ließ Figuren verschwinden. Einzelne Kapitel erschienen vorab in Zeitschriften; der Roman blieb unvollendet und wurde nie als Buch veröffentlicht.\n\nIm Nachlass liegen Notizhefte, zwei Manuskriptkonvolute und eine überarbeitete Reinschrift. Streichungen, Randzusätze und abweichende Blattfolgen erzählen unterschiedliche Geschichten seiner Entstehung. Welche Entwürfe gehören zusammen? Was wurde wann verändert? Miriam Falks Team will diese Zusammenhänge in einer genetischen Edition sichtbar und am digitalisierten Manuskript nachvollziehbar machen. Der gedruckte Band bietet eine begründet gewählte Lesefassung und ausgewählte Varianten.\n\nLukas untersucht die Werkgenese; Nora verfolgt, wie sich Figuren und Erzählperspektiven verändern. Beide arbeiten zugleich an eigenen Dissertationen. Vier Jahre sind finanziert. Doch die Forschung, der Verlagssatz und die digitale Veröffentlichung folgen ihren eigenen Zeitplänen.",
+    "goal": "Gemeinsam edieren, eigenständig forschen und nachvollziehbare Fassungen veröffentlichen.",
+    "resources": "Zwei wissenschaftliche Mitarbeitende, Hilfskräfte, technisches Team, vorhandene Digitalisate; Zusammenarbeit mit Bibliothek und Verlag.",
+    "bottleneck": "Die Stellen enden früher als manche wissenschaftlichen und publizistischen Arbeiten.",
+    "question": "Wie bleibt eine gemeinsame Editionsgrundlage verlässlich, wenn Forschungen, Veröffentlichungen und Zuständigkeiten auseinanderlaufen?",
+    "author": {
+      "name": "Elise Hartmann",
+      "birth": 1842,
+      "death": 1901,
+      "fictional": true
+    },
+    "work": {
+      "title": "Die andere Stadt",
+      "writing_period": "1878–1886",
+      "publication": "Einzelne Kapitel als Vorabdruck; unvollendet und nie als Buch veröffentlicht.",
+      "witnesses": [
+        "Notizhefte",
+        "zwei Manuskriptkonvolute",
+        "überarbeitete Reinschrift",
+        "Zeitschriftenvorabdrucke"
+      ]
+    },
+    "digital_value": "In welcher Reihenfolge standen die Sätze zunächst? Wohin wurde eine Passage verschoben? Welche Ergänzung gehört zu welcher Schreibphase? Im Interface der digitalen Edition lassen sich Rekonstruktionen nebeneinander betrachten, einzelne Schichten einblenden und direkt mit der Handschriftenseite vergleichen. Der gedruckte Band vermittelt ausgewählte Varianten und eine begründete Lesefolge; wechselnde Anordnungen und konkurrierende Rekonstruktionen lassen sich dort schwerer nachvollziehen. Die wissenschaftlich verantworteten TEI-Daten halten Texte, Varianten und editorische Beziehungen unabhängig von einer einzelnen Oberfläche fest. Sie bilden den Kern unserer digitalen Edition und können unterschiedliche Frontends, Druckausgaben und weitere Forschungsanwendungen speisen. Das technische Frontend stellt dafür ein Interface zur Erschließung der digitalen Edition bereit: Seine Auswahl-, Vergleichs- und Bildfunktionen prägen, was sich an der Edition erkennen lässt."
+  },
+  "roles": [
+    {
+      "id": "P04-ROL01",
+      "name": "Miriam Falk",
+      "task": "Wissenschaftliche Leitung und offizielle Freigabe",
+      "access": "Fachliche Entscheidungen; technische Unterstützung verfügbar"
+    },
+    {
+      "id": "P04-ROL02",
+      "name": "Lukas",
+      "task": "Edition und eigene Dissertation zur Werkgenese",
+      "access": "Editionsarbeit und autorisierte eigene Forschung; offizielle Freigabe gemeinsam geregelt"
+    },
+    {
+      "id": "P04-ROL03",
+      "name": "Nora",
+      "task": "Edition und eigene Dissertation zu Figuren und Perspektiven",
+      "access": "Editionsarbeit, eigene Annotationen, vereinbarter Forschungszugang nach Stellenwechsel"
+    },
+    {
+      "id": "P04-ROL04",
+      "name": "Technisches Team",
+      "task": "Import, Git-Unterstützung, Schema, Frontend und Tests",
+      "access": "Technische Administration mit Vertretung; keine alleinige Entscheidung über Lesarten"
+    },
+    {
+      "id": "P04-ROL05",
+      "name": "Hilfskräfte",
+      "task": "Basistranskription und abgegrenzte Prüfungen",
+      "access": "Zugewiesene Daten; Rückfragen statt selbstständiger Konfliktauflösung"
+    },
+    {
+      "id": "P04-ROL06",
+      "name": "Bibliothek",
+      "task": "Bildressourcen; gesondert vereinbarte Archiv- und Betriebsleistungen",
+      "access": "Nach vereinbartem Auftrag; vollständiger Frontendbetrieb zeitlich noch offen"
+    },
+    {
+      "id": "P04-ROL07",
+      "name": "Verlag",
+      "task": "Band, Korrekturrückmeldung, reduziertes Webangebot und TEI-Download",
+      "access": "Definierte Lieferungen; kein täglicher Git-Zugang erforderlich"
+    }
+  ],
+  "defaults": [
+    "Das Team beginnt an einem kleinen Konvolut. oXygen mit Git-Client und ein kurzer gemeinsamer Ablauf ermöglichen selbstständige Korrekturen; die Technik unterstützt bei Konflikten.",
+    "Das Editionsrepo liegt in einer institutionellen GitLab-Projektgruppe. Zwei benannte Personen können Administration und Wiederherstellung veranlassen.",
+    "Eine geprüfte Basistranskription wird kontrolliert nach TEI übernommen. Danach ist diese Einheit im Editionsrepo die maßgebliche wissenschaftliche Arbeitsfassung.",
+    "Editionsdaten und Frontendcode liegen in getrennten Repos. Versionierte Konverter bleiben zunächst im Editionsrepo. Definierte Exporte liegen im Importarchiv.",
+    "Lukas entwickelt eine dauerhaft alternative Rekonstruktion auf einem bezeichneten Forschungsstand weiter. Nora pflegt zusätzliche Figurenrelationen in einem eigenen Annotationsrepo.",
+    "Veröffentlichungen verbinden freigegebene Daten, Schema, Frontend und Bildbezüge. Wissenschaftlich relevante Satzkorrekturen werden kontrolliert in die TEI zurückgeführt.",
+    "Vor Stellenende sind Forschungszugänge, lokale Datenkopien, Nachredaktion, institutionelle Verantwortung und Wiederherstellung geregelt."
+  ],
+  "stories": [
+    {
+      "id": "P04-S01",
+      "topic": "Zusammenarbeit",
+      "title": "Wir müssen edieren, nicht Software entwickeln",
+      "scene": [
+        "„Wir brauchen eure XML-Dateien in Git“, sagt das technische Team. Falk schaut von ihren Unterlagen auf: „Warum reicht unser gemeinsamer Ordner nicht?“ Lukas kennt Git vom Hörensagen und denkt an Konflikte. Nora fragt lieber gleich: „Was muss ich dafür jeden Tag zusätzlich tun?“",
+        "Sie probieren es an einer einzigen Stelle. Nora korrigiert „Thore“ zu „Tore“, vergleicht die Änderung und hält fest, warum sie nötig war. Lukas prüft am Bild. Als Nora die alte Lesung noch einmal sehen möchte, ist sie sofort wieder da. „Gut“, sagt sie. „Aber den Ablauf schreiben wir auf.“"
+      ],
+      "takeaway": "Ein guter Git-Ablauf macht das Team selbstständig und lässt Hilfe erreichbar bleiben.",
+      "explanation": "Git hält Änderungen und ihre Beziehungen fest. Ein Commit sichert zunächst im lokalen Repo. Erst das Übertragen auf den Projektserver macht ihn dort verfügbar. Die fachliche Prüfung der Lesung ist ein eigener Schritt.",
+      "steps": [
+        "Pilotkonvolut und einfachen täglichen Ablauf festlegen.",
+        "Sichern, Übertragen, Vergleichen und fachliche Prüfung gemeinsam ausprobieren.",
+        "Handbuch, Einführung und technische Vertretung einrichten."
+      ],
+      "done": "Eine neue Mitarbeiterin kann eine TEI-Korrektur sichern, auf den Projektserver übertragen und zur fachlichen Prüfung geben.",
+      "git": "Git zeigt die geänderte Stelle, die Begründung und den vorherigen Stand. Das institutionelle GitLab stellt den gemeinsamen Zugang bereit.",
+      "example": "beispiele/lesung-vorher.xml → beispiele/lieferstand-v1.xml: Thore wird zu Tore; die historische Streichung und der Randzusatz bleiben erhalten.",
+      "detail": {
+        "title": "So arbeiten wir miteinander",
+        "text": "Das Team vereinbart vor dem ersten Zugang, welche Daten für Editionsarbeit und Dissertationen genutzt werden dürfen, wie Beiträge zugeordnet werden und wer freigibt. Interne Stände und Git-Geschichte dürfen nicht unbefugt weitergegeben werden. Lokale Kopien werden geschützt; möglicher unbefugter Zugriff oder Geräteverlust wird sofort an die Projektleitung und den technischen Kontakt gemeldet. Die praktische Schrittfolge steht im versionierten Handbuch. Zur Einführung gehört eine Übung im oXygen-Git-Client."
+      },
+      "terms": [
+        "G-GIT",
+        "G-COMMIT",
+        "G-OXYGEN"
+      ],
+      "source_decisions": [
+        "D4-01",
+        "D4-03"
+      ],
+      "owner": "P04-ROL01",
+      "demo": "P04-DEMO01"
+    },
+    {
+      "id": "P04-S02",
+      "topic": "Import und Datenhoheit",
+      "title": "Noch einmal exportiert",
+      "scene": [
+        "Die erste Handschrifteneinheit ist in TEI übernommen. Lukas hat eine gestrichene Formulierung und den Zusatz am Rand ausgezeichnet. Dann kommt ein neuer Export: Eine Hilfskraft hat in Transkribus die Lesung „Thore“ verbessert. „Dann nehmen wir einfach die neue Datei?“",
+        "Nora öffnet den Vergleich. Der verbesserte Text ist da. Die genetische Auszeichnung aus ihrer Editionsarbeit fehlt. Sie übernehmen die Lesung gezielt. Der Export bleibt als Herkunftsbeleg erhalten; die bereits bearbeitete TEI wird weitergeführt."
+      ],
+      "takeaway": "Nach der abgenommenen Übernahme wird diese Editionsdatei in Git weiterbearbeitet.",
+      "explanation": "Der Übergang erfolgt Einheit für Einheit: Basistranskription prüfen, Export fixieren, Transformation dokumentieren, Import abnehmen. Das ist noch keine Publikationsfreigabe. Spätere Korrekturen aus Transkribus werden als Änderungsvorschläge verglichen; sie ersetzen keine bereits angereicherte TEI-Datei.",
+      "steps": [
+        "Exportstand und Transformationsfassung dokumentieren und sichern.",
+        "Text, Randzusätze, Kennungen und Bildbezug am Import prüfen.",
+        "Abnahme und spätere Korrekturregel ins Handbuch aufnehmen."
+      ],
+      "done": "Für eine Einheit sind Herkunft, Überführung, Abnahme und maßgeblicher Bearbeitungsort nachvollziehbar.",
+      "git": "Git macht sichtbar, welche Auszeichnung ein neuer Dateistand verlieren würde. Der kontrollierte Vergleich erlaubt eine gezielte Übernahme.",
+      "example": "beispiele/erneuter-export.txt enthält eine bessere Lesung, aber keine genetische Struktur; lieferstand-v1.xml bewahrt die Streichung und den Randzusatz.",
+      "detail": {
+        "title": "Zwei Entscheidungen statt eines Stichtags",
+        "text": "Ein Dokument wechselt nach bestandener Importprüfung. Die reguläre Transkribus-Produktionsphase endet erst, wenn die vorgesehenen Einheiten übergeben sind und die Inventur stimmt. Ziel ist eine frühe gemeinsame TEI-Basis. Schwierige Seiten dürfen länger bildnah bearbeitet werden. Für den Pilotvergleich testen wir PAGE XML mit eigener versionierter Transformation gegen den verfügbaren direkten TEI-Export."
+      },
+      "terms": [
+        "G-TRANSKRIBUS",
+        "G-TEI",
+        "G-TRANSFORMATION"
+      ],
+      "source_decisions": [
+        "D4-T1",
+        "D4-T2",
+        "D4-T3"
+      ],
+      "owner": "P04-ROL04",
+      "demo": "P04-DEMO01"
+    },
+    {
+      "id": "P04-S03",
+      "topic": "Digitale Edition",
+      "title": "Die Ergänzung fehlt",
+      "scene": [
+        "Auf dem Bildschirm steht: „Clara blieb am Tore stehen.“ Lukas zeigt auf den Rand der Handschriftenansicht: „Und wo ist der Rest?“ In der TEI steht die Ergänzung längst: „als gehörte sie nicht hierher“. Die aktuelle Ansicht zeigt sie trotzdem nicht.",
+        "Nora und die Entwicklerin prüfen dieselbe Stelle. Der Viewer verarbeitet den Randzusatz noch nicht. Sie ergänzen Darstellung und Test. In der veröffentlichten Edition bleibt bis zur gemeinsamen Prüfung der bisherige freigegebene Stand."
+      ],
+      "takeaway": "Daten, Schema und Darstellung müssen zusammen geprüft werden.",
+      "explanation": "Die genetische Edition erschließt Veränderungen und Beziehungen am Manuskript. Eine Lesefassung ist eine mögliche Ansicht. Auch Streichungen, Ergänzungen und ihre Bildbezüge müssen erkundbar bleiben. Wir prüfen deshalb nicht nur gültiges XML, sondern auch, ob die wissenschaftlich wichtigen Informationen tatsächlich ankommen.",
+      "steps": [
+        "Eine repräsentative Stelle und die erwarteten Ansichten dokumentieren.",
+        "Datenregeln, Bildanker und Darstellung gemeinsam testen.",
+        "Veröffentlichte Daten- und Codefassungen im Manifest festhalten."
+      ],
+      "done": "Die Ergänzung ist in der vorgesehenen Ansicht erreichbar und die veröffentlichte Kombination aus Daten, Schema und Frontend ist bezeichnet.",
+      "git": "Git versioniert Daten und Code. Freigaben verbinden geprüfte Stände; unfertige Änderungen gelangen nicht automatisch ins öffentliche Angebot.",
+      "example": "beispiele/lieferstand-v1.xml enthält del und add. Ein Prüffall muss sicherstellen, dass beide in der genetischen Ansicht zugänglich sind.",
+      "detail": {
+        "title": "Zwei Geschichten derselben Stelle",
+        "text": "Hartmann strich eine Formulierung und ergänzte einen Satzteil am Rand. Das gehört zur historischen Textgenese. Nora korrigiert heute eine Lesung, Lukas präzisiert die Auszeichnung: Das gehört zur modernen Bearbeitungsgeschichte in Git. Das Datum eines Commits datiert keine historische Schreibhandlung."
+      },
+      "terms": [
+        "G-ODD",
+        "G-IIIF",
+        "G-CI",
+        "G-DIGITALE-EDITION"
+      ],
+      "source_decisions": [
+        "D4-04",
+        "D4-05"
+      ],
+      "owner": "P04-ROL04",
+      "demo": "P04-DEMO01"
+    },
+    {
+      "id": "P04-S04",
+      "topic": "Eigenständige Forschung",
+      "title": "Lukas ordnet ein Blatt neu ein",
+      "scene": [
+        "Lukas legt zwei Blattkopien nebeneinander. „Ich glaube, unsere Reihenfolge stimmt hier nicht.“ Ein Befund an der Blattfolge spricht dafür, dass die Clara-Passage später entstand als bisher angenommen. Ausgerechnet seine eigene frühe Rekonstruktion steht damit zur Diskussion.",
+        "Nora hört aufmerksam zu. Ihre Dissertation verfolgt, wann Clara aus dem Roman verschwindet. „Dann verändert das auch meine Deutung.“ Sie prüfen den Befund gemeinsam. Lukas entwickelt die alternative Ordnung zunächst in einem eigenen Forschungsbestand weiter; Nora hält fest, auf welcher Editionsfassung ihre Figurenbeziehungen beruhen."
+      ],
+      "takeaway": "Eigenständige Forschung braucht einen bezeichneten Ausgangsstand und Raum für andere Deutungen.",
+      "explanation": "Ein kurzer Branch eignet sich für eine begrenzte Änderung, die zur Prüfung zurückkommen soll. Eine längerfristig andere Rekonstruktion erhält ein eigenes Forschungsrepo. Nora ergänzt ihre Figurenbeziehungen separat als Stand-off-Annotation: Die Verweise beziehen sich auf stabile Stellen und einen konkreten Editionsstand. Über eine Änderung der offiziellen Edition entscheidet die Fachredaktion nach wissenschaftlicher Diskussion.",
+      "steps": [
+        "Ausgangsrelease, stabile Kennungen und Forschungsfrage benennen.",
+        "Arbeitsform wählen: kurzer Branch, eigenständiger Bestand oder zusätzliche Annotation.",
+        "Übernahmen und geänderte Bezüge fachlich prüfen und dokumentieren."
+      ],
+      "done": "Beide Dissertationen können ihren Datenbezug reproduzieren; die offizielle Edition wird nicht unbemerkt ummodelliert.",
+      "git": "Git bewahrt alternative Bearbeitungsverläufe und ermöglicht gezielte Vergleiche und Übernahmen. Wissenschaftliche Gültigkeit wird fachlich beurteilt.",
+      "example": "beispiele/forschungsbezug.json trennt Lukas’ alternative Blattordnung von Noras zusätzlicher Figurenrelation.",
+      "detail": {
+        "title": "Fork, Branch und Berechtigung",
+        "text": "Ein Branch ist ein paralleler Verlauf innerhalb eines Repos. Ein Fork ist eine auf der Plattform verknüpfte Abzweigung in einem eigenen Projekt; Sichtbarkeit und Zugriff hängen von den Plattformregeln ab. Vor dem Fork werden diese geprüft. Für dauerhaft eigene vertrauliche Forschung kann ein gesondert eingerichtetes Repo geeigneter sein. Ein Branch schützt keine privaten Dissertationsteile vor anderen Personen mit entsprechendem Repozugriff."
+      },
+      "terms": [
+        "G-BRANCH",
+        "G-FORK",
+        "G-STANDOFF"
+      ],
+      "source_decisions": [
+        "D4-D1",
+        "D4-D2"
+      ],
+      "owner": "P04-ROL01",
+      "demo": "P04-DEMO01"
+    },
+    {
+      "id": "P04-S05",
+      "topic": "Publikationsstände",
+      "title": "Im Buch ist es schon korrigiert",
+      "scene": [
+        "In der Fahne steht noch „als gehörte sie nicht hierher“. Beim erneuten Blick auf die Handschrift erkennt Nora: „dorthin“ ist die bessere Lesung. Der Satz wird korrigiert. „Ist das auch schon in unseren Daten?“, fragt Falk. Noch nicht.",
+        "Das Team führt die Korrektur in die TEI zurück und gibt V2 frei. Das Buch bleibt im Satz; die Bibliothek kann das geplante Editionsfrontend noch nicht bereitstellen. Als Ersatzweg haben Projekt und Verlag eine einfache Leseansicht mit TEI-Download vereinbart. Der Verlag bereitet dieses Angebot vor. Für den TEI-Download vereinbaren sie ausdrücklich V2."
+      ],
+      "takeaway": "Buch, TEI und Webangebot brauchen nachvollziehbare Fassungsbeziehungen.",
+      "explanation": "Die Redaktion prüft fachliche Satzkorrekturen und übernimmt sie in die Editionsdaten. Typografische Anpassungen werden getrennt behandelt. Ein Tag markiert den freigegebenen Git-Stand; ein Release beschreibt und bündelt ihn. Die Archivfassung erhält eigene Metadaten. Die reduzierte Verlagsansicht schafft Zugang, bietet aber nicht alle genetischen Vergleichs- und Bildfunktionen des geplanten Editionsfrontends.",
+      "steps": [
+        "Korrekturrückgabe und zuständige Nachredaktion vor Förderende vereinbaren.",
+        "Wissenschaftlich relevante Satzkorrekturen gezielt übernehmen und prüfen.",
+        "Buchbezug, TEI-Download und Webkombination mit tatsächlichen Fassungen kennzeichnen."
+      ],
+      "done": "V2 enthält die Korrektur; Download und Publikationsbeschreibung nennen den richtigen Stand. Verantwortung für spätere Änderungen ist vereinbart.",
+      "git": "Git dokumentiert die Rückführung. Benannte Stände und ein Manifest verbinden Lieferfassung, Korrektur und Ausgabe.",
+      "example": "beispiele/lieferstand-v1.xml → referenzstand-v2.xml: hierher wird zu dorthin. Die Satzkorrektur ist im Korrekturprotokoll bezeichnet.",
+      "detail": {
+        "title": "Wenn der Download zunächst hinterherhinkt",
+        "text": "Muss der Verlag zunächst V1 anbieten, wird sie als Satz-Eingangsstand mit benanntem Korrekturstatus veröffentlicht. Nachgereichte V2 erhält eine neue Bezeichnung und einen Änderungshinweis. Keine vorhandene Fassung wird stillschweigend als identisch mit dem fertigen Buch ausgegeben. Der öffentliche Viewer wird erst nach seinem eigenen Test auf V2 umgestellt. Die Satzmittel bleiben gesichert. Die auslaufenden Projektstellen finanzieren dagegen nicht automatisch die weitere wissenschaftliche Nachredaktion."
+      },
+      "terms": [
+        "G-TAG",
+        "G-RELEASE",
+        "G-ARCHIV"
+      ],
+      "source_decisions": [
+        "D4-P1",
+        "D4-P2",
+        "D4-P3",
+        "D4-P4"
+      ],
+      "owner": "P04-ROL01",
+      "demo": "P04-DEMO01"
+    },
+    {
+      "id": "P04-S06",
+      "topic": "Weiterarbeit",
+      "title": "Die Stelle endet. Die Dissertation nicht.",
+      "scene": [
+        "Nora packt ihren Schreibtisch zusammen. An der neuen Universität wartet eine andere Aufgabe; ihre Dissertation nimmt sie mit. „Und die Figurenannotation?“, fragt Lukas. „Die auch“, sagt sie. „Aber wir testen den Zugang lieber jetzt.“",
+        "Sie prüfen gemeinsam, welche Daten Nora weiterverwenden darf und welche Kopien sie besitzt. Die Bibliothek übernimmt ein beschriebenes Archivpaket. Für Nachkorrekturen an der Edition bleiben Falk und die benannte Redaktion zuständig. Der technische Kontakt zeigt seiner Vertretung, wie ein geprüfter Stand wiederhergestellt wird."
+      ],
+      "takeaway": "Weiterarbeit wird vor dem Stellenende vorbereitet und praktisch geprüft.",
+      "explanation": "Die neue Rolle wird dokumentiert: eigener Forschungszugang, offizielle Schreibrechte, Freigabe und Administration sind unterschiedliche Befugnisse. Die Vereinbarung regelt erlaubte Kopien, Schutz, Rückgabe oder Löschung sowie begründete Ausnahmen und die spätere assoziierte Mitarbeit. Derselbe Rollencheck gilt für externe Technik, Verlag und Bibliothek; ihre Vereinbarungen richten sich nach Aufgabe und Zugang.",
+      "steps": [
+        "Forschungsbestand, Nutzungsrechte und funktionierenden Zugang vor Stellenende prüfen.",
+        "Fachliche Nachredaktion, Administration, Bildbetrieb und Archiv getrennt zuordnen.",
+        "Wiederherstellung und eine begrenzte Nachkorrektur durch eine zweite Person testen."
+      ],
+      "done": "Nora kann ihren vereinbarten Forschungsstand nutzen. Eine zweite qualifizierte Person kann den dokumentierten Editionsstand wiederherstellen und prüfen.",
+      "git": "Ein Git-Klon oder Bundle kann die Datengeschichte übertragen. Plattformfunktionen, Berechtigungen und externe Bilddienste werden zusätzlich gesichert oder neu eingerichtet.",
+      "example": "beispiele/zugangsmatrix.json unterscheidet Kernteam, assoziierte Forschung, technische Betreuung und empfangende Einrichtungen.",
+      "detail": {
+        "title": "Was ein Hostwechsel zusätzlich verlangt",
+        "text": "Neben Dateien und Git-Geschichte werden offene Aufgaben, Prüfkonfiguration, geschützte Freigaben, Zugänge und Verweise kontrolliert. Geheimnisse und Zugangsschlüssel werden gesondert sicher verwaltet. Eine Archivzusage enthält keine automatische Zusage für Frontendbetrieb oder wissenschaftliche Nachredaktion."
+      },
+      "terms": [
+        "G-MIGRATION",
+        "G-VERANTWORTUNG"
+      ],
+      "source_decisions": [
+        "D4-N1",
+        "D4-N2",
+        "D4-D1"
+      ],
+      "owner": "P04-ROL01",
+      "demo": "P04-DEMO01"
+    }
+  ],
+  "terms": [
+    {
+      "id": "G-GIT",
+      "title": "Git und GitLab",
+      "text": "Git hält Dateistände und ihre Beziehungen fest. GitLab ist die gewählte Plattform für gemeinsamen Zugang, Prüfung und Projektorganisation."
+    },
+    {
+      "id": "G-COMMIT",
+      "title": "Commit und Übertragen",
+      "text": "Ein Commit hält ausgewählte Änderungen lokal mit einer Nachricht fest. Übertragen macht diese Änderungen auf dem Projektserver verfügbar."
+    },
+    {
+      "id": "G-OXYGEN",
+      "title": "oXygen",
+      "text": "Der XML-Editor unterstützt die TEI-Bearbeitung. Ein gesondertes Git-Client-Add-on integriert Vergleich und Versionsarbeit; Installation und Zugang gehören zur Einführung."
+    },
+    {
+      "id": "G-TRANSKRIBUS",
+      "title": "Transkribus, OCR und HTR",
+      "text": "Die bildnahe Umgebung unterstützt Erkennung und Korrektur. OCR betrifft gedruckte, HTR handschriftliche Texte. Der Export wird vor der TEI-Weiterarbeit geprüft."
+    },
+    {
+      "id": "G-TEI",
+      "title": "XML und TEI",
+      "text": "XML stellt strukturierte Daten dar. TEI bietet ein fachliches Vokabular zur Beschreibung von Texten; das Projekt legt seine konkrete Verwendung fest."
+    },
+    {
+      "id": "G-TRANSFORMATION",
+      "title": "Transformation",
+      "text": "Ein versioniertes Verfahren überführt eine Eingabestruktur in das benötigte TEI. Das Ergebnis muss am Ausgangsmaterial geprüft werden."
+    },
+    {
+      "id": "G-ODD",
+      "title": "ODD und Schema",
+      "text": "Die projektspezifische TEI-Anpassung beschreibt das Modell. Ein daraus abgeleitetes Schema prüft vereinbarte Strukturen; die Interpretation bleibt fachlich zu prüfen."
+    },
+    {
+      "id": "G-IIIF",
+      "title": "IIIF",
+      "text": "Gemeinsame Schnittstellen machen Bilder und ihre Präsentationsstruktur nutzbar. Ein Canvas bezeichnet eine Seite oder Ansicht; Regionen erlauben Verweise auf Ausschnitte."
+    },
+    {
+      "id": "G-CI",
+      "title": "Automatische Prüfungen",
+      "text": "Prüfungen laufen bei Änderungen wiederholt ab. Sie erkennen etwa fehlerhafte Strukturen und Verweise. Eine grüne Prüfung ersetzt keine Prüfung der Lesung."
+    },
+    {
+      "id": "G-DIGITALE-EDITION",
+      "title": "Digitale genetische Edition",
+      "text": "Die Edition erschließt Entwürfe, Schreibschichten und Beziehungen mit digitalen Mitteln. Ihre wissenschaftlichen Funktionen gehen über eine bloße Online-Lesefassung hinaus."
+    },
+    {
+      "id": "G-BRANCH",
+      "title": "Branch",
+      "text": "Ein paralleler Bearbeitungsverlauf im selben Repo, etwa für eine begrenzte Änderung mit späterer Prüfung."
+    },
+    {
+      "id": "G-FORK",
+      "title": "Fork",
+      "text": "Eine auf der Plattform verknüpfte Abzweigung eines Repos in einem eigenen Projekt. Regeln für Sichtbarkeit und Zugriff müssen zur beabsichtigten Nutzung passen."
+    },
+    {
+      "id": "G-STANDOFF",
+      "title": "Stand-off-Annotation",
+      "text": "Zusätzliche Auszeichnung wird getrennt gespeichert und verweist auf genau bezeichnete Stellen einer Basisfassung."
+    },
+    {
+      "id": "G-TAG",
+      "title": "Tag",
+      "text": "Eine benannte Markierung eines Git-Stands. Eine Markierung allein führt keine Prüfung durch und sichert keine unabhängige Archivierung."
+    },
+    {
+      "id": "G-RELEASE",
+      "title": "Release",
+      "text": "Eine beschriebene Ausgabe, die das Team nach seinen Regeln freigibt. Daten, Prüfergebnis und Versionshinweise gehören zusammen."
+    },
+    {
+      "id": "G-ARCHIV",
+      "title": "Archivfassung",
+      "text": "Ein beschriebenes erhaltenes Paket mit Zuständigkeit und gegebenenfalls persistentem Identifikator; unabhängig von der laufenden Bearbeitung."
+    },
+    {
+      "id": "G-MIGRATION",
+      "title": "Migration",
+      "text": "Ein geregelter Umzug von Daten und Abläufen. Git-Geschichte und zusätzliche Plattformfunktionen werden getrennt geprüft."
+    },
+    {
+      "id": "G-VERANTWORTUNG",
+      "title": "Verantwortung und Administration",
+      "text": "Fachliche Freigabe, Serververwaltung, Rechte an Daten und Betrieb sind unterschiedliche Aufgaben. Sie werden Personen beziehungsweise Einrichtungen zugeordnet."
+    }
+  ],
+  "time_tracks": [
+    {
+      "id": "P04-T01",
+      "title": "Förderung",
+      "message": "Die Projektstellen und volle Infrastruktur sind für vier Jahre gesichert. Die Satzmittel bleiben auch bei späterer Fertigstellung verfügbar."
+    },
+    {
+      "id": "P04-T02",
+      "title": "Dissertationen",
+      "message": "Lukas hat vor Projektbeginn begonnen; Nora entwickelt und meldet ihr Vorhaben nach der Einstellung an. Der Antrag plant den Abschluss zum Projektende; voraussichtlich laufen beide Forschungen darüber hinaus weiter."
+    },
+    {
+      "id": "P04-T03",
+      "title": "Buch",
+      "message": "Abschluss im Antrag zum Projektende. Satzkosten sind gedeckt; spätere fachliche Nachredaktion ist gesondert zu sichern."
+    },
+    {
+      "id": "P04-T04",
+      "title": "Editionsfrontend",
+      "message": "Zum Projektende soll das technische Frontend bereitstehen. Sein Interface ermöglicht es, die digitale Edition zu lesen, Schreibschichten zu vergleichen und Textstellen mit den Digitalisaten zu verbinden. Die TEI-Daten können auch unabhängig davon veröffentlicht und genutzt werden. Für einen späteren Frontendstart vereinbaren Projekt, Bibliothek und Verlag vorab einen Ersatzweg: Der Verlag stellt eine einfache Leseansicht und den freigegebenen TEI-Stand als Download bereit. Umfang, Fassungsangabe, Aktualisierung und Zuständigkeiten werden festgehalten; genetische Vergleiche und Bildverknüpfungen des geplanten Interfaces sind damit noch nicht vollständig verfügbar."
+    }
+  ],
+  "demo": {
+    "id": "P04-DEMO01",
+    "unit": "EH-MS01-B012R",
+    "segment": "eh-ms01-b012r-p01",
+    "character": "char-clara",
+    "files": [
+      "lieferstand-v1.xml",
+      "referenzstand-v2.xml",
+      "forschungsbezug.json"
+    ]
+  },
+  "timeline": {
+    "title": "Plan, Förderung und erwarteter Verlauf",
+    "planned_completion": "Buch, Editionsfrontend und Dissertationen zum Projektende",
+    "secured_support": "Projektstellen und volle Projektinfrastruktur bis zum Förderende",
+    "print_funding": "Satzmittel sind auch bei späterer Fertigstellung gesichert.",
+    "expected_dissertations": "Selbst bei optimistischer Schätzung Weiterarbeit nach Stellenende.",
+    "fallback": "Forschungszugang, Nachredaktion und technische Betreuung gesondert vereinbaren; reduziertes Verlagsangebot vorbereiten.",
+    "lukas_note": "Lukas hat vor Projektbeginn begonnen. Nora hat ihr Vorhaben nach der Einstellung entwickelt.",
+    "support_note": "Nach Stellenende sind volle Infrastruktur und Betreuung nicht automatisch gesichert."
+  },
+  "early_publication": {
+    "id": "P04-PUB01",
+    "title": "Früh zeigen. Bewusst freigeben.",
+    "intro": "Nicht alles muss bis zum Schluss warten. Das Team kann Kapitel, Bearbeitungsstufen oder einzelne Funktionen früher veröffentlichen – wenn es Umfang, Interessen und Freigaben gemeinsam plant.",
+    "scene": [
+      "„Warum warten wir mit dem Frontend, bis der ganze Roman fertig ediert ist?“, fragt die Entwicklerin. „Register und Digitalisate könnten wir schon zeigen. Und einen freigegebenen Abschnitt gemeinsam ausprobieren.“ Falk sieht den Vorteil: Rückmeldungen kämen zu einer Zeit, in der das Team noch darauf reagieren kann.",
+      "Lukas zögert: „Meine neue Blattordnung ist noch nicht publiziert.“ Nora nickt. Auch der Verlag will den späteren Band nicht vollständig vorweggenommen sehen. Sie trennen deshalb die Fragen: Welche Funktionen dürfen schon online gehen? Welche Texte und Deutungen geben sie wann frei?"
+    ],
+    "takeaway": "Frühe Teilveröffentlichungen brauchen einen eigenen Freigabeplan – nicht den vollständigen Abschluss der Edition.",
+    "strategies": [
+      {
+        "id": "functions",
+        "title": "Funktionen zuerst",
+        "description": "Register, Digitalisatsansicht oder Volltextsuche werden nutzbar, bevor die edierten Texte vollständig vorliegen.",
+        "example": "Ein freigegebenes Register erschließt Manuskriptseiten. Die Suche arbeitet zunächst auf einem bezeichneten Transkriptionsbestand und führt zum Digitalisat.",
+        "git": "Frontendcode, Suchindex, Register und Datenbasis erhalten getrennte Versionsbezüge. Die öffentliche Kombination wird als getesteter Integrationsstand freigegeben.",
+        "gate": "Auch Register, Suchindex, Treffertexte und Bildzugänge gehören in die Freigabe. Noch nicht veröffentlichte Interpretation wird daraus nicht ungeprüft sichtbar."
+      },
+      {
+        "id": "chapters",
+        "title": "Kapitelweise veröffentlichen",
+        "description": "Ein geprüfter Teilbestand wird als benannte Teilausgabe veröffentlicht; weitere Kapitel kommen später hinzu.",
+        "example": "Ein erstes Kapitel mit seinen Entwurfsfassungen erscheint, während andere Konvolute noch bearbeitet werden.",
+        "git": "Jeder Release verzeichnet die enthaltenen Einheiten und ihre Modell-/Prüfstände. Die Ausgabe bleibt zitierbar, auch wenn weitere Kapitel folgen.",
+        "gate": "Mit Verlag und Forschenden werden Textumfang, Varianten, Kommentare und Zeitpunkt vereinbart. Fehlende Kapitel werden im Inhaltsverzeichnis erkennbar gemacht."
+      },
+      {
+        "id": "stages",
+        "title": "Bearbeitungsstufen zeigen",
+        "description": "Zuerst wird eine geprüfte Basistranskription publiziert; genetische Auszeichnung und Kommentare folgen in neuen Fassungen.",
+        "example": "Version 0.1 bietet eine geprüfte Transkription. Version 0.2 ergänzt eine erste ausgewiesene Annotationsschicht; später folgt die vollständig verantwortete genetische Darstellung.",
+        "git": "Transkription, Annotation und fachliche Freigabe werden pro Einheit dokumentiert. Neue Fassungen ersetzen die zitierte ältere Ausgabe nicht stillschweigend.",
+        "gate": "Eine Transkription wird als Transkription bezeichnet, nicht als fertige genetische Edition. Zusätzliche Annotationen erhalten einen eigenen Stand und Prüfstatus."
+      }
+    ],
+    "interests": "Der Verlag möchte das gedruckte Buch nicht lange vor seinem Erscheinen vollständig vorweggenommen sehen. Lukas und Nora möchten Zeitpunkt und Form ihrer eigenen Forschungspublikationen mitbestimmen. Deshalb legt das Team für jede Teilausgabe fest, welche Texte, Register, Suchtreffer, Kommentare und Deutungen öffentlich werden. Internes Ausprobieren kann früher beginnen: Tests und Rückmeldungen sind auch mit einem begrenzten Zugang möglich. Die vereinbarten öffentlichen Teile gehen anschließend gezielt online.",
+    "cumulative": "In einem alternativen Szenario vereinbaren Lukas und Nora eine kumulative Promotion: Zusammengehörige wissenschaftliche Beiträge entstehen und erscheinen während der Forschungsarbeit. Eine frühe, klar verantwortete Veröffentlichung kann dann im eigenen Interesse liegen. Lukas könnte seine neue Rekonstruktion in einem eigenständigen Beitrag begründen; Nora ihre Figurenanalyse mit einer veröffentlichten Annotationsfassung verbinden. Beide können auf die passende Ausgabe der Webedition verweisen. Welche Publikationsformen, Begutachtung und Eigenanteile zählen, wird früh mit Betreuung und zuständiger Fakultät nach der geltenden Promotionsordnung geklärt. Das kann den Druck mindern, alles bis zu einer einzigen abschließenden Publikation zurückhalten zu müssen.",
+    "citation": "Für eine konkrete Analyse wird eine archivierte Ausgabe mit Versions-DOI zitiert; Stellenkennungen verweisen auf die untersuchte Passage. Auf der Website stehen Autorenschaft und Verantwortungsanteile beim jeweiligen Beitrag. Die weiterentwickelte Edition verlinkt die ältere Fassung und den Beitrag. Ein DOI macht den Stand referenzierbar; die Anerkennung als Promotionsleistung richtet sich nach den vereinbarten fachlichen und formalen Anforderungen.",
+    "default": "Wir entwickeln das Frontend früh und iterativ. Grundgerüst und Schnittstellentests können zu Projektbeginn entstehen; der fachliche Ausbau beginnt mit repräsentativen TEI-Daten. In vereinbarten Rückmeldefenstern halten wir die digitalen Ansichten eng am jeweiligen Editionsstand. Kernfunktionen nehmen wir rechtzeitig vor Förderende ab und optimieren weiter, solange Kapazität verfügbar ist. Ein freigegebener öffentlicher Funktionsumfang kann früh nutzbar werden; Kapitel und Bearbeitungsstufen folgen nach den vereinbarten Freigaben. Für Betrieb und Pflege ist ein Kontakt benannt. Der Satz liegt beim Verlag; eigene frühe Satzpreviews gehören in diesem Modell nicht zum Projektablauf.",
+    "steps": [
+      "Technischen Vorlauf und Entwicklungsfenster im Arbeitsplan vereinbaren; einen repräsentativen TEI-Pilotbestand und einen begrenzten Modellbereich festlegen.",
+      "Ansichten am aktuellen Editionsstand erproben; Rückmeldungen bündeln und öffentliche Freigaben mit Verlag und Promovierenden abstimmen.",
+      "Kernfunktionen mit Testpuffer abnehmen; weitere Teilreleases, Archivbezüge, Optimierungen und verfügbare Anschlusskapazität dokumentieren."
+    ],
+    "done": "Ein erstes vereinbartes Angebot ist öffentlich nutzbar, sein Umfang und Datenstand sind erkennbar, Rückmeldungen haben einen zuständigen Empfänger und die nächste Ausgabe hat eine konkrete Aufgabe.",
+    "sources": [
+      {
+        "title": "Kumulative Dissertation · Philosophische Fakultät Göttingen",
+        "url": "https://www.uni-goettingen.de/de/689605.html",
+        "note": "Ein Beispiel auch für Neuere deutsche Literatur und Digital Humanities. Die Anforderungen unterscheiden Publikationsfähigkeit und individuelle Beiträge; maßgeblich ist die jeweilige Promotionsordnung."
+      },
+      {
+        "title": "Zenodo · DOI-Versionierung",
+        "url": "https://zenodo.org/help/versioning",
+        "note": "Versions-DOIs referenzieren eine bestimmte Ausgabe; ein übergreifender DOI kann alle Versionen repräsentieren."
+      }
+    ],
+    "source_decisions": [
+      "D4-04",
+      "D4-P3",
+      "D4-P4",
+      "D4-D2"
+    ],
+    "development": {
+      "title": "Früh entwickeln – eng an der Edition",
+      "principle": "Wir beginnen früh und iterativ, dosieren den Ausbau aber nach dem vorhandenen Material. Ein technisches Grundgerüst kann vom Projektstart an vorbereitet werden. Fachliche Ansichten wachsen mit einem repräsentativen TEI-Pilotbestand. So bleibt das Frontend nahe am jeweiligen Editionsstand, statt erst am Schluss auf einen vermeintlich endgültigen Bestand zu treffen.",
+      "plan_change": "Im Antrag folgt der Frontendausbau in unserem Fall mit leichter Überlappung auf die eigentliche Editionsarbeit. Das lässt wenig Zeit für fachliche Rückmeldungen vor Förderende. Falk stimmt deshalb zu Projektbeginn einen vorgezogenen technischen Vorlauf und feste Entwicklungsfenster mit der lehrstuhleigenen IT ab. Die vorhandene Kapazität wird neu eingeplant; zusätzliche finanzielle Lasten werden vermieden. Aufgaben und Zeitbedarf werden im aktualisierten Arbeitsplan festgehalten.",
+      "maxim": "Beginnen: so früh wie möglich, so spät wie nötig. Kernfunktionen rechtzeitig abnehmen; danach so lange optimieren, wie vereinbarte Kapazität verfügbar ist.",
+      "phases": [
+        {
+          "title": "1 · Technischer Vorlauf ab Projektstart",
+          "text": "Die Technik bereitet Grundgerüst, Datenzugriff, gegebenenfalls die vorgesehene Datenbankanbindung und den IIIF-Zugang vor. Testdaten prüfen Schnittstellen und Abläufe. Wissenschaftliche Mitarbeit ist auf die nötigen Grundentscheidungen begrenzt; ausgedachte Testdaten bestimmen keine Editionshypothesen."
+        },
+        {
+          "title": "2 · Fachlicher Ausbau mit repräsentativer TEI",
+          "text": "Der Pilot enthält typische und schwierige Fälle: Randzusatz, Streichung, unklare Zuordnung und stabile Bildanker. Dieser begrenzte Modellbereich ist ausreichend beschrieben, bevor die zugehörigen Ansichten ausgebaut werden. Das gesamte TEI-Modell muss noch nicht endgültig sein. Veränderte Regeln bekommen einen versionierten Schnittstellenstand und passende Tests."
+        },
+        {
+          "title": "3 · Kurze Ausbau- und Rückmeldefenster",
+          "text": "Fachredaktion und Technik prüfen überschaubare Ansichten am aktuellen Editionsstand. Rückmeldungen werden gebündelt; nicht jede Alltagskorrektur wird zur Frontendbesprechung. Die Technik arbeitet in vereinbarten Fenstern statt über die gesamte Laufzeit durchgehend gebunden zu sein. Öffentliche Freigaben folgen zusätzlich den Absprachen mit Verlag und Forschenden."
+        },
+        {
+          "title": "4 · Kernabnahme vor Förderende, Optimierung danach im vereinbarten Rahmen",
+          "text": "Die nötigen Kernfunktionen werden mit Zeit für Korrekturen abgenommen. Weitere Optimierungen laufen solange Personal und technische Kapazität verfügbar sind. Bei einem früher nötigen Entwicklungsende gibt es einen lauffähigen, beschriebenen Stand. Fortgesetzte Entwicklung nach Stellenende erhält eine eigene Zuständigkeit und Kapazitätszusage."
+        }
+      ],
+      "tradeoffs": [
+        {
+          "title": "TEI bleibt in Bewegung",
+          "text": "Ein sofortiger Vollausbau kann unnötige Umbauten erzeugen. Deshalb beginnen wissenschaftliche Ansichten mit einem tragfähigen Modellbereich und einem realen Pilotbestand; Schema, Daten und Code werden gemeinsam getestet."
+        },
+        {
+          "title": "Facharbeit braucht Ruhe",
+          "text": "Ständige Oberflächendiskussionen ziehen Energie von Transkription und Modellierung ab. Das Team bündelt Anforderungen, benennt eine Ansprechperson und begrenzt Rückmeldungen auf vereinbarte Termine."
+        },
+        {
+          "title": "Entwicklung bindet Zeit",
+          "text": "Auch vorhandene IT-Kapazität ist einzuplanen. Technischer Vorlauf, Ausbau und spätere Korrekturen erhalten feste Fenster. Ziel ist lange Verbesserbarkeit, keine dauernde Vollzeitbindung des Entwicklungsteams."
+        }
+      ],
+      "choices": [
+        {
+          "id": "pilot",
+          "title": "Gestufter früher Start · unsere Empfehlung",
+          "effect": "Technischer Vorlauf beginnt früh. Der fachliche Ausbau setzt mit repräsentativer TEI ein; kurze Rückmeldefenster halten Frontend und Editionsstand zusammen. Die Kernabnahme liegt vor dem letzten Projekttermin."
+        },
+        {
+          "id": "late",
+          "title": "Frontendausbau erst nach Editionsabschluss",
+          "effect": "Die Entwicklung erhält einen bereits weit konsolidierten TEI-Bestand. Dafür bleibt vor Förderende wenig Zeit für Rückmeldungen, Modellkorrekturen und Optimierung. Der Plan braucht einen eigenen Testpuffer und eine tragfähige Anschlusskapazität."
+        },
+        {
+          "id": "full",
+          "title": "Voller fachlicher Ausbau ab Projektstart",
+          "effect": "Ansichten entstehen sehr früh, treffen aber auf ein noch offenes Modell. Häufige Umbauten, fachlicher Abstimmungsbedarf und lange Bindung der Technik werden wahrscheinlicher. Ohne geeigneten Pilotbestand beginnen wir zunächst mit Gerüst und Schnittstellentests."
+        }
+      ],
+      "print_difference": "Digitale Ansichten können wir eng am derzeitigen Editionsstand nachführen und gemeinsam prüfen. Der Satz liegt in unserem Modell beim Verlag. Frühe Satzpreviews bereiten wir im Projekt nicht selbst vor; relevante spätere Satzkorrekturen führen wir kontrolliert zurück.",
+      "git_support": {
+        "title": "So stützt Git beide Entwicklungswege",
+        "intro": "Wir richten dieselbe Prüfgrundlage ein. Im iterativen Weg wird sie häufig durchlaufen; im Phasenmodell sichert sie die Übergaben und die anschließende Integration. Technisches Prüfen und fachliches Gegenlesen gehören zusammen.",
+        "paths": [
+          {
+            "title": "Iterativ: kleine Änderungen, häufig zusammen prüfen",
+            "steps": [
+              "Für eine überschaubare Aufgabe einen kurzen Branch anlegen, etwa für die Anzeige von Randzusätzen. Im Änderungsvorschlag (Merge Request) stehen erwartetes Verhalten und die betroffenen Beispielstellen.",
+              "Bei jedem Änderungsvorschlag lässt die GitLab-Pipeline automatisch prüfen: Passen TEI und Schema zusammen? Bleiben Kennungen und Bildverweise erhalten? Lässt sich das Frontend bauen? Zeigt der Interface-Test den Randzusatz an der richtigen Stelle? Die Technik erzeugt daraus eine zugangsgeschützte Testansicht für die Redaktion.",
+              "Nach erfolgreicher Prüfung und fachlicher Rückmeldung wird die Änderung in den Hauptstand übernommen. Bei einer Modelländerung prüfen wir auch die zugehörige Anpassung des Frontends. Das Integrationsprotokoll hält fest, welche Daten-, Schema- und Code-Commits gemeinsam getestet wurden."
+            ],
+            "example": "Nora meldet: Der Randzusatz fehlt im Interface. Der Änderungsvorschlag ergänzt Ansicht und Testfall. Danach prüft Nora genau diese Stelle in der Testansicht; die Pipeline prüft zusätzlich die bisherigen Beispielfälle."
+          },
+          {
+            "title": "In Phasen: Übergaben eindeutig und wiederholbar machen",
+            "steps": [
+              "Schon während der Editionsphase vereinbaren Redaktion und Technik das Übergabeformat. Schema, repräsentative TEI-Beispiele und erwartete Ausgaben liegen versioniert vor. Automatische Prüfungen melden Abweichungen, auch wenn der eigentliche Frontendausbau erst später beginnt.",
+              "Am Phasenende kennzeichnen wir den abgenommenen Lieferstand mit einem annotierten Tag, etwa tei-uebergabe-01. Das Übergabeprotokoll nennt zusätzlich den genauen Commit, das Schema und bekannte offene Punkte. Die Entwicklung bezieht ausdrücklich diesen Stand, nicht laufend den neuesten Arbeitsstand.",
+              "Der erste Integrationslauf baut das Frontend gegen diese Grundlage und prüft die vereinbarten Beispielfälle. Korrekturen laufen als kurze Änderungsvorschläge in die maßgeblichen Daten zurück. Ein neuer Übergabestand ersetzt den alten erst nach erneuter gemeinsamer Prüfung; wir verschieben den alten Tag nicht."
+            ],
+            "example": "Die Redaktion liefert TEI-Stand 01. Während die Technik damit arbeitet, wird eine Bildreferenz korrigiert. Die Korrektur bekommt einen eigenen Änderungsvorschlag und anschließend einen neuen Übergabestand. So ist erkennbar, welche Fassung die Entwicklung tatsächlich verwendet."
+          }
+        ],
+        "automation": [
+          {
+            "title": "Hooks: früh am Arbeitsplatz prüfen",
+            "text": "Ein pre-commit-Hook prüft vor dem Speichern eines Commits die dafür vorgemerkten XML-Dateien und meldet etwa ungültige Auszeichnung oder doppelte Kennungen. Die Technik hält Hook und Prüfscripte im Repo, richtet sie beim Onboarding ein und dokumentiert die benötigten Werkzeuge. Lokale Hooks müssen auf jedem Arbeitsplatz aktiviert werden und können umgangen werden. Deshalb wiederholt die zentrale Pipeline die verbindlichen Prüfungen."
+          },
+          {
+            "title": "Pipeline: den gemeinsamen Stand absichern",
+            "text": "Die Pipeline ist ein auf dem GitLab-Server eingerichteter Prüfablauf, kein eingebauter XML-Prüfer von Git. Wir versionieren ihre Konfiguration und verwenden festgelegte Werkzeugversionen. Automatische Tests prüfen auch die Kombination der vorgesehenen Daten-, Schema- und Codefassungen aus den getrennten Repos. Der Hauptbranch ist geschützt; Übernahmen erfordern erfolgreiche Pflichtprüfungen und die vereinbarte Durchsicht. Testberichte und Testansicht bleiben im berechtigten Team. Ein grüner Test ersetzt keine editorische Abnahme."
+          },
+          {
+            "title": "Markieren, wiederholen, gezielt zurücknehmen",
+            "text": "Für jeden abgenommenen Integrationsstand verzeichnen wir die exakten Daten-, Schema- und Code-Commits sowie Bauanleitung und Werkzeugversionen. Tags machen solche Meilensteine gut auffindbar. Prüfergebnisse und Testansichten werden passend dazu gesichert; kurzlebige Pipeline-Artefakte sind kein dauerhaftes Archiv. Verursacht eine Änderung einen Fehler, kann git revert sie durch einen neuen, nachvollziehbaren Commit zurücknehmen. Anschließend wird die Kombination erneut geprüft. Getrennte Repos werden dabei ausdrücklich aufeinander abgestimmt."
+          }
+        ],
+        "action": "Die Technik richtet zunächst einen versionierten Prüfaufruf für lokale Hooks und Pipeline ein. Die Redaktion liefert dazu typische und schwierige Beispielstellen samt erwarteter Darstellung. Gemeinsam erproben sie einen gültigen und einen absichtlich fehlerhaften Teststand sowie den erneuten Aufbau eines bezeichneten Integrationsstands.",
+        "done": "Ein Änderungsvorschlag mit fehlerhaftem Testmaterial wird zuverlässig gestoppt; ein zulässiger Stand lässt sich anhand seiner Daten- und Codekennungen erneut bauen und fachlich prüfen.",
+        "sources": [
+          {
+            "title": "Git: Hooks",
+            "url": "https://git-scm.com/docs/githooks"
+          },
+          {
+            "title": "GitLab: CI/CD-Pipelines",
+            "url": "https://docs.gitlab.com/ci/pipelines/"
+          }
+        ]
+      }
+    }
+  },
+  "reading_demo": {
+    "id": "P04-ORDER01",
+    "title": "Gleiche Worte. Andere Lesefolge.",
+    "intro": "Eine Randnotiz kann unterschiedlich in den Haupttext eingeordnet werden. Wechseln Sie zwischen zwei Rekonstruktionen und wählen Sie einen Textteil: Seine Stelle auf der Demoseite bleibt auffindbar.",
+    "comparison": "Die digitale Edition kann unterschiedliche Lesefolgen am selben Material erkundbar machen. Der Druck wählt eine begründete Folge und erläutert Alternativen im Apparat.",
+    "git": "Git hält fest, welche Textteile, Zuordnungen und Modellregeln einer Ansicht zugrunde liegen. Die historische Reihenfolge ist eine editorische Hypothese; sie wird nicht aus der Abfolge moderner Commits abgelesen.",
+    "segments": [
+      {
+        "id": "seq-clara",
+        "label": "Clara am Tor",
+        "text": "Clara blieb am Tore stehen.",
+        "region": [
+          45,
+          95,
+          650,
+          85
+        ],
+        "lines": [
+          "Clara blieb am Tore stehen."
+        ],
+        "place": "Haupttext, obere Zeile"
+      },
+      {
+        "id": "seq-stadt",
+        "label": "Die Stadt wird dunkel",
+        "text": "Hinter den Fenstern wurden die Lampen gelöscht.",
+        "region": [
+          220,
+          310,
+          475,
+          105
+        ],
+        "lines": [
+          "Hinter den Fenstern wurden",
+          "die Lampen gelöscht."
+        ],
+        "place": "Randnotiz, unterer Seitenbereich"
+      },
+      {
+        "id": "seq-schritte",
+        "label": "Die Schritte",
+        "text": "Erst jetzt hörte sie die Schritte auf dem Pflaster.",
+        "region": [
+          45,
+          200,
+          650,
+          85
+        ],
+        "lines": [
+          "Erst jetzt hörte sie die Schritte auf dem Pflaster."
+        ],
+        "place": "Haupttext, folgende Zeile"
+      }
+    ],
+    "hypotheses": [
+      {
+        "title": "Rekonstruktion A",
+        "order": [
+          "seq-clara",
+          "seq-stadt",
+          "seq-schritte"
+        ],
+        "explanation": "Zuerst Clara am Tor, dann die dunkler werdende Stadt: Die Randnotiz wird nach Claras Ankunft eingeordnet."
+      },
+      {
+        "title": "Rekonstruktion B",
+        "order": [
+          "seq-stadt",
+          "seq-clara",
+          "seq-schritte"
+        ],
+        "explanation": "Zuerst die dunkler werdende Stadt, dann Clara am Tor: Dieselbe Randnotiz eröffnet die Passage. Der Zusammenhang wird anders gewichtet."
+      }
+    ]
+  }
+}

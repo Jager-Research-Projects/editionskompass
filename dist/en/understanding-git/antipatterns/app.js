@@ -1,0 +1,57 @@
+'use strict';
+const {chapters,cards}=window.ACADEMY,app=document.querySelector('#app'),KEY='git-academy-catalog-v2';
+let saved={seen:[],best:{},runs:0},persistent=true,run=null;
+try{saved={...saved,...JSON.parse(localStorage.getItem(KEY)||'{}')};localStorage.setItem(KEY,JSON.stringify(saved))}catch(e){persistent=false}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(saved))}catch(e){persistent=false}document.querySelector('#storage').textContent=persistent?'Fortschritt wird nur in diesem Browser gespeichert.':'Browserspeicher nicht verfügbar – Fortschritt gilt für diese Sitzung.'}
+function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function button(text,fn,cls=''){let b=document.createElement('button');b.textContent=text;b.className=cls;b.onclick=fn;return b}
+function show(html){app.innerHTML=html;window.scrollTo(0,0)}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function home(){run=null;show(`<div class="eyebrow">Digitale Editionen · Fünf Kapitel</div><h1>Gute Geschichte.<br>Auch im Repository.</h1><p class="intro">Erkenne riskante Gewohnheiten, wäge Alternativen ab und finde heraus, wann eine Ausnahme sinnvoll ist. Vom Dateichaos bis zur Git-Historie.</p><img class="hero-image" src="assets/academy.webp" alt="Git Antipattern Academy: Bücher, Lernkarten und ein Git-Graph"><div class="row between"><p>${saved.seen.length} von 25 Lernkarten entdeckt</p><span class="badge">5 Aufgaben pro Runde · etwa 5 Minuten</span></div><progress value="${saved.seen.length}" max="25" aria-label="Entdeckte Lernkarten"></progress><div class="grid" id="chapters"></div><p class="note warning">Grundlage: Originalkatalog vom 19. Oktober 2026. Smells sind Hinweise, keine Beweise. Bei Folgenfragen nennen die Szenarien deshalb auch die gewählte Praxis. <a href="Git_Antipatterns_Digitale_Editionen.md" download>Originalkatalog herunterladen</a>.</p>`);chapters.forEach((name,i)=>{let el=document.createElement('section');el.className='card chapter';el.innerHTML=`<img class="chapter-image" src="assets/chapter-${i+1}.webp" alt="" loading="lazy"><div class="seal">0${i+1} <span aria-hidden="true">❧</span></div><h3>${name}</h3><p>${['Fassungen, Kopien, Bewahrung, Sicherung und Zuständigkeiten.','Metadaten, wissenschaftliche Fassungen und Publikationsreife.','Vereinbarungen, Zugänge, Nutzungsrechte und Einwilligung.','Aussagegrenzen von Analysen, Nutzungszwecke und historische Daten.','Kohärente Commits, Integration, Formatierung und stabile Releases.'][i]}</p><p class="note">${saved.best[i]===undefined?'Noch keine Runde abgeschlossen':`Bester Durchlauf: ${saved.best[i]} / 5`}</p>`;el.append(button('Kapitel beginnen →',()=>start(i),'primary'));document.querySelector('#chapters').append(el)});app.append(button('Fortschritt zurücksetzen',()=>{if(confirm('Alle lokal gespeicherten Lernfortschritte löschen?')){saved={seen:[],best:{},runs:0};persist();home()}}))}
+function start(ch){saved.runs++;persist();const pool=shuffle(cards.filter(c=>c.chapter===ch)),types=shuffle([0,1,2,3,4]);run={ch,questions:pool.map((c,i)=>({c,type:types[i],exception:Math.random()<.5})),pos:0,score:0};question()}
+const typeNames=['Smell Detective','Zwei Wege / ein Problem','Passende Alternative','Antipattern oder legitime Ausnahme?','Kausalkette'];
+function question(){let q=run.questions[run.pos],c=q.c;show(`<div class="row between"><span class="eyebrow">Kapitel ${run.ch+1} · ${chapters[run.ch]}</span><span>Aufgabe ${run.pos+1} / 5</span></div><progress value="${run.pos}" max="5" aria-label="Rundenfortschritt"></progress><article class="card question"><div class="eyebrow">${typeNames[q.type]}</div><h2 id="question-title" tabindex="-1">${['Welche Folge ist zu erwarten?','Welcher Weg adressiert das Problem?','Welches konkrete Risiko verringert diese Maßnahme?','Wie bewertest du diese Handlung?','Bringe die Erklärung in die richtige Reihenfolge.'][q.type]}</h2><p id="prompt"></p><div class="options" id="options"></div><div id="feedback" aria-live="polite"></div></article>`);document.querySelector('#question-title').focus();let prompt=document.querySelector('#prompt'),opts=document.querySelector('#options');
+if(q.type===4){renderChain(q,prompt,opts);return}
+let choices=[],right;
+if(q.type===0){prompt.textContent=c.smell;right=c.cause;choices=[right,...shuffle(cards.filter(x=>x.id!==c.id&&x.chapter===c.chapter)).slice(0,3).map(x=>x.cause)]}
+if(q.type===1){prompt.textContent=c.problem;right=c.good;choices=[right,c.bad]}
+if(q.type===2){prompt.textContent=c.good;right=c.cause;choices=[right,...shuffle(cards.filter(x=>x.id!==c.id&&x.chapter===c.chapter)).slice(0,2).map(x=>x.cause)]}
+if(q.type===3){prompt.textContent=q.exception?c.exception:c.smell;right=q.exception?'Legitime Ausnahme im beschriebenen Rahmen':'Problematisches Muster';choices=['Problematisches Muster','Legitime Ausnahme im beschriebenen Rahmen']}
+shuffle(choices).forEach(t=>{let b=button(t,()=>{opts.querySelectorAll('button').forEach(x=>{x.disabled=true;if(x.textContent===right)x.classList.add('correct')});if(t!==right)b.classList.add('wrong');finish(t===right,q)},'option');opts.append(b)})}
+
+// A card occupies exactly one place. Moving onto another card swaps their places.
+function moveChain(state,card,target){const from=state.indexOf(card);if(from<0||target<0||target>=state.length)return state;const next=[...state];[next[from],next[target]]=[next[target],next[from]];return next}
+function renderChain(q,prompt,opts){
+ prompt.textContent='Ziehe die Textkarten in die beschrifteten Kettenglieder. Du kannst sie beliebig verschieben und tauschen. Alternativ: Karte auswählen, dann Ziel anklicken (auch mit Tab und Enter). Erst „Kette prüfen“ wertet aus.';
+ const texts=[q.c.smell,q.c.cause,q.c.good],labels=['Situation','Mögliche Folge','Gegenmaßnahme'];
+ let state=[null,null,null,...shuffle([0,1,2])],selected=null,dragged=null;
+ opts.className='chain-exercise';
+ const board=document.createElement('div');board.className='chain-board';
+ const tray=document.createElement('div');tray.className='chain-tray';tray.setAttribute('aria-label','Kartenablage');
+ const status=document.createElement('p');status.className='note';status.setAttribute('aria-live','polite');
+ const check=button('Kette prüfen',()=>{finish(state.slice(0,3).every((v,i)=>v===i),q);},'primary');check.disabled=true;
+ const clear=button('Alle Karten zurücklegen',()=>{state=[null,null,null,...shuffle([0,1,2])];selected=null;draw();status.textContent='Alle Karten liegen wieder in der Ablage.'});
+ const actions=document.createElement('div');actions.className='row';actions.append(check,clear);
+ opts.append(board,tray,status,actions);
+ function place(card,index){state=moveChain(state,card,index);selected=null;draw(index);status.textContent='Karte verschoben. '+state.slice(0,3).filter(v=>v!==null).length+' von 3 Kettengliedern belegt.'}
+ function draw(focusIndex){board.innerHTML='';tray.innerHTML='';let focusControl=null;
+ state.forEach((card,index)=>{
+ const slot=document.createElement('div');slot.className=index<3?'chain-link':'tray-slot';
+ if(index<3){const label=document.createElement('div');label.className='chain-label';label.textContent=(index+1)+' · '+labels[index];slot.append(label)}
+ const control=button(card===null?(index<3?'Karte hier ablegen':'Zurück in die Ablage'):texts[card],()=>{if(selected!==null){place(selected,index);return}if(card!==null){selected=card;draw(index);status.textContent='Karte ausgewählt. Wähle ein Ziel oder dieselbe Karte zum Abwählen.'}},'chain-tile'+(card===null?' empty':'')+(card!==null&&selected===card?' selected':''));
+ control.setAttribute('aria-label',(index<3?labels[index]:'Kartenablage')+': '+(card===null?'leer':texts[card]));
+ control.setAttribute('aria-pressed',String(card!==null&&selected===card));
+ if(card!==null){control.draggable=true;control.ondragstart=e=>{dragged=card;e.dataTransfer.setData('text/plain',String(card));e.dataTransfer.effectAllowed='move';};control.ondragend=()=>{dragged=null;};}
+ slot.ondragover=e=>{e.preventDefault();e.dataTransfer.dropEffect='move';};
+ slot.ondrop=e=>{e.preventDefault();if(dragged!==null)place(dragged,index);dragged=null;};
+ slot.append(control);(index<3?board:tray).append(slot);if(index===focusIndex)focusControl=control;
+ });check.disabled=state.slice(0,3).some(v=>v===null);if(focusControl)focusControl.focus();
+ }
+ draw();
+}
+
+function finish(ok,q){if(!q.graded){if(ok)run.score++;q.graded=true;}if(!saved.seen.includes(q.c.id))saved.seen.push(q.c.id);persist();let f=document.querySelector('#feedback');f.className='feedback';f.innerHTML=`<strong>${ok?'Richtig eingeordnet.':'Noch ein Gedanke dazu.'}</strong>${q.type===4?'<p class="note">Für den Rundenwert zählt die erste Prüfung. Du kannst die Kette weiter umstellen und erneut prüfen.</p>':''}${q.type===3?`<p>${q.exception?'Die genannte Bedingung begrenzt das Risiko. Eine Ausnahme ist keine pauschale Empfehlung.':'Die beschriebene Situation enthält ein konkretes Risiko; der Kontext entscheidet über die passende Abhilfe.'}</p>`:''}${solution(q.c)}${q.type===4?`<p class="note">Die erwartete Kette: ${esc(q.c.smell)} → ${esc(q.c.cause)} → ${esc(q.c.good)}</p>`:''}`;f.append(button(run.pos===4?'Runde abschließen →':'Nächste Aufgabe →',()=>{run.pos++;if(run.pos===5)result();else question()},'primary'))}
+function solution(c){let x=c.tile%5*25,y=Math.floor(c.tile/5)*25;return `<section class="solution"><div class="eyebrow">Lernkarte · ${c.code}</div><h3>${esc(c.title)}</h3><div class="illustration" role="img" aria-label="Illustration zu ${esc(c.title)}" style="background-position:${x}% ${y}%"></div><p><strong>Kontext:</strong> ${esc(c.context)}</p><p><strong>Problem und gewählte Praxis:</strong> ${esc(c.smell)}</p><p><strong>Attraktiv, weil:</strong> ${esc(c.appeal)}</p><p><strong>Beobachtbare Smells:</strong> ${esc(c.symptoms)}</p><p><strong>Mögliche Folgen:</strong> ${esc(c.cause)}</p><p><strong>Besser so:</strong> ${esc(c.good)}</p><p><strong>Warum?</strong> ${esc(c.reason)}</p><p><strong>Geltungsgrenze:</strong> ${esc(c.boundary)}</p></section>`}
+function result(){saved.best[run.ch]=Math.max(saved.best[run.ch]||0,run.score);persist();let ch=run.ch;show(`<div class="eyebrow">Runde abgeschlossen</div><h1>${run.score} von 5 richtig.</h1><p class="intro">${run.score===5?'Gut abgewogen!':'Die Lernkarten helfen dir, Risiken und Ausnahmen genauer zu unterscheiden.'} Jede neue Runde mischt die Aufgabenarten und Antwortreihenfolge. Pro Kapitel kommen alle fünf Themen vor.</p><div class="row" id="actions"></div>`);let a=document.querySelector('#actions');a.append(button('Noch eine Runde',()=>start(ch),'primary'),button('Kapitelübersicht',home));if(ch<4)a.append(button('Weiter zu Kapitel '+(ch+2),()=>start(ch+1)))}
+function library(){show(`<h1>Alle 25 Lernkarten</h1><p>Zum Nachlesen müssen Sie keine Runde spielen. Die Kapitelrunden bleiben eine freiwillige Herausforderung.</p><div id="back"></div><div class="grid" id="collection"></div>`);document.querySelector("#back").append(button("← Kapitelübersicht",home));cards.forEach(c=>{let el=document.createElement("article");el.className="card";el.innerHTML=solution(c);document.querySelector("#collection").append(el)})}
+document.querySelector('#library').onclick=()=>{if(run&&run.pos<5&&!confirm('Laufende Runde verlassen? Entdeckte Karten bleiben erhalten.'))return;run=null;library()};persist();home();

@@ -1,0 +1,1108 @@
+{
+  "id": "P03",
+  "version": "0.4.0",
+  "date": "2026-10-22",
+  "title": "Rätselhaft!",
+  "subtitle": "Ein Repo. Eine wissenschaftliche Publikation. Viele neue Forschungsfragen.",
+  "stories": [
+    {
+      "id": "P03-S07",
+      "source_id": "Neukonzeption 0.2",
+      "title": "Eine Ablage für Forschung – eine Publikation für andere.",
+      "teaser": "Eine passende Forschungsablage ist noch keine Datenpublikation.",
+      "sections": [
+        {
+          "title": "Elifs Frage",
+          "paragraphs": [
+            "Lea gibt Elif Zugang zu ihrem Forschungsrepo. Elif möchte Reimformen untersuchen und fragt: „Welchen TEI-Ordner soll ich nehmen?“"
+          ]
+        },
+        {
+          "title": "Für Leas Untersuchung sinnvoll",
+          "paragraphs": [
+            "Das Repo bewahrt die übernommenen Quellen, die vereinheitlichten Daten und die festgehaltenen Eingaben einzelner Studien. Dasselbe Buch liegt dadurch in mehreren begründeten Fassungen vor. Diese Struktur dokumentiert Leas Forschungsweg. Elif braucht dagegen einen eindeutig bezeichneten Korpusbestand für eine neue Untersuchung."
+          ]
+        }
+      ],
+      "git": "Git hält Publikationskonzept, Daten und Korrekturen nachvollziehbar zusammen. GitHub macht README, Releases, Issues und geprüfte Beiträge zugänglich. Welche Arbeitsgeschichte öffentlich wird, entscheidet das Team bewusst.",
+      "action": "Publikationskonzept früh festhalten, einen maßgeblichen Bestand ausweisen und den Einstieg mit einer externen Person erproben. Nur vorbereitete, geprüfte Fassungen freigeben.",
+      "question": "Was müsste jemand wissen, der heute ohne uns mit unserem Repo zu forschen beginnt?",
+      "graphics": [
+        "P03-G07"
+      ],
+      "demo": "publikationskonzept.md",
+      "image": null,
+      "image_alt": "",
+      "takeaway": {
+        "title": "Ein Publikationsrepositorium ist kein veröffentlichtes Forschungsrepo!",
+        "text": "Eine gute Forschungsablage erklärt, wie eine Studie entstanden ist. Die Datenpublikation erklärt, welchen Bestand andere für neue Studien verwenden sollen. Dafür richten wir ein eigenes kuratiertes Korpusrepo ein."
+      },
+      "topic": "ARBEITSBESTAND UND PUBLIKATION",
+      "practice": {
+        "steps": [
+          "Publikationskonzept vor der ersten Freigabe in Git festhalten.",
+          "Geprüfte Buchdateien aus daten/vereinheitlicht nach data/tei des Publikationsrepos übernehmen.",
+          "README, Regeln und Einstieg ergänzen; den ersten Release extern ausprobieren lassen."
+        ],
+        "example": "Forschungsrepo: quellen/tei/rk_1786_b0001.xml → daten/vereinheitlicht/rk_1786_b0001.xml → analysen/reimstudie/eingabe/rk_1786_b0001.xml. Publikationsrepo: genau ein maßgeblicher Korpusstand unter data/tei/rk_1786_b0001.xml.",
+        "done": "Eine neue Nutzerin erkennt ohne Rückfrage, welche Dateien und welche Version sie untersuchen soll."
+      }
+    },
+    {
+      "id": "P03-S01",
+      "source_id": "S3-B",
+      "title": "Das Skript läuft. Wo sind die Lösungen?",
+      "teaser": "Ein Inhalt kann verschwinden, obwohl die bisherige Auswertung weiterläuft.",
+      "sections": [
+        {
+          "title": "Eine unbemerkte Auslassung",
+          "paragraphs": [
+            "Leas neue Aufbereitung übernimmt die Rätseltexte, verliert aber den Lösungsteil: Er war in der bisherigen TEI-Struktur in einem getrennten XML-Element erfasst und ist in den neu erzeugten TEI-Daten nicht mehr enthalten. Ihre bisherige Python-Auswertung zählt nur Rätsel und Verse: Die Zahlen bleiben gleich. Erst beim Lesen einer Seminaraufgabe fehlt die Antwort."
+          ]
+        },
+        {
+          "title": "Den Fehler eingrenzen",
+          "paragraphs": [
+            "Lea und Jonas vergleichen in Git die Fassungen vor und nach der Konvertierung. Dabei erkennen sie, dass die geänderte Konvertierung das XML-Element mit den Lösungen nicht übernimmt. Sie korrigieren das Verfahren und erstellen einen kleinen neuen Prüffall, der genau diesen Fehler nachstellt: Ein Rätsel mit einem getrennt ausgezeichneten Lösungsteil muss die Konvertierung vollständig durchlaufen. Der Test prüft anschließend, ob Lösung und Zuordnung erhalten geblieben sind."
+          ]
+        }
+      ],
+      "git": "Versionsvergleich und bezeichnete Werkzeugstände zeigen, wann Inhalte verloren gingen und welche Importe betroffen sind. Ein Regressionstest begleitet die Korrektur. Git bewahrt Änderungen; ihren fachlichen Sinn muss das Team prüfen.",
+      "action": "Vor und nach jeder Transformation Inhaltserhalt prüfen; bekannte Quellmerkmale testen, gezielt lesen und Korrekturen im nächsten Release beschreiben.",
+      "question": "Welche Daten könnte unsere heutige Analyse verlieren, ohne dass sich ihr Ergebnis merklich ändert?",
+      "graphics": [
+        "P03-G01",
+        "P03-G03"
+      ],
+      "demo": "beispiele/segmentierung/",
+      "image": null,
+      "image_alt": "",
+      "topic": "QUALITÄT PRÜFEN",
+      "takeaway": {
+        "title": "Eine erfolgreiche Analyse beweist keine vollständigen Daten.",
+        "text": "Wir prüfen Struktur, Beziehungen und Inhaltserhalt getrennt. Automatische Tests werden durch einen gezielten Quellenvergleich ergänzt."
+      },
+      "practice": {
+        "steps": [
+          "Vor und nach einer Transformation alle zu übernehmenden Elemente und Inhalte, IDs und Verweise vergleichen.",
+          "Im Pull Request den Diff und betroffene Quellstellen prüfen; unerwartete Verluste klären.",
+          "Den Fehlerfall als Regressionstest behalten und erst nach fachlicher Freigabe veröffentlichen."
+        ],
+        "example": "Zwei Rätsel und zwei Lösungen vor der Verarbeitung; zwei Rätsel und keine Lösung danach. XML und Demo-Schema bestehen, der Bestandsvergleich meldet den Verlust.",
+        "done": "Der Prüflauf erkennt den bekannten Verlust; die Quellenkontrolle und Freigabe sind dokumentiert."
+      }
+    },
+    {
+      "id": "P03-S02",
+      "source_id": "S3-A",
+      "title": "Gestern war das Ergebnis noch anders.",
+      "teaser": "Wachsende Daten brauchen nachvollziehbare Fassungen.",
+      "sections": [
+        {
+          "title": "Eine neue Grafik",
+          "paragraphs": [
+            "Für ihre Publikation hat Elif den Versanteil im Korpus berechnet und eine Balkengrafik erzeugt, die ihr sehr aussagekräftig erschien. Etwas später möchte sie mit demselben Skript dieselbe Grafik in ausdrucksstärkeren Farben erzeugen. Doch die Balken zeigen ein unerwartetes Bild: Lea hat inzwischen weitere Sammlungen aufgenommen. Elifs Skript lädt stets den aktuellen Repositorystand."
+          ]
+        },
+        {
+          "title": "Den verwendeten Stand wiederholen",
+          "paragraphs": [
+            "Mit dem archivierten früheren Release und demselben Skript kann Elif die ursprüngliche Grafik wiederherstellen. Sie muss die verwendete Datenversion angeben, damit andere ihre Zahlen und Schlussfolgerungen nachvollziehen können. An ihren Schlussfolgerungen ändert der erweiterte Bestand nichts; einige Zahlen fallen allerdings weniger eindeutig aus als zuvor. Elif hält nun Datenfassung, Belegauswahl und Verfahren gemeinsam fest. Lea kann weiter Bücher ergänzen, während frühere Untersuchungen auf ihren bezeichneten Datenstand zurückgreifen können."
+          ]
+        }
+      ],
+      "git": "Fixierte Daten- und Werkzeugstände machen den Vergleich wiederholbar. Git dokumentiert Bestandsänderungen; deren wissenschaftliche Bedeutung muss das Team erklären.",
+      "action": "Konkreten Korpusrelease, Auswahl, Extraktion und Analyse gemeinsam dokumentieren; archivierte Version zitieren und Bestandsänderungen fachlich einordnen.",
+      "question": "Könnte jemand allein mit unseren Angaben dieselbe Forschungsgrundlage wieder zusammensetzen?",
+      "graphics": [
+        "P03-G04",
+        "P03-G05"
+      ],
+      "demo": "beispiele/versionsvergleich/",
+      "image": "vergleich.webp",
+      "image_alt": "Lea und Elif vergleichen zwei unterschiedlich umfangreiche Versionsmappen.",
+      "topic": "VERSIONEN UND FORSCHUNGSNACHWEIS",
+      "takeaway": {
+        "title": "Eine Untersuchung braucht einen bestimmten Datenstand.",
+        "text": "Wir veröffentlichen geprüfte Releases und erhalten sie unabhängig vom Git-Host. Forschende nennen zusätzlich Auswahl, Extraktion und Werkzeugfassung."
+      },
+      "practice": {
+        "steps": [
+          "Nach der Freigabe einen geschützten Tag und Release mit Bestands- und Änderungsnotizen anlegen.",
+          "Datenpaket samt Metadaten archivieren und den konkreten Versionsnachweis in den Zitierhinweis aufnehmen.",
+          "Für jede Analyse Release, Auswahl, Exportregel und Skriptfassung festhalten."
+        ],
+        "example": "Demo-v1.0: 2 von 4 Rätseln sind Verse. Demo-v1.1: 8 von 10. Werden dieselben vier alten Belege ausgewählt, bleibt ihr Anteil bei 50 Prozent.",
+        "done": "Eine andere Person kann aus den bezeichneten Daten und Verfahren die Untersuchung wiederholen."
+      }
+    },
+    {
+      "id": "P03-S03",
+      "source_id": "S3-D",
+      "title": "Ein Reim hilft dem Modell auf die Sprünge.",
+      "teaser": "Zusatzannotation und Modellversuche bleiben ihrer Basis zugeordnet.",
+      "sections": [
+        {
+          "title": "Eine Frage aus dem Seminar",
+          "paragraphs": [
+            "Studierende lassen ein lokales Sprachmodell gereimte Zweizeiler lösen. In einer Gruppe dieser Rätsel ist die Lösung zugleich das fehlende Reimwort im zweiten Vers. „Versteht es das Rätsel oder ergänzt es nur den Reim?“ Um das zu untersuchen, vergleicht die Gruppe die Verse mit einer getrennt gespeicherten Prosabearbeitung, in der der Reimhinweis fehlt."
+          ]
+        },
+        {
+          "title": "Aus Nutzung wird Anschlussforschung",
+          "paragraphs": [
+            "Elif ergänzt in den für diese Untersuchung verwendeten Daten Form- und Wortannotation. Damit kennzeichnet sie insbesondere die Rätsel, deren Lösung das fehlende Reimwort ist. Bei einem späteren Workshop werden die so aufbereiteten Daten für einen Vergleich verschiedener Sprachmodelle genutzt. Es entsteht ein separates kleines Benchmark-Korpus: Welches Modell kann sprachliche Rätsel im Deutsch vergangener Sprachstufen lösen? Ein weiteres Experiment trainiert ein Sprachmodell mithilfe der Referenzdaten nach; auf den getrennt gehaltenen Testdaten erzielt es deutlich bessere Lösungsergebnisse. Das Team entscheidet, das gesamte vorhandene Korpus für solche Aufgaben aufzubereiten. Die Daten erhalten eine zusätzliche Annotationsschicht. TEI erlaubt, diese Schicht gesondert auszuzeichnen und mit den Basisdaten zu verknüpfen, ohne deren Texte zu verändern. Die erweiterte Fassung erhält eine neue Versionsnummer; Basisrelease, Annotation und Modellversuche bleiben nachvollziehbar miteinander verbunden."
+          ]
+        }
+      ],
+      "git": "Basisrelease, Annotation und Versuchsskripte lassen sich über bezeichnete Fassungen verbinden. Issues und Pull Requests ermöglichen Rückfragen und geprüfte Beiträge; die Versionierung macht die Untersuchung nachvollziehbar.",
+      "action": "Formen und Lösungsbezüge dokumentieren; Annotationen und Versuchsfassungen kennzeichnen; Basisdaten, Auswahl und Modellverfahren gemeinsam nachweisen.",
+      "question": "Welche neue Forschungsfrage wird durch unsere derzeitige Auszeichnung erschwert?",
+      "graphics": [
+        "P03-G06"
+      ],
+      "image": "seminar.webp",
+      "image_alt": "Studierende und Lea vergleichen Modellantworten und gedruckte Rätselverse.",
+      "topic": "NACHNUTZUNG UND ANNOTATION",
+      "takeaway": {
+        "title": "Neue Forschung soll auf dem Korpus aufbauen können.",
+        "text": "Unser Ausgangspunkt ist eine getrennt versionierte Zusatzannotation. Originale, Bearbeitungen, automatische Schichten und Modellversuche bleiben eindeutig unterscheidbar."
+      },
+      "practice": {
+        "steps": [
+          "Annotation mit Basisrelease, Beleg- oder Wortankern und Erzeugungsverfahren beschreiben.",
+          "Automatische Herkunft und Prüfstatus angeben; Basisdaten ohne Zusatzschicht anbieten.",
+          "Bei Modellversuchen Testeingaben und Lösungen trennen; Trainings-/Testauswahl und verwandte Belege prüfen."
+        ],
+        "example": "Basis: Korpus v1.0. Zusatz: Wortannotation 1.0 mit Bezug auf dessen Tokenisierung. Modelltest: Rätseltexte in testeingaben.jsonl, Referenzantworten getrennt in loesungen.jsonl.",
+        "done": "Die Annotation ist ihrer Basis zugeordnet und kann weggelassen werden; der Versuch ist dokumentiert."
+      }
+    },
+    {
+      "id": "P03-S04",
+      "source_id": "S3-C",
+      "title": "Klappt es auch ohne Leas Rechner?",
+      "teaser": "Ein frischer Download zeigt die stillen Voraussetzungen.",
+      "sections": [
+        {
+          "title": "Ein Versuch ohne Zuruf",
+          "paragraphs": [
+            "Jonas lädt den Release auf einen anderen Rechner und beginnt bei README. Das Beispiel erwartet noch Leas Netzlaufwerk. Im Team hatte das niemand bemerkt: Alle arbeiteten mit derselben Infrastruktur."
+          ]
+        },
+        {
+          "title": "Der Einstieg wird verbessert",
+          "paragraphs": [
+            "Lea ersetzt persönliche Pfade durch relative Pfade und dokumentiert Aufruf, Abhängigkeiten und erwartetes Ergebnis. Jonas startet noch einmal vom frischen Paket. Diesmal gelingt die erste Untersuchung ohne Hilfe. Vor dem Ende von Leas Stelle erprobt er auch die Anleitung zum nächsten Release."
+          ]
+        }
+      ],
+      "git": "Ein bezeichneter Release, vollständige lokale Daten, versionierte Beispiele und klare Änderungsnachweise ermöglichen selbstständige Nutzung. Die Anleitung für spätere Releases wird ebenfalls praktisch erprobt.",
+      "action": "Von einem frischen Download aus eine erste Untersuchung durchführen; Pfade, Dateinamen und Abhängigkeiten prüfen und fehlende Schritte dokumentieren.",
+      "question": "Wo braucht jemand außerhalb unseres Teams noch Wissen, das nur in unseren Köpfen oder auf unseren Rechnern steckt?",
+      "graphics": [
+        "P03-G07",
+        "P03-G08"
+      ],
+      "demo": "beispiele/uebergabe/",
+      "image": "uebergabe.webp",
+      "image_alt": "Jonas arbeitet anhand einer Anleitung, während Lea ihn selbst ausprobieren lässt.",
+      "topic": "LOKALE NUTZUNG UND ÜBERGABE",
+      "takeaway": {
+        "title": "Der Einstieg muss ohne die Projektumgebung funktionieren.",
+        "text": "Wir liefern einen kleinen vollständigen Nutzungseinstieg und den gesamten bezeichneten Datenbestand. Ein anderer Rechner ist unser praktischer Gegencheck."
+      },
+      "practice": {
+        "steps": [
+          "Dateinamen ohne betriebssystemspezifische Sonderzeichen und relative Pfade verwenden.",
+          "Einen Aufruf mit Abhängigkeiten und erwarteter Ausgabe in README dokumentieren.",
+          "Eine andere Person das frisch entpackte Paket ausführen lassen; Kontakt und Pflegezusage ergänzen."
+        ],
+        "example": "Statt eines Pfads zu Leas Netzlaufwerk sucht das Skript korpus.xml relativ zu seinem eigenen Ordner. Der Einstieg läuft mit Python-Standardbibliothek ohne API oder Konto.",
+        "done": "Das dokumentierte Ergebnis entsteht in einer frischen Umgebung; fehlendes Wissen ist in der Anleitung ergänzt."
+      }
+    },
+    {
+      "id": "P03-S05",
+      "source_id": "S3-E",
+      "title": "Die Bibliothek wartet auf den Server.",
+      "teaser": "Lokale Daten sind unser Grundangebot.",
+      "sections": [
+        {
+          "title": "Öffentlich und trotzdem nicht nutzbar",
+          "paragraphs": [
+            "Elif möchte viele Rätsel lokal vergleichen. Die Bibliothek lädt sie einzeln über die API. Der Server drosselt die Anfragen; ihre Untersuchung bleibt stehen."
+          ]
+        },
+        {
+          "title": "Ein unabhängiger Arbeitsweg",
+          "paragraphs": [
+            "Das Team bietet den vollständigen Release zum Download an und lässt die Bibliothek auch lokale Dateien lesen. Eine kleine Probe führt zum ersten Ergebnis. API und Frontend bleiben zusätzliche Zugänge."
+          ]
+        }
+      ],
+      "git": "Git versioniert Daten und Software. Es finanziert und betreibt keine zusätzlichen Dienste.",
+      "action": "Zugangsbedarf untersuchen; statische, bibliotheksbasierte und laufende Angebote nach ihrem tatsächlichen Nutzen und Pflegebedarf wählen.",
+      "question": "Welcher konkrete Mehrwert rechtfertigt welches Betriebsversprechen?",
+      "graphics": [
+        "P03-G11"
+      ],
+      "image": null,
+      "image_alt": "",
+      "topic": "DOWNLOADS UND ZUSATZDIENSTE",
+      "takeaway": {
+        "title": "Korpusanalysen dürfen nicht vom laufenden Projektserver abhängen.",
+        "text": "Unser Grundangebot sind versionierte lokale Daten und dokumentierte Exporte. Einen zusätzlichen Dienst richten wir erst für einen konkreten Bedarf und mit gesichertem Betrieb ein."
+      },
+      "practice": {
+        "steps": [
+          "Kleine Einstiegsdaten und vollständigen Release getrennt anbieten; große Bestände sinnvoll portionieren.",
+          "Bibliothek und Beispiele auch mit lokalen Daten ausführbar machen.",
+          "API oder Frontend nur ergänzen, wenn Nutzen, Zuständigkeit und Betrieb geklärt sind."
+        ],
+        "example": "Zum Ausprobieren: nutzungsstart.zip. Für die vollständige Analyse: das bezeichnete Korpuspaket. Beide beschreiben ihre Dateien und den jeweiligen Umfang.",
+        "done": "Die Untersuchung kann auch fortgesetzt werden, wenn die API ausfällt."
+      }
+    },
+    {
+      "id": "P03-S06",
+      "source_id": "S3-F",
+      "title": "Der Host zieht um. Die Forschung soll bleiben.",
+      "teaser": "Dateien und nötigen Kontext gemeinsam erhalten.",
+      "sections": [
+        {
+          "title": "Mehr als Dateien umziehen",
+          "paragraphs": [
+            "Beim Wechsel des Hosts sind die Git-Dateien vorhanden. Verknüpfte Diskussionen und Release-Anhänge fehlen jedoch. Einige Entscheidungen sind nur dort erklärt."
+          ]
+        },
+        {
+          "title": "Den benötigten Kontext erhalten",
+          "paragraphs": [
+            "Jonas übernimmt die notwendigen Plattforminformationen und hält fachliche Entscheidungen im Repo fest. Die Prüfungen laufen auch außerhalb der bisherigen Automatisierung. Archivierte Releases sichern die früheren Forschungsbezüge."
+          ]
+        }
+      ],
+      "git": "Git-Daten sind portabel; wissenschaftliche Archivierung und dokumentierte Verfahren begrenzen die Abhängigkeit von Plattformfunktionen.",
+      "action": "Git- und Plattformexporte planen, benötigten Kontext bewahren und den Neuaufbau am neuen Ort testen.",
+      "question": "Was wäre nach dem Verlust des aktuellen Hosts tatsächlich noch ausführbar?",
+      "graphics": [
+        "P03-G12"
+      ],
+      "image": null,
+      "image_alt": "",
+      "topic": "PORTABILITÄT UND ERHALT",
+      "takeaway": {
+        "title": "Git-Geschichte und Plattformbestand sind verschiedene Dinge.",
+        "text": "Wir sichern Git, veröffentlichte Pakete und die für das Verständnis nötigen Entscheidungen. Der Neuaufbau wird anhand einer versionierten Anleitung geprüft."
+      },
+      "practice": {
+        "steps": [
+          "Git-Referenzen und benötigte Zusatzdateien sichern; relevante Issues und Entscheidungen exportieren oder dokumentieren.",
+          "Prüfungen und Exporte ohne die alte CI-Umgebung ausführen.",
+          "Releasepakete, Zitiernachweise, Kontakt und Berechtigungen am neuen Ort prüfen."
+        ],
+        "example": "Git überträgt Commits und Tags. Release-Anhänge, relevante Diskussionen und Diensteinstellungen werden zusätzlich übernommen oder nachvollziehbar dokumentiert.",
+        "done": "Die Dateien sind am neuen Ort verständlich und die dokumentierten Verfahren ausführbar."
+      }
+    }
+  ],
+  "persona": {
+    "lead": "Lea möchte, dass andere mit den alten Rätseln Neues herausfinden. Dafür muss das Korpus auch ohne ihre persönliche Einführung funktionieren.",
+    "paragraphs": [
+      "Lea Berger erschließt mit einem kleinen Team historische Rätselbücher. Der Lehrstuhl forscht seit Jahren zum Thema. Im dreijährigen Projekt kommen systematische Korpusanalysen hinzu: Studierende untersuchen Reimformen; externe Forschende vergleichen lokale Sprachmodelle.",
+      "Das offene TEI-Korpus ist selbst eine wissenschaftliche Publikation auf GitHub. Andere sollen einen bezeichneten Stand herunterladen, verstehen und lokal auswerten können. Dafür plant Lea die Publikation von Anfang an mit. Nach Projektende soll sie auch ohne ihre persönliche Einführung weiter nutzbar bleiben."
+    ],
+    "question": "Wie wird aus unserem Arbeitsbestand eine wissenschaftliche Datenpublikation, mit der andere selbstständig forschen können?",
+    "facts": {
+      "Projektzeit": "Drei Jahre",
+      "Team": "Eine WiMi-Stelle, Lehrstuhlzeit und Beratung",
+      "Publikation": "TEI-Korpus in einer GitHub-Projektorganisation",
+      "Nutzung": "Lehre, Korpusanalysen, Reimforschung und Modellversuche",
+      "Maßstab": "Finden, verstehen, lokal untersuchen und zitieren"
+    }
+  },
+  "roles": [
+    {
+      "id": "P03-A01",
+      "name": "Lea Berger",
+      "role": "Wissenschaftliche Mitarbeiterin",
+      "text": "Importiert, prüft, analysiert und bereitet Releases vor. Ihre befristete Stelle darf nicht zum unbegrenzten Wartungsversprechen werden."
+    },
+    {
+      "id": "P03-A02",
+      "name": "Miriam Vogt",
+      "role": "Wissenschaftliche Leitung",
+      "text": "Verantwortet Korpusprofil, fachliche Freigaben und Ressourcen. Ein neues Buch braucht nicht nur technischen Platz, sondern eine begründete Aufnahme."
+    },
+    {
+      "id": "P03-A03",
+      "name": "Jonas Richter",
+      "role": "Technische Vertretung am Lehrstuhl",
+      "text": "Prüft Verfahren und kann vertreten – neben anderen Aufgaben. Git-Zugriff schafft weder fehlendes Projektwissen noch zusätzliche Arbeitszeit."
+    },
+    {
+      "id": "P03-A04",
+      "name": "Tessa König",
+      "role": "Forschungsdatenberatung",
+      "text": "Berät zu Archivpaketen, Metadaten und Übergabe. Beratung bedeutet nicht automatisch die dauerhafte Fachpflege des Korpus."
+    },
+    {
+      "id": "P03-A05",
+      "name": "Elif Arslan",
+      "role": "Externe Linguistin",
+      "text": "Nutzt bestimmte Datenstände und entwickelt eine zusätzliche Annotationsschicht. Ihre Forschung kann mit dem Korpus verbunden bleiben, ohne vollständig darin aufzugehen."
+    }
+  ],
+  "windows": [
+    {
+      "title": "ca. 1500–1650",
+      "text": "Frühe Drucksammlungen und unterschiedliche gelehrte wie volkssprachliche Kontexte."
+    },
+    {
+      "title": "ca. 1750–1850",
+      "text": "Literarische Kleinformen, Sammlungen, Almanache und Zeitschriften als Untersuchungsfelder."
+    },
+    {
+      "title": "ca. 1900–1950",
+      "text": "Populäre Sammlungen und veränderte Medienkontexte; nicht automatisch alle Arten von Denksport."
+    }
+  ],
+  "glossary": [
+    {
+      "id": "tei",
+      "title": "TEI und XML",
+      "paragraphs": [
+        "XML kennzeichnet Dokumentteile durch Elemente und Attribute. TEI stellt dafür ein wissenschaftliches Vokabular bereit: hier etwa Rätsel, Verse, Lösungen, Bibliografie und Verantwortung. Es ist kein fertiges Seitenlayout.",
+        "Ein Buch oder eine Sammlung bildet den Kontext; das einzelne Rätsel ist ein eigener Beleg. Dieselbe vermutete Rätselidee in mehreren Büchern erhält mehrere Belegkennungen. Eine Traditionsbeziehung ist eine zusätzliche Forschungsannahme."
+      ],
+      "links": [
+        [
+          "TEI: Anpassung und Verwendung",
+          "https://tei-c.org/release/doc/tei-p5-doc/en/html/USE.html"
+        ]
+      ]
+    },
+    {
+      "id": "schema",
+      "title": "Schema, ODD und fachliche Prüfung",
+      "paragraphs": [
+        "Ein Schema beschreibt erlaubte Strukturen. Die TEI-ODD verbindet Modellbeschreibung und Anpassung; daraus kann ein Relax-NG-Schema erzeugt werden. Zusätzliche Regeln prüfen etwa Referenzen und Pflichtangaben.",
+        "Gültiges XML und eindeutige Kennungen beweisen keine richtigen Rätselgrenzen. Quellenvergleich und fachliche Stichproben bleiben nötig. Das beigefügte kleine Demo-Schema ist keine vollständige Korpus-ODD."
+      ],
+      "links": [
+        [
+          "TEI: Verwendung",
+          "https://tei-c.org/release/doc/tei-p5-doc/en/html/USE.html"
+        ]
+      ]
+    },
+    {
+      "id": "oxygen",
+      "title": "oXygen und die Bearbeitungsumgebung",
+      "paragraphs": [
+        "oXygen ist ein XML-Editor mit lesbarer Autorenansicht und konfigurierbaren Prüfungen. Ein Git-Client-Add-on kann Änderungen, Commits und Synchronisation im Editor zugänglich machen.",
+        "Lea arbeitet mit einem freigegebenen Projektprofil. Die Konvertierung vieler Texte läuft separat; kleine fachliche Korrekturen bleiben nachvollziehbar. Andere XML-Werkzeuge sind möglich, wenn Modell und Verfahren unterstützt werden."
+      ],
+      "links": [
+        [
+          "oXygen: Git Client",
+          "https://www.oxygenxml.com/doc/ug-addons/git-client/git-addon.html"
+        ]
+      ]
+    },
+    {
+      "id": "git",
+      "title": "Git, GitHub und GitLab",
+      "paragraphs": [
+        "Git versioniert Dateistände und ihre Beziehungen. GitHub und GitLab ergänzen Hosting, Zugriffe, Diskussionen und Prüfabläufe. Ein Git-Repository ist nicht automatisch ein dauerhaft betreutes Archiv.",
+        "Unser Muster: private Forschung und Aufbereitung auf dem Uni-GitLab; ein eigenes öffentliches Korpusrepo in einer GitHub-Projektorganisation enthält die freigegebenen Daten. Mindestens zwei autorisierte Personen können administrieren."
+      ],
+      "links": [
+        [
+          "Git: Grundlagen",
+          "https://git-scm.com/book/de/v2"
+        ]
+      ]
+    },
+    {
+      "id": "branch",
+      "title": "Branches, Beiträge und Reviews",
+      "paragraphs": [
+        "Ein Branch hält eine vorübergehende Änderung getrennt erprobbar. Ein Pull/Merge Request bündelt sie zur Prüfung. Branches trennen keine vertraulichen Lesebereiche.",
+        "Ein Beitrag wird erst nach automatischer und fachlicher Prüfung übernommen. Offene Beiträge schaffen Chancen und Reviewarbeit. Ein öffentliches Repo ist keine Zusage, jede Erweiterung zu integrieren."
+      ],
+      "links": [
+        [
+          "Git: Branches",
+          "https://git-scm.com/book/de/v2/Git-Branching-Branches-auf-einen-Blick"
+        ]
+      ]
+    },
+    {
+      "id": "release",
+      "title": "Commit, Tag und Release",
+      "paragraphs": [
+        "Ein Commit bezeichnet eine technische Revision. Ein Tag benennt einen Stand, kann technisch aber verschoben werden und braucht Schutzregeln. Ein GitHub-Release ergänzt Freigabenotizen und Dateien zu einem Tag.",
+        "Das Projekt definiert seine wissenschaftlichen Releases: vollständige Prüfung, fachliche Freigabe, Zusammensetzung und Changelog. Veröffentlichte Stände werden nicht stillschweigend ersetzt; Korrekturen erhalten neue Versionen."
+      ],
+      "links": [
+        [
+          "GitHub: Releases",
+          "https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases"
+        ]
+      ]
+    },
+    {
+      "id": "doi",
+      "title": "Versionsarchiv und DOI",
+      "paragraphs": [
+        "Eine DOI ist ein dauerhafter Identifikator, kein Ersatz für erhaltene Dateien und gepflegte Metadaten. Für eine Analyse wird die konkret verwendete archivierte Version angegeben, nicht nur die Versionsfamilie.",
+        "Der Releaseweg kann einen geeigneten Archivdienst nutzen. Die Zenodo/GitHub-Verknüpfung ist ein möglicher technischer Weg; Datenpaket, Ressourcentyp, Metadaten und vollständige Bestandteile werden bewusst geprüft. Ein DOI pro Commit ist nicht das Ziel."
+      ],
+      "links": [
+        [
+          "Zenodo: DOI-Versionierung",
+          "https://doi.org/10.5281/zenodo.1256592"
+        ]
+      ]
+    },
+    {
+      "id": "xslt",
+      "title": "XSLT und Analysemanifest",
+      "paragraphs": [
+        "XSLT leitet etwa TXT oder HTML aus XML ab. Ob Vorreden, Lösungen und Überschriften enthalten sind, verändert die Forschungsgrundlage. Die Extraktion ist deshalb ein dokumentiertes Verfahren.",
+        "Ein Analysemanifest verbindet Korpusrelease, Belegauswahl, Extraktion, Werkzeugfassung und Parameter. Es ersetzt keine Dateien; es beschreibt, welche tatsächlich erhaltenen Bestandteile zusammengehören."
+      ],
+      "links": [
+        [
+          "W3C: XSLT",
+          "https://www.w3.org/TR/xslt-30/"
+        ]
+      ]
+    },
+    {
+      "id": "stand-off",
+      "title": "Stand-off und abgeleitetes Korpus",
+      "paragraphs": [
+        "Stand-off speichert Annotationen getrennt und verweist auf eine konkrete Basisversion. Stabile Rätselkennungen reichen für Wortannotation nicht immer aus: Tokenisierung und feinere Anker müssen zusammenpassen.",
+        "Wir beginnen für zusätzliche automatische Annotation mit einer getrennten Schicht. Direkt in die Basis übernehmen wir nur fachlich beschlossene Modelländerungen. Ein eigenständiges abgeleitetes Korpus ist eine spätere Vertiefung."
+      ],
+      "links": [
+        [
+          "TEI: Stand-off Markup",
+          "https://tei-c.org/release/doc/tei-p5-doc/en/html/SA.html"
+        ]
+      ]
+    },
+    {
+      "id": "fair",
+      "title": "FAIR und frei verwendbare Quellen",
+      "paragraphs": [
+        "Auffindbar, zugänglich, interoperabel und nachnutzbar wird das Korpus durch Metadaten, erhaltene Versionen, offene Formate, verständliche Modelle und klare Nutzungsbedingungen. Eine öffentliche Repo-Adresse allein genügt nicht.",
+        "Aufgenommen werden nur frei wiederverwendbare Texte. Quelle und Bedingungen stehen in den Metadaten. Das Alter eines Werkes beweist nicht die freie Nutzbarkeit jeder digitalen Fassung. Arbeitskonten und Git-Metadaten brauchen daneben einen angemessenen Schutz."
+      ],
+      "links": [
+        [
+          "GO FAIR: Grundsätze",
+          "https://www.go-fair.org/fair-principles/"
+        ]
+      ]
+    },
+    {
+      "id": "analyse",
+      "title": "Python, XQuery und Datenprüfung",
+      "paragraphs": [
+        "Python ist eine Programmiersprache, mit der sich XML-Dateien verarbeiten und Korpora auswerten lassen. XQuery ist eine Abfragesprache für strukturierte Daten, besonders XML. Beide können genau die Eigenschaften untersuchen, nach denen ein Verfahren fragt.",
+        "Eine erfolgreiche Abfrage ist keine automatische TEI-Validierung. Die Konformität zum vereinbarten Schema und der Inhaltserhalt werden gesondert geprüft. Auch ein schemagültiger Bestand kann fachliche Fehler enthalten."
+      ],
+      "links": [
+        [
+          "Python: ElementTree",
+          "https://docs.python.org/3/library/xml.etree.elementtree.html"
+        ],
+        [
+          "W3C: XQuery 3.1",
+          "https://www.w3.org/TR/xquery-31/"
+        ]
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "Distant Reading und Close Reading",
+      "paragraphs": [
+        "Distant Reading untersucht Muster über viele Texte hinweg, etwa Häufigkeiten und Verteilungen. Close Reading betrachtet einzelne Texte und Stellen genau. Im Korpusprojekt ergänzen sich beide Perspektiven.",
+        "Eine unveränderte Rätselzahl kann einen verlorenen Lösungsteil verdecken. Bestandsprüfungen, gezielte Lektüre und Versionsvergleich untersuchen andere Eigenschaften als die bisherige Analyse."
+      ],
+      "links": []
+    }
+  ],
+  "choices": [
+    {
+      "id": "P03-D17",
+      "key": "timing",
+      "label": "Wann wird das Korpus nutzbar?",
+      "options": {
+        "early": "Früh ein geprüfter, dokumentierter Teilbestand",
+        "late": "Erst kurz vor dem letzten Workshop"
+      }
+    },
+    {
+      "id": "P03-D18",
+      "key": "organization",
+      "label": "Wie ist der Bestand angeboten?",
+      "options": {
+        "clear": "Maßgeblicher Bestand, Regeln und Einstiegsbeispiel",
+        "dump": "Forschungsablage ohne eigene Publikationsaufbereitung"
+      }
+    },
+    {
+      "id": "P03-D19",
+      "key": "local",
+      "label": "Kann man unabhängig lokal arbeiten?",
+      "options": {
+        "yes": "Vollständiger Download, relative Pfade, offene Formate",
+        "api": "Nur serverabhängiger Zugang über API/Bibliothek"
+      }
+    },
+    {
+      "key": "host",
+      "id": "P03-D01",
+      "label": "Wo liegt das öffentliche Korpus?",
+      "options": {
+        "github": "GitHub-Projektorganisation",
+        "gitlab": "Öffentliches institutionelles GitLab"
+      }
+    },
+    {
+      "key": "history",
+      "id": "P03-D02",
+      "label": "Welche Geschichte wird veröffentlicht?",
+      "options": {
+        "clean": "Geprüfte eigenständige Publikationsgeschichte",
+        "unchecked": "Private Geschichte noch nicht vollständig geprüft"
+      }
+    },
+    {
+      "key": "quality",
+      "id": "P03-D05",
+      "label": "Was wurde geprüft?",
+      "options": {
+        "full": "Struktur, Referenzen, Ausgaben und Fachprüfung",
+        "schema": "Bisher nur Struktur und Schema"
+      }
+    },
+    {
+      "key": "citation",
+      "id": "P03-D06",
+      "label": "Worauf verweist die Forschung?",
+      "options": {
+        "release": "Geprüfter Release mit Versionsarchiv",
+        "commit": "Exakter Commitstand",
+        "main": "Jeweils aktueller main"
+      }
+    },
+    {
+      "key": "annotation",
+      "id": "P03-D07",
+      "label": "Wohin kommt neue Annotation?",
+      "options": {
+        "standoff": "Eigenständige Stand-off-Schicht",
+        "inline": "Direkt in den Basis-TEI",
+        "derived": "Abgeleitetes Forschungskorpus"
+      }
+    },
+    {
+      "key": "care",
+      "id": "P03-D09",
+      "label": "Was geschieht nach Förderende?",
+      "options": {
+        "conserve": "Begrenzt konservierend pflegen",
+        "active": "Aktiv integrieren und veröffentlichen",
+        "transfer": "Institutionell übertragen",
+        "archive": "Abgeschlossen archivieren"
+      }
+    },
+    {
+      "key": "successor",
+      "id": "P03-D10",
+      "label": "Sind Nachfolge und Pflegezeit geklärt?",
+      "options": {
+        "yes": "Ja, benannt und eingeplant",
+        "no": "Noch nicht gesichert"
+      }
+    },
+    {
+      "key": "archive",
+      "id": "P03-D15",
+      "label": "Ist der Release unabhängig archiviert?",
+      "options": {
+        "yes": "Archivpaket und Metadaten geprüft",
+        "no": "Bisher nur am Git-Host"
+      }
+    },
+    {
+      "key": "frontend",
+      "id": "P03-D08",
+      "label": "Zusätzliche laufende Anwendung/API?",
+      "options": {
+        "no": "Nein, Daten und dokumentierte Exporte",
+        "yes": "Ja, ein zusätzlicher Dienst"
+      }
+    },
+    {
+      "key": "funding",
+      "id": "P03-D16",
+      "label": "Ist dessen Betrieb finanziert?",
+      "options": {
+        "no": "Noch keine Betriebszusage",
+        "yes": "Trägerschaft und Betrieb gesichert"
+      }
+    }
+  ],
+  "risks": [
+    {
+      "id": "P03-R01",
+      "title": "Versionen",
+      "story": "P03-S02",
+      "meaning": "Hohe Bedeutung für die Wiederholbarkeit",
+      "text": "Ein Ergebnis verweist nur auf den jeweils aktuellen Bestand. Korrekturen, neue Bücher oder andere Extraktionen können die Forschungsgrundlage verändern.",
+      "git": "Commit- und Releasekennungen erlauben genaue Zuordnung. Ein Archiv hält die bezeichneten Daten unabhängig vom laufenden Host.",
+      "consider": "Welche Auswahl und welche Werkzeugfassung wurden verwendet? Ist der exakte Stand erhalten?",
+      "action": "Release, Versionsarchiv, Auswahl und Verfahren in einem Analysemanifest verbinden.",
+      "owner": "Forschende und Releaseverantwortliche"
+    },
+    {
+      "id": "P03-R03",
+      "title": "Datenverlust",
+      "story": "P03-S01",
+      "meaning": "Hohe Bedeutung für die Datenqualität",
+      "text": "Die Analyse läuft, obwohl eine Transformation getrennte Lösungen verloren hat. Gerade Eigenschaften, die das eigene Skript nicht verwendet, bleiben leicht unbeachtet.",
+      "git": "Vergleiche und bezeichnete Werkzeugstände grenzen den Verlust ein. Regressionstests machen bekannte Fälle wiederholbar prüfbar.",
+      "consider": "Prüfen wir nur die Eigenschaften unserer heutigen Forschungsfrage oder auch den erhaltenen Bestand und andere Nutzungsweisen?",
+      "action": "Bestand vor und nach Verarbeitung vergleichen, gezielt lesen und die Korrektur im Release dokumentieren.",
+      "owner": "Lea, Jonas und fachliche Redaktion"
+    },
+    {
+      "id": "P03-R08",
+      "title": "Anschlussforschung",
+      "story": "P03-S03",
+      "meaning": "Wissenschaftliche Chance mit zusätzlichem Pflegebedarf",
+      "text": "Externe Forschende bringen Bücher, Korrekturen und neue Annotationen mit. Das erweitert das Korpus und seine Fragen; Prüfung und Betreuung bleiben Arbeit.",
+      "git": "Pull/Merge Requests und verbundene Repos machen Beiträge und Ableitungen nachvollziehbar.",
+      "consider": "Wer prüft und pflegt die Erweiterung? Sind gemeinsame Anker und Versionsbeziehungen vereinbart?",
+      "action": "Beiträge nach Kapazität kuratieren; externe Schichten oder Teilkorpora bewusst verbinden.",
+      "owner": "Projektleitung, Maintainer und Beitragende"
+    },
+    {
+      "id": "P03-R06",
+      "title": "Pflege",
+      "story": "P03-S04",
+      "meaning": "Hohe Bedeutung für Kontinuität",
+      "text": "Leas befristete Stelle endet. Ein zweiter Account verhindert nicht, dass Releasewissen oder Pflegezeit fehlen.",
+      "git": "Versionierte Anleitungen, Tests und klare Datenstände erleichtern Übergaben; die Arbeitszeit muss institutionell gesichert sein.",
+      "consider": "Kann eine andere Person prüfen, ableiten und einen Probe-Release erstellen?",
+      "action": "Übergabetest durchführen, Rollen und Umfang der Pflege benennen.",
+      "owner": "Lehrstuhl, technische Vertretung und Träger"
+    },
+    {
+      "id": "P03-R10",
+      "title": "Lokale Nutzung",
+      "story": "P03-S05",
+      "meaning": "Chance auf Reichweite und laufende Betriebspflicht",
+      "text": "Eine Anwendung kann neue Nutzungen eröffnen. Sie braucht über die Datenpublikation hinaus einen betreuten Dienst.",
+      "git": "Getrennte Softwareversionen halten Entwicklung und Datenstände zugeordnet. Hosting und Support entstehen daraus nicht automatisch.",
+      "consider": "Welcher Bedarf rechtfertigt welche Technik?",
+      "action": "TEI und Exporte verlässlich anbieten; zusätzliche Dienste nur mit Trägerschaft zusagen.",
+      "owner": "Projektleitung und Infrastrukturträger"
+    },
+    {
+      "id": "P03-R07",
+      "title": "Hostwechsel",
+      "story": "P03-S06",
+      "meaning": "Kontinuität braucht mehr als einen Mirror",
+      "text": "Git-Daten bleiben übertragbar, Plattformvorgänge und Automatisierung können fehlen.",
+      "git": "Git überträgt Objekte und Referenzen. Plattforminformationen und Verfahren müssen bewusst exportiert oder dokumentiert werden.",
+      "consider": "Was ist nach dem Wechsel noch auffindbar und ausführbar?",
+      "action": "Archivierte Releases und Neuaufbau auf anderer Infrastruktur prüfen.",
+      "owner": "Institutionelle Owner und Archivträger"
+    },
+    {
+      "id": "P03-R17",
+      "title": "Einstieg",
+      "story": "P03-S07",
+      "meaning": "Hohe Bedeutung für tatsächliche Nutzung",
+      "text": "Ein öffentliches Repo kann unverständlich bleiben: mehrere letzte Fassungen, große Pakete, lokale Pfade und unklare Annotationen verhindern die erste Untersuchung.",
+      "git": "README, Publikationskonzept, kleine Beispiele und benannte Releases lassen sich gemeinsam versionieren. Issues sammeln konkrete Rückmeldungen.",
+      "consider": "Kann jemand den maßgeblichen Bestand erkennen und ohne persönliche Einführung beginnen?",
+      "action": "Einstieg mit einer fremden Umgebung erproben und eine kleine vollständige Untersuchung mitliefern.",
+      "owner": "Lea und die fachliche Redaktion"
+    },
+    {
+      "id": "P03-R18",
+      "title": "Auszeichnung",
+      "story": "P03-S03",
+      "meaning": "Unterschiede können Analysen unbemerkt verzerren",
+      "text": "Teilbestände verwenden verschiedene Regeln oder automatisch erzeugte Annotationen ohne erkennbaren Prüfstatus. Ein gleiches Suchmuster erfasst dann nicht überall dasselbe.",
+      "git": "Versionierte Regeln, Tests und dokumentierte Transformationen erklären Unterschiede. Neue Annotationen können als bezeichnete Schichten verbunden werden.",
+      "consider": "Welche Praxis gilt in welchem Bestand? Welche Annotation ist automatisch und wie wurde sie geprüft?",
+      "action": "Auszeichnungspraktiken dokumentieren, Unterschiede prüfen und vereinheitlichte Exporte als Ableitungen kennzeichnen.",
+      "owner": "Modellverantwortliche und Annotationserstellende"
+    }
+  ],
+  "pipeline": [
+    "Quellen und interne Arbeit",
+    "Publikationskonzept festhalten",
+    "Daten prüfen und kuratieren",
+    "GitHub: Daten, Regeln, Beispiele",
+    "Release und Archiv",
+    "Lokal forschen und rückmelden"
+  ],
+  "qualitySteps": [
+    "XML wohlgeformt?",
+    "Schema eingehalten?",
+    "Bestand und Verweise erhalten?",
+    "Ableitung geprüft?",
+    "Stellen gegen Quelle gelesen?",
+    "Freigabe dokumentiert?"
+  ],
+  "citationSteps": [
+    {
+      "title": "Commit",
+      "text": "Exakte technische Revision. Kann ein ungeprüfter Zwischenstand sein."
+    },
+    {
+      "title": "Tag und Projekt-Release",
+      "text": "Benannter, nach Projektregeln geprüfter Stand mit Zusammensetzung und Änderungshinweisen."
+    },
+    {
+      "title": "Archivierte Version",
+      "text": "Erhaltenes Datenpaket mit Metadaten und Versionsidentifikator. Für Forschung die konkrete verwendete Fassung nennen."
+    }
+  ],
+  "annotationWays": [
+    {
+      "key": "inline",
+      "title": "Im Haupt-TEI",
+      "text": "Direkt im Basis-TEI, wenn die Redaktion das Modell fachlich erweitert. Die Änderung wird geprüft und mit einem neuen Basisrelease veröffentlicht."
+    },
+    {
+      "key": "standoff",
+      "title": "Eigene Annotationsschicht",
+      "text": "Unser Ausgangspunkt für zusätzliche automatische Annotation: eigene Version, konkreter Basisrelease, eindeutige Anker und dokumentierter Prüfstatus."
+    },
+    {
+      "key": "derived",
+      "title": "Abgeleitetes Forschungskorpus",
+      "text": "Für eine eigenständige neue Forschungsedition: eigenes Repo mit Herkunft, Auswahl und Transformationsnachweis. Diese Vertiefung braucht eigene Pflege."
+    }
+  ],
+  "careStates": [
+    {
+      "key": "active",
+      "title": "Aktiv pflegen",
+      "text": "Neue Beiträge prüfen und Releases erstellen. Benannte Menschen brauchen dafür Zeit."
+    },
+    {
+      "key": "conserve",
+      "title": "Konservierend pflegen",
+      "text": "Wichtige Korrekturen und Erhalt sichern; weitere Aufnahmen nach Kapazität entscheiden."
+    },
+    {
+      "key": "transfer",
+      "title": "Übertragen",
+      "text": "Pflege, Freigaben und Zugänge gehen nach überprüfter Übergabe an einen neuen Träger."
+    },
+    {
+      "key": "archive",
+      "title": "Abgeschlossen archivieren",
+      "text": "Keine laufende Integration zusagen. Erhaltene Releases und verständlicher Status erlauben weitere Nutzung."
+    }
+  ],
+  "handover": [
+    "Frische Arbeitsumgebung aufsetzen",
+    "Bezeichneten Daten- und Werkzeugstand öffnen",
+    "Prüfungen mit erwarteten Befunden ausführen",
+    "Dokumentierte Auswahl und Extraktion erzeugen",
+    "Nicht öffentlichen Probe-Release paketieren",
+    "Dateien, Prüfsummen, Zuständigkeit und Archivweg prüfen"
+  ],
+  "strategy": [
+    {
+      "title": "Früh eine klare Publikation planen",
+      "text": "Ein eigenes öffentliches Korpusrepo in einer GitHub-Projektorganisation enthält die freigegebenen Daten. Das Forschungsrepo bleibt für Quellen, Aufbereitung und eigene Studien zuständig."
+    },
+    {
+      "title": "Einen maßgeblichen Bestand anbieten",
+      "text": "data/tei enthält die Buchdateien nach einem dokumentierten Modell. README, Schema, Lizenz, Zitation und ein kleines Beispiel gehören dazu."
+    },
+    {
+      "title": "Jede Änderung prüfen",
+      "text": "Änderungen kommen über einen Pull Request. Automatische Prüfungen laufen bei jedem Vorschlag; eine zweite Person liest die betroffenen Stellen fachlich gegen."
+    },
+    {
+      "title": "Geprüfte Releases veröffentlichen",
+      "text": "Freigegebene Stände erhalten Tag, Release, Änderungsnotizen und ein unabhängiges Archivpaket mit Versionsnachweis."
+    },
+    {
+      "title": "Lokale Forschung ermöglichen",
+      "text": "Vollständige Downloads, kleine Einstiegsdaten, relative Pfade und dokumentierte Abhängigkeiten sind verbindlich. Eine API ist ein Zusatzangebot."
+    },
+    {
+      "title": "Forschungsbezüge festhalten",
+      "text": "Jede Untersuchung nennt Datenrelease, Auswahl, Extraktion und Skriptfassung. Ein Analysemanifest verbindet diese Angaben."
+    },
+    {
+      "title": "Neue Annotation getrennt versionieren",
+      "text": "Zusätzliche automatische Wortannotation wird zunächst als Stand-off-Schicht veröffentlicht. Sie nennt Basisrelease, Anker, Verfahren und Prüfstatus."
+    },
+    {
+      "title": "Verantwortung nach Projektende benennen",
+      "text": "Mindestens zwei autorisierte Zugangswege, eine gepflegte Anleitung und ein erreichbarer Kontakt sichern den Betrieb. Nach Förderende gilt begrenzte konservierende Pflege."
+    }
+  ],
+  "contributing": [
+    {
+      "title": "Eine Anfrage ist noch keine Übernahme",
+      "text": "Neue Bücher müssen zum Korpusprofil passen und frei wiederverwendbar sein. Quelle, Kontext und Rechtebedingungen werden genannt. Eine kurze Voranfrage klärt Umfang und verfügbare Reviewkapazität."
+    },
+    {
+      "title": "Prüfbarer Beitrag",
+      "text": "Der Beitrag benennt Daten- und Werkzeugstand, stabile IDs, Konvertierung und fachliche Prüfungen. Unsichere Grenzen oder Lösungen werden dokumentiert. Die Redaktion entscheidet über Aufnahme und Freigabe."
+    },
+    {
+      "title": "Zugänge und Arbeitsgeschichte",
+      "text": "Personenbezogene Accounts erhalten passende Rechte. Keine Zugangsdaten, privaten Mitteilungen oder ungeklärten Fremdmaterialien in Git aufnehmen. Öffentliche Historie wird bewusst freigegeben; Branches sind keine Vertraulichkeitsgrenze."
+    },
+    {
+      "title": "Begrenzte Zusagen",
+      "text": "Fehlerberichte, geprüfte Beiträge und eigenständige kompatible Teilkorpora sind unterschiedliche Beteiligungsformen. Die Pflegezusage und Zuständigkeit sind sichtbar; aus Offenheit folgt keine unbegrenzte Integrationspflicht."
+    }
+  ],
+  "inventory": [
+    {
+      "id": "R3-01",
+      "situation": "Forschungsanalysen laufen auf wechselndem `main`",
+      "effect": "Hoch: Ergebnisse nicht eindeutig wiederholbar",
+      "git": "Commit-/Releasefixierung",
+      "measure": "Version-DOI, Manifest, Zitierregel"
+    },
+    {
+      "id": "R3-02",
+      "situation": "Neues Material verändert Korpuszusammensetzung",
+      "effect": "Hoch: frühere Häufigkeitsbefunde verschieben sich",
+      "git": "Releases, Änderungen und Bestand nachvollziehbar",
+      "measure": "Änderungen und Auswahlbias dokumentieren"
+    },
+    {
+      "id": "R3-03",
+      "situation": "Automatisierte Segmentierung trifft falsche Rätselgrenzen",
+      "effect": "Hoch: systematische Fehler in Distant Reading",
+      "git": "versionierte Importverfahren, Tests",
+      "measure": "fachliche Stichproben, Korrekturreleases"
+    },
+    {
+      "id": "R3-04",
+      "situation": "TEI-Schema wird inkonsistent verwendet",
+      "effect": "Hoch: Vergleichbarkeit/Verarbeitung leiden",
+      "git": "automatisierte Checks",
+      "measure": "ODD/RNG, Schematron, Globaltests"
+    },
+    {
+      "id": "R3-05",
+      "situation": "Private Publikationshistorie wird öffentlich",
+      "effect": "Mittel bis hoch: ungewollte Veröffentlichung früherer Inhalte",
+      "git": "Git-Historie ist lesbar",
+      "measure": "historienbewusste Freigabe / neues Publikationsrepo"
+    },
+    {
+      "id": "R3-06",
+      "situation": "WiMi scheidet nach Förderung aus",
+      "effect": "Hoch: Releasewissen/Accounts verwaisen",
+      "git": "Git konserviert Dateien, aber nicht implizites Wissen",
+      "measure": "Maintenance-Handbuch, mehrere Owner, Übergabetest"
+    },
+    {
+      "id": "R3-07",
+      "situation": "Uni- oder externer Git-Host ändert sich",
+      "effect": "Mittel bis hoch: Links/CI/Plattformdaten verlieren Wirkung",
+      "git": "Git-Objekte grundsätzlich portabel",
+      "measure": "externe Archivierung, Exporttest, Migrationsplan"
+    },
+    {
+      "id": "R3-08",
+      "situation": "Externe Beiträge nehmen zu",
+      "effect": "Chance + Risiko: Wachstum vs. Prüfkosten",
+      "git": "Pull/Merge Requests, Forks",
+      "measure": "Annahmeregeln, Reviewrollen, Beitragslimit"
+    },
+    {
+      "id": "R3-09",
+      "situation": "Neue Annotationen führen zu Modelländerungen",
+      "effect": "Mittel bis hoch: komplexere Validierung/Versionslogik",
+      "git": "Branchtests, eigenständige Repos",
+      "measure": "Basiskorpus stabil, Annotationen getrennt oder bewusst integrieren"
+    },
+    {
+      "id": "R3-10",
+      "situation": "Python-API/Frontend werden begonnen",
+      "effect": "Chance + Risiko: größere Nutzung vs. laufender Support",
+      "git": "getrennte Softwareversionierung",
+      "measure": "Bedarfsnachweis, Pflegefinanzierung, optionales Angebot"
+    },
+    {
+      "id": "R3-11",
+      "situation": "Commitgeschichte wird zur alleinigen Dokumentation",
+      "effect": "Mittel: Nutzende verstehen wichtige Revisionen nicht",
+      "git": "Commitnachrichten helfen intern",
+      "measure": "wissenschaftlicher Changelog und Release Notes"
+    },
+    {
+      "id": "R3-12",
+      "situation": "XSLT-Extraktion wird verändert",
+      "effect": "Hoch für Analysen: gleicher TEI-Stand, anderes Textkorpus",
+      "git": "versionierte Transformationsskripte",
+      "measure": "Toolversion und Parameter im Analysemanifest"
+    },
+    {
+      "id": "R3-13",
+      "situation": "Unterschiedliche Quellen dominieren bestimmte Epochen",
+      "effect": "Hoch: Scheinkonjunkturen statt Geschichte",
+      "git": "Git dokumentiert Bestand, verhindert Bias nicht",
+      "measure": "Auswahlkonzept und quellenkritische Hinweise"
+    },
+    {
+      "id": "R3-14",
+      "situation": "Einziges persönliches Administratorkonto",
+      "effect": "Hoch: verlorene Zugriffsmöglichkeit",
+      "git": "Plattformrollen verfügbar",
+      "measure": "institutionelle Organisation und Nachfolge"
+    },
+    {
+      "id": "R3-15",
+      "situation": "Keine dauerhafte Archivierung",
+      "effect": "Hoch: Releases/Links abhängig von Git-Host",
+      "git": "Tags allein nicht hinreichend",
+      "measure": "archivierte Version-DOIs und Erhaltungsprüfung"
+    },
+    {
+      "id": "R3-16",
+      "situation": "Daten-/Werkzeugstände nicht gemeinsam referenziert",
+      "effect": "Hoch: Distanzanalysen nicht reproduzierbar",
+      "git": "Git-Hashes pro Repo möglich",
+      "measure": "zusammengesetztes Analyse-/Release-Manifest"
+    }
+  ],
+  "uses": [
+    {
+      "title": "Im Seminar untersuchen",
+      "text": "Studierende prüfen Hypothesen zu Versform, Formeln und Lösungen. Ein kleiner Beispieldatensatz führt zur ersten lokalen Analyse."
+    },
+    {
+      "title": "Reime und Lösungen vergleichen",
+      "text": "Zwei gereimte Verse, eine Lösung als Vers oder ein ausgespartes Reimwort: unterschiedliche Formen brauchen nachvollziehbare Auszeichnung."
+    },
+    {
+      "title": "Modelle prüfen und nachtrainieren",
+      "text": "Ein Benchmark oder ein Konferenzbeitrag kann auf dem Korpus aufbauen. Datenfassung, Versuchseingaben und Verfahren müssen unterscheidbar bleiben."
+    }
+  ],
+  "researchPath": [
+    {
+      "title": "Release wählen",
+      "text": "Bezeichneter Datenbestand und bekannte Grenzen."
+    },
+    {
+      "title": "Auswahl festhalten",
+      "text": "Welche Rätsel, Lösungsformen und Schichten?"
+    },
+    {
+      "title": "Lokal untersuchen",
+      "text": "Dokumentierte Extraktion, Skript und Umgebung."
+    },
+    {
+      "title": "Befund teilen",
+      "text": "Ergebnis mit Daten- und Verfahrensnachweis."
+    }
+  ],
+  "publication": [
+    {
+      "title": "Für wen?",
+      "text": "Studierende, Korpusforschende und Modellgruppen sollen selbstständig von einem Download zu einer nachvollziehbaren Untersuchung gelangen."
+    },
+    {
+      "title": "Welcher Bestand?",
+      "text": "data/tei enthält die maßgeblichen Buchdateien. Lösungen sind mit Rätselkennungen verbunden. Automatische Annotationen liegen getrennt und nennen Verfahren und Prüfstatus."
+    },
+    {
+      "title": "Wie einsteigen?",
+      "text": "README erklärt Bestand, Lizenz, Struktur und ersten Aufruf. Kleine Beispiele, Teilpakete und vollständige Daten sind ohne Uni-Konto lokal nutzbar."
+    },
+    {
+      "title": "Wie freigeben?",
+      "text": "Prüfungen, Bestandsvergleich und gezielte fachliche Lektüre gehen dem Release voraus. Tag, Releasenotizen und Archivpaket bezeichnen die Veröffentlichung."
+    },
+    {
+      "title": "Wie verbessern?",
+      "text": "Fehler werden als Issues gemeldet, Korrekturen geprüft und in neuen Releases beschrieben. Ältere Forschungsstände bleiben referenzierbar; ihre Mängel werden nicht zur Pflicht künftiger Fassungen."
+    }
+  ],
+  "pattern": [
+    {
+      "id": "P03-M01",
+      "title": "Früh eine klare Publikation planen",
+      "text": "Ein eigenes öffentliches Korpusrepo in einer GitHub-Projektorganisation enthält die freigegebenen Daten. Das Forschungsrepo bleibt für Quellen, Aufbereitung und eigene Studien zuständig.",
+      "example": "Vor dem ersten Workshop stehen Zielgruppe, Datenumfang, Ordnerstruktur, Prüfung und Releaseweg im versionierten Publikationskonzept.",
+      "tip": "Ein separates Publikationsrepo verhindert, dass interne Arbeitsstände beiläufig mitveröffentlicht werden."
+    },
+    {
+      "id": "P03-M02",
+      "title": "Einen maßgeblichen Bestand anbieten",
+      "text": "data/tei enthält die Buchdateien nach einem dokumentierten Modell. README, Schema, Lizenz, Zitation und ein kleines Beispiel gehören dazu.",
+      "example": "Eine Nutzerin findet in README: „Für Analysen verwenden Sie data/tei dieses Releases. Beispiele stehen in examples/.“",
+      "tip": "Nehmen Sie die Struktur als Ausgangspunkt. Eigene Ergänzungen bekommen eine erklärte Funktion."
+    },
+    {
+      "id": "P03-M03",
+      "title": "Jede Änderung prüfen",
+      "text": "Änderungen kommen über einen Pull Request. Automatische Prüfungen laufen bei jedem Vorschlag; eine zweite Person liest die betroffenen Stellen fachlich gegen.",
+      "example": "Ein Konverter ändert zehn Bücher: Schema und Verweise prüfen, Bestandsänderungen vergleichen und mindestens die betroffenen Strukturtypen gegenlesen.",
+      "tip": "Ein laufendes Skript ist kein Qualitätsnachweis. Prüfumfang und fachliche Freigabe werden festgehalten."
+    },
+    {
+      "id": "P03-M04",
+      "title": "Geprüfte Releases veröffentlichen",
+      "text": "Freigegebene Stände erhalten Tag, Release, Änderungsnotizen und ein unabhängiges Archivpaket mit Versionsnachweis.",
+      "example": "v1.1 ergänzt Sammlungen und korrigiert Lösungen. CHANGELOG nennt die Änderungen; v1.0 bleibt als früherer Forschungsstand erhalten.",
+      "tip": "Bereits veröffentlichte Fassungen nicht stillschweigend überschreiben. Fehler in einer neuen Version korrigieren."
+    },
+    {
+      "id": "P03-M05",
+      "title": "Lokale Forschung ermöglichen",
+      "text": "Vollständige Downloads, kleine Einstiegsdaten, relative Pfade und dokumentierte Abhängigkeiten sind verbindlich. Eine API ist ein Zusatzangebot.",
+      "example": "Ein frisch entpacktes Beispiel liefert mit einem dokumentierten Aufruf das angegebene Ergebnis – ohne Uni-Konto oder Netzlaufwerk.",
+      "tip": "Prüfen Sie den Einstieg auf einem anderen Rechner. Dokumentieren Sie die tatsächlich getestete Umgebung."
+    },
+    {
+      "id": "P03-M06",
+      "title": "Forschungsbezüge festhalten",
+      "text": "Jede Untersuchung nennt Datenrelease, Auswahl, Extraktion und Skriptfassung. Ein Analysemanifest verbindet diese Angaben.",
+      "example": "Die Reimstudie verwendet Release v1.0, vier Rätselkennungen und den bezeichneten Export ohne Lösungen.",
+      "tip": "Speichern Sie den Nachweis zusammen mit der Untersuchung, nicht nur als Link zum jeweils aktuellen Repo."
+    },
+    {
+      "id": "P03-M07",
+      "title": "Neue Annotation getrennt versionieren",
+      "text": "Zusätzliche automatische Wortannotation wird zunächst als Stand-off-Schicht veröffentlicht. Sie nennt Basisrelease, Anker, Verfahren und Prüfstatus.",
+      "example": "Eine Wortartenannotation verweist auf v1.0 und die dortige Tokenisierung. Nutzende können Basisdaten ohne diese Schicht beziehen.",
+      "tip": "Eine fachlich beschlossene Änderung am Basismodell ist möglich; sie erhält einen neuen Basisrelease. Zusätzliche Forschung bleibt zunächst getrennt."
+    },
+    {
+      "id": "P03-M08",
+      "title": "Verantwortung nach Projektende benennen",
+      "text": "Mindestens zwei autorisierte Zugangswege, eine gepflegte Anleitung und ein erreichbarer Kontakt sichern den Betrieb. Nach Förderende gilt begrenzte konservierende Pflege.",
+      "example": "README nennt, wer wichtige Korrekturen prüft und dass neue Bücher nach verfügbarer Kapazität aufgenommen werden.",
+      "tip": "Erproben Sie Nutzung und Releasevorbereitung vor dem Ausscheiden der Hauptbearbeiterin."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "case": "P01",
+  "label": "Fall 01 · Anna",
+  "project": "anfang",
+  "stories": "mira",
+  "materialTarget": "#material",
+  "strategy": [
+    "Mit einem begrenzten TEI-Modell und vorbereiteter oXygen-/Git-Umgebung beginnen; Beratung und Lizenz klären.",
+    "Änderungen vergleichen, als Commit festhalten und regelmäßig zum privaten Arbeitsrepo übertragen; den Rückweg testen.",
+    "Geprüfte Editionsdaten in einem eigenen Publikationsrepo freigeben; eine kleine Website und eine Archivfassung nach Bedarf ergänzen."
+  ],
+  "storySelectors": [
+    "#mira",
+    "#repo-umzug",
+    "#publikation"
+  ],
+  "architectureSelectors": [
+    "#architecture-text"
+  ],
+  "hideOriginal": [
+    "persona",
+    "strategy",
+    "graph",
+    "decisions",
+    "architecture",
+    "risks",
+    "stories",
+    "handbook",
+    "manual"
+  ],
+  "rules": [
+    [
+      "Arbeiten und prüfen",
+      "Änderungen in überschaubaren Schritten bearbeiten, vor dem Übertragen vergleichen und mit den vereinbarten Prüfregeln kontrollieren."
+    ],
+    [
+      "Bezeichnen und dokumentieren",
+      "Maßgebliche Daten, Regeln, Zuständigkeiten und zusammengehörende Ausgabestände nachvollziehbar benennen."
+    ],
+    [
+      "Zugriff und Weiterarbeit",
+      "Nur berechtigten Personen Zugriff geben; Beiträge, Freigaben, Rollenwechsel, Sicherung und Wiederherstellung entsprechend dem Projektumfang regeln."
+    ]
+  ],
+  "media": [
+    {
+      "file": "assets/anna-markdown.webp",
+      "type": "KI-generierte Illustration",
+      "label": "Fiktive Szene · KI-generierte Illustration",
+      "provenance": "#nachweise",
+      "date": "Siehe ursprüngliche Bildnachweise; nicht nachträglich ergänzt."
+    },
+    {
+      "file": "assets/anna-mira.webp",
+      "type": "KI-generierte Illustration",
+      "label": "Fiktive Szene · KI-generierte Illustration",
+      "provenance": "#nachweise",
+      "date": "Siehe ursprüngliche Bildnachweise; nicht nachträglich ergänzt."
+    },
+    {
+      "file": "assets/anna-schreibtisch.webp",
+      "type": "KI-generierte Illustration",
+      "label": "Fiktive Szene · KI-generierte Illustration",
+      "provenance": "#nachweise",
+      "date": "Siehe ursprüngliche Bildnachweise; nicht nachträglich ergänzt."
+    },
+    {
+      "file": "assets/anna-tei.webp",
+      "type": "KI-generierte Illustration",
+      "label": "Fiktive Szene · KI-generierte Illustration",
+      "provenance": "#nachweise",
+      "date": "Siehe ursprüngliche Bildnachweise; nicht nachträglich ergänzt."
+    }
+  ],
+  "ratingBasis": "Redaktionelle Einordnung für den Modellfall vor zusätzlichen Maßnahmen. Plausibilität ist keine gemessene Wahrscheinlichkeit; Wirkung meint bei Chancen den Nutzen, bei Risiken eine unerwünschte Folge. Ungeklärte Fälle bleiben außerhalb der Quadranten. Annas mittlere Werte werden in der kompakten Ansicht links beziehungsweise unten gebündelt; die genaue Einordnung steht in der Tabelle und in ihrer Detailmatrix.",
+  "ratings": [],
+  "riskTexts": {},
+  "materials": [
+    {
+      "kind": "persona",
+      "title": "Projektkarte",
+      "description": "Persona, Vorhaben und Ressourcen",
+      "pdf": "familie-projekt.pdf"
+    },
+    {
+      "kind": "family-strategy",
+      "title": "Musterstrategie",
+      "description": "Die empfohlene Ausgangslösung",
+      "pdf": "familie-strategie.pdf"
+    },
+    {
+      "kind": "graph",
+      "title": "Entscheidungsgraph",
+      "description": "Wege, Abhängigkeiten und Zusammenführungen",
+      "format": "A3",
+      "pdf": "familie-entscheidungen.pdf"
+    },
+    {
+      "kind": "family-architecture",
+      "title": "Architektur",
+      "description": "Arbeitsorte, Datenflüsse und Ausgaben",
+      "pdf": "familie-architektur.pdf"
+    },
+    {
+      "kind": "family-risks",
+      "title": "Chancen und Risiken",
+      "description": "Einordnungen, Maßnahmen und Zuständigkeiten",
+      "pdf": "familie-risiken.pdf"
+    },
+    {
+      "kind": "family-stories",
+      "title": "Situationen · Lesefassung",
+      "description": "Die Fallgeschichten zum Nachlesen",
+      "pdf": "familie-situationen.pdf"
+    },
+    {
+      "kind": "workflow",
+      "title": "Handbuch und Arbeitsregeln",
+      "description": "Verbindliche Praxis im passenden Projektumfang",
+      "pdf": "familie-regeln.pdf"
+    }
+  ],
+  "riskTarget": ".matrix-pair",
+  "knowledge": [
+    {
+      "selector": ".workflow>div",
+      "text": "Vergleichen Sie vor dem nächsten Schritt den gespeicherten Stand mit Ihrer Änderung. Halten Sie fest, welche Prüfung erfolgt ist und wer eine Freigabe übernehmen darf."
+    }
+  ]
+}

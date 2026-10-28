@@ -1,0 +1,1529 @@
+{
+  "version": "0.4.1",
+  "id": "P02",
+  "date": "2026-10-21",
+  "persona": {
+    "title": "A work for generations",
+    "subtitle": "Many jobs, one edition, and no one stays forever.",
+    "narrative": [
+      "Johann Friedrich Albrecht wrote about almost everything that moved his time. His letters, works and notes are now in different collections. Many texts are hardly read anymore; without careful development their connections remain invisible.",
+      "An academic association wants to make this scattered work accessible as a historical-critical complete edition. The participants know that they will not complete the project alone. Other people will have to understand, examine and continue their decisions.",
+      "A publisher takes over the elaborate book volumes. A later open digital provision is agreed, their objects and conditions have to be clearly distinguished. At the same time index, comments and cross references grow with each volume. What was initially manageable becomes a network.",
+      "This is why the edition also preserves its common working knowledge. A well-kept manual lays down rules, examples and responsibilities – so that a staff change does not force a new start every time."
+    ],
+    "question": "How do we get scientific connection without blocking necessary change?",
+    "facts": {
+      "Vorhaben": "Works, letters and estates of a fictional scholar",
+      "Zeithorizont": "Decades and several project generations",
+      "Arbeitsweise": "Federated groups with independent band editors",
+      "Publikation": "Publishing volumes and time-differentiated digital approvals",
+      "Engpass": "Coordination, common data and long-term responsibility"
+    }
+  },
+  "roles": [
+    {
+      "id": "P02-A01",
+      "name": "Nora Seidel",
+      "role": "Bandherausgeberin",
+      "text": "She wants to present the tradition appropriately. A common schema should enable her scientific decision, not anticipate it. She releases technical manual rules."
+    },
+    {
+      "id": "P02-A02",
+      "name": "Samir Demir",
+      "role": "Scientific and technical editors",
+      "text": "He combines text model, index, exams and editions. A small local change can affect many other volumes. Together with his technical representation he maintains manuals, work profiles and tests."
+    },
+    {
+      "id": "P02-A03",
+      "name": "Eva Brandt",
+      "role": "Gesamtkoordination",
+      "text": "It needs reliable handovers, achievable decision-makers and financed time for rework and change. Introduction and maintenance of rules are firmly planned tasks."
+    },
+    {
+      "id": "P02-A04",
+      "name": "An external assessor",
+      "role": "Begutachtung",
+      "text": "It needs a clearly identified, legible test bench and a confidential back channel. Git knowledge is not a prerequisite."
+    },
+    {
+      "id": "P02-A05",
+      "name": "Clara Winter",
+      "role": "Verlagslektorat",
+      "text": "It organises editorial and book production. Reliable taxes and the economic viability of the agreed offer are legitimate interests."
+    }
+  ],
+  "stories": [
+    {
+      "id": "P02-S01",
+      "title": "We can describe this in more detail.",
+      "teaser": "A better interpretation changes more than a day in the text.",
+      "scene": [
+        "Nora comes across a letter post that insufficiently captures the previous variant model. She wants to change the markup. Not for the pleasure of conversion: The new distinction makes her scientific argumentation more precise.",
+        "Samir opens the preview. The new proposal also concerns register references, web presentation and sentence. Previous volumes have been published with a different model version. The question is not only whether Nora is right, but how her improvement can be included in the overall edition.",
+        "The Commission has developed a limited experiment. The team compares change only for future volumes, retrospective migration and parallel model versions. Each variant preserves something and creates new work.",
+        "The decided model change is documented in ODD, examples and manual with scope. Old band stands remain comprehensible with their then rules."
+      ],
+      "dialog": "\"The schema must not decide what I can say scientifically.\" — \"All right, but we also need to know how to spend this statement in ten years.\"",
+      "git": "A test branch keeps the new modeling trialable separately. Versioned data, schemas and migration scripts make differences understandable. A Git tag designates a specific version; a tape release also requires the appropriate index and software levels.",
+      "consider": "Which old stocks are affected? Who checks the semantic correctness of a migration? Is a new schema sufficient or does the edition report have to change?",
+      "action": "Choose a representative test passage, document the impact and care costs, examine the technical and technical aspects and keep the decision with its scope.",
+      "role": "Bandredaktion, scientific-technical editorial and authorized edition commission",
+      "question": "Who finances the improvement, including work on earlier volumes?",
+      "links": [
+        "P02-D03",
+        "P02-R01",
+        "P02-G03"
+      ],
+      "image": {
+        "src": "assets/quellen.webp",
+        "alt": "Illustration: Two researchers compare a letter with an open historical volume.",
+        "caption": "A new interpretation begins at a concrete source."
+      }
+    },
+    {
+      "id": "P02-S02",
+      "title": "The report's here.",
+      "teaser": "A fixed version allows a judgment. It does not end the discussion.",
+      "scene": [
+        "The test bench has been sent out, the publisher has provided a production window. Then the external expert opinion is received: A central text decision is not yet sufficiently substantiated.",
+        "Nora takes a hint, contradicts a second and revises a third section. Eva organizes who decides on the answer and what changes need to be re-evaluated. The reviewer should not have to learn the Git system or see the entire internal work history.",
+        "The editors provide a readable HTML or PDF extract with precise stand identification. Feedback remains in the agreed confidential area. The result is documented well-founded; a technical examination alone does not decide any scientific issue.",
+        "The manual determines which test bench and which standard version belong to the report. Confidential feedback is in the separate review area; professional answers are documented on a reasoned basis."
+      ],
+      "dialog": "\"We can't just put in every criticism.\" — \"No. But we have to be able to show how we tested it.\"",
+      "git": "A clearly marked test bench and the comparison to the revision combine feedback and editing. Protected test packages can be generated from versioned sources.",
+      "consider": "Who is allowed to read the report? What anonymity is agreed? What change does a re-examination require? Sectors are not a reliable separation of reading permissions.",
+      "action": "Check stand, back channel, competent authority and deal with revisions; coordinate schedules with the publisher.",
+      "role": "Expert person, band editor, general editor and publisher's editor",
+      "question": "Who carries additional review time and decides on remaining dissent?",
+      "links": [
+        "P02-R02",
+        "P02-G02"
+      ]
+    },
+    {
+      "id": "P02-S03",
+      "title": "The data would be ideal for our research",
+      "teaser": "Research interest meets an already agreed publication strategy.",
+      "scene": [
+        "A research team wants to use commented letter data for a new network analysis. The collaboration promises insights and makes the edition visible early, but the volume in question is not yet open.",
+        "Clara recalls that the publisher invests in editing, set and production. Delayed digital delivery was part of the agreement. Eva wants to enable cooperation without passing any promises.",
+        "The team separates metadata, text, comment, images and publishing PDF. What use is already allowed, which one needs an additional agreement? A deadline alone does not answer this question. The case does not require a specific contract solution.",
+        "The rights/publication office uses the release procedure from the manual. Research on released letter data and a later access to the internal history of creation are different requests."
+      ],
+      "dialog": "\"The data is something different from the book.\" — \"Are they? We need to know what we actually agreed with each other. \"",
+      "git": "After an agreed approval, a curated data package can be accurately identified and published in its own public repo. Private history and confidential feedback will not be exported.",
+      "consider": "Which items does the contract include? Which third-party materials have their own terms and conditions? What is only accessible, what can also be reusable? Who may make a binding decision?",
+      "action": "Check concrete agreements, separate types of data, negotiate additional access if necessary and document each approval in a comprehensible manner.",
+      "role": "Project management, competent legal advice, authorised bodies and publishing house",
+      "question": "What support does research and a sustainable publication allow?",
+      "links": [
+        "P02-D04",
+        "P02-R03",
+        "P02-G04"
+      ],
+      "image": {
+        "src": "assets/redaktion.webp",
+        "alt": "Illustration: Editor, editor and colleagues discuss correction flags and a book volume.",
+        "caption": "Research interest, book production and agreements belong to one table."
+      }
+    },
+    {
+      "id": "P02-S04",
+      "title": "Volume 7, please repeat",
+      "teaser": "In 2055, the old host disappeared.",
+      "scene": [
+        "A new working group wants to reprint an older volume. The database at that time is no longer in operation, the original Git host no longer exists. A book book book and a data package are preserved.",
+        "The package contains a manifest: it lists text status, schema, ZX Q1 snapshot and output program. The group checks whether these components actually exist. A list alone does not replace the files.",
+        "Where the previous edition can be reconstructed, the team documents the way. Where something is missing, it marks the gap. A new edition receives its own responsible version. The previous publication will not be reproduced afterwards as unchanged.",
+        "In the archive package, the group also finds the then manual and profile description. It is only with this that it becomes clear which tests and handovers belonged to this bandstand."
+      ],
+      "dialog": "\"We have the texts. \" — \"Good. But do we also have the index to which these texts refer?\"",
+      "git": "A transferable version history preserves file versions and its relationships. It can facilitate restart, but does not replace DB snapshots, context, rights decisions, and available transformations.",
+      "consider": "What is actually received? Can output and references be tested? Which platform data have been taken over separately? Who can release the new issue?",
+      "action": "Check archive packages for completeness, regularly test restoration, document missing components and institutionally secure transfers.",
+      "role": "Infrastructure providers, archive services and new scientific editors",
+      "question": "What recurring tests would have made the gaps visible earlier?",
+      "links": [
+        "P02-D05",
+        "P02-R04",
+        "P02-G03"
+      ]
+    },
+    {
+      "id": "P02-S05",
+      "title": "The typesetting proof was already tested",
+      "teaser": "A popular new surface facilitates commenting. Samir discovers how her return journey changes already tested work again.",
+      "scene": [
+        "Sometimes a distance is not right, sometimes a line, sometimes a reference to the register. At first every finding seems small for itself. Together they stall the book production. The publishing house paid for an advertising campaign; just in Albrecht's anniversary year a band threatens to fail again. Clara blames the typesetting service provider.",
+        "This contradicts: the delivered data looks sloppy. Countless little things would even be tacitly improved in typesetting. \"Can no one explain to the editors what a non-breaking space is?",
+        "The editors are outraged. They have carefully marked distances and stroke types and checked the relevant places immediately afterwards. Nora remembers exactly a correction that is wrong again in the flag. From the editor's point of view, the error must have come into the typesetting.",
+        "Samir listens to the dispute. He promises to look at the history of the affected places: Maybe it is possible to find out when and how the mistakes have come back.",
+        "Samir explains how he started: \"I have put together all the late corrected passages. Then I looked: What were the last changes before the correction? And what are the arrangements between the first occurrence of the error and its remedy? What do these paths have in common?",
+        "In his selection the associated timestamps are mostly late at night. He shows some entries. \"And anyway: The closer the deadline moves, the further the entries reach into the night. At first I thought we had a concentration problem and maybe should change something about our biorhythms.",
+        "\"But it wasn't that, he continues. \"The late timestamps did not explain the cause. I had to look at the places themselves and their prehistory in more detail.\" With git blame he finds an introduction to the associated change; with git show and the comparison of two versions he reads back further. Character, annotation and test deduction he looks together.",
+        "The editorial staff remembers correctly: the special distances and the correct line were already stored correctly. Samir changes between this near reading and the comparison of many cases. In the overview he finds a common way of editing. In the individual versions he sees what is lost on this way.",
+        "For some time now there has been a new interface for comments that need to be compared with the index. On the left is the readable comment, on the right there are matching person, location and work records. The editors can compare hits and select the correct link without constantly switching between XML files and register lists.",
+        "Everyone confirms the profit. The work is easier to do, confusion can be resolved immediately. \"We definitely want to keep this surface,\" says Nora. Nobody wants to go back to the laborious earlier way of working.",
+        "In this successful new way, Samir finds the cause. When he is involved in the project, comments are transferred to the working view and then played back. The back import simplifies certain special distances and strokes. Furthermore, the connection does not carry existing date distinctions without loss: it reconstructs them afterwards with the number recognition from the returned text.",
+        "There are two things that remain invisible in the comfortable surface: A carefully set range dash is changed – and the markup recalculated from it now says something different. The surface is a real help. Your way back needs a repair.",
+        "The remaining comments will continue to be processed in the previous XML tool. Only the comments with register matching take the path through the new interface. Therefore, the errors do not appear everywhere.",
+        "Even under these comments, many remain inconspicuous: if you do not contain any of the affected distances or strokes, you can pass the problematic return route without a visible accident. Only the meeting of processing path and relevant characters triggers the described chain.",
+        "Samir can now explain the many individual findings. \"Take a closer look at your characters\" the editors had done long ago. The markers had been checked – before the later step, which simplified them again.",
+        "A small example shows the sequence. The commentary says \"1848–1849, excellent as a contiguous period. An automated step detects such time data and inserts an annotation layer for the index. Project-internal number recognition also uses the ZX Q1. After the return journey there is \"1848-1849: When the layer is rebuilt, the rule now generates two individual annual nominations. The previous period markup will not be received.",
+        "The rule creates formally permitted, but differently assigned data. Register entries and the web finder are derived from it. At the same time lost protected distances can change the change. In the flag someone finds the wrong line and repairs it. A index already released for the sentence no longer fits the corrected text and output level.",
+        "Not only the flag is affected. Also the separate web finder, register extracts and already prepared register volumes must be checked for the affected changes and possibly re-created. Stable IDs prevent some reference shift, but no wrong temporal annotation or an outdated page reference.",
+        "The dependence lies here in the agreed project rules and output routes. Neither an ordinary line nor TEI leads on its own to this interpretation. This is exactly what Samir needs to check.",
+        "It is particularly clear from a comment by Luke. The wrong line had already been discovered and repaired. The correction was returned to the relevant data set; the index was re-examined and released for the set.",
+        "Then Luke reads the next flag and discovers a real mistake of his own: He confused the recipient of a letter. He opens the comment in the familiar new surface, corrects the recipient and selects the appropriate person entry from the index. A correct and necessary correction.",
+        "After playing back, the range dash, which has been repaired before, has once again become a simple \"-\" . Lukas has not touched the relevant time. Nevertheless, the connection recalculates its annotation. Time period and register assignment are again not correct; the cascade reaches sentence, web finder and register output again.",
+        "\"But I only corrected the receiver!\" says Lukas. This is exactly what makes the case for Samir so instructive. Not the new technical correction was wrong. It triggered the same wrong way back again. The seemingly careless causer unintentionally reproduced the mechanism.",
+        "Samir distinguishes the lossy route of transmission, the unfavorable sequence of examination and subsequent change, the passing on into dependent expenditures and the repeated repair of only visible symptoms. Such weaknesses can interact; not every error has the same cause.",
+        "The immediate countermeasure lies after the reimport: The editorial team checks signs, annotation and output there. This additional control is immediately recorded in the manual. Parallel to this, the incorrect connection of the comment tool is revised – so that the tested content will survive the whole way unchanged in the future.",
+        "Technical corrections go back to the relevant data stock. From this, affected annotations and issues are re-derived in a controlled manner. A release state documents text, index, rules and output path together. Silent sentence repairs without return must not become permanent second data stock.",
+        "The technical cause, the quick protection and the revision of the tool are discussed. Samir comes back to his entry: \"Nevertheless: Should we perhaps talk about our working hours? Before the deadline it was quite late. And we could regularly track how long corrections remain.",
+        "\"I'd rather work at night and do something else in the afternoon. I don't want to be measured by target times for comments. After all, we're not in the software industry.\"",
+        "Eva nods: \"When you work best is your business. If we need such nights before each release, we should talk about dates and support. That's my responsibility.\"",
+        "\"All right. Our agreement describes troubleshooting. Is this how regular evaluation is part of it? \" Samir shakes his head. \"No. And I shouldn't have made a concentration story out of the nocturnal entries. Before we make a routine out of it, we have to clarify questions and limits together. \" His timestamps are not proof of working hours.",
+        "The employee agreement was explained at the start. It regulates contributions, accesses and the protection of the work history. Samir's new evaluation is not allowed at all. The team delimits the technical order: Which transfer changes the data? A regular observation of daily times does not belong to it.",
+        "It is also recommended to develop the standards for progress and quality together. In software development, such a common understanding is common in Scrum, for example: The team checks its workflow and agrees on improvements. For the edition, reliable handovers, expertly tested processing levels and less repeated post-corrections could count. Which measurement values fit this can be derived from the tasks of the edition; individual target times for scientific comments do not follow from this.",
+        "A long-lasting project will have to change its processes further. Together clarified purposes, accesses and limits facilitate these adjustments. Thus, Samir's precise insights can enable both technical improvements as well as a factual discussion about planning and relief. Legal and ethical limits remain binding."
+      ],
+      "dialog": "\"At first I thought we had a concentration problem. \" — Later: \"Nevertheless, should we perhaps talk about our working hours? \"",
+      "git": "Close reading of individual stands with git blame, git show and comparisons reconstructs the change of a position. Analyses of many places show the accumulation after a selective register reconciliation. Together they allow precise monitoring; the technical assignment of changes is not a proof of guilt.",
+      "consider": "The employee agreement regulates ordinary troubleshooting, rights and protection. New more comprehensive evaluations require a separate clarification. Scientific time allocation remains independent within the agreed framework; storage times are not proof of working hours.",
+      "action": "Release the transition test H06 immediately, revise the comment tool in parallel and decrease the return journey with regression test. Then recheck the manual rule. Clear new process analyses according to employee agreement and analysis sheet in advance.",
+      "role": "Editorial, staff and, where appropriate, their representations, coordination, technical and legally responsible bodies",
+      "question": "What rules, resources and common standards do the project need to ensure that process management and discussion about load can take place fairly?",
+      "links": [
+        "P02-D06",
+        "P02-R05",
+        "P02-G05"
+      ],
+      "sections": [
+        {
+          "title": "\"We've already corrected that!\"",
+          "paragraphs": [
+            "Sometimes a distance is not right, sometimes a line, sometimes a reference to the register. At first every finding seems small for itself. Together they stall the book production. The publishing house paid for an advertising campaign; just in Albrecht's anniversary year a band threatens to fail again. Clara blames the typesetting service provider.",
+            "This contradicts: the delivered data looks sloppy. Countless little things would even be tacitly improved in typesetting. \"Can no one explain to the editors what a non-breaking space is?",
+            "The editors are outraged. They have carefully marked distances and stroke types and checked the relevant places immediately afterwards. Nora remembers exactly a correction that is wrong again in the flag. From the editor's point of view, the error must have come into the typesetting.",
+            "Samir listens to the dispute. He promises to look at the history of the affected places: Maybe it is possible to find out when and how the mistakes have come back."
+          ]
+        },
+        {
+          "title": "Samir's first track: the late processing",
+          "paragraphs": [
+            "Samir explains how he started: \"I have put together all the late corrected passages. Then I looked: What were the last changes before the correction? And what are the arrangements between the first occurrence of the error and its remedy? What do these paths have in common?",
+            "In his selection the associated timestamps are mostly late at night. He shows some entries. \"And anyway: The closer the deadline moves, the further the entries reach into the night. At first I thought we had a concentration problem and maybe should change something about our biorhythms.",
+            "\"But it wasn't that, he continues. \"The late timestamps did not explain the cause. I had to look at the places themselves and their prehistory in more detail.\" With git blame he finds an introduction to the associated change; with git show and the comparison of two versions he reads back further. Character, annotation and test deduction he looks together.",
+            "The editorial staff remembers correctly: the special distances and the correct line were already stored correctly. Samir changes between this near reading and the comparison of many cases. In the overview he finds a common way of editing. In the individual versions he sees what is lost on this way."
+          ],
+          "links": [
+            [
+              "Git: pale",
+              "https://git-scm.com/docs/git-blame"
+            ],
+            [
+              "Git: show",
+              "https://git-scm.com/docs/git-show"
+            ],
+            [
+              "Git: Compare Differences",
+              "https://git-scm.com/docs/git-diff"
+            ]
+          ],
+          "timestamps": true,
+          "commands": true
+        },
+        {
+          "title": "The new comment interface: a great relief",
+          "paragraphs": [
+            "For some time now there has been a new interface for comments that need to be compared with the index. On the left is the readable comment, on the right there are matching person, location and work records. The editors can compare hits and select the correct link without constantly switching between XML files and register lists.",
+            "Everyone confirms the profit. The work is easier to do, confusion can be resolved immediately. \"We definitely want to keep this surface,\" says Nora. Nobody wants to go back to the laborious earlier way of working.",
+            "In this successful new way, Samir finds the cause. When he is involved in the project, comments are transferred to the working view and then played back. The back import simplifies certain special distances and strokes. Furthermore, the connection does not carry existing date distinctions without loss: it reconstructs them afterwards with the number recognition from the returned text.",
+            "There are two things that remain invisible in the comfortable surface: A carefully set range dash is changed – and the markup recalculated from it now says something different. The surface is a real help. Your way back needs a repair."
+          ],
+          "spotlight": true
+        },
+        {
+          "title": "Why it just hits some comments",
+          "paragraphs": [
+            "The remaining comments will continue to be processed in the previous XML tool. Only the comments with register matching take the path through the new interface. Therefore, the errors do not appear everywhere.",
+            "Even under these comments, many remain inconspicuous: if you do not contain any of the affected distances or strokes, you can pass the problematic return route without a visible accident. Only the meeting of processing path and relevant characters triggers the described chain.",
+            "Samir can now explain the many individual findings. \"Take a closer look at your characters\" the editors had done long ago. The markers had been checked – before the later step, which simplified them again."
+          ]
+        },
+        {
+          "title": "From one stroke a register cascade is created",
+          "paragraphs": [
+            "A small example shows the sequence. The commentary says \"1848–1849, excellent as a contiguous period. An automated step detects such time data and inserts an annotation layer for the index. Project-internal number recognition also uses the ZX Q1. After the return journey there is \"1848-1849: When the layer is rebuilt, the rule now generates two individual annual nominations. The previous period markup will not be received.",
+            "The rule creates formally permitted, but differently assigned data. Register entries and the web finder are derived from it. At the same time lost protected distances can change the change. In the flag someone finds the wrong line and repairs it. A index already released for the sentence no longer fits the corrected text and output level.",
+            "Not only the flag is affected. Also the separate web finder, register extracts and already prepared register volumes must be checked for the affected changes and possibly re-created. Stable IDs prevent some reference shift, but no wrong temporal annotation or an outdated page reference.",
+            "The dependence lies here in the agreed project rules and output routes. Neither an ordinary line nor TEI leads on its own to this interpretation. This is exactly what Samir needs to check."
+          ],
+          "example": true,
+          "tei": true
+        },
+        {
+          "title": "Luke corrects a factual error – and triggers the relapse",
+          "paragraphs": [
+            "It is particularly clear from a comment by Luke. The wrong line had already been discovered and repaired. The correction was returned to the relevant data set; the index was re-examined and released for the set.",
+            "Then Luke reads the next flag and discovers a real mistake of his own: He confused the recipient of a letter. He opens the comment in the familiar new surface, corrects the recipient and selects the appropriate person entry from the index. A correct and necessary correction.",
+            "After playing back, the range dash, which has been repaired before, has once again become a simple \"-\" . Lukas has not touched the relevant time. Nevertheless, the connection recalculates its annotation. Time period and register assignment are again not correct; the cascade reaches sentence, web finder and register output again.",
+            "\"But I only corrected the receiver!\" says Lukas. This is exactly what makes the case for Samir so instructive. Not the new technical correction was wrong. It triggered the same wrong way back again. The seemingly careless causer unintentionally reproduced the mechanism."
+          ],
+          "incident": true
+        },
+        {
+          "title": "What kind of workflow problem is that?",
+          "paragraphs": [
+            "Samir distinguishes the lossy route of transmission, the unfavorable sequence of examination and subsequent change, the passing on into dependent expenditures and the repeated repair of only visible symptoms. Such weaknesses can interact; not every error has the same cause.",
+            "The immediate countermeasure lies after the reimport: The editorial team checks signs, annotation and output there. This additional control is immediately recorded in the manual. Parallel to this, the incorrect connection of the comment tool is revised – so that the tested content will survive the whole way unchanged in the future.",
+            "Technical corrections go back to the relevant data stock. From this, affected annotations and issues are re-derived in a controlled manner. A release state documents text, index, rules and output path together. Silent sentence repairs without return must not become permanent second data stock."
+          ],
+          "patterns": true,
+          "tools": true,
+          "metrics": true,
+          "reading": true,
+          "ruleChange": true
+        },
+        {
+          "title": "\"Nevertheless, we should talk about our working hours",
+          "paragraphs": [
+            "The technical cause, the quick protection and the revision of the tool are discussed. Samir comes back to his entry: \"Nevertheless: Should we perhaps talk about our working hours? Before the deadline it was quite late. And we could regularly track how long corrections remain.",
+            "\"I'd rather work at night and do something else in the afternoon. I don't want to be measured by target times for comments. After all, we're not in the software industry.\"",
+            "Eva nods: \"When you work best is your business. If we need such nights before each release, we should talk about dates and support. That's my responsibility.\"",
+            "\"All right. Our agreement describes troubleshooting. Is this how regular evaluation is part of it? \" Samir shakes his head. \"No. And I shouldn't have made a concentration story out of the nocturnal entries. Before we make a routine out of it, we have to clarify questions and limits together. \" His timestamps are not proof of working hours."
+          ],
+          "privacy": true
+        },
+        {
+          "title": "Joint responsibility needs clear standards",
+          "paragraphs": [
+            "The employee agreement was explained at the start. It regulates contributions, accesses and the protection of the work history. Samir's new evaluation is not allowed at all. The team delimits the technical order: Which transfer changes the data? A regular observation of daily times does not belong to it.",
+            "It is also recommended to develop the standards for progress and quality together. In software development, such a common understanding is common in Scrum, for example: The team checks its workflow and agrees on improvements. For the edition, reliable handovers, expertly tested processing levels and less repeated post-corrections could count. Which measurement values fit this can be derived from the tasks of the edition; individual target times for scientific comments do not follow from this.",
+            "A long-lasting project will have to change its processes further. Together clarified purposes, accesses and limits facilitate these adjustments. Thus, Samir's precise insights can enable both technical improvements as well as a factual discussion about planning and relief. Legal and ethical limits remain binding."
+          ],
+          "links": [
+            [
+              "Scrum Guide: joint improvement in the retrospective",
+              "https://scrumguides.org/scrum-guide.html#sprint-retrospective"
+            ]
+          ]
+        }
+      ],
+      "image": {
+        "src": "assets/detektiv.webp",
+        "alt": "Illustration: Samir compares marked correction flags with an abstract overview on his laptop.",
+        "caption": "Samir searches for links between changes, outputs and repeated corrections. The picture shows no real software interface."
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "P02-D01",
+      "key": "org",
+      "label": "How do the editors work together?",
+      "options": {
+        "federated": "Federated groups",
+        "autonomous": "Autonomous editorial services",
+        "central": "Central Editors"
+      }
+    },
+    {
+      "id": "P02-D02",
+      "key": "data",
+      "label": "Where is the data maintained significantly?",
+      "options": {
+        "hybrid": "Hybrid with clear responsibilities",
+        "git": "Git-zentriert",
+        "db": "Datenbank-zentriert"
+      }
+    },
+    {
+      "id": "P02-D03",
+      "key": "model",
+      "label": "How do we react to a new edition model?",
+      "options": {
+        "future": "Only future volumes",
+        "migrate": "Migrate old stocks",
+        "parallel": "Support models in parallel",
+        "core": "Semantic core, multiple representations"
+      }
+    },
+    {
+      "id": "P02-D04",
+      "key": "rights",
+      "label": "Is the public data package free?",
+      "options": {
+        "unknown": "Unexplained",
+        "embargo": "Still under embargo",
+        "approved": "Technically and legally released"
+      }
+    },
+    {
+      "id": "P02-D05",
+      "key": "archive",
+      "label": "Can the band be restored?",
+      "options": {
+        "unknown": "Not yet tested",
+        "complete": "Obtaining components and testing reconstruction",
+        "missing": "index snapshot missing"
+      }
+    },
+    {
+      "id": "P02-D06",
+      "key": "analysis",
+      "label": "How is the process analysis regulated?",
+      "options": {
+        "new": "Newly introduced after years",
+        "agreed": "Prior ruling, by way of opposition",
+        "expanded": "Purpose or depth is extended"
+      }
+    },
+    {
+      "id": "P02-D07",
+      "key": "host",
+      "label": "Who carries the Git infrastructure?",
+      "options": {
+        "academy": "Joint Academy Director",
+        "uni": "Lead University",
+        "external": "External Service"
+      }
+    },
+    {
+      "id": "P02-D08",
+      "key": "repos",
+      "label": "How do we cut the working repositorys?",
+      "options": {
+        "hybrid": "Sectoral repos plus common standards",
+        "mono": "A total repo",
+        "volumes": "Band-/Paketrepos"
+      }
+    },
+    {
+      "id": "P02-D09",
+      "key": "stack",
+      "label": "Which database/output route do we test?",
+      "options": {
+        "xml": "XML way: eXist-db / TEI Publisher",
+        "relational": "Relational register path: PostgreSQL",
+        "graph": "Relationship analysis: Graph database"
+      }
+    }
+  ],
+  "entries": [
+    {
+      "id": "P02-R01",
+      "title": "Methodenwechsel",
+      "story": "P02-S01",
+      "type": "Chance and risk",
+      "before": "High importance over decades",
+      "measure": "Technically adopt, finance and release model changes into rules/manuals with scope"
+    },
+    {
+      "id": "P02-R02",
+      "title": "Begutachtung",
+      "story": "P02-S02",
+      "type": "Quality and coordination",
+      "before": "Technical gain; additional time required",
+      "measure": "Fixed test bench, confidential return channel and regulated verification"
+    },
+    {
+      "id": "P02-R03",
+      "title": "Research and publishing",
+      "story": "P02-S03",
+      "type": "Chance and release question",
+      "before": "Cooperation possible; rights unsolved",
+      "measure": "Examine subjects and concrete agreements"
+    },
+    {
+      "id": "P02-R04",
+      "title": "Wiederherstellung",
+      "story": "P02-S04",
+      "type": "Long-term continuity",
+      "before": "Unexplained without test",
+      "measure": "Complete packages including manual/profile capture and regular redesign"
+    },
+    {
+      "id": "P02-R05",
+      "title": "Process learning and control",
+      "story": "P02-S05",
+      "type": "Optimization and personalisation",
+      "before": "Precise analysis possible; clarify conditions",
+      "measure": "Employee agreement, concrete analysis sheet and documented manual change"
+    }
+  ],
+  "metrics": [
+    {
+      "title": "Late errors after one work step",
+      "text": "Confirmed errors, which are only noticeable after a transfer or typesetting proof, in relation to the comparable tested scope. Constant error classes and test density are important."
+    },
+    {
+      "title": "Time from notification to verified remediation",
+      "text": "Start: documented error message. End: professionally checked correction. Waiting times, difficulty and responsibility; neither individual working hours nor automatic breach of deadlines."
+    },
+    {
+      "title": "Reopened corrections",
+      "text": "Which messages have to be reopened? Group related follow-up errors so that the same chain does not appear as many independent problems."
+    },
+    {
+      "title": "Amendment without a new reference test",
+      "text": "After a relevant text/comment change: Is there any evidence that the target and current edition have been checked together? Test proofs are additional data, not truth readable from Git."
+    },
+    {
+      "title": "Jointly amended areas",
+      "text": "Which files or areas are frequently changed together? This can show a dependency or just a common formatting. A conspicuous coupling is a reason to look, not an error proof."
+    },
+    {
+      "title": "Changes to TEI structures",
+      "text": "Which elements, attributes and relationships are actually changed? Consider mechanical formatting and mass changes separately. A structural comparison does not automatically recognize a change of meaning."
+    },
+    {
+      "title": "Persistence of formal problems",
+      "text": "How long does a recognized schema or reference problem persist? Document test times and the respective valid standard versions; do not project a later tightened rule unnoticed back to earlier work as then error."
+    },
+    {
+      "title": "Encoding of comparable cases",
+      "text": "Where do comparable points differ from the documented conventions? Consider material type and project phase. Distinguish technically justified exceptions from unintended inconsistencies."
+    }
+  ],
+  "glossary": [
+    {
+      "id": "tei",
+      "title": "TEI and XML: What is stored?",
+      "paragraphs": [
+        "XML identifies elements of a document with named elements and attributes. TEI is a common vocabulary and set of rules for it: for example, for text, variants, editorial interventions, personal references and responsibility. It is not a finished layout and no database.",
+        "A limited, documented TEI model is agreed in the project. A structure can be technically valid and still express a false reading. Technical decisions remain with the editorial staff."
+      ],
+      "links": [
+        [
+          "TEI: Introduction to XML",
+          "https://tei-c.org/release/doc/tei-p5-doc/en/html/SG.html"
+        ]
+      ]
+    },
+    {
+      "id": "oxygen",
+      "title": "oXygen Author: Write and check",
+      "paragraphs": [
+        "oXygen XML Author is a XML editing tool with a configurable author view. A prepared environment can connect input, schema check and readable display. The project needs appropriate settings, training and cleared licenses.",
+        "Alternative: XML editors or a supported browser interface. It is crucial that the common model, feedback and exports are supported. A license must not be the only gateway to scientific data.",
+        "The Albrecht Edition uses a versioned project profile tested with Diff tests before approval. Unintentionally complete formatting is not mixed with an object correction."
+      ],
+      "links": [
+        [
+          "Manufacturer: Oxygen XML Author",
+          "https://www.oxygenxml.com/xml_author.html"
+        ]
+      ]
+    },
+    {
+      "id": "schema",
+      "title": "schema, ODD and additional test rules",
+      "paragraphs": [
+        "A schema defines permitted structures. In a TEI-ODD, the project documents and describes its adaptations, resulting in schemas and documentation. Schematron can express additional testable conditions, such as relationships between data.",
+        "Well-shaped means: XML is syntactically correct. Schematic means: The structure fulfils the selected schema. Both guarantee no correct interpretation. Model and test rules get own versions."
+      ],
+      "links": [
+        [
+          "TEI: adaptation and use",
+          "https://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html"
+        ]
+      ]
+    },
+    {
+      "id": "git",
+      "title": "Git, Hosting, Industries and Reviews",
+      "paragraphs": [
+        "Git retains stored file versions and its relationships. GitLab or GitHub complement hosting, rights management, discussions and audit procedures. Those who run the server do not yet decide on scientific content.",
+        "Sectors allow for parallel processing. A merge/pull request bundles an amendment proposal for testing. Tags name certain stands and have to be transferred. Industries are not a safe boundary between different reading circles."
+      ],
+      "links": [
+        [
+          "Git: Basics",
+          "https://git-scm.com/book/de/v2"
+        ]
+      ]
+    },
+    {
+      "id": "ci",
+      "title": "CI: Execute joint tests automatically",
+      "paragraphs": [
+        "Continuous integration means here: Changes are regularly merged and examined with agreed tests. The process can check XML, test references and create previews. Errors appear early and understandable for everyone.",
+        "A green test is only as meaningful as the rules contained in it. Technical assessment and legal approval are not replaced by this. The test program itself also needs to be versioned and maintained."
+      ],
+      "links": []
+    },
+    {
+      "id": "xml-db",
+      "title": "XML database: eXist-db or BaseX",
+      "paragraphs": [
+        "A XML database stores and searches structured documents. With XQuery, for example, all letters with a specific person or certain variants can be retrieved across the corpus.",
+        "eXist-db combines XML data storage with web application building capabilities. BaseX is another XML database with XQuery and tools for exploration. Both need expert operation, backup and a tested export. They do not replace Git versioning automatically."
+      ],
+      "links": [
+        [
+          "eXist-db: Developing applications",
+          "https://www.exist-db.org/exist/apps/doc/development-starter"
+        ],
+        [
+          "BaseX: Documentation",
+          "https://docs.basex.org/main/Main_Page"
+        ]
+      ]
+    },
+    {
+      "id": "publisher",
+      "title": "TEI Publisher: Build an edition application",
+      "paragraphs": [
+        "TEI Publisher provides an environment for the presentation and publication of editions. The demo shows text views, index and correspondence navigation among others. It is a concrete audit trail for the XML path, not an already decided overall system.",
+        "The team tests on a difficult passage whether variants, comments, search and output fit. Adaptation, operation and the connection to the publishing set remain project tasks."
+      ],
+      "links": [
+        [
+          "TEI Publisher: Try Documentation and Demos",
+          "https://tei-publisher.org/index.html"
+        ]
+      ]
+    },
+    {
+      "id": "other-db",
+      "title": "Other databases: index and relation networks",
+      "paragraphs": [
+        "A relational database such as PostgreSQL can lead to clearly structured common index. A graph database such as Neo4j focuses on relationships – such as correspondence networks. These are different tasks and models.",
+        "The project does not have to use all systems. A graph can be derived from TEI and registers. For each information it is determined where it is processed decisively; independently maintained double stocks create conflicts."
+      ],
+      "links": [
+        [
+          "PostgreSQL: Overview",
+          "https://www.postgresql.org/about/"
+        ],
+        [
+          "Neo4j: What is a graph database?",
+          "https://neo4j.com/docs/getting-started/graph-database/"
+        ]
+      ]
+    },
+    {
+      "id": "release",
+      "title": "Release, manifest and archive package",
+      "paragraphs": [
+        "A release is a deliberately released version. The manifesto lists the associated data, schema, index and software versions as well as appropriate release information. A day in just one repo does not fully capture this combination.",
+        "An archive package contains the required components and documentation. A Git mirror alone usually does not keep database stands nor any platform discussions, check prints and context information. Recovery is practically tested.",
+        "The manifesto also mentions the valid manual and profile version. Publication package and protected process history are kept separately."
+      ],
+      "links": []
+    },
+    {
+      "id": "fair",
+      "title": "FAIR, Openness and Moving Wall",
+      "paragraphs": [
+        "FAIR focuses on findability, accessibility, interoperability and re-use. It does not mean that every file is immediately open to the network. Metadata, IDs and understandable access conditions are important even with limited access.",
+        "A moving wall postpones an agreed public approval. Subject matter, beginning of the deadline, duration and other conditions are specified in concrete terms. Text data, comment, images and publishing PDF can have different rules."
+      ],
+      "links": [
+        [
+          "GO FAIR: Principles and access",
+          "https://www.gofair.foundation/fair-principles"
+        ]
+      ]
+    },
+    {
+      "id": "analysis-tools",
+      "title": "CodeScene, Code Maat and DevOps",
+      "paragraphs": [
+        "CodeScene visualizes aspects of a version history, including frequently changed areas. Code Maat provides open-top repository mining, for example for change frequency and collectively modified files. None of the tools automatically detects the scientific correctness of a TEI passage.",
+        "DevOps combines development and operation with short feedback loops. DORA measurements refer to software delivery. For the edition, we develop our own measurement questions; the correction time of a note is not simply explained as a DORA indicator.",
+        "For a limited start Git Quick Stats and specifically configured Gitinspector reports are eligible. PyDriller combines historical file contents with its own XML checks. Gource makes development clear; GrimoireLab is a possible later step for several data sources. The concrete toolbox can be found in Samir's case history and as a pilot sheet on the materials."
+      ],
+      "links": [
+        [
+          "CodeScene: Behavioral analysis",
+          "https://codescene.com/product/behavioral-code-analysis"
+        ],
+        [
+          "Code Maat: Examples and source code",
+          "https://github.com/adamtornhill/code-maat"
+        ],
+        [
+          "DORA: Measurements and their definitions",
+          "https://dora.dev/guides/dora-metrics/"
+        ],
+        [
+          "Samir's Tool Pilot as PDF",
+          "assets/pilot.pdf"
+        ]
+      ]
+    }
+  ],
+  "inventory": [
+    {
+      "source_id": "R-AK-01",
+      "title": "Method change and schema change",
+      "meaning": "highly relevant long-term risk and innovation opportunity",
+      "git": "Industries, versioning, migration tests",
+      "measure": "Governance, migration finance; concerns older volumes and builds"
+    },
+    {
+      "source_id": "R-AK-02",
+      "title": "Leitungs-/Personalwechsel",
+      "meaning": "High continuity risk",
+      "git": "Transferable data, history",
+      "measure": "documented decision-making rights, succession, knowledge transfer"
+    },
+    {
+      "source_id": "R-AK-03",
+      "title": "Failure of a job",
+      "meaning": "High organisational risk",
+      "git": "Transfer of repos/work packages",
+      "measure": "common standards, representations"
+    },
+    {
+      "source_id": "R-AK-04",
+      "title": "Heterogeneous edition departments",
+      "meaning": "High integration risk",
+      "git": "Joint test pipelines",
+      "measure": "Schemes, IDs, Integration Authority; autonomy increases coordination needs"
+    },
+    {
+      "source_id": "R-AK-05",
+      "title": "Embargo-/Verlagskonflikt",
+      "meaning": "high legal and journalistic risk",
+      "git": "Controlled approvals",
+      "measure": "Contract, rights management; public history must not contain any protective material"
+    },
+    {
+      "source_id": "R-AK-06",
+      "title": "Confidential opinions in Git",
+      "meaning": "High confidentiality risk",
+      "git": "Git alone unsuitable for anonymization",
+      "measure": "Separate confidential review procedures"
+    },
+    {
+      "source_id": "R-AK-07",
+      "title": "Review delays",
+      "meaning": "Termin-/Koordinationsrisiko",
+      "git": "fixed stands, status, change tracking",
+      "measure": "Time limits, resources, responsible persons"
+    },
+    {
+      "source_id": "R-AK-08",
+      "title": "Load bottlenecks",
+      "meaning": "Management risk and optimising opportunity",
+      "git": "Package-related evaluations",
+      "measure": "No individual ranking, additional context"
+    },
+    {
+      "source_id": "R-AK-09",
+      "title": "Employee activity profiles",
+      "meaning": "Datenschutz-/Fairnessrisiko",
+      "git": "Reinforceable by Git",
+      "measure": "clear access, evaluation and publication rules"
+    },
+    {
+      "source_id": "R-AK-10",
+      "title": "Technologischer/Hosting-Wandel",
+      "meaning": "Long-term dependency risk",
+      "git": "Portable repositories",
+      "measure": "Export of platform data, DB snapshots, tests"
+    },
+    {
+      "source_id": "R-AK-11",
+      "title": "New research questions",
+      "meaning": "Significant post-use opportunity",
+      "git": "Citierable versions",
+      "measure": "open, semantically developed data, APIs/DB"
+    },
+    {
+      "source_id": "R-AK-12",
+      "title": "International cooperation",
+      "meaning": "Research opportunities and governance",
+      "git": "common versioned workflows",
+      "measure": "Roles, Permissions, Privacy, Contracts"
+    },
+    {
+      "source_id": "R-AK-13",
+      "title": "Funding ends before completion",
+      "meaning": "high possible damage",
+      "git": "archived intermediates",
+      "measure": "orderly partial publication, takeover and rights clarification"
+    },
+    {
+      "source_id": "R-AK-14",
+      "title": "Amended register entry concerns many volumes",
+      "meaning": "Integration and quality risk",
+      "git": "traceable mass correction",
+      "measure": "stable identifiers, DB and tests"
+    },
+    {
+      "source_id": "R-AK-15",
+      "title": "Publisher corrections not returned",
+      "meaning": "Contradictory versions",
+      "git": "versioned handover and diff",
+      "measure": "defined feedback channel"
+    },
+    {
+      "source_id": "R-AK-16",
+      "title": "Publication deadlines expire",
+      "meaning": "OA opportunity and release risk",
+      "git": "Versioned publication packages, automation",
+      "measure": "contractually audited approval, control of third-party material"
+    }
+  ],
+  "analysisTools": [
+    {
+      "name": "Git pale, show and diff",
+      "phase": "Investigate a location",
+      "purpose": "The line history provides an introduction to the last assigned change. Previous levels and differences can then be read specifically and connected with annotation, check deduction and correction note.",
+      "limit": "No automatic cause identification. Deleted or replaced lines and previous changes require further comparisons. The associated name is not proof of individual guilt.",
+      "links": [
+        [
+          "git blame",
+          "https://git-scm.com/docs/git-blame"
+        ],
+        [
+          "git show",
+          "https://git-scm.com/docs/git-show"
+        ],
+        [
+          "git diff",
+          "https://git-scm.com/docs/git-diff"
+        ]
+      ]
+    },
+    {
+      "name": "Git Quick Stats",
+      "phase": "First overview",
+      "purpose": "Displays statistics about commits, files and activity. Samir checks first which areas and time periods deserve a closer look.",
+      "limit": "No TEI semantics. Imports, bots, renamings and mass formatting can shape the image; statistics do not explain its causes.",
+      "links": [
+        [
+          "Project and application examples",
+          "https://github.com/git-quick-stats/git-quick-stats"
+        ]
+      ]
+    },
+    {
+      "name": "Gitinspector",
+      "phase": "Targeted report",
+      "purpose": "Creates historical repository reports and can be limited to selected file types. For TEI files, Samir XML must explicitly include in the file filter.",
+      "limit": "Standard reports are person-oriented, XML is not included in the default file filter. A XML output file of the report is not an analysis of the TEI meaning.",
+      "links": [
+        [
+          "Project and documentation",
+          "https://github.com/ejwa/gitinspector"
+        ]
+      ]
+    },
+    {
+      "name": "Gource",
+      "phase": "See on the team",
+      "purpose": "Visualizes the development of a repository as a moving file tree. For a workshop, the growth and change of editing can be illustrated.",
+      "limit": "A vivid animation is not a proof of quality. Names and activity can become visible; also the joint demonstration needs an clarified scope.",
+      "links": [
+        [
+          "Project, Examples and Establishment",
+          "https://gource.io/"
+        ]
+      ]
+    },
+    {
+      "name": "PyDriller",
+      "phase": "Connect Git and TEI",
+      "purpose": "A Python library to run commits and modified files. Samir can connect previous and later file contents with its own XML checks.",
+      "limit": "Custom scripts and technical definitions are required. Built-in code/method metrics are not TEI quality measurement. Consider missing content, renamings and merge strategy.",
+      "links": [
+        [
+          "Documentation on modified files",
+          "https://pydriller.readthedocs.io/en/latest/modifiedfile.html"
+        ],
+        [
+          "Project and start-up",
+          "https://github.com/ishepard/pydriller"
+        ]
+      ]
+    },
+    {
+      "name": "Jing, Schematron, XPath and XSLT",
+      "phase": "Check the XML page",
+      "purpose": "Jing checks against a RELAX-NG-schema. Schematron formulates additional rules. XPath selects elements and attributes; XSLT can generate structured comparisons, reports, and outputs.",
+      "limit": "These are different tools and languages. Regular version, context and test run are documented. A formally valid reference can show the wrong technical position.",
+      "links": [
+        [
+          "Jing",
+          "https://github.com/relaxng/jing-trang"
+        ],
+        [
+          "Schematron",
+          "https://schematron.com/"
+        ],
+        [
+          "XPath",
+          "https://www.w3.org/TR/xpath-31/"
+        ]
+      ]
+    },
+    {
+      "name": "CodeScene / Code Maat",
+      "phase": "Complementary exploration of patterns",
+      "purpose": "Hotspots or jointly modified files provide search directions. Samir compares them with the professionally classified correction cases.",
+      "limit": "Code health assessments are not transferred to TEI. A frequently changed area can show intensive scientific work instead of poor quality.",
+      "links": [
+        [
+          "CodeScene: product and tour",
+          "https://codescene.com/product/behavioral-code-analysis"
+        ],
+        [
+          "Code Maat",
+          "https://github.com/adamtornhill/code-maat"
+        ]
+      ]
+    },
+    {
+      "name": "GrimoireLab",
+      "phase": "Where there is a greater need",
+      "purpose": "Can merge data from Git, processes and review systems and access them as dashboards. Interesting when a pilot creates a well-founded permanent need.",
+      "limit": "More setup and care; the linked data also allow deeper personal insights. Do not precautionably collect all available sources.",
+      "links": [
+        [
+          "Project, supported sources and entry",
+          "https://chaoss.github.io/grimoirelab/"
+        ]
+      ]
+    }
+  ],
+  "analysisPilot": [
+    {
+      "title": "1. Inventory and clear question",
+      "text": "Choose one to three suitable repositories and comparable time periods. Start with a small overview and mark imports, bots, renamings as well as changed commit practice. Before evaluating purpose, data scope and access clarify."
+    },
+    {
+      "title": "2. Connect Git and TEI results",
+      "text": "Check the same subsets against the appropriate schema and project rules. Investigate historical stands with PyDriller and XML evaluations. Match familiar problem cases with comparable stable areas; distinguish professional decisions from error corrections."
+    },
+    {
+      "title": "3. Try out actions and early indicators",
+      "text": "Three to five abnormalities with alternative explanations and prioritized measures persist. Test improvements in a targeted manner. Check a possible early indicator only at later periods, not used for its development; detect false alarms and overlooked problems. No standard edition health score."
+    }
+  ],
+  "workflowPatterns": [
+    {
+      "id": "P02-WF01",
+      "title": "Error in the transmission route",
+      "text": "An export or return import changes relevant characters or structures. Check whether the agreed content survives the path unchanged; not just look at the source file."
+    },
+    {
+      "id": "P02-WF02",
+      "title": "Problematic sequence",
+      "text": "A thorough examination is before a later changing step. Your statement applies to the old version; afterwards a targeted new control is necessary."
+    },
+    {
+      "id": "P02-WF03",
+      "title": "Transfer with loss",
+      "text": "Assumptions and formats change between tools, teams or processing steps. Each handover is a possible checkpoint, not automatically a proven error."
+    },
+    {
+      "id": "P02-WF04",
+      "title": "Fehlerkaskade",
+      "text": "An early change affects number recognition, index and multiple outputs. The visible correction at one point may require further revisions."
+    },
+    {
+      "id": "P02-WF05",
+      "title": "Triggered antipattern",
+      "text": "A problematic procedure becomes a habit: repair only in the flag, do not reverse changes, repeatedly admonish for care without examining the transmission route."
+    }
+  ],
+  "readingModes": [
+    {
+      "title": "Close Reading: understand the process",
+      "text": "Read text, characters, annotation and earlier versions of a passage in detail. git blame points to the last assigned line change; git show and comparisons open up further stands. Technical assignment alone explains neither cause nor responsibility."
+    },
+    {
+      "title": "Distant Reading: Identify the pattern",
+      "text": "Compare many cases by process path, time and type of change. Accumulations, stable counter-examples and recurring correction loops show where to look more closely."
+    },
+    {
+      "title": "Together: meaningful monitoring",
+      "text": "Switch from the pattern back to the location and from the declared point to other cases. Develop targeted tests and follow improvements. The possible depth of individual insights requires transparent rules."
+    }
+  ],
+  "cascadeExample": {
+    "title": "A selective detour, several dependent expenditures",
+    "intro": "The new interface facilitates register matching. Only part of the comments go through it. The way back changes certain markers and reconstructs date annotation from the text; exactly this combination triggers the error.",
+    "stages": [
+      {
+        "label": "1. Checked baseline level",
+        "title": "Marker and period correct",
+        "text": "\"1848–1849\" is recognized as a period of time. Typographic markers are tested; the index matches this data level."
+      },
+      {
+        "label": "2. Balance of registers",
+        "title": "The return journey changes the characters",
+        "text": "Only register-related comments take the path through the new surface. When reimported, \"1848–1849\" becomes \"1848-1849\" . The previous date award will not be received; the subsequent project rule creates two individual annual nominations instead of the period."
+      },
+      {
+        "label": "3. Correction and relapse",
+        "title": "Correctly corrected – later wrong again",
+        "text": "A typesetting correction restores the line; index, web finders and register volumes have to be re-tuned. In case of a later justified comment correction, the same register path introduces the character loss again."
+      }
+    ],
+    "action": "Repair the way back; check the affected markers, annotations and expenditures after the comparison. Keep corrections in the relevant inventory and create dependent stands together again."
+  },
+  "interfaceFocus": {
+    "eyebrow": "WORKFLOW'S KEY POWER",
+    "title": "Comment more conveniently. Information is lost when playing back.",
+    "lead": "The progress is undisputed: Comment and matching index data stand next to each other. The error lies in the integration of this new work path.",
+    "quote": "\"We definitely want to keep this surface.",
+    "comment": "Albrecht's correspondence developed in 1848–49 in close association with his brother.",
+    "register": [
+      "Person: Albrecht's brother",
+      "Period: 1848–1849",
+      "Matching directly to the comment"
+    ],
+    "stages": [
+      {
+        "title": "1. Tested TEI data",
+        "text": "Markers and period are already stored correctly."
+      },
+      {
+        "title": "2. Readable comment view",
+        "text": "Only for comments with register reconciliation. The technical processing becomes easier."
+      },
+      {
+        "title": "3. Wrong way back",
+        "text": "Characters are simplified; date distinctions from the text are recalculated."
+      }
+    ],
+    "conclusion": "Before exporting properly – changed after reimporting. An earlier check cannot prevent this later loss."
+  },
+  "teiExample": {
+    "title": "Thus, from a period of time something different",
+    "beforeLabel": "Before the process: a period",
+    "before": "<date from=\"1848\" to=\"1849\">1848–1849</date>",
+    "beforeText": "from and to describe the beginning and end of the associated period.",
+    "afterLabel": "After the wrong way back and the re-marking",
+    "after": "<date when=\"1848\">1848</date>-<date when=\"1849\">1849</date>",
+    "afterText": "When here each describes a single year. The connection as a period is missing. Both fragments can be allowed as a structure; the statement is not the same.",
+    "why": "A mere replacement of the visible line within the original date markup would not delete from and to. In the case of the faulty connection, the original annotation does not result in lossless and rebuilds it from the simplified text. Therefore, Samir must also examine export, import and number recognition together.",
+    "link": [
+      "TEI explains date and date attributes",
+      "https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html"
+    ]
+  },
+  "recurrence": {
+    "title": "The correct correction takes the wrong path again",
+    "steps": [
+      {
+        "title": "Already repaired",
+        "text": "Line and period are correct again; index and sentence level are checked."
+      },
+      {
+        "title": "Luke discovers a material error",
+        "text": "He corrects the recipient and rebalances the comment with the index."
+      },
+      {
+        "title": "Untouched Time Changed",
+        "text": "The return import simplifies the line and creates the date mark again."
+      },
+      {
+        "title": "The cascade is back",
+        "text": "index, set, web finders and register volumes must be checked together again."
+      }
+    ]
+  },
+  "workflowBridge": {
+    "id": "P02-B01",
+    "eyebrow": "BETWEEN SITUATION 04 AND 05",
+    "title": "The edition learns with every band",
+    "paragraphs": [
+      "For decades, the workflows of an edition have not stopped. Recurring steps can be better organized with experience; at the same time, growing index and more cross-references make new solutions necessary. The editorial team tests routines, takes on tried and tested and improves. Each introduced change receives a suitable manual version; rework on older collections is documented as its own order.",
+      "Technical progress is also being made: OCR can provide templates, for example LLM can provide proposals for annotations. Such results are subject to technical examination. New rules should also be applied to older data without overwriting previously done work.",
+      "Git helps to keep data, rules and processing scripts together in suitable stands. The editors can first test a change separately, compare results and understand which old data have already been traced. Whether the improvement is technically correct and the handovers work, they must continue to check. That is exactly what the next situation is all about."
+    ]
+  },
+  "nightEntries": [
+    {
+      "date": "04.06.",
+      "time": "00:27",
+      "text": "Comment balanced with index"
+    },
+    {
+      "date": "06.06.",
+      "time": "00:37",
+      "text": "Replayed revised comments"
+    },
+    {
+      "date": "08.06.",
+      "time": "02:30",
+      "text": "Register reconciliation completed"
+    },
+    {
+      "date": "09.06.",
+      "time": "03:35",
+      "text": "Corrections for the next flag accepted"
+    }
+  ],
+  "gitCommands": [
+    {
+      "id": "blame",
+      "name": "git blame",
+      "title": "What is the change behind this line?",
+      "paragraphs": [
+        "git blame assigns to each line of a selected file version the change it last changed. Samir gets a commit identifier and can open the corresponding change.",
+        "This is an introduction to the prehistory: A later reformatting can also appear as a last change. The command does not explain the technical cause nor any personal responsibility. Therefore Samir reads on with git show and version comparisons."
+      ],
+      "example": "git blame -L 42.48 -- kommentare.xml",
+      "explanation": "Shows the change assignment for lines 42 to 48 of the file kommentare.xml.",
+      "link": [
+        "Git documentation: pale",
+        "https://git-scm.com/docs/git-blame"
+      ]
+    },
+    {
+      "id": "show",
+      "name": "git show",
+      "title": "What has been changed in this step?",
+      "paragraphs": [
+        "git show opens a selected commit: its description and, in the case of an ordinary commit, changes to the predecessor. Samir sees which files and text passages have been changed together.",
+        "With the commit identifier from git blame he follows the return import. For the direct comparison of two selected versions he also uses git diff. The technical reading of the XML positions remains part of the investigation."
+      ],
+      "example": "git show a1b2c3d -- kommentare.xml",
+      "explanation": "a1b2c3d is an example of a commit identifier. The change to kommentare.xml is shown.",
+      "link": [
+        "Git documentation: show",
+        "https://git-scm.com/docs/git-show"
+      ]
+    }
+  ],
+  "gitAgreement": {
+    "id": "P02-M10",
+    "title": "Plant: Process analyses with Git",
+    "intro": "This plant concretizes section 5 of the employee agreement. It regulates investigations to improve workflows. A new regular analysis begins only after documented question, information and necessary approval.",
+    "fields": [
+      "Responsible: overall coordination Eva Brandt",
+      "Technical implementation: Samir Demir and designated representation",
+      "Technical examination: responsible editorial department",
+      "Objections and data protection: Data Protection Office of the Academies Association / Staff Representation",
+      "Review: half-yearly and before any extension of purpose or method"
+    ],
+    "sections": [
+      {
+        "id": "A01",
+        "title": "Question and scope",
+        "kind": "Regel",
+        "paragraphs": [
+          "An analysis describes work steps and error classes. Raw data is only read to the required extent. Reports do not contain personal rankings. The reconstruction of individual changes is not issued as complete proof of cause or responsibility."
+        ]
+      },
+      {
+        "id": "A02",
+        "title": "2. Access, disclosure and deadlines",
+        "kind": "Regel",
+        "paragraphs": [
+          "Samir and his representative work on the released investigation data in the protected working environment. Nora checks the professional classification. Eva and the relevant editorial staff receive the limited report on process findings. Publishers and expert experts do not receive any personal raw data.",
+          "Exports of analysis are deleted 90 days after completion. The expertly reviewed process report is held for two years and then examined on further demand. Scientific source histories are subject to the separate archive concept."
+        ]
+      },
+      {
+        "id": "A03",
+        "title": "3. Excluded uses",
+        "kind": "Regel",
+        "paragraphs": [
+          "Individual working hours, performance rankings and automatic personnel decisions are not derived. Time stamps may reconstruct the order in the search for errors released here; a new evaluation of day times or individual work patterns is thus not allowed. Pseudomym data are not treated as anonymous."
+        ]
+      },
+      {
+        "id": "A04",
+        "title": "4. Modification, objections and old data",
+        "kind": "Regel",
+        "paragraphs": [
+          "New methods, recipients or purposes will be discussed in advance with the team and examined institutionally. Older data will only be included after separate examination of purpose, necessity and information obligations. This annex does not give retroactive consent. Controversial new evaluations will be suspended until clarification."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Analysis sheet BUG-58: The incorrect return import",
+      "items": [
+        "Question: Does the comment surface change checked characters and time periods?",
+        "Data: the affected comments and appropriate counter-examples of the current volume; versions before and after reimport, schema/register rule and check deduction.",
+        "Method: git blame/show and version comparisons; comparison by processing route and error class. Daytimes and individual work patterns are not evaluated.",
+        "Implementation: Samir and technical representation; technical acceptance: Nora. Eva and the affected editors receive the process report.",
+        "Environment: institutional GitLab and local XML evaluation; no upload to external analysis or AI services. Export cancellation 90 days after completion, review after two years.",
+        "Measures: Apply transition test H06 immediately, revise the comment tool in parallel and decrease the return journey with regression test; then recheck the manual. Previous night observation does not become a routine and is not part of this analysis task."
+      ]
+    },
+    "links": [
+      [
+        "EDSA: Principles for processing",
+        "https://www.edpb.europa.eu/topics/key-gdpr-concepts/basic-principles_de"
+      ],
+      [
+        "EDSA: Legal basis and consent",
+        "https://www.edpb.europa.eu/sme/be-compliant/process-personal-data-lawfully_en"
+      ],
+      [
+        "Austrian example: § 96 ArbVG",
+        "https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40123095/NOR40123095.html"
+      ]
+    ]
+  },
+  "handbook": {
+    "id": "P02-H01",
+    "title": "Git Manual of the Albrecht Edition",
+    "version": "1.1",
+    "status": "Dedicated project regulation",
+    "date": "21 October 2026",
+    "nextReview": "21 April 2027",
+    "owner": "Samir Demir · Scientific and Technical Editor",
+    "approval": "Nora Seidel for the specialist editorials · Eva Brandt for the overall coordination",
+    "intro": "This manual applies to all working groups of the Albrecht Edition. It describes the binding common practice and explicitly identifies recommendations. The currently valid version lies in the protected repository standards under governance/git-handbuch.md. New employees receive an introduction before the first productive commit.",
+    "sections": [
+      {
+        "id": "H00",
+        "title": "0. Emergency aid: nothing hastily overwrite",
+        "kind": "Regel",
+        "paragraphs": [
+          "In case of unclear version: Secure work, view git status and git diff and address the scientific-technical editors. Do not solve unclear conflicts by blindly taking over a page. If secrets or confidential information are accidentally introduced, immediately communicate IT and editorial staff – even if the current file has already been corrected.",
+          "No one rewrites shared or archived history on his own. The editorial team coordinates necessary interventions with IT and the competent authorities. Compressed access data are blocked; file deletion alone is not sufficient."
+        ]
+      },
+      {
+        "id": "H01",
+        "title": "1. Validity and care",
+        "kind": "Regel",
+        "paragraphs": [
+          "The working groups maintain texts in area repos. The common standard repo contains manuals, edition guidelines, schema/ODD, test rules, profile and transformation documentation. The central index is maintained in the register database. Its released snapshots are clearly linked to the text stands.",
+          "Samir supervises the manual together with a designated technical representation. Specialist editorials examine technical rules; Eva secures mandate and maintenance time. On April 21st and October 21st, the manual is reviewed, as well as after incidents as well as model and tool changes.",
+          "Proposals for modifications will receive a GOV-ticket with occasion, affected sections and scope. Technical and technical review are preceded by the approval. The released version will be tagged, explained in the team and announced in writing. Previous versions remain internally accessible. The manual does not extend any rights or analysis purposes of the employee agreement."
+        ]
+      },
+      {
+        "id": "H02",
+        "title": "Competence and attribution",
+        "kind": "Regel",
+        "paragraphs": [
+          "Each assignment designates execution, scientific responsibility and editorial check. An assistant can implement a decision that Nora is responsible for; their technical work and Nora's scientific responsibility are documented separately. New readings or unclear assignments are decided professionally before they are accepted as reliable findings.",
+          "Personal Git identifiers such as alb-k7m42 remain stable and will not be remitted. Author and committer fields run these identifiers with a technical project address. The separate institutional identity register manages the assignment. Bots have their own identifiers. Scientific contributions and responsibility are identified in TEI metadata and contribution proofs. This information may allow conclusions; pseudonymous history is protected."
+        ]
+      },
+      {
+        "id": "H03",
+        "title": "3. Equipment and accesses",
+        "kind": "Regel",
+        "paragraphs": [
+          "Work repos are opened exclusively on institutionally managed, encrypted devices or in the remote working environment provided. This also applies to external contributors. Registration is made personal with multi-factor authentication; keys and tokens are not shared.",
+          "Private Git accounts, public forks, personal clouds and unregistered mirrors are excluded for internal inventory. IT runs the device and permission directory. Withdrawal of a server access does not delete local clones; their handling is part of the documented transfer.",
+          "Before access, the person in the participation and access directory is assigned to the appropriate task. Introduction, agreement, device sharing and permissions are confirmed. A technical Git training including the used oXygen-Git client belongs to this."
+        ]
+      },
+      {
+        "id": "H04",
+        "title": "4. The Daily Way of Work",
+        "kind": "Regel",
+        "paragraphs": [
+          "Check the correct workspace, branch and open file version before starting; retrieve the released version and synchronize it according to project procedures. Each task receives an ED, DATA or BUG ticket. Short branches of work are e.g. ed/ED-142 register subscription or fix/BUG-58 period.",
+          "Before the commit: Read Diff, validate affected TEI files, check file quantity and confidential content. A commit contains a related verifiable change. Text correction and global format conversion are separated. The commit message calls activity, object, concrete change and ticket, for example: reg(Letter-017): Correct recipient reference [ED-142].",
+          "A merge request bundles the target, ticket, technical justification, exams and open questions. main is protected. Changes in content require a second person who is responsible for technical matters; changes to the model, interface or test procedure additionally the technical editorial staff. Acquisition takes place with merge commit. Deviations require a documented approval; already shared contributions are not secretly rewritten."
+        ]
+      },
+      {
+        "id": "H05",
+        "title": "5. TEI and oXygen",
+        "kind": "Regel",
+        "paragraphs": [
+          "The editors distribute the shared oXygen project profile with assigned schema and documented program version. Author Mode is used for regular editing; text mode of the targeted XML control. After both, the diff is checked.",
+          "Existing characters, spacings, indentation and line endings are retained as long as the task does not require any change. Automatic complete formatting and hard automatic line breaks are disabled for edition files. Visual soft transition remains allowed. Profile changes are tested on representative files by opening, small modification, saving and diff.",
+          "An unintentionally reformatted file is not taken over at all. To secure the desired work first and to coordinate the restoration with the editors. Planned format migrations receive an isolated order. A green scheme test does not replace the control of the characters or the scientific examination."
+        ]
+      },
+      {
+        "id": "H06",
+        "title": "6. Transitional rule: check again after reconciliation of registers",
+        "kind": "Regel",
+        "paragraphs": [
+          "After re-importing from the comment interface, the modified comments are specifically checked for preserved strokes, protected spacing and date annotation. A period such as 1848–1849 must be maintained as a corresponding period of time. The automatically generated annotation layer for the index is checked before the ZX Q1.",
+          "The regression test includes range dash, protected distance, period marking and a factual comment correction without changing the time indication. It checks the entire back-and-back path. Nora confirms the professional expectation; Samir is responsible for the test.",
+          "Corrections go back to the relevant inventory. index snapshot, set, web finder and affected register issues are re-derived from the coordinated version and checked. Also a later purely factual correction goes through this control. Silent repairs exclusively in the flag are not completed correction.",
+          "H06 secures the time until technical acceptance of the revised comment tool. The tool change has its own order and regression test. After its probation, the need for additional control is re-evaluated and the manual adapted again."
+        ]
+      },
+      {
+        "id": "H07",
+        "title": "7. Tests and editorial approval",
+        "kind": "Regel",
+        "paragraphs": [
+          "Before each integration, XML well-formedness, project-specific schema, additional reference/consistency rules, Git ID check and security checks are performed. Formatting warnings are clarified. The examining person determines what has been professionally verified: source, identification, interpretation or side effects.",
+          "A technical test success does not give scientific or legal approval. Blocking protection tests are not routinely ignored. Necessary exceptions are documented on the basis of justification and responsible approval."
+        ]
+      },
+      {
+        "id": "H08",
+        "title": "8. New tools and old data",
+        "kind": "Regel",
+        "paragraphs": [
+          "New procedures are tested on a separate test stock. The order documents input, rule/program version, expected results, rights, data transmission, fault cases and return path. This also applies to OCR and LLM. Protected data do not go to external services without approval.",
+          "Editorially relevant proposals are examined professionally before taking over. In case of appropriate supervised procedures, control and withdrawal remain effective. For old data, it is recorded which collection with which standard version have been followed up and which exceptions have been examined professionally. New rules are not tacitly regarded as the yardstick of previous work."
+        ]
+      },
+      {
+        "id": "H09",
+        "title": "9. Integration, publication and rights",
+        "kind": "Regel",
+        "paragraphs": [
+          "The integration takes over audited data packets and an internal import manifest with source repo, source commit, index snapshot, check and permission note. Complete work stories remain in the protected origin repos. A data packet and a Git history are different transfer objects.",
+          "The publication environment generates its own public inventory with its own history from released sources. It does not take over internal commits. Nora is responsible for the scientific package release; the rights/publication office checks material rights and publishing conditions. Clara is included in the agreed production transfers.",
+          "Before publication, data, metadata, XML comments, images, generated files as well as all publicly accessible industries, tags, releases and artifacts are checked. An embargo triggers the object check. Only what meets the documented conditions is released. A file export alone is not a right check."
+        ]
+      },
+      {
+        "id": "H10",
+        "title": "Protection and preservation",
+        "kind": "Regel",
+        "paragraphs": [
+          "IT secures central repos and required platform data daily; every week an institutionally separate backup is created. Monthly the recovery of a changing sample is logged, every year a complete tape setup. Database snapshots, additional binary files and necessary software components are included.",
+          "The volume manifest combines text, index, ZXq1, transformations, manual and profile versions as well as approvals. The scientific archive takes over citing publication packages and protected process packages separately. Process packages also contain required decision and process documentation; their accesses are regulated separately."
+        ]
+      },
+      {
+        "id": "H11",
+        "title": "11. Incidents, departure and role change",
+        "kind": "Regel",
+        "paragraphs": [
+          "Errors are reported with repo and stand identification, sensitive information in the confidential reporting channel. Notifications are first used to limit damage. Technical errors are rectified in a comprehensible manner; necessary security or data protection adjustments coordinate the competent body including controlled copies.",
+          "When leaving, tasks and open decisions are handed over, accesses blocked and local copies deleted or institutionally taken over according to IT instructions. Contributions remain visible in accordance with the agreed recognition rules. Data protection requests are examined separately; the departure does not automatically make the work history public or automatically pointless.",
+          "Local git stands and the .git directory remain protected against unauthorized access. Device loss, lost disks, accidental approvals or possibly copied data are reported immediately; a proven data flow is not awaited.",
+          "In case of role and institution changes, task, agreement and required access are re-examined prior to further work. Temporary exceptions for remaining accesses or copies need documented purpose, scope, protection, expiry date and approval of the overall coordination with the participation of the responsible bodies. IT documents the conversion and subsequent final control."
+        ]
+      },
+      {
+        "id": "H12",
+        "title": "12. Recommendations and contact routes",
+        "kind": "Recommendation and list",
+        "paragraphs": [
+          "Recommendation: often secure small understandable intermediates and avoid long unsynchronized work. Commit frequency is not a power measure. In case of uncertainty, include an expert early.",
+          "Git, profiles and handovers: scientific-technical editorial staff. Scientific decisions: responsible editorial board. Rights and publishing house: Legal/publication office. Security incidents: institutional IT service. Personal data and objections: data protection office and employee representation. The current contact list is protected in the project portal.",
+          "Binding attachments: Responsibilities matrix, Edition policy, ODD/schema, Verification rules, oXygen profile description, review template, rights directory, backup/archive profile and employee agreement. The released version of each installation is listed."
+        ]
+      }
+    ],
+    "changelog": [
+      {
+        "version": "1.0",
+        "text": "First common working order: examination before handovers, review, publication and security."
+      },
+      {
+        "version": "1.1",
+        "text": "After BUG-58: immediate reimport control H06 released as transition rule; parallel tool revision and regression test commissioned. After acceptance of the tool, the rule is rechecked."
+      }
+    ]
+  },
+  "employeeAgreement": {
+    "id": "P02-V01",
+    "title": "Staff agreement of the Albrecht Edition",
+    "version": "1.1",
+    "status": "Projektvereinbarung",
+    "date": "21 October 2026",
+    "owner": "Academies Association · Overall coordination Eva Brandt",
+    "intro": "This agreement applies to all contributors with access to the internal editions. It describes the obligations of the contributors and the commitments of the Academies Association. The data protection information, rights system and the archive concept are included; they are made available and explained before work starts.",
+    "sections": [
+      {
+        "id": "V01",
+        "title": "1. Working together and preserving the emergence",
+        "kind": "Regel",
+        "paragraphs": [
+          "We use Git for cooperation, comprehensible versions, troubleshooting and protected preservation of our work history. Accesses to work areas, integration, publication and archive are allocated separately. Before the first productive contribution, the work path, the applicable rules and contact persons are explained.",
+          "File contents, previous versions, commit messages, identifiers and timestamps can remain permanently comprehensible. The removal in the current text does not remove older versions. Work history will not automatically become public with the end of the project."
+        ]
+      },
+      {
+        "id": "V02",
+        "title": "2. Identification, contribution and scientific responsibility",
+        "kind": "Regel",
+        "paragraphs": [
+          "You work under your own stable pseudonymous project identifier. Identifications are not passed on or reused. The institutional identity register is managed separately protected. Also pseudonymous histories remain personal; from professional contributions, assignments can be identified.",
+          "The technical execution is distinguished from scientific responsibility and professional acceptance. Your contributions are appropriately identified in TEI metadata and contribution proofs after the documented activities. Git author or Git committer alone does not decide on scientific authorship."
+        ]
+      },
+      {
+        "id": "V03",
+        "title": "3. Contributions, rights of use and publishing links",
+        "kind": "Regel",
+        "paragraphs": [
+          "The rights attachment determines for each contribution, which processing, integration, archiving and publication is permitted and which attribution applies. A commit does not grant a general public permission to use it. Rights of third parties are not granted by this agreement.",
+          "Who brings in foreign material, names source, well-known rightholders and conditions. Unclear cases remain in the designated protected area. Publisher PDF, comment, text data and images are released separately. No one publishes internal repos, exports or screenshots independently."
+        ]
+      },
+      {
+        "id": "V04",
+        "title": "4. Care and help",
+        "kind": "Regel",
+        "paragraphs": [
+          "The released Git manual regulates the daily work. Check changes before the commit and use the intended reviews. Passwords, private messages and personnel issues do not belong in Git, tickets or XML comments. Technically necessary vulnerable information receives a suitable access area.",
+          "If you have accidentally uploaded confidential data, please contact the responsible service immediately – even if you have already changed the file. Messages are first used to limit damage. Shared history is not secretly rewritten or wrongly attributed to posts. Necessary interventions coordinate the editorial team with the competent authorities.",
+          "You may not make available to unauthorized persons any current git stands or Git history. Protect local repos including the .git directory, exports and stored access data through shared device encryption, screen lock, and personal accesses. Do not use unreleased approvals or synchronization services.",
+          "Report possible unauthorized access to IT and project coordination immediately: for example, in the case of lost device or data carrier, exposed token, accidental folder sharing or suspicion of a copied history. Do not wait for proof of a data outflow. IT locks accesses and coordinates further measures with the competent authorities."
+        ]
+      },
+      {
+        "id": "V05",
+        "title": "5. Troubleshooting, process analysis and free time allocation",
+        "kind": "Regel",
+        "paragraphs": [
+          "The reconstruction of a faulty site is part of the agreed troubleshooting process. A new regular or comprehensive analysis needs a written analysis sheet, information from the team and the required institutional examination and participation. It names question, data, method, access, recipients, deadlines and excluded uses.",
+          "Commit numbers, change quantities and daily hours are not used for individual performance evaluation, attendance control or rank formation. Storage times are not proof of working hours.",
+          "Appropriate quality and progress standards are developed with the team. No automatic personnel decisions follow from measurement values. Security or legal incidents run in a separate, narrowly limited procedure; they do not allow general personnel monitoring."
+        ]
+      },
+      {
+        "id": "V06",
+        "title": "6. Who sees the data",
+        "kind": "Regel",
+        "paragraphs": [
+          "The role overview mentions who is allowed to read, administrate, perform approved analyses and receive reports. Technical access does not grant an additional evaluation permit. Expert reporters and publishers receive the agreed test packages or production data, no general accesses to the internal work history.",
+          "New analysis tools and external AI/Cloud services are checked for rights, transmission and protection prior to integration. This agreement does not allow the precautionary transmission of all repos to third-party services."
+        ]
+      },
+      {
+        "id": "V07",
+        "title": "7. Archiving and subsequent research",
+        "kind": "Regel",
+        "paragraphs": [
+          "The Academies Association passes released results and protected work stories separately to its scientific archive. Results data and methods are made publicly accessible in the legally released scope. Protected accesses apply to process holdings.",
+          "Subsequent research at the origin of the edition will be decided after documented application, legal examination and protection examination. Research access is not approval for evaluation of former employees or for publication of personal profiles. This agreement does not contain any general consent to any future research use."
+        ]
+      },
+      {
+        "id": "V08",
+        "title": "8. Rights, Storage and Objections",
+        "kind": "Regel",
+        "paragraphs": [
+          "The data protection information lists the responsible bodies, legal bases, recipients, storage purposes and rights. Applications for information, correction, deletion or restriction are examined by the data protection authority in accordance with the legal requirements. These rights are not abandoned by a signature.",
+          "Git clones, backups and archival copies are taken into account in the implementation. Technical difficulties are not a general reason for rejection. Measures, remaining limits and decisions are explained and documented.",
+          "Questions and objections can be addressed to Eva, the data protection office or the employee representation without any discrimination. The receipt is confirmed within five working days; legal processing periods remain decisive."
+        ]
+      },
+      {
+        "id": "V09",
+        "title": "9. Quitting, changing roles and changing rules",
+        "kind": "Regel",
+        "paragraphs": [
+          "When leaving, tasks are handed over, accesses are terminated and local collection are deleted or institutionally taken over under the guidance of IT. Contributions and legally preserved history remain in accordance with the respective rules; existing rights remain.",
+          "The change from the core team to an associated institution or to another task triggers a new check before the new access: Which responsibility remains, which collection are needed and which agreement applies now? Old rights are withdrawn before the appropriate new rights are established. Further work with the previous account scope does not take place automatically.",
+          "A temporary exception for further accesses or local copies is documented by the overall coordination, agreed with IT and the bodies responsible for rights and data protection and expressly released. It specifies the purpose, collection, protective measures, responsible person, expiration date and final control. Legal and contractual limits remain binding; an exception is not a flat-rate permission to retain all data.",
+          "Manual changes are announced and explained. They do not extend any agreed usage purposes. New purposes or further data access require a separate examination and regulation. Taking note confirms the information; it does not replace any required legal basis or participation."
+        ]
+      }
+    ],
+    "attachments": [
+      {
+        "title": "Datenschutzinformation",
+        "text": "The institutions involved document their responsibility, legal bases per purpose, recipients, storage and review rules as well as rights of data subjects and means of complaint. The data protection authority keeps and updates this information."
+      },
+      {
+        "title": "Rights and publication installation",
+        "text": "The right/publication office carries out the contribution, scope of rights, source/third-party rights, license, attribution and publishing conditions per subject. Missing rights block the relevant approval."
+      },
+      {
+        "title": "Archive and research access concept",
+        "text": "The scientific archive documents acquisition, protection requirements, retention decision, access criteria, application procedures and treatment of later interested parties. Procedural records are evaluated before the takeover; access remains dedicated."
+      },
+      {
+        "title": "Analyzer and Git Manual",
+        "text": "The analytical system concretizes each released study. The manual describes the current daily practice; its current version and introduction are documented."
+      }
+    ]
+  },
+  "handbookIntro": {
+    "title": "How we work together",
+    "paragraphs": [
+      "On the first day a new colleague should not have to guess from old emails how the edition works. Nora opens the Git manual with her. Samir sets up the shared work profile. Where does an order start? Who checks a correction? And who do you ask if a file suddenly looks completely different? The introduction also includes a practical Git training: for example, view changes, commit and compare with the Git client add-on in oXygen.",
+      "The answers are in the common standard repository. The released version is binding; recommendations are recognisable. Samir and his representative maintain the technical part, the specialist editorial departments are responsible for the editorial rules. Eva ensures that care and introduction get working hours.",
+      "Every six months and after important changes, the manual is reviewed. Proposal, technical review, approval and announcement are documented. The handling of contributions and work history is also agreed. Why this agreement becomes important later shows Samir's investigation."
+    ]
+  },
+  "ruleChange": {
+    "title": "From BUG-58 manual 1.1",
+    "before": "Version 1.0: Check characters and period before handover.",
+    "after": "Version 1.1 · H06: After reimport check characters AND period display; check index annotation and dependent output from the same version.",
+    "steps": [
+      "Findings and proposed amendments",
+      "Technical and technical review",
+      "approval and new test",
+      "Notification and application",
+      "Next joint examination"
+    ],
+    "paragraphs": [
+      "The book production now needs a reliable handover. Samir therefore proposes an immediately implementable additional control: After the return import, the affected characters and period awards are checked. Nora sets out the technical criteria. Eva releases the transitional rule and explains it in the editorial round; in the manual it is now as H06.",
+      "At the same time, Eva commissions the revision of the comment tool. Samir and the development investigate export and reimport, receive the original annotation and complete a regression test. This takes more time than the additional examination. Until the new path is taken, the editorial team continues to work with the transitional rule.",
+      "Later, Lukas plays through his recipient correction in the revised tool: The untouched time is retained. Nora and Samir take the improved back-and-back path technically and technically. The additional control has secured the interim; the tool change removes the cause. Both were initiated and implemented.",
+      "The next manual change is also due. The team checks which additional control is still necessary after the tried and tested tool change. A transitional rule does not last forever, because it once made sense."
+    ]
+  },
+  "transparency": [
+    {
+      "title": "Ergebnisse",
+      "text": "Released edition data and citing state of publication become accessible according to the respective rights."
+    },
+    {
+      "title": "Methoden",
+      "text": "Guidelines, data models and procedures are documented and shared to the extent permitted."
+    },
+    {
+      "title": "Entstehungsprozess",
+      "text": "Work histories remain protected. Later research receives regulated access after separate examination."
+    }
+  ],
+  "privacyTurn": {
+    "eyebrow": "NEW FRAMEWORK · DATA PROTECTION",
+    "title": "When the analysis draws attention to people",
+    "text": "So far, it has been a matter of error analysis, monitoring and improving the processes. Now another question arises: What personal insights arise – and who can use them for what?"
+  },
+  "participation": {
+    "title": "Who else works with the data?",
+    "paragraphs": [
+      "The edition also includes employees of the typesetting service provider, the IT and the publisher as well as external experts. They have different tasks and need different data. An employee agreement for the core team does not automatically cover these relationships. Agreements can be concluded with the participating institutions or service providers; they must actually record their authorised contributors and the permitted uses.",
+      "Albrecht therefore runs a participation and access directory. For each party there are institution, task, responsible contact, required repos or data packets, access to history, local copies, valid agreement and end/examination date. Parties are grouped together into appropriate groups; however, permissions are awarded per task and person. A contract with a service provider does not mean general Git access for its entire workforce.",
+      "Prior to each entry and when changing roles or institutions, access will be re-matched. This also applies when switching from the core team to an associated institution. Responsibility, agreement, training, shared devices and copies must match the new task. The appropriate contractual and data protection rules are determined according to the actual relationship; not every external access is the same type of service."
+    ],
+    "groups": [
+      {
+        "group": "Core team / Bandredaktionen",
+        "access": "Required working repositorys and related protected history",
+        "rule": "Employee agreement, manual and role sharing"
+      },
+      {
+        "group": "Associated entities",
+        "access": "Delimited areas of work according to cooperation task",
+        "rule": "Cooperation and access arrangements; designated contributors"
+      },
+      {
+        "group": "IT and technical operation",
+        "access": "System rights required for operation and incidents",
+        "rule": "Operational/service arrangements, confidentiality and limited administration tasks"
+      },
+      {
+        "group": "Satzdienstleister",
+        "access": "Tested production packages; no general access to work history",
+        "rule": "Contractual handover, correction, security and copy arrangements"
+      },
+      {
+        "group": "Publisher/Lectorate",
+        "access": "Agreed delivery stands and return channels",
+        "rule": "Publication contract and supplementary data/access rules"
+      },
+      {
+        "group": "External expert",
+        "access": "Fixed test deduction or separate protected test range",
+        "rule": "Confidential review order with scope, return channel and end of access"
+      }
+    ],
+    "steps": [
+      "Task, Party and Required collection",
+      "Examine appropriate agreement and responsibilities",
+      "Training: Git, Handbook, Safety and Reporting Routes",
+      "Release and document personal limited rights",
+      "Recheck, change and complete in the case of roll changes, time limits or exit"
+    ]
+  }
+}

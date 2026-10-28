@@ -1,0 +1,146 @@
+[
+  {
+    "title": "Gemeinsam arbeiten",
+    "kind": "Chance",
+    "situation": "Ein überschaubarer Ablauf ermöglicht selbstständige Mitarbeit.",
+    "git": "Git hält Veränderungen nachvollziehbar fest und unterstützt gemeinsame Prüfung.",
+    "consider": "Einführung, Zeit und Hilfe müssen erreichbar sein.",
+    "action": "Pilot gemeinsam durchführen und das Handbuch mit neuen Mitarbeitenden erproben.",
+    "owner": "Projektleitung und technisches Team",
+    "matrix": {
+      "title": "Gemeinsam arbeiten",
+      "type": "chance",
+      "likelihood": "höher",
+      "impact": "begrenzt",
+      "reason": "Mit Einführung und einem überschaubaren Ablauf ist ein Gewinn im Arbeitsalltag gut erreichbar. Er betrifft zunächst die Zusammenarbeit, nicht alle offenen Fragen des Projekts."
+    }
+  },
+  {
+    "title": "Importverluste",
+    "kind": "Risiko",
+    "situation": "Ein neuer Export kann inzwischen ergänzte genetische Auszeichnung überschreiben.",
+    "git": "Vergleich und Versionsgeschichte zeigen verlorene Strukturen.",
+    "consider": "Der bessere Textstand ist nicht automatisch die bessere Editionsdatei.",
+    "action": "Spätere Lesungskorrekturen gezielt übernehmen; bei systematischem Fehler den Konverter reparieren.",
+    "owner": "Importverantwortung und Fachredaktion",
+    "matrix": {
+      "title": "Importverluste",
+      "type": "risk",
+      "likelihood": "geringer",
+      "impact": "weitreichend",
+      "reason": "Nach der vereinbarten Importabnahme sind neue Vollimporte seltener. Überschreibt einer genetische Auszeichnung, kann dennoch ein großer Teil der Editionsarbeit betroffen sein."
+    }
+  },
+  {
+    "title": "Eigene Forschung",
+    "kind": "Chance",
+    "situation": "Lukas und Nora gewinnen neue Einsichten, die über die gemeinsame Edition hinausgehen.",
+    "git": "Eigene referenzierte Forschungsbestände und Vergleiche halten den Bezug nachvollziehbar.",
+    "consider": "Langfristige Autonomie, Datenrechte und spätere Übernahmen brauchen Regeln.",
+    "action": "Basisrelease und stabile Kennungen festhalten; passende Forschungsrepos einrichten.",
+    "owner": "Promovierende und Projektleitung",
+    "matrix": {
+      "title": "Eigene Forschung",
+      "type": "chance",
+      "likelihood": "höher",
+      "impact": "weitreichend",
+      "reason": "Lukas und Nora arbeiten bereits an eigenen Fragen. Nachvollziehbare Forschungsstände können sowohl ihre Dissertationen als auch die gemeinsame Edition langfristig stärken."
+    }
+  },
+  {
+    "title": "Neue Befunde",
+    "kind": "Chance und Folgeaufwand",
+    "situation": "Eine andere Chronologie verändert Edition, Figureninterpretation und möglicherweise das Frontend.",
+    "git": "Alternative Stände lassen sich untersuchen und kontrolliert übernehmen.",
+    "consider": "Ein technisch konfliktfreier Merge entscheidet keine wissenschaftliche Frage.",
+    "action": "Befund fachlich diskutieren; Schema, Daten und Darstellung gemeinsam nachprüfen.",
+    "owner": "Fachredaktion, Forschende und Technik",
+    "matrix": {
+      "title": "Neue Befunde",
+      "type": "chance",
+      "likelihood": "geringer",
+      "impact": "weitreichend",
+      "reason": "Eine grundlegend andere Chronologie ist offen. Tritt sie auf, kann sie Edition, Interpretation und Interface gleichzeitig verändern; der Folgeaufwand bleibt mitzudenken."
+    }
+  },
+  {
+    "title": "Satzkorrekturen",
+    "kind": "Risiko",
+    "situation": "Das Buch enthält eine fachliche Korrektur, die im Download noch fehlt.",
+    "git": "Benannte Liefer- und Referenzstände dokumentieren den Rückfluss.",
+    "consider": "Fachliche und rein typografische Änderungen unterscheiden; Nachredaktion braucht Zeit.",
+    "action": "Korrekturpaket vereinbaren und fachliche Änderungen geprüft in TEI übernehmen.",
+    "owner": "Redaktion und Verlag",
+    "matrix": {
+      "title": "Satzkorrekturen",
+      "type": "risk",
+      "likelihood": "höher",
+      "impact": "begrenzt",
+      "reason": "Einzelne Abweichungen zwischen Satz und Download sind im Korrekturprozess naheliegend. Ihr Umfang bleibt zunächst auf betroffene Stellen begrenzt; ohne geregelten Rückfluss können sie sich ausweiten."
+    }
+  },
+  {
+    "title": "Veröffentlichung",
+    "kind": "Chance und Abstimmung",
+    "situation": "Frühe Teilveröffentlichungen bringen Rückmeldungen, während das Team noch reagieren kann.",
+    "git": "Teilreleases verbinden genau bezeichnete Daten, Funktionen und Prüfstände.",
+    "consider": "Verlagsinteressen, eigene Forschung und kumulative Publikationswege beeinflussen den öffentlichen Umfang.",
+    "action": "Einen Freigabeplan mit Inhaltsumfang, Zuständigkeit, Betrieb und nächsten Ausgaben vereinbaren.",
+    "owner": "Fachredaktion, Forschende, Technik und Verlag",
+    "matrix": {
+      "title": "Veröffentlichung",
+      "type": "chance",
+      "likelihood": "geringer",
+      "impact": "weitreichend",
+      "reason": "Frühe Rückmeldungen können die Nutzbarkeit deutlich verbessern. Ob ein dafür geeigneter Bestand früh öffentlich werden kann, hängt noch von Verlag und Forschenden ab."
+    }
+  },
+  {
+    "title": "Forschungszugang",
+    "kind": "Risiko",
+    "situation": "Noras Account läuft aus, während ihre Dissertation weitergeht.",
+    "git": "Autorisierte Kopien und bezeichnete Basisstände ermöglichen unabhängige Weiterarbeit.",
+    "consider": "Eigene Forschungsnutzung und offizielle Schreibrechte sind verschiedene Befugnisse.",
+    "action": "Vor Stellenende die neue Rolle, erlaubte Kopien und Zugang praktisch prüfen.",
+    "owner": "Nora, Projektleitung und institutionelle Administration",
+    "matrix": {
+      "title": "Forschungszugang",
+      "type": "risk",
+      "likelihood": "höher",
+      "impact": "weitreichend",
+      "reason": "Die Stellen enden voraussichtlich vor den Dissertationen. Ohne Anschlussregelung ist eine Zugangsunterbrechung daher plausibel und kann die eigenständige Weiterarbeit erheblich beeinträchtigen."
+    }
+  },
+  {
+    "title": "Technische Betreuung",
+    "kind": "Risiko",
+    "situation": "Eine einzelne Person kennt Import, Tests und Wiederherstellung.",
+    "git": "Versionierte Verfahren und Dokumentation machen Wissen übertragbar.",
+    "consider": "Ein Repo allein dokumentiert noch keine Serverkonfiguration oder Bildabhängigkeit.",
+    "action": "Vertretung einrichten und eine zweite Person die Wiederherstellung durchführen lassen.",
+    "owner": "Technisches Team und institutionelle Trägerschaft",
+    "matrix": {
+      "title": "Technische Betreuung",
+      "type": "risk",
+      "likelihood": "geringer",
+      "impact": "weitreichend",
+      "reason": "Der Ausfall einer Schlüsselperson ist nicht absehbar. Ohne erprobte Vertretung kann er aber Import, Prüfungen und Frontendbetrieb zugleich treffen."
+    }
+  },
+  {
+    "title": "Weiterarbeit",
+    "kind": "Risiko",
+    "situation": "Förderende und spätere Korrekturen treffen auf weniger verfügbare Zeit.",
+    "git": "Geprüfte Stände begrenzen Nacharbeit und helfen bei der Übergabe.",
+    "consider": "Archivierung, Frontendbetrieb und wissenschaftliche Nachredaktion sind getrennte Leistungen.",
+    "action": "Aufgaben, Verantwortliche und realistische Nachförderkapazität früh vereinbaren.",
+    "owner": "Projektleitung mit Verlag und Bibliothek",
+    "matrix": {
+      "title": "Weiterarbeit",
+      "type": "risk",
+      "likelihood": "höher",
+      "impact": "weitreichend",
+      "reason": "Nach Förderende steht weniger gesicherte Arbeitszeit zur Verfügung. Fehlende Nachredaktion oder Betreuung kann deshalb mehrere Ausgaben und spätere Korrekturen betreffen."
+    }
+  }
+]

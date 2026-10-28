@@ -1,0 +1,66 @@
+{
+  "status": "künstliche Demonstration, keine historischen Befunde",
+  "segmentation": {
+    "bad": {
+      "schema": true,
+      "ids_and_present_references": true,
+      "riddles": 4,
+      "solutions": 0,
+      "source_regression": false
+    },
+    "corrected": {
+      "schema": true,
+      "ids_and_present_references": true,
+      "riddles": 2,
+      "solutions": 2,
+      "source_regression": true
+    }
+  },
+  "versions": {
+    "v1.0": {
+      "riddles": 4,
+      "verse": 2,
+      "prose": 2,
+      "verse_percent": 50.0,
+      "ids": [
+        "riddle-a1",
+        "riddle-a2",
+        "riddle-b1",
+        "riddle-b2"
+      ]
+    },
+    "v1.1": {
+      "riddles": 10,
+      "verse": 8,
+      "prose": 2,
+      "verse_percent": 80.0,
+      "ids": [
+        "riddle-a1",
+        "riddle-a2",
+        "riddle-b1",
+        "riddle-b2",
+        "riddle-c1",
+        "riddle-c2",
+        "riddle-c3",
+        "riddle-c4",
+        "riddle-c5",
+        "riddle-c6"
+      ]
+    }
+  },
+  "unchanged_selection": {
+    "ids": [
+      "riddle-a1",
+      "riddle-a2",
+      "riddle-b1",
+      "riddle-b2"
+    ],
+    "riddles": 4,
+    "verse": 2,
+    "verse_percent": 50
+  },
+  "extraction": {
+    "riddles_only_words": 20,
+    "including_solutions_words": 24
+  }
+}

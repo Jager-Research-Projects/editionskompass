@@ -1,0 +1,3 @@
+(()=>{'use strict';const frame=document.querySelector('.portal-frame');if(!frame)return;const main=document.querySelector('main');if(main&&!main.id)main.id='portal-content';if(main&&!document.querySelector('a[href="#'+main.id+'"]')){const a=document.createElement('a');a.href='#'+main.id;a.textContent=document.documentElement.lang==='en'?'Skip to content':'Zum Inhalt';a.className='portal-skip';a.style.cssText='position:absolute;left:10px;top:-100px;z-index:1000;background:#fff;padding:12px';a.onfocus=()=>a.style.top='10px';a.onblur=()=>a.style.top='-100px';frame.before(a)}
+// Existing local navigation remains in its own header; the portal uses a div to avoid selector collisions.
+})();

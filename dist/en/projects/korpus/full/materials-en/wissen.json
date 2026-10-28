@@ -1,0 +1,1108 @@
+{
+  "id": "P03",
+  "version": "0.4.0",
+  "date": "2026-10-22",
+  "title": "Rätselhaft!",
+  "subtitle": "A repo. A scientific publication. Many new research questions.",
+  "stories": [
+    {
+      "id": "P03-S07",
+      "source_id": "Reconception 0.2",
+      "title": "A repository for research – one publication for another.",
+      "teaser": "A suitable research repository is not yet a data publication.",
+      "sections": [
+        {
+          "title": "Elif's question",
+          "paragraphs": [
+            "Lea gives Elif access to her research repo. Elif wants to investigate rhyme forms and asks: \"Which TEI folder should I take?"
+          ]
+        },
+        {
+          "title": "Reasonable for Lea's investigation",
+          "paragraphs": [
+            "The repo preserves the acquired sources, the standardized data and the recorded entries of individual studies. The same book is thus available in several well-founded versions. This structure documents Lea's research path. Elif, on the other hand, needs a clearly identified corpus stock for a new study."
+          ]
+        }
+      ],
+      "git": "Git keeps publication concept, data and corrections together in a comprehensible way. GitHub makes README, releases, issues and audited contributions accessible. The team decides which work history becomes public.",
+      "action": "Determine publication concept early, identify a significant inventory and test the entry with an external person. Only prepared, tested versions release.",
+      "question": "What would anyone know who will start researching with our repo today without us?",
+      "graphics": [
+        "P03-G07"
+      ],
+      "demo": "publikationskonzept.md",
+      "image": null,
+      "image_alt": "",
+      "takeaway": {
+        "title": "A publication repository is not simply a research repository made public!",
+        "text": "A good research repository explains how a study was developed. The data publication explains which inventory others should use for new studies. We set up our own curated corpusrepo for this purpose."
+      },
+      "topic": "STATE OF WORK AND PUBLICATION",
+      "practice": {
+        "steps": [
+          "Note publication concept before the first approval in Git.",
+          "Apply audited book files from data/uniformized to data/tei of the publication repositorys.",
+          "README, add rules and entry; let the first release be tested externally."
+        ],
+        "example": "Research repo: sources/tei/rk_1786_b0001.xml → data/uniformized/ZXq1 → analyses/rhyme study/entry/ZX Q2. Publication repo: exactly one relevant corpus under data/tei / rk_1786_b0001.xml.",
+        "done": "A new user recognizes without question which files and which version to examine."
+      }
+    },
+    {
+      "id": "P03-S01",
+      "source_id": "S3-B",
+      "title": "The script's running.",
+      "teaser": "A content can disappear, although the previous evaluation continues.",
+      "sections": [
+        {
+          "title": "An unnoticed omission",
+          "paragraphs": [
+            "Lea's new preparation takes over the riddle texts, but loses the solution part: It was recorded in the previous TEI structure in a separate XML element and is no longer included in the newly generated TEI data. Their previous Python analysis only counts puzzles and verses: The numbers remain the same. Only when reading a seminar task the answer is missing."
+          ]
+        },
+        {
+          "title": "Limiting the error",
+          "paragraphs": [
+            "Lea and Jonas use Git to compare the versions before and after conversion. They discover that the modified converter omits the XML element containing the solutions. They correct the procedure and create a small new regression test that reproduces this specific error: a riddle with a separately encoded solution must pass through the conversion intact. The test then checks that the solution and its link to the riddle have been preserved."
+          ]
+        }
+      ],
+      "git": "Version comparison and designated tool stands show when content was lost and which imports are affected. A regression test accompanies the correction. Git preserves changes; the team must check its technical sense.",
+      "action": "Check content retention before and after each transformation; test known source features, read them specifically and describe corrections in the next release.",
+      "question": "What data could our analysis of today lose without its result changing noticeably?",
+      "graphics": [
+        "P03-G01",
+        "P03-G03"
+      ],
+      "demo": "beispiele/segmentierung/",
+      "image": null,
+      "image_alt": "",
+      "topic": "TEST QUALITY",
+      "takeaway": {
+        "title": "A successful analysis proves no complete data.",
+        "text": "We check structure, relationships and content retention separately. Automatic tests are complemented by a targeted comparison of sources."
+      },
+      "practice": {
+        "steps": [
+          "Before and after a transformation, compare all elements and content that should be retained, as well as IDs and references.",
+          "Check the diff and affected source points in the pull request; clear unexpected losses.",
+          "Keep the error as a regression test and publish only after technical approval."
+        ],
+        "example": "Two puzzles and two solutions before processing; two puzzles and no solution afterwards. XML and Demo-schema exist, the inventory comparison reports the loss.",
+        "done": "The test run detects the known loss; the source control and approval are documented."
+      }
+    },
+    {
+      "id": "P03-S02",
+      "source_id": "S3-A",
+      "title": "Yesterday the result was different.",
+      "teaser": "Growing data need comprehensible versions.",
+      "sections": [
+        {
+          "title": "A new graphic",
+          "paragraphs": [
+            "For her publication, Elif calculated the proportion of verse in the corpus and produced a bar chart that seemed particularly revealing. A little later, she wants to use the same script to reproduce the chart in more striking colours. But the bars now tell an unexpected story: Lea has added further collections in the meantime. Elif’s script always loads the current repository version."
+          ]
+        },
+        {
+          "title": "Repeat the used version",
+          "paragraphs": [
+            "Using the archived earlier release and the same script, Elif can reproduce her original chart. She needs to identify the data version so that others can check her figures and conclusions. The expanded collection does not change her conclusions, although some figures are now less clear-cut. Elif records the data version, selection of evidence and procedure together. Lea can continue adding books, while earlier studies can still refer back to their specified data version."
+          ]
+        }
+      ],
+      "git": "Fixed data and tool stands make the comparison repeatable. Git documents inventory changes; the team must explain their scientific significance.",
+      "action": "Document concrete corpus release, selection, extraction and analysis together; quote archived version and technically classify inventory changes.",
+      "question": "Could someone put the same research basis back together with our information alone?",
+      "graphics": [
+        "P03-G04",
+        "P03-G05"
+      ],
+      "demo": "beispiele/versionsvergleich/",
+      "image": "vergleich.webp",
+      "image_alt": "Lea and Elif compare two different version folders.",
+      "topic": "VERSIONS AND RESEARCH AREA",
+      "takeaway": {
+        "title": "An investigation needs a certain level of data.",
+        "text": "We publish audited releases and receive them independently of the Git host. Researchers also call selection, extraction and tooling."
+      },
+      "practice": {
+        "steps": [
+          "After the approval create a protected tag and release with inventory and change notes.",
+          "Archive data package including metadata and include the concrete version proof in the citation note.",
+          "For each analysis record release, selection, export rule and script version."
+        ],
+        "example": "Demo-v1.0: 2 out of 4 puzzles are verses. Demo-v1.1: 8 out of 10. If the same four old documents are selected, their share remains at 50 percent.",
+        "done": "Another person may repeat the examination from the designated data and procedures."
+      }
+    },
+    {
+      "id": "P03-S03",
+      "source_id": "S3-D",
+      "title": "A rhyme helps the model to jump.",
+      "teaser": "Additional annotation and model experiments remain assigned to their basis.",
+      "sections": [
+        {
+          "title": "A question from the seminar",
+          "paragraphs": [
+            "Students ask a local language model to solve rhyming two-line riddles. In one group of these riddles, the solution is also the missing rhyme word in the second line. “Does it understand the riddle, or is it simply completing the rhyme?” To investigate this, the group compares the verse with a separately stored prose adaptation that removes the rhyme clue."
+          ]
+        },
+        {
+          "title": "Out of use, follow-up research",
+          "paragraphs": [
+            "Elif adds annotations of form and words to the data used for this study. In particular, she identifies the riddles whose solution is the missing rhyme word. At a later workshop, the prepared data are used to compare different language models. This creates a separate small benchmark corpus: which model can solve verbal riddles in historical varieties of German? Another experiment fine-tunes a language model using the reference data; it achieves substantially better results on the separately held test data. The team decides to prepare the entire existing corpus for such tasks. The data receive an additional annotation layer. TEI allows this layer to be encoded separately and linked to the base data without changing their texts. The extended edition receives a new version number; the base release, annotations and model experiments remain traceably connected."
+          ]
+        }
+      ],
+      "git": "Basic release, annotation and test scripts can be combined via specified versions. Issues and pull requests enable queries and verified contributions; the versioning makes the investigation comprehensible.",
+      "action": "Document forms and solutions; identify annotations and test designs; demonstrate basic data, selection and modeling together.",
+      "question": "What new research question is being made more difficult by our current markup?",
+      "graphics": [
+        "P03-G06"
+      ],
+      "image": "seminar.webp",
+      "image_alt": "Students and Lea compare model answers and printed riddle verses.",
+      "topic": "SUPPLEMENTARY USE AND ANNOTATION",
+      "takeaway": {
+        "title": "New research should be able to build on the corpus.",
+        "text": "Our starting point is a separately versioned additional annotation. Originals, processing, automatic layers and model experiments remain clearly distinguishable."
+      },
+      "practice": {
+        "steps": [
+          "Describe annotation with base release, anchoring or word and generation methods.",
+          "Specify automatic origin and test status; offer basic data without additional layer.",
+          "In model tests separate test inputs and solutions; test training/test selection and related evidence."
+        ],
+        "example": "Base: corpus v1.0. Addition: word annotation 1.0 with reference to its tokenization. Model test: puzzle texts in testadditions.jsonl, reference answers separated in loesungen.jsonll.",
+        "done": "The annotation is assigned to its base and can be omitted; the experiment is documented."
+      }
+    },
+    {
+      "id": "P03-S04",
+      "source_id": "S3-C",
+      "title": "Does it work without Lea's computer?",
+      "teaser": "A fresh download shows the quiet conditions.",
+      "sections": [
+        {
+          "title": "An attempt without acclamation",
+          "paragraphs": [
+            "Jonas loads the release to another computer and starts with README. The example still awaits Lea's network drive. Nobody in the team had noticed that: everyone worked with the same infrastructure."
+          ]
+        },
+        {
+          "title": "Enhancing entry",
+          "paragraphs": [
+            "Lea replaces personal paths with relative paths and documents calls, dependencies and expected results. Jonas starts again from the fresh package. This time the first examination succeeds without help. Before the end of Lea's job he also tests the instructions for the next release."
+          ]
+        }
+      ],
+      "git": "A designated release, complete local data, versioned examples and clear proofs of change enable independent use. The instructions for later releases are also practically tested.",
+      "action": "From a fresh download perform an initial examination; check paths, filenames and dependencies and document missing steps.",
+      "question": "Where does someone outside our team need knowledge that is only in our minds or on our computers?",
+      "graphics": [
+        "P03-G07",
+        "P03-G08"
+      ],
+      "demo": "beispiele/uebergabe/",
+      "image": "uebergabe.webp",
+      "image_alt": "Jonas works with a guide, while Lea lets him try out himself.",
+      "topic": "LOCAL USE AND TRANSFER",
+      "takeaway": {
+        "title": "The entry must work without the project environment.",
+        "text": "We provide a small full access and the entire designated data set. Another computer is our practical countercheck."
+      },
+      "practice": {
+        "steps": [
+          "Use filenames without system specific special characters and relative paths.",
+          "Document a call with dependencies and expected output in README.",
+          "Another person can have the newly unpacked package carried out; add contact and care commitment."
+        ],
+        "example": "Instead of a path to Lea's network drive, the script korpus.xml searches relative to its own folder. Entry runs with Python default library without API or account.",
+        "done": "The documented result is created in a fresh environment; missing knowledge is supplemented in the guide."
+      }
+    },
+    {
+      "id": "P03-S05",
+      "source_id": "S3-E",
+      "title": "The library is waiting for the server.",
+      "teaser": "Local data is our basic offer.",
+      "sections": [
+        {
+          "title": "Public and still not usable",
+          "paragraphs": [
+            "Elif wants to compare many puzzles locally. The library loads them individually via the API. The server throttles the requests; their investigation stops."
+          ]
+        },
+        {
+          "title": "An Independent Way of Work",
+          "paragraphs": [
+            "The team offers the complete release for download and lets the library also read local files. A small sample leads to the first result. API and frontend remain additional accesses."
+          ]
+        }
+      ],
+      "git": "Git versions data and software. It does not finance or operate any additional services.",
+      "action": "Investigate access needs; choose static, library-based and ongoing offers according to their actual benefits and care needs.",
+      "question": "What concrete added value does what business promise justify?",
+      "graphics": [
+        "P03-G11"
+      ],
+      "image": null,
+      "image_alt": "",
+      "topic": "DOWNLOADS AND ADDITIONAL SERVICES",
+      "takeaway": {
+        "title": "corpus analyses must not depend on the current project server.",
+        "text": "Our basic offer is versioned local data and documented exports. We set up an additional service only for a specific need and with secure operation."
+      },
+      "practice": {
+        "steps": [
+          "Offer small entry data and complete release separately; share large collection meaningfully.",
+          "Library and examples can also be executable with local data.",
+          "API or Frontend supplement only if benefits, responsibility and operation are clarified."
+        ],
+        "example": "To try out: userstart.zip. For the complete analysis: the designated corpus package. Both describe their files and the respective scope.",
+        "done": "The investigation can also be continued if the API fails."
+      }
+    },
+    {
+      "id": "P03-S06",
+      "source_id": "S3-F",
+      "title": "The host is moving, so I want the research to stay.",
+      "teaser": "Get files and necessary context together.",
+      "sections": [
+        {
+          "title": "Move more than files",
+          "paragraphs": [
+            "When changing the host, the Git files are present. Linked discussions and release attachments are missing. Some decisions are only explained there."
+          ]
+        },
+        {
+          "title": "Maintaining the needed context",
+          "paragraphs": [
+            "Jonas takes over the necessary platform information and records professional decisions in the repo. The tests also run outside of the previous automation. Archived releases secure the earlier research references."
+          ]
+        }
+      ],
+      "git": "Git data are portable; scientific archiving and documented procedures limit the dependence on platform functions.",
+      "action": "Plan git and platform exports, preserve the necessary context and test the new setup at the new location.",
+      "question": "What would be possible after the loss of the current host?",
+      "graphics": [
+        "P03-G12"
+      ],
+      "image": null,
+      "image_alt": "",
+      "topic": "PORTABILITY AND CONSERVATION",
+      "takeaway": {
+        "title": "Git history and platform stock are different things.",
+        "text": "We secure Git, published packages and the necessary decisions for understanding. The rebuild is checked using a versioned guide."
+      },
+      "practice": {
+        "steps": [
+          "Back up Git references and required additional files; export or document relevant issues and decisions.",
+          "Execute checks and exports without the old CI environment.",
+          "Check release packages, citations, contact and permissions at the new location."
+        ],
+        "example": "Git transfers commits and tags. Release attachments, relevant discussions and service settings are additionally adopted or documented in a comprehensible manner.",
+        "done": "The files are understandable at the new location and the documented procedures executable."
+      }
+    }
+  ],
+  "persona": {
+    "lead": "Lea wants others to find out something new with the old puzzles. To do this, the corpus has to work without their personal introduction.",
+    "paragraphs": [
+      "Lea Berger opens up historical puzzle books with a small team. The chair has been researching the topic for years. In the three-year project, systematic corpus analyses are added: students examine rhyme forms; external researchers compare local language models.",
+      "The open TEI corpus is itself a scientific publication on GitHub. Others are supposed to be able to download, understand and evaluate a designated version. Lea is planning the publication from the beginning. After the end of the project it should remain usable even without its personal introduction."
+    ],
+    "question": "How does our working population turn into a scientific data publication with which others can conduct independent research?",
+    "facts": {
+      "Projektzeit": "Three years",
+      "Team": "A WiMi position, chair time and advice",
+      "Publikation": "TEI corpus in a GitHub project organisation",
+      "Nutzung": "Teaching, corpus analysis, rhyme research and model experiments",
+      "Maßstab": "Find, understand, investigate and quote locally"
+    }
+  },
+  "roles": [
+    {
+      "id": "P03-A01",
+      "name": "Lea Berger",
+      "role": "Scientific assistant",
+      "text": "Import, check, analyze and prepare releases. Your temporary job must not become an unlimited maintenance promise."
+    },
+    {
+      "id": "P03-A02",
+      "name": "Miriam Vogt",
+      "role": "Scientific direction",
+      "text": "Responsible for corpus profile, technical approvals and resources. A new book needs not only technical space, but a well-founded recording."
+    },
+    {
+      "id": "P03-A03",
+      "name": "Jonas Richter",
+      "role": "Technical representation at the Chair",
+      "text": "Checks procedures and can represent – among other tasks. Git access does not create any lack of project knowledge or additional working hours."
+    },
+    {
+      "id": "P03-A04",
+      "name": "Tessa King",
+      "role": "Forschungsdatenberatung",
+      "text": "Advice on archive packages, metadata and handover. Consulting does not automatically mean the permanent maintenance of the corpus."
+    },
+    {
+      "id": "P03-A05",
+      "name": "Elif Arslan",
+      "role": "External linguist",
+      "text": "Uses certain data levels and develops an additional annotation layer. Your research can remain connected to the corpus without being completely absorbed in it."
+    }
+  ],
+  "windows": [
+    {
+      "title": "ca. 1500–1650",
+      "text": "Early collections of printing and different learned and popular contexts."
+    },
+    {
+      "title": "ca. 1750–1850",
+      "text": "Literary small forms, collections, almanacs and journals as fields of investigation."
+    },
+    {
+      "title": "ca. 1900–1950",
+      "text": "Popular collections and changed media contexts; not automatically all types of thinking sport."
+    }
+  ],
+  "glossary": [
+    {
+      "id": "tei",
+      "title": "TEI and XML",
+      "paragraphs": [
+        "XML identifies document parts with elements and attributes. TEI provides a scientific vocabulary for this: here, for example, puzzles, verses, solutions, bibliography and responsibility. It is not a finished page layout.",
+        "A book or a collection forms the context; the individual riddle is its own proof. The same supposed riddle idea in several books receives several evidence identifiers. An additional research assumption is a tradition relationship."
+      ],
+      "links": [
+        [
+          "TEI: adaptation and use",
+          "https://tei-c.org/release/doc/tei-p5-doc/en/html/USE.html"
+        ]
+      ]
+    },
+    {
+      "id": "schema",
+      "title": "schema, ODD and editorial check",
+      "paragraphs": [
+        "A schema describes permitted structures. The TEI-ODD combines model description and adaptation; from this a Relax NG-schema can be generated. Additional rules check references and mandatory information.",
+        "Valid XML and unique identifiers do not prove proper puzzle limits. Source comparison and professional samples remain necessary. The attached small demo schema is not a complete corpus ODD."
+      ],
+      "links": [
+        [
+          "TEI: Use",
+          "https://tei-c.org/release/doc/tei-p5-doc/en/html/USE.html"
+        ]
+      ]
+    },
+    {
+      "id": "oxygen",
+      "title": "oXygen and the editing environment",
+      "paragraphs": [
+        "oXygen is a XML editor with readable author view and configurable checks. A Git client add-on can make changes, commits and synchronization available in the editor.",
+        "Lea works with a shared project profile. The conversion of many texts runs separately; small technical corrections remain understandable. Other XML tools are possible if model and procedures are supported."
+      ],
+      "links": [
+        [
+          "oXygen: Git Client",
+          "https://www.oxygenxml.com/doc/ug-addons/git-client/git-addon.html"
+        ]
+      ]
+    },
+    {
+      "id": "git",
+      "title": "Git, GitHub and GitLab",
+      "paragraphs": [
+        "Git versions file versions and its relationships. GitHub and GitLab complement hosting, accesses, discussions and test runs. A Git repository is not automatically a permanently maintained archive.",
+        "Our pattern: private research and preparation on the Uni-GitLab; a separate public corpus in a GitHub project organization contains the released data. At least two authorized persons can administer."
+      ],
+      "links": [
+        [
+          "Git: Basics",
+          "https://git-scm.com/book/de/v2"
+        ]
+      ]
+    },
+    {
+      "id": "branch",
+      "title": "Industries, Contributions and Reviews",
+      "paragraphs": [
+        "A branch keeps a temporary change trialable separately. A pull/merge request bundles them for testing. Industries do not separate confidential reading areas.",
+        "A contribution will only be accepted after automatic and professional examination. Open contributions create opportunities and review work. A public repo is not a commitment to integrate any extension."
+      ],
+      "links": [
+        [
+          "Git: Industries",
+          "https://git-scm.com/book/de/v2/Git-Branching-Branches-auf-einen-Blick"
+        ]
+      ]
+    },
+    {
+      "id": "release",
+      "title": "Commit, Tag and Release",
+      "paragraphs": [
+        "A commit refers to a technical revision. A tag names a version but can be moved technically and needs protection rules. A GitHub release adds release notes and files to one tag.",
+        "The project defines its scientific releases: full review, editorial approval, composition and changelog. Published stands are not tacitly replaced; corrections receive new versions."
+      ],
+      "links": [
+        [
+          "GitHub: Releases",
+          "https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases"
+        ]
+      ]
+    },
+    {
+      "id": "doi",
+      "title": "Version Archive and DOI",
+      "paragraphs": [
+        "A DOI is a permanent identifier, not a replacement for received files and maintained metadata. For an analysis, the specifically used archived version is specified, not only the version family.",
+        "The release path can use a suitable archive service. Zenodo/GitHub linking is a possible technical way; data packet, resource type, metadata and complete components are deliberately checked. A DOI per commit is not the goal."
+      ],
+      "links": [
+        [
+          "Zenodo: DOI versioning",
+          "https://doi.org/10.5281/zenodo.1256592"
+        ]
+      ]
+    },
+    {
+      "id": "xslt",
+      "title": "XSLT and Analysis Manifest",
+      "paragraphs": [
+        "For example, XSLT derives TXT or HTML from XML. Whether auditions, solutions and headlines are included changes the research basis. Extraction is therefore a documented procedure.",
+        "An analysis manifest combines corpus release, sample selection, extraction, tool set and parameters. It does not replace files; it describes which actually received components belong together."
+      ],
+      "links": [
+        [
+          "W3C: XSLT",
+          "https://www.w3.org/TR/xslt-30/"
+        ]
+      ]
+    },
+    {
+      "id": "stand-off",
+      "title": "version-off and derived corpus",
+      "paragraphs": [
+        "version-off stores annotations separately and refers to a concrete basic version. Stable puzzle identifiers are not always sufficient for word annotation: Tokenization and finer anchors must fit together.",
+        "We start for additional automatic annotation with a separate layer. Directly into the base we only take over technically decided model changes. An independent derived corpus is a later deepening."
+      ],
+      "links": [
+        [
+          "TEI: version-off markup",
+          "https://tei-c.org/release/doc/tei-p5-doc/en/html/SA.html"
+        ]
+      ]
+    },
+    {
+      "id": "fair",
+      "title": "FAIR and freely usable sources",
+      "paragraphs": [
+        "The corpus can be found, accessible, interoperable and reusable through metadata, preserved versions, open formats, understandable models and clear terms of use. A public repo address alone is not sufficient.",
+        "Only freely reusable texts are recorded. Source and conditions are in the metadata. The age of a work does not prove the free usability of any digital version. Working accounts and Git metadata also need adequate protection."
+      ],
+      "links": [
+        [
+          "GO FAIR: Principles",
+          "https://www.go-fair.org/fair-principles/"
+        ]
+      ]
+    },
+    {
+      "id": "analyse",
+      "title": "Python, XQuery and data verification",
+      "paragraphs": [
+        "Python is a programming language with which XML files can be processed and corpora evaluated. XQuery is a query language for structured data, especially XML. Both can examine exactly the properties that a process asks for.",
+        "A successful query is not an automatic TEI validation. Conformity to the agreed schema and content retention are checked separately. Also a schematic inventory may contain technical errors."
+      ],
+      "links": [
+        [
+          "Python: ElementTree",
+          "https://docs.python.org/3/library/xml.etree.elementtree.html"
+        ],
+        [
+          "W3C: XQuery 3.1",
+          "https://www.w3.org/TR/xquery-31/"
+        ]
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "Distant Reading and Close Reading",
+      "paragraphs": [
+        "Distant Reading examines patterns across many texts, such as frequencies and distributions. Close Reading looks closely at individual texts and locations. Both perspectives complement each other in the corpus project.",
+        "An unchanged number of puzzles can hide a lost solution part. Inventory checks, targeted reading and version comparison examine other properties than the previous analysis."
+      ],
+      "links": []
+    }
+  ],
+  "choices": [
+    {
+      "id": "P03-D17",
+      "key": "timing",
+      "label": "When will the corpus be usable?",
+      "options": {
+        "early": "Early an audited, documented subset",
+        "late": "Just shortly before the last workshop"
+      }
+    },
+    {
+      "id": "P03-D18",
+      "key": "organization",
+      "label": "How is the collection offered?",
+      "options": {
+        "clear": "Relevant inventory, rules and start-up example",
+        "dump": "Research repository without its own publication preparation"
+      }
+    },
+    {
+      "id": "P03-D19",
+      "key": "local",
+      "label": "Is it possible to work locally independently?",
+      "options": {
+        "yes": "Full download, relative paths, open formats",
+        "api": "Only server dependent access via API/library"
+      }
+    },
+    {
+      "key": "host",
+      "id": "P03-D01",
+      "label": "Where is the public corpus located?",
+      "options": {
+        "github": "GitHub-Projektorganisation",
+        "gitlab": "Public institutional GitLab"
+      }
+    },
+    {
+      "key": "history",
+      "id": "P03-D02",
+      "label": "What story is being published?",
+      "options": {
+        "clean": "Tested independent publication history",
+        "unchecked": "Private history not yet fully verified"
+      }
+    },
+    {
+      "key": "quality",
+      "id": "P03-D05",
+      "label": "What has been tested?",
+      "options": {
+        "full": "Structure, references, issues and technical examination",
+        "schema": "So far only structure and schema"
+      }
+    },
+    {
+      "key": "citation",
+      "id": "P03-D06",
+      "label": "What does research refer to?",
+      "options": {
+        "release": "Verified release with version archive",
+        "commit": "Exact Committance",
+        "main": "Current main"
+      }
+    },
+    {
+      "key": "annotation",
+      "id": "P03-D07",
+      "label": "Where does new annotation come from?",
+      "options": {
+        "standoff": "Independent version-off layer",
+        "inline": "Direct to the base TEI",
+        "derived": "Derived research corpus"
+      }
+    },
+    {
+      "key": "care",
+      "id": "P03-D09",
+      "label": "What happens after the sponsor?",
+      "options": {
+        "conserve": "Maintaining Limited Preservation",
+        "active": "Actively integrate and publish",
+        "transfer": "Institutionally transferred",
+        "archive": "Archive Completed"
+      }
+    },
+    {
+      "key": "successor",
+      "id": "P03-D10",
+      "label": "Are succession and nursing time clarified?",
+      "options": {
+        "yes": "Yes, named and planned",
+        "no": "Not yet secured"
+      }
+    },
+    {
+      "key": "archive",
+      "id": "P03-D15",
+      "label": "Is the release archived independently?",
+      "options": {
+        "yes": "Archive package and metadata checked",
+        "no": "So far only at the Git-Host"
+      }
+    },
+    {
+      "key": "frontend",
+      "id": "P03-D08",
+      "label": "Additional current application/API?",
+      "options": {
+        "no": "No, data and documented exports",
+        "yes": "Yes, an additional service"
+      }
+    },
+    {
+      "key": "funding",
+      "id": "P03-D16",
+      "label": "Is its operation financed?",
+      "options": {
+        "no": "No operational commitment yet",
+        "yes": "Sponsorship and operation secured"
+      }
+    }
+  ],
+  "risks": [
+    {
+      "id": "P03-R01",
+      "title": "Versionen",
+      "story": "P03-S02",
+      "meaning": "High importance for repeatability",
+      "text": "A result refers only to the current inventory. Corrections, new books or other extractions can change the research basis.",
+      "git": "Commit and release identifiers allow accurate assignment. An archive keeps the designated data regardless of the current host.",
+      "consider": "Which selection and which tool holder were used? Is the exact version obtained?",
+      "action": "Connect release, version archive, selection and procedures in an analysis manifest.",
+      "owner": "Researchers and Release Managers"
+    },
+    {
+      "id": "P03-R03",
+      "title": "Datenverlust",
+      "story": "P03-S01",
+      "meaning": "High importance for data quality",
+      "text": "The analysis is running, although a transformation has lost separate solutions. Just properties that the own script does not use remain slightly ignored.",
+      "git": "Comparisons and designated tool stands limit the loss. Regression tests make known cases repeatable verifiable.",
+      "consider": "Do we only examine the properties of our current research question or the existing collection and other ways of using it?",
+      "action": "Compare inventory before and after processing, read purposefully and document the correction in the release.",
+      "owner": "Lea, Jonas and technical editors"
+    },
+    {
+      "id": "P03-R08",
+      "title": "Anschlussforschung",
+      "story": "P03-S03",
+      "meaning": "Scientific opportunity with additional care needs",
+      "text": "External researchers bring with them books, corrections and new annotations. This expands the corpus and its questions; testing and supervision remain work.",
+      "git": "Pull/merge requests and related repos make contributions and derivatives comprehensible.",
+      "consider": "Who checks and maintains the extension? Are common anchors and version relations agreed?",
+      "action": "Curate contributions by capacity; consciously connect external layers or partial corpora.",
+      "owner": "Project management, maintainers and contributors"
+    },
+    {
+      "id": "P03-R06",
+      "title": "Pflege",
+      "story": "P03-S04",
+      "meaning": "High importance for continuity",
+      "text": "Lea's temporary job ends. A second account does not prevent release knowledge or maintenance time from missing.",
+      "git": "Versioned instructions, tests and clear data levels facilitate handovers; working time must be institutionally secured.",
+      "consider": "Can another person check, derive and create a sample release?",
+      "action": "Perform handover test, name roles and scope of care.",
+      "owner": "Chair, technical representation and institution"
+    },
+    {
+      "id": "P03-R10",
+      "title": "Local use",
+      "story": "P03-S05",
+      "meaning": "Opportunity for range and ongoing operational obligation",
+      "text": "An application can open up new uses. It needs a service beyond the data publication.",
+      "git": "Separate software versions hold development and data levels assigned. Hosting and support do not arise automatically.",
+      "consider": "Which need justifies which technology?",
+      "action": "TEI and offer exports reliably; provide additional services only with carriership.",
+      "owner": "Project management and infrastructure promoters"
+    },
+    {
+      "id": "P03-R07",
+      "title": "Hostwechsel",
+      "story": "P03-S06",
+      "meaning": "Continuity needs more than one mirror",
+      "text": "Git data remains transferable, platform operations and automation may be missing.",
+      "git": "Git transfers objects and references. Platform information and procedures must be consciously exported or documented.",
+      "consider": "What else can be found and executable after the change?",
+      "action": "Check archived releases and rebuild on other infrastructure.",
+      "owner": "Institutional owners and archive holders"
+    },
+    {
+      "id": "P03-R17",
+      "title": "Einstieg",
+      "story": "P03-S07",
+      "meaning": "High importance for actual use",
+      "text": "A public repo can remain incomprehensible: several last versions, large packages, local paths and unclear annotations prevent the first investigation.",
+      "git": "README, publication concept, small examples and named releases can be versioned together. Issues collect concrete feedback.",
+      "consider": "Can anyone recognize the decisive structure and begin without personal introduction?",
+      "action": "Test entry with a foreign environment and provide a small complete examination.",
+      "owner": "Lea and the editorial staff"
+    },
+    {
+      "id": "P03-R18",
+      "title": "Auszeichnung",
+      "story": "P03-S03",
+      "meaning": "Differences can distort analyses unnoticed",
+      "text": "Partial stocks use different rules or automatically generated annotations without detectable test status. An identical search pattern does not capture the same thing everywhere.",
+      "git": "Versioned rules, tests and documented transformations explain differences. New annotations can be connected as designated layers.",
+      "consider": "Which practice applies in which inventory? Which annotation is automatic and how has it been tested?",
+      "action": "Document markup practices, check differences and identify unified exports as derivatives.",
+      "owner": "Model managers and annotation creators"
+    }
+  ],
+  "pipeline": [
+    "Sources and internal work",
+    "Determine publication concept",
+    "Check and curate data",
+    "GitHub: Data, rules, examples",
+    "Release and Archive",
+    "Local research and reporting"
+  ],
+  "qualitySteps": [
+    "XML well formed?",
+    "schema respected?",
+    "collection and references received?",
+    "Derivatives checked?",
+    "Places read against source?",
+    "approval documented?"
+  ],
+  "citationSteps": [
+    {
+      "title": "Commit",
+      "text": "Exact technical revision. Can be an untested interim version."
+    },
+    {
+      "title": "Tag and project release",
+      "text": "Designated version with composition and modification instructions audited according to project rules."
+    },
+    {
+      "title": "archived version",
+      "text": "Received data package with metadata and version identifier. For research call the specific version used."
+    }
+  ],
+  "annotationWays": [
+    {
+      "key": "inline",
+      "title": "In the main TEI",
+      "text": "Directly in the base TEI, when the editors expand the model professionally. The change is checked and published with a new base release."
+    },
+    {
+      "key": "standoff",
+      "title": "Own annotation layer",
+      "text": "Our starting point for additional automatic annotation: own version, concrete base release, clear anchors and documented test status."
+    },
+    {
+      "key": "derived",
+      "title": "Derived research corpus",
+      "text": "For an independent new research edition: own repo with origin, selection and proof of transformation. This deepening needs its own care."
+    }
+  ],
+  "careStates": [
+    {
+      "key": "active",
+      "title": "Actively Maintain",
+      "text": "Check new posts and create releases. Named people need time to do so."
+    },
+    {
+      "key": "conserve",
+      "title": "Maintaining Preservation",
+      "text": "Secure important corrections and receipt; decide on further recordings according to capacity."
+    },
+    {
+      "key": "transfer",
+      "title": "Transfer",
+      "text": "Care, approvals and accesses go after checked transfer to a new carrier."
+    },
+    {
+      "key": "archive",
+      "title": "Archive Completed",
+      "text": "No ongoing integration. Received releases and understandable status allow further use."
+    }
+  ],
+  "handover": [
+    "Set up a fresh working environment",
+    "Open designated data and tool stand",
+    "Conduct tests with expected results",
+    "Create Documented Selection and Extraction",
+    "Package non-public sample release",
+    "Check files, checksum, responsibility and archive path"
+  ],
+  "strategy": [
+    {
+      "title": "Planning a clear publication early",
+      "text": "A separate public corpus in a GitHub project organisation contains the released data. The research repo remains responsible for sources, preparation and own studies."
+    },
+    {
+      "title": "Offering a significant collection",
+      "text": "data/tei contains the book files according to a documented model. README, schema, license, citation and a small example are included."
+    },
+    {
+      "title": "Check every change",
+      "text": "Changes come via a pull request. Automatic checks run with each proposal; a second person reads the affected bodies professionally against."
+    },
+    {
+      "title": "Publish Verified Releases",
+      "text": "Released stands receive tag, release, change notes and an independent archive package with version proof."
+    },
+    {
+      "title": "Making local research possible",
+      "text": "Full downloads, small entry data, relative paths and documented dependencies are mandatory. An API is an additional offer."
+    },
+    {
+      "title": "Determine research receipts",
+      "text": "Each study refers to data release, selection, extraction and scripting. An analysis manifest combines this information."
+    },
+    {
+      "title": "Version new annotation separately",
+      "text": "Additional automatic word annotation is first published as a version-off layer. It calls basic release, anchor, procedure and test status."
+    },
+    {
+      "title": "Name responsibility after end of project",
+      "text": "At least two authorized access routes, a well-kept guide and a reachable contact secure the operation. Limited conservation care applies after the sponsor."
+    }
+  ],
+  "contributing": [
+    {
+      "title": "A request is not yet accepted",
+      "text": "New books must fit the corpus profile and be freely reusable. Source, context and rights conditions are mentioned. A short preliminary request clarifies scope and available review capacity."
+    },
+    {
+      "title": "Applicable contribution",
+      "text": "The article names data and tool stand, stable IDs, conversion and technical tests. Uncertain limits or solutions are documented. The editorial board decides on recording and approval."
+    },
+    {
+      "title": "Accesses and work history",
+      "text": "Personal accounts receive appropriate rights. No access data, private communications or unexplained third-party materials are included in Git. Public history is consciously released; branches are not a confidentiality limit."
+    },
+    {
+      "title": "Limited commitments",
+      "text": "Error reports, audited contributions and independent compatible subcorpora are different forms of participation. The care commitment and responsibility are visible; out of openness there is no unlimited obligation to integrate."
+    }
+  ],
+  "inventory": [
+    {
+      "id": "R3-01",
+      "situation": "Research analyses run on alternating `main`",
+      "effect": "High: results not clearly repeatable",
+      "git": "Commit-/Releasefixierung",
+      "measure": "Version DOI, manifesto, citation rule"
+    },
+    {
+      "id": "R3-02",
+      "situation": "New material changes corpus composition",
+      "effect": "High: previous frequency findings shift",
+      "git": "Releases, changes and inventory traceable",
+      "measure": "Document changes and selection biases"
+    },
+    {
+      "id": "R3-03",
+      "situation": "Automated segmentation hits wrong puzzle limits",
+      "effect": "High: Systematic errors in Distant Reading",
+      "git": "versioned import procedures, tests",
+      "measure": "Technical samples, correction releases"
+    },
+    {
+      "id": "R3-04",
+      "situation": "TEI-schema is used inconsistently",
+      "effect": "High: Comparability/Processing suffer",
+      "git": "automated checks",
+      "measure": "ODD/RNG, Schematron, Global Tests"
+    },
+    {
+      "id": "R3-05",
+      "situation": "Private publication history becomes public",
+      "effect": "Medium to high: Unwanted publication of previous content",
+      "git": "Git history is legible",
+      "measure": "history-conscious approval / new publication repository"
+    },
+    {
+      "id": "R3-06",
+      "situation": "WiMi retires after funding",
+      "effect": "High: orphan release knowledge/accounts",
+      "git": "Git preserves files but not implicit knowledge",
+      "measure": "Maintenance manual, multiple owners, handover test"
+    },
+    {
+      "id": "R3-07",
+      "situation": "Uni- or external Git host changes",
+      "effect": "Medium to high: links/CI/platform data lose effect",
+      "git": "Git objects are basically portable",
+      "measure": "external archiving, export test, migration plan"
+    },
+    {
+      "id": "R3-08",
+      "situation": "External contributions are increasing",
+      "effect": "Chance + risk: growth vs. audit costs",
+      "git": "Pull/Merge Requests, Forks",
+      "measure": "Acceptance rules, review roles, contribution limit"
+    },
+    {
+      "id": "R3-09",
+      "situation": "New annotations lead to model changes",
+      "effect": "Medium to high: more complex validation/version logic",
+      "git": "Branch tests, independent repos",
+      "measure": "Basic corpus stable, integrating annotations separately or consciously"
+    },
+    {
+      "id": "R3-10",
+      "situation": "Start Python API/frontend",
+      "effect": "Chance + risk: greater use of vs. ongoing support",
+      "git": "Separate software versioning",
+      "measure": "Proof of need, financing for care, optional offer"
+    },
+    {
+      "id": "R3-11",
+      "situation": "Commit story becomes the sole documentation",
+      "effect": "Means: Beneficiaries do not understand important revisions",
+      "git": "Commit messages help internally",
+      "measure": "scientific changelog and release notes"
+    },
+    {
+      "id": "R3-12",
+      "situation": "Changing XSLT extraction",
+      "effect": "High for analysis: same TEI-version, other text corpus",
+      "git": "versioned transformation scripts",
+      "measure": "Tool version and parameters in the analysis manifest"
+    },
+    {
+      "id": "R3-13",
+      "situation": "Different sources dominate certain epochs",
+      "effect": "High: Fake conjunctions instead of history",
+      "git": "Git documents inventory, does not prevent bias",
+      "measure": "Selection concept and source-critical notes"
+    },
+    {
+      "id": "R3-14",
+      "situation": "Only personal administrator account",
+      "effect": "High: lost access option",
+      "git": "Platform rollers available",
+      "measure": "institutional organisation and succession"
+    },
+    {
+      "id": "R3-15",
+      "situation": "No permanent archiving",
+      "effect": "High: releases/links depending on Git host",
+      "git": "Dates not sufficient alone",
+      "measure": "archived version DOIs and maintenance check"
+    },
+    {
+      "id": "R3-16",
+      "situation": "Data/Tool Stands not referenced together",
+      "effect": "High: Distance analysis not reproducible",
+      "git": "Git hashes per repo possible",
+      "measure": "composite analysis/release manifest"
+    }
+  ],
+  "uses": [
+    {
+      "title": "Investigate in the seminar",
+      "text": "Students examine hypotheses about verse form, formulas and solutions. A small sample dataset leads to the first local analysis."
+    },
+    {
+      "title": "Compare rhymes and solutions",
+      "text": "Two rhymed verses, a solution as a verse or a rhyme: different forms need comprehensible distinction."
+    },
+    {
+      "title": "Check and train models",
+      "text": "A benchmark or conference contribution can be based on the corpus. Data collection, test entries and procedures must remain distinguishable."
+    }
+  ],
+  "researchPath": [
+    {
+      "title": "Select Release",
+      "text": "Described dataset and known limits."
+    },
+    {
+      "title": "Hold selection",
+      "text": "What riddles, solutions and layers?"
+    },
+    {
+      "title": "Check Locally",
+      "text": "Documented extraction, script and environment."
+    },
+    {
+      "title": "Share findings",
+      "text": "Result with data and process proof."
+    }
+  ],
+  "publication": [
+    {
+      "title": "For whom?",
+      "text": "Students, corpus researchers and model groups should independently get to a comprehensible investigation from a download."
+    },
+    {
+      "title": "What collection?",
+      "text": "data/tei contains the relevant book files. Solutions are associated with puzzle identifiers. Automatic annotations are separated and call procedures and test status."
+    },
+    {
+      "title": "How to get in?",
+      "text": "README explains inventory, license, structure and first call. Small examples, subpackages and complete data can be used locally without a university account."
+    },
+    {
+      "title": "How to release?",
+      "text": "Exams, inventory comparison and targeted technical reading precedes the release. Tag, release notes and archive package denote the publication."
+    },
+    {
+      "title": "How to improve?",
+      "text": "Errors are reported as issues, corrections are checked and described in new releases. Older research findings remain referenceable; their defects will not become mandatory for future versions."
+    }
+  ],
+  "pattern": [
+    {
+      "id": "P03-M01",
+      "title": "Planning a clear publication early",
+      "text": "A separate public corpus in a GitHub project organisation contains the released data. The research repo remains responsible for sources, preparation and own studies.",
+      "example": "Before the first workshop are target group, data scope, folder structure, examination and release path in the versioned publication concept.",
+      "tip": "A separate publication repository prevents internal working versions from being published casually."
+    },
+    {
+      "id": "P03-M02",
+      "title": "Offering a significant collection",
+      "text": "data/tei contains the book files according to a documented model. README, schema, license, citation and a small example are included.",
+      "example": "A user finds in README: \"For analysis, use data/tei of this release. Examples are in examples/.",
+      "tip": "Take the structure as a starting point. Own supplements get an explained function."
+    },
+    {
+      "id": "P03-M03",
+      "title": "Check every change",
+      "text": "Changes come via a pull request. Automatic checks run with each proposal; a second person reads the affected bodies professionally against.",
+      "example": "A converter changes ten books: schema and check references, compare inventory changes and read back at least the affected structure types.",
+      "tip": "A running script is not a proof of quality. Test scope and editorial approval are recorded."
+    },
+    {
+      "id": "P03-M04",
+      "title": "Publish Verified Releases",
+      "text": "Released stands receive tag, release, change notes and an independent archive package with version proof.",
+      "example": "v1.1 complements collections and corrects solutions. CHANGELOG mentions the changes; v1.0 is retained as a previous state of research.",
+      "tip": "Do not overwrite already published versions tacitly. Correct errors in a new version."
+    },
+    {
+      "id": "P03-M05",
+      "title": "Making local research possible",
+      "text": "Full downloads, small entry data, relative paths and documented dependencies are mandatory. An API is an additional offer.",
+      "example": "A newly unpacked example returns the specified result with a documented call – without a university account or network drive.",
+      "tip": "Check the entry on another computer. Document the actual tested environment."
+    },
+    {
+      "id": "P03-M06",
+      "title": "Determine research receipts",
+      "text": "Each study refers to data release, selection, extraction and scripting. An analysis manifest combines this information.",
+      "example": "The Reimstudie uses release v1.0, four puzzle identifiers and the designated export without solutions.",
+      "tip": "Save the proof together with the examination, not only as a link to the current repo."
+    },
+    {
+      "id": "P03-M07",
+      "title": "Version new annotation separately",
+      "text": "Additional automatic word annotation is first published as a version-off layer. It calls basic release, anchor, procedure and test status.",
+      "example": "A word type annotation refers to v1.0 and the tokenization there. Users can obtain basic data without this layer.",
+      "tip": "A technically decided change to the basic model is possible; it receives a new basic release. Additional research remains initially separate."
+    },
+    {
+      "id": "P03-M08",
+      "title": "Name responsibility after end of project",
+      "text": "At least two authorized access routes, a well-kept guide and a reachable contact secure the operation. Limited conservation care applies after the sponsor.",
+      "example": "README mentions who checks important corrections and that new books are recorded after available capacity.",
+      "tip": "Try usage and release preparation before leaving the main editor."
+    }
+  ]
+}

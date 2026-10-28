@@ -1,0 +1,75 @@
+{
+  "id": "P04-ORDER01",
+  "title": "Gleiche Worte. Andere Lesefolge.",
+  "intro": "Eine Randnotiz kann unterschiedlich in den Haupttext eingeordnet werden. Wechseln Sie zwischen zwei Rekonstruktionen und wählen Sie einen Textteil: Seine Stelle auf der Demoseite bleibt auffindbar.",
+  "comparison": "Die digitale Edition kann unterschiedliche Lesefolgen am selben Material erkundbar machen. Der Druck wählt eine begründete Folge und erläutert Alternativen im Apparat.",
+  "git": "Git hält fest, welche Textteile, Zuordnungen und Modellregeln einer Ansicht zugrunde liegen. Die historische Reihenfolge ist eine editorische Hypothese; sie wird nicht aus der Abfolge moderner Commits abgelesen.",
+  "segments": [
+    {
+      "id": "seq-clara",
+      "label": "Clara am Tor",
+      "text": "Clara blieb am Tore stehen.",
+      "region": [
+        45,
+        95,
+        650,
+        85
+      ],
+      "lines": [
+        "Clara blieb am Tore stehen."
+      ],
+      "place": "Haupttext, obere Zeile"
+    },
+    {
+      "id": "seq-stadt",
+      "label": "Die Stadt wird dunkel",
+      "text": "Hinter den Fenstern wurden die Lampen gelöscht.",
+      "region": [
+        220,
+        310,
+        475,
+        105
+      ],
+      "lines": [
+        "Hinter den Fenstern wurden",
+        "die Lampen gelöscht."
+      ],
+      "place": "Randnotiz, unterer Seitenbereich"
+    },
+    {
+      "id": "seq-schritte",
+      "label": "Die Schritte",
+      "text": "Erst jetzt hörte sie die Schritte auf dem Pflaster.",
+      "region": [
+        45,
+        200,
+        650,
+        85
+      ],
+      "lines": [
+        "Erst jetzt hörte sie die Schritte auf dem Pflaster."
+      ],
+      "place": "Haupttext, folgende Zeile"
+    }
+  ],
+  "hypotheses": [
+    {
+      "title": "Rekonstruktion A",
+      "order": [
+        "seq-clara",
+        "seq-stadt",
+        "seq-schritte"
+      ],
+      "explanation": "Zuerst Clara am Tor, dann die dunkler werdende Stadt: Die Randnotiz wird nach Claras Ankunft eingeordnet."
+    },
+    {
+      "title": "Rekonstruktion B",
+      "order": [
+        "seq-stadt",
+        "seq-clara",
+        "seq-schritte"
+      ],
+      "explanation": "Zuerst die dunkler werdende Stadt, dann Clara am Tor: Dieselbe Randnotiz eröffnet die Passage. Der Zusammenhang wird anders gewichtet."
+    }
+  ]
+}

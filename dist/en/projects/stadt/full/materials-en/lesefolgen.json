@@ -1,0 +1,75 @@
+{
+  "id": "P04-ORDER01",
+  "title": "Same words. Other reading sequence.",
+  "intro": "An edge note can be classified differently into the main text. Switch between two reconstructions and select a text part: its location on the demo page remains to be found.",
+  "comparison": "The digital edition can reveal different reading sequences on the same material. The print chooses a well-founded sequence and explains alternatives in the apparatus.",
+  "git": "Git records which text parts, assignments and model rules are underlying a view. The historical order is an editorial hypothesis; it is not read from the sequence of modern commits.",
+  "segments": [
+    {
+      "id": "seq-clara",
+      "label": "Clara at the gate",
+      "text": "Clara stopped at the gate.",
+      "region": [
+        45,
+        95,
+        650,
+        85
+      ],
+      "lines": [
+        "Clara stopped at the gate."
+      ],
+      "place": "Main text, upper line"
+    },
+    {
+      "id": "seq-stadt",
+      "label": "The city is getting dark",
+      "text": "Behind the windows, the lamps were extinguished.",
+      "region": [
+        220,
+        310,
+        475,
+        105
+      ],
+      "lines": [
+        "Behind the windows were",
+        "the lamps are extinguished."
+      ],
+      "place": "Side note, lower side area"
+    },
+    {
+      "id": "seq-schritte",
+      "label": "The steps",
+      "text": "Only now did she hear the steps on the patch.",
+      "region": [
+        45,
+        200,
+        650,
+        85
+      ],
+      "lines": [
+        "Only now did she hear the steps on the patch."
+      ],
+      "place": "Main text, following line"
+    }
+  ],
+  "hypotheses": [
+    {
+      "title": "Reconstruction A",
+      "order": [
+        "seq-clara",
+        "seq-stadt",
+        "seq-schritte"
+      ],
+      "explanation": "First Clara at the gate, then the darkening city: The marginal note is classified after Clara's arrival."
+    },
+    {
+      "title": "Reconstruction B",
+      "order": [
+        "seq-stadt",
+        "seq-clara",
+        "seq-schritte"
+      ],
+      "explanation": "First the darker city, then Clara at the gate: The same marginal note opens the passage. The connection is weighted differently."
+    }
+  ]
+}

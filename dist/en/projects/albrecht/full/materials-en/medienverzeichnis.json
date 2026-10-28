@@ -1,0 +1,30 @@
+[
+  {
+    "file": "assets/detektiv.webp",
+    "type": "AI-generated illustration",
+    "label": "Fictional scene · AI-generated illustration",
+    "provenance": "assets/bildnachweise.md",
+    "date": "See original photo credits; not subsequently supplemented."
+  },
+  {
+    "file": "assets/quellen.webp",
+    "type": "AI-generated illustration",
+    "label": "Fictional scene · AI-generated illustration",
+    "provenance": "assets/bildnachweise.md",
+    "date": "See original photo credits; not subsequently supplemented."
+  },
+  {
+    "file": "assets/redaktion.webp",
+    "type": "AI-generated illustration",
+    "label": "Fictional scene · AI-generated illustration",
+    "provenance": "assets/bildnachweise.md",
+    "date": "See original photo credits; not subsequently supplemented."
+  },
+  {
+    "file": "assets/werk.svg",
+    "type": "Textual graphics created as code",
+    "label": "Editorial teaching graphic · schematic representation",
+    "provenance": "assets/bildnachweise.md",
+    "date": "See original photo credits; not subsequently supplemented."
+  }
+]

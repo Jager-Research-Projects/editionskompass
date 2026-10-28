@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "date": "2026-10-28",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "sourceDocuments": [
+    "entscheidungshilfe_git_existdb_digitale_editionen.md",
+    "git_existdb_digitale_editionen_vergleich.md"
+  ],
+  "assistance": "AI-assisted drafting, translation, schematic SVG authoring and implementation",
+  "sources": [
+    [
+      "eXist-db · Documentation",
+      "https://exist-db.org/exist/apps/doc/"
+    ],
+    [
+      "eXist-db · XQuery",
+      "https://exist-db.org/exist/apps/doc/xquery"
+    ],
+    [
+      "eXist-db · Community / professional support",
+      "https://exist-db.org/exist/apps/doc/getting-help"
+    ],
+    [
+      "Saxonica · Using XQuery",
+      "https://www.saxonica.com/html/documentation12/using-xquery/index.html"
+    ],
+    [
+      "Git · Documentation",
+      "https://git-scm.com/docs"
+    ],
+    [
+      "TEI · Guidelines",
+      "https://tei-c.org/guidelines/"
+    ]
+  ],
+  "pdfReview": "See tests/databases-results.json; no formal accessibility conformance claim."
+}

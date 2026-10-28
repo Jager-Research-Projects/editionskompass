@@ -1,0 +1,86 @@
+[
+  {
+    "name": "README.md",
+    "kind": "Datei",
+    "purpose": "Neue Nutzer finden den maßgeblichen Bestand, Einstieg, Version, Lizenz, Zitation und Rückkanal.",
+    "care": "Mit dem Publikationskonzept planen; vor externer Nutzung anlegen; vor jedem Release prüfen.",
+    "preview": "README.md\n# Die andere Stadt\n## Daten und Ausgabe\n## Einstieg und Prüfung\n## Zitation und Rückmeldung"
+  },
+  {
+    "name": "data/",
+    "kind": "Ordner",
+    "purpose": "Maßgebliche TEI in fachlich sinnvollen, stabil bezeichneten Einheiten.",
+    "care": "Im Pilotbestand zuschneiden; bei Aufnahme prüfen; bei Umstrukturierung Verweise migrieren.",
+    "preview": "data/\n  ms01/\n    eh-ms01-b012r.xml\n    eh-ms01-b012v.xml"
+  },
+  {
+    "name": "schema/",
+    "kind": "Ordner",
+    "purpose": "ODD, abgeleitetes Schema und zusätzliche Regeln dokumentieren das Modell.",
+    "care": "Mit der Modellierung anlegen; Modelländerungen gemeinsam prüfen; Rückwirkung testen.",
+    "preview": "schema/\n  hartmann.odd\n  hartmann.rng\n  hartmann.sch"
+  },
+  {
+    "name": "transforms/",
+    "kind": "Ordner",
+    "purpose": "Versionierte Transformationen überführen oder leiten Daten ab.",
+    "care": "Vor dem ersten Import testen; systematische Fehler korrigieren und betroffene Importe nachprüfen.",
+    "preview": "transforms/\n  page-to-tei.xsl\n  reading-view.xsl"
+  },
+  {
+    "name": "import/manifests/",
+    "kind": "Ordner",
+    "purpose": "Herkunft, Prüfsummen, Konverter und Abnahme verbinden Exportarchiv und TEI.",
+    "care": "Bei jeder Übernahme erstellen; alte Protokolle erhalten; nachträgliche Korrekturen nachweisen.",
+    "preview": "import/manifests/\n  ms01-import.json"
+  },
+  {
+    "name": "docs/",
+    "kind": "Ordner",
+    "purpose": "Handbuch, Kennungen, Forschungsbezug, Freigabe und Weiterarbeit erklären.",
+    "care": "Früh anlegen; nach erprobter Prozessänderung sofort aktualisieren und freigeben.",
+    "preview": "docs/\n  handbuch.md\n  kennungen.md\n  forschungsstaende.md\n  uebergabe.md"
+  },
+  {
+    "name": "tests/",
+    "kind": "Ordner",
+    "purpose": "Kleine technische und fachliche Prüffälle machen Erwartungen nachvollziehbar.",
+    "care": "Mit Import und Modell aufbauen; bei Fehlern einen passenden Prüffall ergänzen.",
+    "preview": "tests/\n  randzusatz.xml\n  erwartete-ansicht.md"
+  },
+  {
+    "name": "CITATION.cff",
+    "kind": "Datei",
+    "purpose": "Zitationsmetadaten nennen die verantwortete Veröffentlichung.",
+    "care": "Beim ersten Release anlegen; mit jeder Ausgabe und geänderten Beteiligung prüfen.",
+    "preview": "title: Die andere Stadt\ntype: dataset\nversion: [freigegebene Fassung]"
+  },
+  {
+    "name": "LICENSE",
+    "kind": "Datei",
+    "purpose": "Die erlaubte Nutzung des freigegebenen Bestands wird eindeutig beschrieben.",
+    "care": "Rechte früh klären; vor Veröffentlichung festlegen; Änderungen an Materialumfang prüfen.",
+    "preview": "Lizenz und Rechtehinweise\nGeltungsbereich\nAusnahmen für fremde Materialien"
+  },
+  {
+    "name": "CHANGELOG.md",
+    "kind": "Datei",
+    "purpose": "Neue Fassungen, Korrekturen und geänderte Bezüge verständlich beschreiben.",
+    "care": "Ab erster Ausgabe pflegen; mit jedem Release aktualisieren.",
+    "preview": "## V2\n- Lesung hierher → dorthin korrigiert\n- Korrektur aus dem Satz zurückgeführt"
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "kind": "Datei",
+    "purpose": "Mitarbeit, Review und Rückfragen für neue Beteiligte erklären.",
+    "care": "Mit dem Teamablauf anlegen; bei geänderten Regeln aktualisieren.",
+    "preview": "## Bearbeiten\n## Vergleichen und sichern\n## Fachlich prüfen lassen"
+  },
+  {
+    "name": "MAINTAINERS.md",
+    "kind": "Datei",
+    "purpose": "Fachliche und technische Verantwortung sowie Vertretung benennen.",
+    "care": "Zu Beginn festlegen; bei jedem Rollen- oder Trägerwechsel aktualisieren.",
+    "preview": "Fachliche Freigabe: Projektredaktion\nTechnik: benannte Betreuung + Vertretung\nArchiv und Betrieb: getrennte Vereinbarungen"
+  }
+]

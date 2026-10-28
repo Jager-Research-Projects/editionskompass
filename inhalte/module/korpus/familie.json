@@ -1,0 +1,255 @@
+{
+  "case": "P03",
+  "label": "Fall 03 · Rätselhaft!",
+  "project": "projekt",
+  "stories": "geschichten",
+  "materialTarget": "#material",
+  "strategy": [
+    "Ein eigenes öffentliches Korpusrepo in einer GitHub-Projektorganisation enthält die freigegebenen Daten. Das Forschungsrepo bleibt für Quellen, Aufbereitung und eigene Studien zuständig.",
+    "data/tei enthält die Buchdateien nach einem dokumentierten Modell. README, Schema, Lizenz, Zitation und ein kleines Beispiel gehören dazu.",
+    "Änderungen kommen über einen Pull Request. Automatische Prüfungen laufen bei jedem Vorschlag; eine zweite Person liest die betroffenen Stellen fachlich gegen.",
+    "Freigegebene Stände erhalten Tag, Release, Änderungsnotizen und ein unabhängiges Archivpaket mit Versionsnachweis.",
+    "Vollständige Downloads, kleine Einstiegsdaten, relative Pfade und dokumentierte Abhängigkeiten sind verbindlich. Eine API ist ein Zusatzangebot.",
+    "Jede Untersuchung nennt Datenrelease, Auswahl, Extraktion und Skriptfassung. Ein Analysemanifest verbindet diese Angaben.",
+    "Zusätzliche automatische Wortannotation wird zunächst als Stand-off-Schicht veröffentlicht. Sie nennt Basisrelease, Anker, Verfahren und Prüfstatus.",
+    "Mindestens zwei autorisierte Zugangswege, eine gepflegte Anleitung und ein erreichbarer Kontakt sichern den Betrieb. Nach Förderende gilt begrenzte konservierende Pflege."
+  ],
+  "storySelectors": [
+    "#stories>article"
+  ],
+  "architectureSelectors": [
+    "#pipeline"
+  ],
+  "hideOriginal": [
+    "persona",
+    "strategy",
+    "graph",
+    "decisions",
+    "architecture",
+    "risks",
+    "stories",
+    "handbook",
+    "manual"
+  ],
+  "rules": [
+    [
+      "Arbeiten und prüfen",
+      "Änderungen in überschaubaren Schritten bearbeiten, vor dem Übertragen vergleichen und mit den vereinbarten Prüfregeln kontrollieren."
+    ],
+    [
+      "Bezeichnen und dokumentieren",
+      "Maßgebliche Daten, Regeln, Zuständigkeiten und zusammengehörende Ausgabestände nachvollziehbar benennen."
+    ],
+    [
+      "Zugriff und Weiterarbeit",
+      "Nur berechtigten Personen Zugriff geben; Beiträge, Freigaben, Rollenwechsel, Sicherung und Wiederherstellung entsprechend dem Projektumfang regeln."
+    ]
+  ],
+  "media": [
+    {
+      "file": "assets/fundstueck.webp",
+      "type": "KI-generierte Illustration",
+      "label": "Fiktive Szene · KI-generierte Illustration",
+      "provenance": "assets/bildprompts.md",
+      "date": "Siehe ursprüngliche Bildnachweise; nicht nachträglich ergänzt."
+    },
+    {
+      "file": "assets/seminar.webp",
+      "type": "KI-generierte Illustration",
+      "label": "Fiktive Szene · KI-generierte Illustration",
+      "provenance": "assets/bildprompts.md",
+      "date": "Siehe ursprüngliche Bildnachweise; nicht nachträglich ergänzt."
+    },
+    {
+      "file": "assets/uebergabe.webp",
+      "type": "KI-generierte Illustration",
+      "label": "Fiktive Szene · KI-generierte Illustration",
+      "provenance": "assets/bildprompts.md",
+      "date": "Siehe ursprüngliche Bildnachweise; nicht nachträglich ergänzt."
+    },
+    {
+      "file": "assets/vergleich.webp",
+      "type": "KI-generierte Illustration",
+      "label": "Fiktive Szene · KI-generierte Illustration",
+      "provenance": "assets/bildprompts.md",
+      "date": "Siehe ursprüngliche Bildnachweise; nicht nachträglich ergänzt."
+    }
+  ],
+  "ratingBasis": "Redaktionelle Ausgangseinordnung für den Modellfall vor zusätzlichen Maßnahmen. Plausibilität ist keine gemessene Wahrscheinlichkeit; Wirkung meint bei Chancen den Nutzen, bei Risiken eine unerwünschte Folge. Ungeklärte Bedingungen bleiben außerhalb der Quadranten. Die Erkundung und Themenkarten erläutern zusätzliche Abhängigkeiten.",
+  "ratings": [
+    {
+      "id": "P03-R01",
+      "title": "Versionen",
+      "type": "risk",
+      "p": "höher",
+      "w": "weitreichend",
+      "reason": "Hohe Bedeutung für die Wiederholbarkeit. Ein Ergebnis verweist nur auf den jeweils aktuellen Bestand. Korrekturen, neue Bücher oder andere Extraktionen können die Forschungsgrundlage verändern."
+    },
+    {
+      "id": "P03-R03",
+      "title": "Datenverlust",
+      "type": "risk",
+      "p": "höher",
+      "w": "weitreichend",
+      "reason": "Hohe Bedeutung für die Datenqualität. Die Analyse läuft, obwohl eine Transformation getrennte Lösungen verloren hat. Gerade Eigenschaften, die das eigene Skript nicht verwendet, bleiben leicht unbeachtet."
+    },
+    {
+      "id": "P03-R08",
+      "title": "Anschlussforschung",
+      "type": "chance",
+      "p": "höher",
+      "w": "weitreichend",
+      "reason": "Wissenschaftliche Chance mit zusätzlichem Pflegebedarf. Externe Forschende bringen Bücher, Korrekturen und neue Annotationen mit. Das erweitert das Korpus und seine Fragen; Prüfung und Betreuung bleiben Arbeit."
+    },
+    {
+      "id": "P03-R06",
+      "title": "Pflege",
+      "type": "risk",
+      "p": "höher",
+      "w": "weitreichend",
+      "reason": "Hohe Bedeutung für Kontinuität. Leas befristete Stelle endet. Ein zweiter Account verhindert nicht, dass Releasewissen oder Pflegezeit fehlen."
+    },
+    {
+      "id": "P03-R10",
+      "title": "Lokale Nutzung",
+      "type": "chance",
+      "p": "höher",
+      "w": "weitreichend",
+      "reason": "Chance auf Reichweite und laufende Betriebspflicht. Eine Anwendung kann neue Nutzungen eröffnen. Sie braucht über die Datenpublikation hinaus einen betreuten Dienst."
+    },
+    {
+      "id": "P03-R07",
+      "title": "Hostwechsel",
+      "type": "risk",
+      "p": "geringer",
+      "w": "weitreichend",
+      "reason": "Kontinuität braucht mehr als einen Mirror. Git-Daten bleiben übertragbar, Plattformvorgänge und Automatisierung können fehlen."
+    },
+    {
+      "id": "P03-R17",
+      "title": "Einstieg",
+      "type": "risk",
+      "p": "höher",
+      "w": "weitreichend",
+      "reason": "Hohe Bedeutung für tatsächliche Nutzung. Ein öffentliches Repo kann unverständlich bleiben: mehrere letzte Fassungen, große Pakete, lokale Pfade und unklare Annotationen verhindern die erste Untersuchung."
+    },
+    {
+      "id": "P03-R18",
+      "title": "Auszeichnung",
+      "type": "risk",
+      "p": "höher",
+      "w": "weitreichend",
+      "reason": "Unterschiede können Analysen unbemerkt verzerren. Teilbestände verwenden verschiedene Regeln oder automatisch erzeugte Annotationen ohne erkennbaren Prüfstatus. Ein gleiches Suchmuster erfasst dann nicht überall dasselbe."
+    }
+  ],
+  "riskTexts": {
+    "P03-R01": {
+      "situation": "Ein Ergebnis verweist nur auf den jeweils aktuellen Bestand. Korrekturen, neue Bücher oder andere Extraktionen können die Forschungsgrundlage verändern.",
+      "git": "Commit- und Releasekennungen erlauben genaue Zuordnung. Ein Archiv hält die bezeichneten Daten unabhängig vom laufenden Host.",
+      "consider": "Welche Auswahl und welche Werkzeugfassung wurden verwendet? Ist der exakte Stand erhalten?",
+      "action": "Release, Versionsarchiv, Auswahl und Verfahren in einem Analysemanifest verbinden.",
+      "owner": "Forschende und Releaseverantwortliche"
+    },
+    "P03-R03": {
+      "situation": "Die Analyse läuft, obwohl eine Transformation getrennte Lösungen verloren hat. Gerade Eigenschaften, die das eigene Skript nicht verwendet, bleiben leicht unbeachtet.",
+      "git": "Vergleiche und bezeichnete Werkzeugstände grenzen den Verlust ein. Regressionstests machen bekannte Fälle wiederholbar prüfbar.",
+      "consider": "Prüfen wir nur die Eigenschaften unserer heutigen Forschungsfrage oder auch den erhaltenen Bestand und andere Nutzungsweisen?",
+      "action": "Bestand vor und nach Verarbeitung vergleichen, gezielt lesen und die Korrektur im Release dokumentieren.",
+      "owner": "Lea, Jonas und fachliche Redaktion"
+    },
+    "P03-R08": {
+      "situation": "Externe Forschende bringen Bücher, Korrekturen und neue Annotationen mit. Das erweitert das Korpus und seine Fragen; Prüfung und Betreuung bleiben Arbeit.",
+      "git": "Pull/Merge Requests und verbundene Repos machen Beiträge und Ableitungen nachvollziehbar.",
+      "consider": "Wer prüft und pflegt die Erweiterung? Sind gemeinsame Anker und Versionsbeziehungen vereinbart?",
+      "action": "Beiträge nach Kapazität kuratieren; externe Schichten oder Teilkorpora bewusst verbinden.",
+      "owner": "Projektleitung, Maintainer und Beitragende"
+    },
+    "P03-R06": {
+      "situation": "Leas befristete Stelle endet. Ein zweiter Account verhindert nicht, dass Releasewissen oder Pflegezeit fehlen.",
+      "git": "Versionierte Anleitungen, Tests und klare Datenstände erleichtern Übergaben; die Arbeitszeit muss institutionell gesichert sein.",
+      "consider": "Kann eine andere Person prüfen, ableiten und einen Probe-Release erstellen?",
+      "action": "Übergabetest durchführen, Rollen und Umfang der Pflege benennen.",
+      "owner": "Lehrstuhl, technische Vertretung und Träger"
+    },
+    "P03-R10": {
+      "situation": "Eine Anwendung kann neue Nutzungen eröffnen. Sie braucht über die Datenpublikation hinaus einen betreuten Dienst.",
+      "git": "Getrennte Softwareversionen halten Entwicklung und Datenstände zugeordnet. Hosting und Support entstehen daraus nicht automatisch.",
+      "consider": "Welcher Bedarf rechtfertigt welche Technik?",
+      "action": "TEI und Exporte verlässlich anbieten; zusätzliche Dienste nur mit Trägerschaft zusagen.",
+      "owner": "Projektleitung und Infrastrukturträger"
+    },
+    "P03-R07": {
+      "situation": "Git-Daten bleiben übertragbar, Plattformvorgänge und Automatisierung können fehlen.",
+      "git": "Git überträgt Objekte und Referenzen. Plattforminformationen und Verfahren müssen bewusst exportiert oder dokumentiert werden.",
+      "consider": "Was ist nach dem Wechsel noch auffindbar und ausführbar?",
+      "action": "Archivierte Releases und Neuaufbau auf anderer Infrastruktur prüfen.",
+      "owner": "Institutionelle Owner und Archivträger"
+    },
+    "P03-R17": {
+      "situation": "Ein öffentliches Repo kann unverständlich bleiben: mehrere letzte Fassungen, große Pakete, lokale Pfade und unklare Annotationen verhindern die erste Untersuchung.",
+      "git": "README, Publikationskonzept, kleine Beispiele und benannte Releases lassen sich gemeinsam versionieren. Issues sammeln konkrete Rückmeldungen.",
+      "consider": "Kann jemand den maßgeblichen Bestand erkennen und ohne persönliche Einführung beginnen?",
+      "action": "Einstieg mit einer fremden Umgebung erproben und eine kleine vollständige Untersuchung mitliefern.",
+      "owner": "Lea und die fachliche Redaktion"
+    },
+    "P03-R18": {
+      "situation": "Teilbestände verwenden verschiedene Regeln oder automatisch erzeugte Annotationen ohne erkennbaren Prüfstatus. Ein gleiches Suchmuster erfasst dann nicht überall dasselbe.",
+      "git": "Versionierte Regeln, Tests und dokumentierte Transformationen erklären Unterschiede. Neue Annotationen können als bezeichnete Schichten verbunden werden.",
+      "consider": "Welche Praxis gilt in welchem Bestand? Welche Annotation ist automatisch und wie wurde sie geprüft?",
+      "action": "Auszeichnungspraktiken dokumentieren, Unterschiede prüfen und vereinheitlichte Exporte als Ableitungen kennzeichnen.",
+      "owner": "Modellverantwortliche und Annotationserstellende"
+    }
+  },
+  "materials": [
+    {
+      "kind": "persona",
+      "title": "Projektkarte",
+      "description": "Persona, Vorhaben und Ressourcen",
+      "pdf": "familie-projekt.pdf"
+    },
+    {
+      "kind": "family-strategy",
+      "title": "Musterstrategie",
+      "description": "Die empfohlene Ausgangslösung",
+      "pdf": "familie-strategie.pdf"
+    },
+    {
+      "kind": "decisions",
+      "title": "Entscheidungsgraph",
+      "description": "Wege, Abhängigkeiten und Zusammenführungen",
+      "format": "A3",
+      "pdf": "familie-entscheidungen.pdf"
+    },
+    {
+      "kind": "family-architecture",
+      "title": "Architektur",
+      "description": "Arbeitsorte, Datenflüsse und Ausgaben",
+      "pdf": "familie-architektur.pdf"
+    },
+    {
+      "kind": "family-risks",
+      "title": "Chancen und Risiken",
+      "description": "Einordnungen, Maßnahmen und Zuständigkeiten",
+      "pdf": "familie-risiken.pdf"
+    },
+    {
+      "kind": "family-stories",
+      "title": "Situationen · Lesefassung",
+      "description": "Die Fallgeschichten zum Nachlesen",
+      "pdf": "familie-situationen.pdf"
+    },
+    {
+      "kind": "maintenance",
+      "title": "Handbuch und Arbeitsregeln",
+      "description": "Verbindliche Praxis im passenden Projektumfang",
+      "pdf": "familie-regeln.pdf"
+    }
+  ],
+  "riskTarget": "#risks",
+  "knowledge": [
+    {
+      "selector": ".workflow>div",
+      "text": "Vergleichen Sie vor dem nächsten Schritt den gespeicherten Stand mit Ihrer Änderung. Halten Sie fest, welche Prüfung erfolgt ist und wer eine Freigabe übernehmen darf."
+    }
+  ]
+}

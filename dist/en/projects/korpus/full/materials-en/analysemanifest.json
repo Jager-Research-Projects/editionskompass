@@ -1,0 +1,32 @@
+{
+  "id": "P03-DEMO-ANALYSE-01",
+  "status": "artificial demonstration; no archived historical data publication",
+  "corpus": {
+    "release": "demo-v1.0",
+    "path": "versionsvergleich/v1.0/data",
+    "version_doi": null,
+    "git_commit": null
+  },
+  "selection": {
+    "book_ids": [
+      "book-a",
+      "book-b"
+    ],
+    "rule": "all puzzles of the two mentioned sample collections"
+  },
+  "extraction": {
+    "file": "xslt/raetseltexte-v1.xsl",
+    "version": "demo-1",
+    "includes_solutions": false,
+    "includes_prefaces": false
+  },
+  "analysis": {
+    "file": "run_demo.py",
+    "measure": "Puzzles / all puzzles",
+    "definition": "riddle-div with direct lg = verse; p = prose",
+    "parameters": {
+      "rounding": "No rounding of collection numbers"
+    }
+  },
+  "production_fields": "In an actual research analysis, concrete version DOI, received commit reference and archived tool stands are added. Zero is explicitly not a valid finished research quote here."
+}

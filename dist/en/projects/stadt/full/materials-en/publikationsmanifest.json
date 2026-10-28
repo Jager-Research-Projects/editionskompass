@@ -1,0 +1,29 @@
+{
+  "status": "Demonstration template without real repository or DOI addresses",
+  "publication_id": "die-andere-stadt-demo-v2",
+  "tei": {
+    "release": "edition-v2",
+    "file": "referenzstand-v2.xml"
+  },
+  "scope": {
+    "type": "Designate sub-issue or complete edition",
+    "included_units": [
+      "EH-MS01-B012R"
+    ],
+    "transcription_status": "Enter test status before approval",
+    "annotation_status": "Enter scope and test status before approval"
+  },
+  "print": {
+    "input_release": "edition-v1",
+    "correction": "back → there",
+    "correction_status": "acquired in edition-v2"
+  },
+  "frontend": {
+    "required": "Enter verified code and image references",
+    "release": null
+  },
+  "archive": {
+    "version_doi": null
+  },
+  "note": "Complete before actual approval with real immutable identifiers and test results."
+}

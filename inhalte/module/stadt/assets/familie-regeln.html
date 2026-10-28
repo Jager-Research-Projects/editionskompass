@@ -1,0 +1,50 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Editionskompass · die-andere-stadt-prototyp · Handbuch und Arbeitsregeln</title><style>body{max-width:980px;margin:30px auto;padding:0 22px;font:18px/1.7 Arial,sans-serif;color:#243d43;background:#fffdf7}h1,h2,h3{font-family:Georgia,serif;line-height:1.25}h1{font-size:38px}h2{font-size:30px}h3{font-size:23px}img,svg{max-width:100%;height:auto}table{width:100%;border-collapse:collapse;table-layout:fixed}th,td{padding:10px;border:1px solid #87998d;vertical-align:top;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere}details{border-top:1px solid #b9c4b6;padding:12px 0}a:focus-visible,summary:focus-visible{outline:3px solid #a94a32;outline-offset:4px}.family-ai,.family-material-meta{font-size:14px}.family-home{display:block;margin-bottom:25px}.family-table-wrap{overflow:auto}@media(max-width:600px){h1{font-size:30px}table{font-size:14px}}</style></head><body><a class="family-home" href="../index.html#materialien">Zurück zum Fall</a><p class="family-material-meta">Editionskompass · Fall 04 · Die andere Stadt · Gemeinsamer Stand 1.1 · 27. Oktober 2026 · Material</p><h1>Handbuch und Beteiligung</h1><section class="print-part"><p>
+</p></section><section class="print-part"><h2>Plausible erste Ordnerstruktur
+</h2><p>
+</p><pre>die-andere-stadt-edition/
+├── README.md                 Einstieg und maßgebliche Daten
+├── CITATION.cff              Angaben zur Zitation
+├── LICENSE                  Nutzungsbedingungen des freigegebenen Bestands
+├── CHANGELOG.md              Veröffentlichte Änderungen
+├── CONTRIBUTING.md           Mitarbeit und Prüfung
+├── MAINTAINERS.md            Aufgaben und Zuständigkeiten
+├── data/
+│   └── ms01/
+│       └── eh-ms01-b012r.xml  Fachlich sinnvoll bearbeitbare Einheit
+├── schema/                   ODD, Schema, zusätzliche Regeln
+├── transforms/               Versionierte Überführung und Ableitungen
+├── import/manifests/          Herkunft, Prüfsummen, Übernahmeprotokolle
+├── docs/
+│   ├── handbuch.md
+│   ├── kennungen.md
+│   ├── forschungsstaende.md
+│   ├── publikationsstaende.md
+│   └── uebergabe.md
+└── tests/                    Technische und fachliche Prüffälle
+</pre><p>
+</p><p>Dies ist die vorgeschlagene Struktur des fiktiven Editionsrepos, nicht das Verzeichnis des Prototypen. Ganze Konvolute werden nur dann in eine Datei gelegt, wenn sie sinnvoll gemeinsam bearbeitet werden können. Der Pilot prüft Konflikthäufigkeit und Referenzen. Blattweise Dateien sind ein Beispiel; der tatsächliche Zuschnitt folgt dem Quellenzusammenhang.
+</p><p>
+</p><p>Außerhalb liegen Frontendcode, autonome Forschungsrepos, die gesicherten Importpakete und die Bilddienste. Manifestdateien verbinden sie, ohne dieselben Bestände unkontrolliert zu vervielfältigen.
+</p><p>
+</p></section><section class="print-part"><h2>Handbuch 1.0: verbindlicher Arbeitsablauf im Fall
+</h2><p>
+</p><p>1. Vor einer Bearbeitung den aktuellen Projektstand holen; bei offenen Konflikten Unterstützung anfordern.
+</p><p>2. Eine zusammengehörige Änderung bearbeiten und am Bild beziehungsweise an der fachlichen Grundlage prüfen.
+</p><p>3. Vergleich ansehen, passende Prüfung ausführen, Änderung mit Begründung sichern und übertragen.
+</p><p>4. Den vorgesehenen fachlichen Review auslösen. Ein automatischer Prüfstatus allein gibt keine Lesart frei.
+</p><p>5. Interne Rückfragen im vereinbarten Kanal bearbeiten; vertrauliche Inhalte und Zugangsdaten nicht in die Git-Geschichte aufnehmen.
+</p><p>
+</p></section><section class="print-part"><h2>Handbuch 1.1: nach der Importprobe ergänzt
+</h2><p>
+</p><p>Nach abgenommenem Import ist die TEI-Datei im Editionsrepo die maßgebliche Arbeitsfassung dieser Einheit. Erneute Exporte ersetzen diese Datei nicht. Spätere Korrekturen werden verglichen, gezielt übernommen und geprüft. Das Übernahmeprotokoll nennt Herkunftsstand, Transformation, Abnahme und Kennungen. Die Produktionsphase endet nach Inventur und geregelter Übergabe verbleibender Einheiten.
+</p><p>
+</p></section><section class="print-part"><h2>Beteiligungsregeln und Vereinbarungen
+</h2><p>
+</p><p>Vor dem Zugang werden Aufgabe, zulässige Datenverwendung, Lese-/Schreibbefugnisse, fachliche Freigabe, Beitragszuordnung und Schutzpflichten festgehalten. Interne Stände und Git-Geschichte dürfen nicht Unbefugten zugänglich gemacht werden. Lokale Kopien auf genutzten Geräten sind zu schützen. Möglicher unbefugter Zugriff, kompromittierte Zugangsdaten oder Verlust eines Geräts mit Projektkopien werden unverzüglich an Projektleitung und technischen Kontakt gemeldet.
+</p><p>
+</p><p>Vor Ausscheiden oder Rollenwechsel wird vereinbart, welche Forschungsstände weiter genutzt und kopiert werden dürfen, welche Daten zurückzugeben oder zu löschen sind und welche dokumentierten Ausnahmen gelten. Assoziierte Weiterarbeit erhält eine passende neue Rolle. Eigene Forschungsrechte begründen keine automatische Freigabebefugnis für die offizielle Edition.
+</p><p>
+</p><p>Das Projekt erfasst alle zugreifenden Parteien: Kernteam, Hilfskräfte, assoziierte Forschung, externe Technik, Verlag und Bibliothek. Personenbezogene Vereinbarungen, institutionelle Regelungen und Dienstleistungsvereinbarungen werden nach Aufgabe und Zugang zugeordnet. Git-Auswertungen erhalten einen transparent vereinbarten Zweck und Zugriffskreis; persönliche Leistungsranglisten gehören nicht zum Arbeitsablauf.
+</p><p>
+</p><p>Die institutionelle Prüfung der später verwendeten Vereinbarung und ihrer rechtlichen Einbettung ist ein eigener Arbeitsschritt. Dieses Redaktionsdokument beschreibt den vorgesehenen Fall und liefert noch keine unterschriftsfertige Vertragsvorlage.
+</p></section></body></html>

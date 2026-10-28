@@ -1,0 +1,297 @@
+{
+  "case": "P02",
+  "label": "Fall 02 · Albrecht",
+  "project": "persona",
+  "stories": "geschichten",
+  "materialTarget": "#material",
+  "strategy": [
+    "Fachliche Zuständigkeiten der Arbeitsstellen mit gemeinsamen Regeln, einem gepflegten Handbuch und regelmäßiger Integration verbinden.",
+    "TEI, Schema, Skripte und Registerstände in bezeichneten Paketen zusammenführen; automatische Prüfungen und fachliche Durchsicht verbinden.",
+    "Gutachten, Verlag und öffentliche Freigabe getrennt regeln; Nachfolge, Wiederherstellung und zulässige Prozessanalysen vorab vereinbaren."
+  ],
+  "storySelectors": [
+    "#stories .story"
+  ],
+  "architectureSelectors": [
+    "#architecture"
+  ],
+  "hideOriginal": [
+    "persona",
+    "strategy",
+    "graph",
+    "decisions",
+    "architecture",
+    "risks",
+    "stories",
+    "handbook",
+    "manual"
+  ],
+  "rules": [
+    [
+      "Arbeiten und prüfen",
+      "Änderungen in überschaubaren Schritten bearbeiten, vor dem Übertragen vergleichen und mit den vereinbarten Prüfregeln kontrollieren."
+    ],
+    [
+      "Bezeichnen und dokumentieren",
+      "Maßgebliche Daten, Regeln, Zuständigkeiten und zusammengehörende Ausgabestände nachvollziehbar benennen."
+    ],
+    [
+      "Zugriff und Weiterarbeit",
+      "Nur berechtigten Personen Zugriff geben; Beiträge, Freigaben, Rollenwechsel, Sicherung und Wiederherstellung entsprechend dem Projektumfang regeln."
+    ]
+  ],
+  "media": [
+    {
+      "file": "assets/detektiv.webp",
+      "type": "KI-generierte Illustration",
+      "label": "Fiktive Szene · KI-generierte Illustration",
+      "provenance": "assets/bildnachweise.md",
+      "date": "Siehe ursprüngliche Bildnachweise; nicht nachträglich ergänzt."
+    },
+    {
+      "file": "assets/quellen.webp",
+      "type": "KI-generierte Illustration",
+      "label": "Fiktive Szene · KI-generierte Illustration",
+      "provenance": "assets/bildnachweise.md",
+      "date": "Siehe ursprüngliche Bildnachweise; nicht nachträglich ergänzt."
+    },
+    {
+      "file": "assets/redaktion.webp",
+      "type": "KI-generierte Illustration",
+      "label": "Fiktive Szene · KI-generierte Illustration",
+      "provenance": "assets/bildnachweise.md",
+      "date": "Siehe ursprüngliche Bildnachweise; nicht nachträglich ergänzt."
+    },
+    {
+      "file": "assets/werk.svg",
+      "type": "Als Code erstellte Lehrgrafik",
+      "label": "Redaktionelle Lehrgrafik · schematische Darstellung",
+      "provenance": "assets/bildnachweise.md",
+      "date": "Siehe ursprüngliche Bildnachweise; nicht nachträglich ergänzt."
+    }
+  ],
+  "ratingBasis": "Redaktionelle Ausgangseinordnung für den Modellfall vor zusätzlichen Maßnahmen. Plausibilität ist keine gemessene Wahrscheinlichkeit; Wirkung meint bei Chancen den Nutzen, bei Risiken eine unerwünschte Folge. Ungeklärte Bedingungen bleiben außerhalb der Quadranten. Die Erkundung und Themenkarten erläutern zusätzliche Abhängigkeiten.",
+  "ratings": [
+    {
+      "id": "P02-R01-chance",
+      "title": "Methodenwechsel",
+      "type": "chance",
+      "p": null,
+      "w": "weitreichend",
+      "reason": "Ein besseres Modell kann neue Einsichten ermöglichen; sein fachlicher Gewinn ist vor dem Versuch offen."
+    },
+    {
+      "id": "P02-R01-risk",
+      "title": "Methodenwechsel",
+      "type": "risk",
+      "p": "höher",
+      "w": "weitreichend",
+      "reason": "Über Jahrzehnte sind Modelländerungen plausibel; sie betreffen Altbestände, Register und Ausgaben."
+    },
+    {
+      "id": "P02-R02-chance",
+      "title": "Begutachtung",
+      "type": "chance",
+      "p": "höher",
+      "w": "weitreichend",
+      "reason": "Fachliche Begutachtung ist vorgesehen und kann die Edition über einzelne Stellen hinaus verbessern."
+    },
+    {
+      "id": "P02-R02-risk",
+      "title": "Begutachtung",
+      "type": "risk",
+      "p": "höher",
+      "w": "begrenzt",
+      "reason": "Rückfragen und zusätzliche Durchsicht benötigen im regulären Ablauf Zeit."
+    },
+    {
+      "id": "P02-R03-chance",
+      "title": "Forschung und Verlag",
+      "type": "chance",
+      "p": null,
+      "w": "weitreichend",
+      "reason": "Die Kooperation ist interessant; Gegenstände und Freigaben sind noch ungeklärt."
+    },
+    {
+      "id": "P02-R03-risk",
+      "title": "Forschung und Verlag",
+      "type": "risk",
+      "p": null,
+      "w": "weitreichend",
+      "reason": "Ohne Prüfung der Vereinbarungen lässt sich die Gefahr einer unzulässigen Weitergabe nicht einordnen."
+    },
+    {
+      "id": "P02-R04-risk",
+      "title": "Wiederherstellung",
+      "type": "risk",
+      "p": null,
+      "w": "weitreichend",
+      "reason": "Ein vollständiger Neuaufbau ist zunächst ungeprüft. Seine Verlässlichkeit darf nicht vorausgesetzt werden."
+    },
+    {
+      "id": "P02-R05-chance",
+      "title": "Prozesslernen und Kontrolle",
+      "type": "chance",
+      "p": "höher",
+      "w": "weitreichend",
+      "reason": "Wiederkehrende Abläufe bieten Ansatzpunkte für Prozesslernen, wenn die Analyse fachlich geeignet ist."
+    },
+    {
+      "id": "P02-R05-risk",
+      "title": "Prozesslernen und Kontrolle",
+      "type": "risk",
+      "p": null,
+      "w": "weitreichend",
+      "reason": "Zweck, Personenbezug und vereinbarte Datennutzung müssen vor der Analyse geklärt werden."
+    }
+  ],
+  "riskTexts": {
+    "P02-R01-chance": {
+      "situation": "Eine bessere Deutung verändert mehr als einen Tag im Text.",
+      "git": "Ein Versuchszweig hält die neue Modellierung getrennt erprobbar. Versionierte Daten, Schemata und Migrationsskripte machen Unterschiede nachvollziehbar. Ein Git-Tag benennt einen bestimmten Stand; ein Bandrelease benötigt zusätzlich die passenden Register- und Softwarestände.",
+      "consider": "Welche Altbestände sind betroffen? Wer prüft die semantische Richtigkeit einer Migration? Reicht ein neues Schema oder muss sich auch der Editionsbericht ändern?",
+      "action": "Eine repräsentative Testpassage wählen, Auswirkungen und Pflegekosten dokumentieren, fachlich und technisch prüfen und die Entscheidung mit ihrem Geltungsbereich festhalten.",
+      "owner": "Bandredaktion, wissenschaftlich-technische Redaktion und befugte Editionskommission"
+    },
+    "P02-R01-risk": {
+      "situation": "Eine bessere Deutung verändert mehr als einen Tag im Text.",
+      "git": "Ein Versuchszweig hält die neue Modellierung getrennt erprobbar. Versionierte Daten, Schemata und Migrationsskripte machen Unterschiede nachvollziehbar. Ein Git-Tag benennt einen bestimmten Stand; ein Bandrelease benötigt zusätzlich die passenden Register- und Softwarestände.",
+      "consider": "Welche Altbestände sind betroffen? Wer prüft die semantische Richtigkeit einer Migration? Reicht ein neues Schema oder muss sich auch der Editionsbericht ändern?",
+      "action": "Eine repräsentative Testpassage wählen, Auswirkungen und Pflegekosten dokumentieren, fachlich und technisch prüfen und die Entscheidung mit ihrem Geltungsbereich festhalten.",
+      "owner": "Bandredaktion, wissenschaftlich-technische Redaktion und befugte Editionskommission"
+    },
+    "P02-R02-chance": {
+      "situation": "Eine fixierte Fassung ermöglicht ein Urteil. Sie beendet die Diskussion nicht.",
+      "git": "Ein eindeutig markierter Prüfstand und der Vergleich zur Revision verbinden Rückmeldung und Bearbeitung. Geschützte Prüfpakete können aus versionierten Quellen erzeugt werden.",
+      "consider": "Wer darf das Gutachten lesen? Welche Anonymität ist vereinbart? Welche Änderung verlangt eine erneute Prüfung? Branches sind keine verlässliche Trennung von Leseberechtigungen.",
+      "action": "Prüfstand, Rückkanal, zuständige Instanz und Umgang mit Überarbeitungen vereinbaren; Terminfolgen mit dem Verlag abstimmen.",
+      "owner": "Gutachtende Person, Bandredaktion, Gesamtredaktion und Verlagslektorat"
+    },
+    "P02-R02-risk": {
+      "situation": "Eine fixierte Fassung ermöglicht ein Urteil. Sie beendet die Diskussion nicht.",
+      "git": "Ein eindeutig markierter Prüfstand und der Vergleich zur Revision verbinden Rückmeldung und Bearbeitung. Geschützte Prüfpakete können aus versionierten Quellen erzeugt werden.",
+      "consider": "Wer darf das Gutachten lesen? Welche Anonymität ist vereinbart? Welche Änderung verlangt eine erneute Prüfung? Branches sind keine verlässliche Trennung von Leseberechtigungen.",
+      "action": "Prüfstand, Rückkanal, zuständige Instanz und Umgang mit Überarbeitungen vereinbaren; Terminfolgen mit dem Verlag abstimmen.",
+      "owner": "Gutachtende Person, Bandredaktion, Gesamtredaktion und Verlagslektorat"
+    },
+    "P02-R03-chance": {
+      "situation": "Forschungsinteresse trifft auf eine bereits vereinbarte Publikationsstrategie.",
+      "git": "Nach geklärter Freigabe kann ein kuratiertes Datenpaket exakt bezeichnet und im eigenen öffentlichen Repo veröffentlicht werden. Private Geschichte und vertrauliche Rückmeldungen werden nicht mitexportiert.",
+      "consider": "Welche Gegenstände umfasst der Vertrag? Welche Drittmaterialien haben eigene Bedingungen? Was ist nur zugänglich, was auch nachnutzbar? Wer darf verbindlich entscheiden?",
+      "action": "Konkrete Vereinbarungen prüfen, Datenarten trennen, gegebenenfalls zusätzlichen Zugang aushandeln und jede Freigabe nachvollziehbar dokumentieren.",
+      "owner": "Projektleitung, zuständige Rechteberatung, berechtigte Stellen und Verlag"
+    },
+    "P02-R03-risk": {
+      "situation": "Forschungsinteresse trifft auf eine bereits vereinbarte Publikationsstrategie.",
+      "git": "Nach geklärter Freigabe kann ein kuratiertes Datenpaket exakt bezeichnet und im eigenen öffentlichen Repo veröffentlicht werden. Private Geschichte und vertrauliche Rückmeldungen werden nicht mitexportiert.",
+      "consider": "Welche Gegenstände umfasst der Vertrag? Welche Drittmaterialien haben eigene Bedingungen? Was ist nur zugänglich, was auch nachnutzbar? Wer darf verbindlich entscheiden?",
+      "action": "Konkrete Vereinbarungen prüfen, Datenarten trennen, gegebenenfalls zusätzlichen Zugang aushandeln und jede Freigabe nachvollziehbar dokumentieren.",
+      "owner": "Projektleitung, zuständige Rechteberatung, berechtigte Stellen und Verlag"
+    },
+    "P02-R04-risk": {
+      "situation": "2055 ist der alte Host verschwunden. Der wissenschaftliche Zusammenhang soll bleiben.",
+      "git": "Eine übertragbare Versionsgeschichte bewahrt Dateistände und ihre Beziehungen. Sie kann den Neustart erleichtern, ersetzt aber weder DB-Snapshots noch Kontext, Rechteentscheidungen und verfügbare Transformationen.",
+      "consider": "Was ist tatsächlich erhalten? Lassen sich Ausgabe und Verweise testen? Welche Plattformdaten wurden separat übernommen? Wer darf die neue Ausgabe freigeben?",
+      "action": "Archivpakete auf Vollständigkeit prüfen, Wiederherstellung regelmäßig erproben, fehlende Bestandteile dokumentieren und Übergaben institutionell absichern.",
+      "owner": "Infrastrukturträger, Archivdienst und neue wissenschaftliche Redaktion"
+    },
+    "P02-R05-chance": {
+      "situation": "Eine beliebte neue Oberfläche erleichtert die Kommentierung. Samir entdeckt, wie ihr Rückweg bereits geprüfte Arbeit wieder verändert.",
+      "git": "Nahlektüre einzelner Stände mit git blame, git show und Vergleichen rekonstruiert die Veränderung einer Stelle. Analysen vieler Stellen zeigen die Häufung nach einem selektiven Registerabgleich. Zusammen erlauben sie präzises Monitoring; die technische Änderungszuordnung ist kein Schuldbeweis.",
+      "consider": "Die Mitarbeitervereinbarung regelt gewöhnliche Fehlersuche, Rechte und Schutz. Neue umfassendere Auswertungen benötigen eine gesonderte Klärung. Wissenschaftliche Zeiteinteilung bleibt im vereinbarten Rahmen selbstständig; Speicherzeiten sind kein Arbeitszeitnachweis.",
+      "action": "Die Übergangsprüfung H06 sofort freigeben, das Kommentartool parallel überarbeiten und den Rückweg mit Regressionstest abnehmen. Danach die Handbuchregel erneut prüfen. Neue Prozessanalysen nach Mitarbeitervereinbarung und Analyseblatt vorab klären.",
+      "owner": "Redaktion, Mitarbeitende und gegebenenfalls ihre Vertretungen, Koordination, technische und rechtlich zuständige Stellen"
+    },
+    "P02-R05-risk": {
+      "situation": "Eine beliebte neue Oberfläche erleichtert die Kommentierung. Samir entdeckt, wie ihr Rückweg bereits geprüfte Arbeit wieder verändert.",
+      "git": "Nahlektüre einzelner Stände mit git blame, git show und Vergleichen rekonstruiert die Veränderung einer Stelle. Analysen vieler Stellen zeigen die Häufung nach einem selektiven Registerabgleich. Zusammen erlauben sie präzises Monitoring; die technische Änderungszuordnung ist kein Schuldbeweis.",
+      "consider": "Die Mitarbeitervereinbarung regelt gewöhnliche Fehlersuche, Rechte und Schutz. Neue umfassendere Auswertungen benötigen eine gesonderte Klärung. Wissenschaftliche Zeiteinteilung bleibt im vereinbarten Rahmen selbstständig; Speicherzeiten sind kein Arbeitszeitnachweis.",
+      "action": "Die Übergangsprüfung H06 sofort freigeben, das Kommentartool parallel überarbeiten und den Rückweg mit Regressionstest abnehmen. Danach die Handbuchregel erneut prüfen. Neue Prozessanalysen nach Mitarbeitervereinbarung und Analyseblatt vorab klären.",
+      "owner": "Redaktion, Mitarbeitende und gegebenenfalls ihre Vertretungen, Koordination, technische und rechtlich zuständige Stellen"
+    }
+  },
+  "materials": [
+    {
+      "kind": "persona",
+      "title": "Projektkarte",
+      "description": "Persona, Vorhaben und Ressourcen",
+      "pdf": "familie-projekt.pdf"
+    },
+    {
+      "kind": "family-strategy",
+      "title": "Musterstrategie",
+      "description": "Die empfohlene Ausgangslösung",
+      "pdf": "familie-strategie.pdf"
+    },
+    {
+      "kind": "decisions",
+      "title": "Entscheidungsgraph",
+      "description": "Wege, Abhängigkeiten und Zusammenführungen",
+      "format": "A3",
+      "pdf": "familie-entscheidungen.pdf"
+    },
+    {
+      "kind": "family-architecture",
+      "title": "Architektur",
+      "description": "Arbeitsorte, Datenflüsse und Ausgaben",
+      "pdf": "familie-architektur.pdf"
+    },
+    {
+      "kind": "family-risks",
+      "title": "Chancen und Risiken",
+      "description": "Einordnungen, Maßnahmen und Zuständigkeiten",
+      "pdf": "familie-risiken.pdf"
+    },
+    {
+      "kind": "family-stories",
+      "title": "Situationen · Lesefassung",
+      "description": "Die Fallgeschichten zum Nachlesen",
+      "pdf": "familie-situationen.pdf"
+    },
+    {
+      "kind": "handbook",
+      "title": "Handbuch und Arbeitsregeln",
+      "description": "Verbindliche Praxis im passenden Projektumfang",
+      "pdf": "familie-regeln.pdf"
+    }
+  ],
+  "riskTarget": "#topics",
+  "knowledge": [
+    {
+      "selector": ".workflow>div",
+      "text": "Vergleichen Sie vor dem nächsten Schritt den gespeicherten Stand mit Ihrer Änderung. Halten Sie fest, welche Prüfung erfolgt ist und wer eine Freigabe übernehmen darf."
+    }
+  ],
+  "practice": [
+    {
+      "target": "#P02-S01 .story-body",
+      "takeaway": "Eine bessere Deutung verändert mehr als einen Tag im Text.",
+      "action": "Eine repräsentative Testpassage wählen, Auswirkungen und Pflegekosten dokumentieren, fachlich und technisch prüfen und die Entscheidung mit ihrem Geltungsbereich festhalten.",
+      "done": "Die fachliche Entscheidung, der zugehörige Prüfstand und die nächste Zuständigkeit sind nachvollziehbar festgehalten."
+    },
+    {
+      "target": "#P02-S02 .story-body",
+      "takeaway": "Eine fixierte Fassung ermöglicht ein Urteil. Sie beendet die Diskussion nicht.",
+      "action": "Prüfstand, Rückkanal, zuständige Instanz und Umgang mit Überarbeitungen vereinbaren; Terminfolgen mit dem Verlag abstimmen.",
+      "done": "Die fachliche Entscheidung, der zugehörige Prüfstand und die nächste Zuständigkeit sind nachvollziehbar festgehalten."
+    },
+    {
+      "target": "#P02-S03 .story-body",
+      "takeaway": "Forschungsinteresse trifft auf eine bereits vereinbarte Publikationsstrategie.",
+      "action": "Konkrete Vereinbarungen prüfen, Datenarten trennen, gegebenenfalls zusätzlichen Zugang aushandeln und jede Freigabe nachvollziehbar dokumentieren.",
+      "done": "Die fachliche Entscheidung, der zugehörige Prüfstand und die nächste Zuständigkeit sind nachvollziehbar festgehalten."
+    },
+    {
+      "target": "#P02-S04 .story-body",
+      "takeaway": "2055 ist der alte Host verschwunden. Der wissenschaftliche Zusammenhang soll bleiben.",
+      "action": "Archivpakete auf Vollständigkeit prüfen, Wiederherstellung regelmäßig erproben, fehlende Bestandteile dokumentieren und Übergaben institutionell absichern.",
+      "done": "Die fachliche Entscheidung, der zugehörige Prüfstand und die nächste Zuständigkeit sind nachvollziehbar festgehalten."
+    },
+    {
+      "target": "#P02-S05 .story-body",
+      "takeaway": "Eine beliebte neue Oberfläche erleichtert die Kommentierung. Samir entdeckt, wie ihr Rückweg bereits geprüfte Arbeit wieder verändert.",
+      "action": "Die Übergangsprüfung H06 sofort freigeben, das Kommentartool parallel überarbeiten und den Rückweg mit Regressionstest abnehmen. Danach die Handbuchregel erneut prüfen. Neue Prozessanalysen nach Mitarbeitervereinbarung und Analyseblatt vorab klären.",
+      "done": "Die fachliche Entscheidung, der zugehörige Prüfstand und die nächste Zuständigkeit sind nachvollziehbar festgehalten."
+    }
+  ]
+}

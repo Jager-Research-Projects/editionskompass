@@ -1,0 +1,5 @@
+Review 0.1 · 27 October 2026: 40 German/English routes; same-topic language switching; internal links and downloads; three interactive findings; feedback for every quiz answer; action draft, Markdown export, session persistence and clearing; no horizontal overflow at 1440, 390 and 320 pixels; keyboard operation of skip link and finding selection. Six single-page worksheets and two complete tagged knowledge PDFs with DE/EN language metadata. Not a full WCAG conformity assessment; practical screen reader testing remains outstanding.
+
+Addition: Four project cards; two optional games with early exit and keyboard answers; 132 knowledge entries per language; 768-pixel layout also checked.
+
+Integration 0.2: Eight complete German case applications and both learning applications integrated; 120 resource groups checked. Full case translations are pending and marked explicitly.

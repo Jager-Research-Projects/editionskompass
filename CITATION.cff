@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Bitte zitieren Sie diese Ressource mit Versionsangabe. / Please cite this resource with its version."
+title: "Editionskompass: Git für wissenschaftliche Editionen"
+type: software
+authors:
+  - family-names: Jäger
+    given-names: Thomas
+keywords:
+  - Git
+  - scholarly editing
+  - digital editions
+  - Forschungsdaten
+version: 1.0.0
+url: "https://jager-research-projects.github.io/editionskompass/"
+repository-code: "https://github.com/Jager-Research-Projects/editionskompass"

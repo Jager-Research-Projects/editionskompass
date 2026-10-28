@@ -1,0 +1,282 @@
+[
+  {
+    "original": "inhalte/module/academy/assets/academy.png",
+    "web": "inhalte/module/academy/assets/academy.webp",
+    "originalSHA256": "ddbffd166bf7c9bd8e29f29b1211fda2ace4832e48a099a3e01f45adc46c88a1",
+    "originalBytes": 2838073,
+    "webBytes": 373358,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/academy/assets/antipatterns.png",
+    "web": "inhalte/module/academy/assets/antipatterns.webp",
+    "originalSHA256": "fa39a019ce411cfa701aca65082db03cbfe2d7b20646c2df730f8c89e443b6fb",
+    "originalBytes": 2705028,
+    "webBytes": 415982,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/academy/assets/card-back.png",
+    "web": "inhalte/module/academy/assets/card-back.webp",
+    "originalSHA256": "5879e14b66c6490edb8a352ca8ec5514f11e2913abd481ffa3abc3c2d9f735bf",
+    "originalBytes": 2842169,
+    "webBytes": 358638,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/academy/assets/card-front.png",
+    "web": "inhalte/module/academy/assets/card-front.webp",
+    "originalSHA256": "1d82182ee7356c32c72116bd0ba6090c89d9548d1e12cd7671c5b4fc8529d15e",
+    "originalBytes": 2591786,
+    "webBytes": 259068,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/academy/assets/chapter-1.png",
+    "web": "inhalte/module/academy/assets/chapter-1.webp",
+    "originalSHA256": "945a8fcd1f737333d7e6d3468400206a668fa8c2afed6ea8aafa73a79378e1d6",
+    "originalBytes": 3014602,
+    "webBytes": 467532,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/academy/assets/chapter-2.png",
+    "web": "inhalte/module/academy/assets/chapter-2.webp",
+    "originalSHA256": "63ecfd7e26e10d3ce7c67239e19ea6823bde74c767ca11346491e0ed63a2c015",
+    "originalBytes": 2789750,
+    "webBytes": 364642,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/academy/assets/chapter-3.png",
+    "web": "inhalte/module/academy/assets/chapter-3.webp",
+    "originalSHA256": "a8fb4919c8af84b06f707cb11362e169b30c4930e0ee54c0c53cae12d36b13df",
+    "originalBytes": 2858571,
+    "webBytes": 388980,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/academy/assets/chapter-4.png",
+    "web": "inhalte/module/academy/assets/chapter-4.webp",
+    "originalSHA256": "b6eca59ea1db3f1109cfccba0ed6c39209790bb15dcaf825bc304de01a3b8bce",
+    "originalBytes": 2691545,
+    "webBytes": 325084,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/academy/assets/chapter-5.png",
+    "web": "inhalte/module/academy/assets/chapter-5.webp",
+    "originalSHA256": "ec73fca6c2e7b91a5008364130d1dadf1c08c6599501c9a6c2c0f6f72f45ddc1",
+    "originalBytes": 2766570,
+    "webBytes": 353938,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/agenten/assets/embedded-23338b9f943db72b.png",
+    "web": "inhalte/module/agenten/assets/embedded-23338b9f943db72b.webp",
+    "originalSHA256": "23338b9f943db72bbff95e24bfb5434d1b637355a7250dd1a032d1f8ee80d0e5",
+    "originalBytes": 2942148,
+    "webBytes": 385580,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/albrecht/assets/detektiv.png",
+    "web": "inhalte/module/albrecht/assets/detektiv.webp",
+    "originalSHA256": "6e4677ee44f39b4038fe4b02a78f613ef8d7b2e71e4778df1f5ee3a13126b29c",
+    "originalBytes": 2995125,
+    "webBytes": 410830,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/albrecht/assets/quellen.png",
+    "web": "inhalte/module/albrecht/assets/quellen.webp",
+    "originalSHA256": "bfb79434a89f4f111dc9d633232f1735dacb571911597486aff3158fea90c918",
+    "originalBytes": 2663573,
+    "webBytes": 307986,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/albrecht/assets/redaktion.png",
+    "web": "inhalte/module/albrecht/assets/redaktion.webp",
+    "originalSHA256": "5efce17542bdaafd8dedba4be4d9f3c7ae1369841ff61297d49bb4e25da61bee",
+    "originalBytes": 2755182,
+    "webBytes": 346506,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/albrecht/assets/embedded-assets/5efce17542bdaafd8ded.png",
+    "web": "inhalte/module/albrecht/assets/embedded-assets/5efce17542bdaafd8ded.webp",
+    "originalSHA256": "5efce17542bdaafd8dedba4be4d9f3c7ae1369841ff61297d49bb4e25da61bee",
+    "originalBytes": 2755182,
+    "webBytes": 346506,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/albrecht/assets/embedded-assets/6e4677ee44f39b4038fe.png",
+    "web": "inhalte/module/albrecht/assets/embedded-assets/6e4677ee44f39b4038fe.webp",
+    "originalSHA256": "6e4677ee44f39b4038fe4b02a78f613ef8d7b2e71e4778df1f5ee3a13126b29c",
+    "originalBytes": 2995125,
+    "webBytes": 410830,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/albrecht/assets/embedded-assets/bfb79434a89f4f111dc9.png",
+    "web": "inhalte/module/albrecht/assets/embedded-assets/bfb79434a89f4f111dc9.webp",
+    "originalSHA256": "bfb79434a89f4f111dc9d633232f1735dacb571911597486aff3158fea90c918",
+    "originalBytes": 2663573,
+    "webBytes": 307986,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/anna/assets/anna-markdown.png",
+    "web": "inhalte/module/anna/assets/anna-markdown.webp",
+    "originalSHA256": "0a362f3881bd1e130c1bbaa5e1bc6b0af961d4d0d63bef58967db75c268e2222",
+    "originalBytes": 2902702,
+    "webBytes": 371334,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/anna/assets/anna-mira.png",
+    "web": "inhalte/module/anna/assets/anna-mira.webp",
+    "originalSHA256": "9b7d795fdb9c849a59e36972178732c5b7652caef1244ba033c65be1e44ece7c",
+    "originalBytes": 3067764,
+    "webBytes": 410736,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/anna/assets/anna-schreibtisch.png",
+    "web": "inhalte/module/anna/assets/anna-schreibtisch.webp",
+    "originalSHA256": "0410262d8f53af250cd727000d5b9e361eb7d8762bc3882dc166a9fd09b24f37",
+    "originalBytes": 3044006,
+    "webBytes": 412516,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/anna/assets/anna-tei.png",
+    "web": "inhalte/module/anna/assets/anna-tei.webp",
+    "originalSHA256": "f8f31b34b052d2f3f93cdee12844fdc137fb14e7b341794f511735439037e91a",
+    "originalBytes": 2831086,
+    "webBytes": 398516,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/anna/assets/embedded-assets/9b7d795fdb9c849a59e3.png",
+    "web": "inhalte/module/anna/assets/embedded-assets/9b7d795fdb9c849a59e3.webp",
+    "originalSHA256": "9b7d795fdb9c849a59e36972178732c5b7652caef1244ba033c65be1e44ece7c",
+    "originalBytes": 3067764,
+    "webBytes": 410736,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/dorothee/assets/embedded-bdf21d896bdbaf0a.png",
+    "web": "inhalte/module/dorothee/assets/embedded-bdf21d896bdbaf0a.webp",
+    "originalSHA256": "bdf21d896bdbaf0a89b6caa878c892d6e33aa2f366d15a92389d4c73e0a5c661",
+    "originalBytes": 2663945,
+    "webBytes": 370258,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/emre/assets/embedded-1ee93e0ae00690cf.png",
+    "web": "inhalte/module/emre/assets/embedded-1ee93e0ae00690cf.webp",
+    "originalSHA256": "1ee93e0ae00690cf29e30199e0730fd9c8d8a188fcf6ee07205d9098f4aacfc0",
+    "originalBytes": 3115645,
+    "webBytes": 457248,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/korpus/assets/fundstueck.png",
+    "web": "inhalte/module/korpus/assets/fundstueck.webp",
+    "originalSHA256": "7b1f021b21f25a9e010604629e99b8075cd4c49edb08d74b72349d5d0376b18a",
+    "originalBytes": 2558359,
+    "webBytes": 305532,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/korpus/assets/seminar.png",
+    "web": "inhalte/module/korpus/assets/seminar.webp",
+    "originalSHA256": "976dde034925e3cb923f1b5d3cab14ffd210af5fcc1b35e24f5b17c9b47b806d",
+    "originalBytes": 3113120,
+    "webBytes": 459112,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/korpus/assets/uebergabe.png",
+    "web": "inhalte/module/korpus/assets/uebergabe.webp",
+    "originalSHA256": "1f27a9948f9de9ece7c7372b6ae502ce35a1c625d2527fb991d036f9836dd7a8",
+    "originalBytes": 3194870,
+    "webBytes": 458788,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/korpus/assets/vergleich.png",
+    "web": "inhalte/module/korpus/assets/vergleich.webp",
+    "originalSHA256": "610f230be19cfc0219514d91622137fd92f7222ac33a425813c8577096aa7a90",
+    "originalBytes": 2685139,
+    "webBytes": 334172,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/korpus/assets/embedded-assets/1f27a9948f9de9ece7c7.png",
+    "web": "inhalte/module/korpus/assets/embedded-assets/1f27a9948f9de9ece7c7.webp",
+    "originalSHA256": "1f27a9948f9de9ece7c7372b6ae502ce35a1c625d2527fb991d036f9836dd7a8",
+    "originalBytes": 3194870,
+    "webBytes": 458788,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/korpus/assets/embedded-assets/610f230be19cfc021951.png",
+    "web": "inhalte/module/korpus/assets/embedded-assets/610f230be19cfc021951.webp",
+    "originalSHA256": "610f230be19cfc0219514d91622137fd92f7222ac33a425813c8577096aa7a90",
+    "originalBytes": 2685139,
+    "webBytes": 334172,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/korpus/assets/embedded-assets/976dde034925e3cb923f.png",
+    "web": "inhalte/module/korpus/assets/embedded-assets/976dde034925e3cb923f.webp",
+    "originalSHA256": "976dde034925e3cb923f1b5d3cab14ffd210af5fcc1b35e24f5b17c9b47b806d",
+    "originalBytes": 3113120,
+    "webBytes": 459112,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/stadt/assets/forschung.png",
+    "web": "inhalte/module/stadt/assets/forschung.webp",
+    "originalSHA256": "fec7d424e3728eea945cdefd15d3d2d6c6faf609b101be0299195f4df6e78127",
+    "originalBytes": 2435564,
+    "webBytes": 274732,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/stadt/assets/team.png",
+    "web": "inhalte/module/stadt/assets/team.webp",
+    "originalSHA256": "dcf676ce4b607d41569f7ff09171e38e6034fad854874942ba485588e480aa62",
+    "originalBytes": 2792148,
+    "webBytes": 348854,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/stadt/assets/uebergabe.png",
+    "web": "inhalte/module/stadt/assets/uebergabe.webp",
+    "originalSHA256": "473c1a0f6e9f1104eb22e48fbc055e96f645e154508f0e2271b254b9a43a20e0",
+    "originalBytes": 2620184,
+    "webBytes": 316524,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/stadt/assets/embedded-assets/473c1a0f6e9f1104eb22.png",
+    "web": "inhalte/module/stadt/assets/embedded-assets/473c1a0f6e9f1104eb22.webp",
+    "originalSHA256": "473c1a0f6e9f1104eb22e48fbc055e96f645e154508f0e2271b254b9a43a20e0",
+    "originalBytes": 2620184,
+    "webBytes": 316524,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  },
+  {
+    "original": "inhalte/module/stadt/assets/embedded-assets/fec7d424e3728eea945c.png",
+    "web": "inhalte/module/stadt/assets/embedded-assets/fec7d424e3728eea945c.webp",
+    "originalSHA256": "fec7d424e3728eea945cdefd15d3d2d6c6faf609b101be0299195f4df6e78127",
+    "originalBytes": 2435564,
+    "webBytes": 274732,
+    "originalArchive": "C:\\Users\\jaege\\.codex\\.chatgpt-projects\\g-p-6abf84d340408191beb22ecd3b6117aa\\sicherungen\\gesamtportal-integration-originalmedien-2026-10-27\\portal-quellen-und-medien.zip"
+  }
+]

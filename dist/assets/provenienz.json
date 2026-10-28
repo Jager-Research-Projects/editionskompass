@@ -1,0 +1,42 @@
+{
+  "version": "0.1",
+  "date": "2026-10-27",
+  "illustrations": [
+    {
+      "file": "anna.png",
+      "source": "anna-prototyp/dist/assets/anna-schreibtisch.png",
+      "type": "AI-generated illustration, reused from existing prototype"
+    },
+    {
+      "file": "albrecht.png",
+      "source": "akademie-prototyp/dist/assets/redaktion.png",
+      "type": "AI-generated illustration, reused from existing prototype"
+    },
+    {
+      "file": "emre.png",
+      "source": "emre-prototyp/src/assets/emre-team-v01.png",
+      "type": "AI-generated illustration, reused from existing prototype"
+    },
+    {
+      "file": "korpus.png",
+      "source": "raetselkorpus-prototyp/dist/assets/seminar.png",
+      "type": "AI-generated illustration, reused from existing prototype"
+    },
+    {
+      "file": "drittmittel.png",
+      "source": "die-andere-stadt-prototyp/dist/assets/team.png",
+      "type": "AI-generated illustration, reused from existing prototype"
+    }
+  ],
+  "texts": "Edited and translated from existing fictional Albrecht, Emre and Anna prototypes; AI-assisted editorial implementation.",
+  "learningCollections": {
+    "statements": 83,
+    "antipatterns": 25,
+    "terms": 24,
+    "sources": [
+      "planung/gesamtportal/referenzen/git_entdeckungsreise_zweisprachig.html",
+      "git-antipattern-academy/content.js",
+      "git-antipattern-academy/content-en.js"
+    ]
+  }
+}

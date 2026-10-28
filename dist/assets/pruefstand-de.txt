@@ -1,0 +1,5 @@
+Prüfstand 0.1 · 27.10.2026: 40 deutsche/englische Routen; Sprachwechsel zum gleichen Thema; interne Links und Downloads; drei interaktive Befunde; Rückmeldungen aller Quizantworten; Maßnahmenentwurf, Markdown-Export, Sitzungsspeicherung und Löschen; keine horizontalen Überläufe bei 1440, 390 und 320 Pixeln; Sprunglink und Befund-Auswahl per Tastatur. Sechs einseitige Arbeitsblätter und zwei vollständige Wissens-PDFs mit Strukturmarkierungen und DE/EN-Sprachangaben. Keine vollständige WCAG-Konformitätsprüfung; Screenreader-Praxistest steht aus.
+
+Ergänzung: Vier Projektkarten; zwei freiwillige Spielarten mit Abbruch und Tastaturantworten; 132 Wissenseinträge je Sprache; auch 768 Pixel geprüft.
+
+Integration 0.2: Acht vollständige deutsche Fallanwendungen und beide Lernanwendungen übernommen; 120 Materialgruppen geprüft. Siehe integrationsmanifest.json und konzeption/integration-0.2.md für Sprachstand und Grenzen.

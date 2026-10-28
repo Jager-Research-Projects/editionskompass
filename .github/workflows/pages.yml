@@ -1,0 +1,50 @@
+name: Build and publish Editionskompass
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      approved: ${{ steps.release.outputs.approved }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-lock.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: python scripts/build_pages.py
+      - run: python tests/check_pages.py
+      - run: python tests/check_pdf_export.py
+      - run: npm test
+      - id: release
+        run: python -c "import json,os; c=json.load(open('publication.json')); open(os.environ['GITHUB_OUTPUT'],'a').write('approved='+str(c['approved']).lower()+'\n')"
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && needs.build.outputs.approved == 'true'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

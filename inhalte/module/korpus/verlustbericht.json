@@ -1,0 +1,14 @@
+{
+  "before": {
+    "riddles": 2,
+    "solutions": 2
+  },
+  "after": {
+    "riddles": 2,
+    "solutions": 0
+  },
+  "schema_before": true,
+  "schema_after": true,
+  "riddle_analysis_unchanged": true,
+  "content_preserved": false
+}

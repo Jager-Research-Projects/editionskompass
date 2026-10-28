@@ -1,0 +1,29 @@
+{
+  "status": "Demonstrationsvorlage ohne reale Repository- oder DOI-Adressen",
+  "publication_id": "die-andere-stadt-demo-v2",
+  "tei": {
+    "release": "edition-v2",
+    "file": "referenzstand-v2.xml"
+  },
+  "scope": {
+    "type": "Teilausgabe oder Gesamtausgabe benennen",
+    "included_units": [
+      "EH-MS01-B012R"
+    ],
+    "transcription_status": "Prüfstatus vor Freigabe eintragen",
+    "annotation_status": "Umfang und Prüfstatus vor Freigabe eintragen"
+  },
+  "print": {
+    "input_release": "edition-v1",
+    "correction": "hierher → dorthin",
+    "correction_status": "in edition-v2 übernommen"
+  },
+  "frontend": {
+    "required": "geprüfte Codefassung und Bildbezüge eintragen",
+    "release": null
+  },
+  "archive": {
+    "version_doi": null
+  },
+  "note": "Vor tatsächlicher Freigabe mit realen unveränderlichen Kennungen und Prüfergebnissen vervollständigen."
+}

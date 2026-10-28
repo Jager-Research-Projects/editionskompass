@@ -1,0 +1,1049 @@
+[
+  {
+    "module": "agenten",
+    "case": "When agents explore repositories",
+    "title": "Workshop overview · Nora and the agent",
+    "formats": {
+      "PNG": "/en/perspectives/agenten/full/assets/agenten-workshop-en-v1.png"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Repository architecture",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/familie-architektur.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/familie-architektur.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Opportunities and risks",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/familie-risiken.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/familie-risiken.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Decision graph",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/familie-entscheidungen.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/familie-entscheidungen.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Shared working rules",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/familie-regeln.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/familie-regeln.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Recommended Git strategy",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/familie-strategie.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/familie-strategie.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Project and persona",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/familie-projekt.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/familie-projekt.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Project scenarios",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/familie-situationen.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/familie-situationen.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Editionskompass · akademie-prototyp · agreement",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/agreement.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/agreement.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Decision graph",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/decisions.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/decisions.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Edition compass · akademie-prototype · employee",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/employee.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/employee.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Edition compass · akademie-prototyp · handbook",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/handbook.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/handbook.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Edition compass · akademie-prototyp · manifest",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/manifest.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/manifest.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Project and persona",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/persona.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/persona.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Editionscompass · akademie-prototyp · pilot",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/pilot.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/pilot.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Edition compass · akademie-prototyp · process",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/process.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/process.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Infrastructure proposal",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/proposal.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/proposal.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Edition compass · akademie-prototyp · release",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/release.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/release.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Project scenarios",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/stories.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/stories.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Git strategy",
+    "formats": {
+      "PDF": "/en/projects/albrecht/full/assets/strategy.pdf",
+      "HTML": "/en/projects/albrecht/full/assets/strategy.html"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Albrecht project handbook",
+    "formats": {
+      "Markdown": "/en/projects/albrecht/full/albrecht-git-handbuch.md"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Staff agreement",
+    "formats": {
+      "Markdown": "/en/projects/albrecht/full/albrecht-mitarbeitervereinbarung.md"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "bildnachweise",
+    "formats": {
+      "Markdown": "/en/projects/albrecht/full/assets/bildnachweise.md"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Decision graph",
+    "formats": {
+      "SVG": "/en/projects/albrecht/full/assets/entscheidungen.svg"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Git data-use agreement",
+    "formats": {
+      "Markdown": "/en/projects/albrecht/full/git-datennutzung-muster.md"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "Infrastructure proposal",
+    "formats": {
+      "Markdown": "/en/projects/albrecht/full/proposal.md"
+    }
+  },
+  {
+    "module": "albrecht",
+    "case": "Large project and long-term edition",
+    "title": "The editorial work",
+    "formats": {
+      "SVG": "/en/projects/albrecht/full/assets/werk.svg"
+    }
+  },
+  {
+    "module": "anna",
+    "case": "Small project and individual edition",
+    "title": "Repository architecture",
+    "formats": {
+      "PDF": "/en/projects/anna/full/assets/familie-architektur.pdf",
+      "HTML": "/en/projects/anna/full/assets/familie-architektur.html"
+    }
+  },
+  {
+    "module": "anna",
+    "case": "Small project and individual edition",
+    "title": "Opportunities and risks",
+    "formats": {
+      "PDF": "/en/projects/anna/full/assets/familie-risiken.pdf",
+      "HTML": "/en/projects/anna/full/assets/familie-risiken.html"
+    }
+  },
+  {
+    "module": "anna",
+    "case": "Small project and individual edition",
+    "title": "Decision graph",
+    "formats": {
+      "PDF": "/en/projects/anna/full/assets/familie-entscheidungen.pdf",
+      "HTML": "/en/projects/anna/full/assets/familie-entscheidungen.html"
+    }
+  },
+  {
+    "module": "anna",
+    "case": "Small project and individual edition",
+    "title": "Shared working rules",
+    "formats": {
+      "PDF": "/en/projects/anna/full/assets/familie-regeln.pdf",
+      "HTML": "/en/projects/anna/full/assets/familie-regeln.html"
+    }
+  },
+  {
+    "module": "anna",
+    "case": "Small project and individual edition",
+    "title": "Recommended Git strategy",
+    "formats": {
+      "PDF": "/en/projects/anna/full/assets/familie-strategie.pdf",
+      "HTML": "/en/projects/anna/full/assets/familie-strategie.html"
+    }
+  },
+  {
+    "module": "anna",
+    "case": "Small project and individual edition",
+    "title": "Project and persona",
+    "formats": {
+      "PDF": "/en/projects/anna/full/assets/familie-projekt.pdf",
+      "HTML": "/en/projects/anna/full/assets/familie-projekt.html"
+    }
+  },
+  {
+    "module": "anna",
+    "case": "Small project and individual edition",
+    "title": "Project scenarios",
+    "formats": {
+      "PDF": "/en/projects/anna/full/assets/familie-situationen.pdf",
+      "HTML": "/en/projects/anna/full/assets/familie-situationen.html"
+    }
+  },
+  {
+    "module": "anna",
+    "case": "Small project and individual edition",
+    "title": "Repository architecture",
+    "formats": {
+      "PDF": "/en/projects/anna/full/assets/anna-architektur.pdf",
+      "HTML": "/en/projects/anna/full/assets/anna-architektur.html",
+      "SVG": "/en/projects/anna/full/assets/anna-architektur.svg",
+      "PNG": "/en/projects/anna/full/assets/anna-architektur.png"
+    }
+  },
+  {
+    "module": "anna",
+    "case": "Small project and individual edition",
+    "title": "Consequence chain",
+    "formats": {
+      "PDF": "/en/projects/anna/full/assets/anna-folgekette.pdf",
+      "HTML": "/en/projects/anna/full/assets/anna-folgekette.html",
+      "SVG": "/en/projects/anna/full/assets/anna-folgekette.svg",
+      "PNG": "/en/projects/anna/full/assets/anna-folgekette.png"
+    }
+  },
+  {
+    "module": "anna",
+    "case": "Small project and individual edition",
+    "title": "Decision graph",
+    "formats": {
+      "PDF": "/en/projects/anna/full/assets/anna-entscheidungsgraph.pdf",
+      "HTML": "/en/projects/anna/full/assets/anna-entscheidungsgraph.html",
+      "SVG": "/en/projects/anna/full/assets/anna-entscheidungsgraph.svg",
+      "PNG": "/en/projects/anna/full/assets/anna-entscheidungsgraph.png"
+    }
+  },
+  {
+    "module": "anna",
+    "case": "Small project and individual edition",
+    "title": "bildnachweise",
+    "formats": {
+      "Markdown": "/en/projects/anna/full/assets/bildnachweise.md"
+    }
+  },
+  {
+    "module": "anna",
+    "case": "Small project and individual edition",
+    "title": "chancen risiken",
+    "formats": {
+      "Markdown": "/en/projects/anna/full/chancen-risiken.md"
+    }
+  },
+  {
+    "module": "anna",
+    "case": "Small project and individual edition",
+    "title": "Design and content grammar",
+    "formats": {
+      "Markdown": "/en/projects/anna/full/grammatik.md"
+    }
+  },
+  {
+    "module": "anna",
+    "case": "Small project and individual edition",
+    "title": "strategie",
+    "formats": {
+      "Markdown": "/en/projects/anna/full/strategie.md"
+    }
+  },
+  {
+    "module": "anna",
+    "case": "Small project and individual edition",
+    "title": "Tools and image credits",
+    "formats": {
+      "Markdown": "/en/projects/anna/full/assets/werkzeug-bildnachweise.md"
+    }
+  },
+  {
+    "module": "christine",
+    "case": "Reviewing a scholarly project",
+    "title": "Workshop overview · Christine Fühlhaber",
+    "formats": {
+      "PNG": "/en/perspectives/christine/full/assets/christine-workshop-en-v1.png"
+    }
+  },
+  {
+    "module": "dorothee",
+    "case": "Researching editorial practice",
+    "title": "Workshop overview · Dorothée Meisner",
+    "formats": {
+      "PNG": "/en/perspectives/dorothee/full/assets/dorothee-workshop-en-v1.png"
+    }
+  },
+  {
+    "module": "emre",
+    "case": "Joining a project",
+    "title": "Workshop overview · Emre Kaya",
+    "formats": {
+      "PNG": "/en/perspectives/emre/full/assets/emre-workshop-en-v1.png"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Repository architecture",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/familie-architektur.pdf",
+      "HTML": "/en/projects/korpus/full/assets/familie-architektur.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Opportunities and risks",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/familie-risiken.pdf",
+      "HTML": "/en/projects/korpus/full/assets/familie-risiken.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Decision graph",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/familie-entscheidungen.pdf",
+      "HTML": "/en/projects/korpus/full/assets/familie-entscheidungen.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Shared working rules",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/familie-regeln.pdf",
+      "HTML": "/en/projects/korpus/full/assets/familie-regeln.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Recommended Git strategy",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/familie-strategie.pdf",
+      "HTML": "/en/projects/korpus/full/assets/familie-strategie.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Project and persona",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/familie-projekt.pdf",
+      "HTML": "/en/projects/korpus/full/assets/familie-projekt.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Project scenarios",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/familie-situationen.pdf",
+      "HTML": "/en/projects/korpus/full/assets/familie-situationen.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Reproducible analysis",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/analysis.pdf",
+      "HTML": "/en/projects/korpus/full/assets/analysis.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Repository architecture",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/architecture.pdf",
+      "HTML": "/en/projects/korpus/full/assets/architecture.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Benchmark design",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/benchmark.pdf",
+      "HTML": "/en/projects/korpus/full/assets/benchmark.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Decision graph",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/decisions.pdf",
+      "HTML": "/en/projects/korpus/full/assets/decisions.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Extending the corpus",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/expansions.pdf",
+      "HTML": "/en/projects/korpus/full/assets/expansions.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Handover checklist",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/handover.pdf",
+      "HTML": "/en/projects/korpus/full/assets/handover.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Maintenance",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/maintenance.pdf",
+      "HTML": "/en/projects/korpus/full/assets/maintenance.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Project and persona",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/persona.pdf",
+      "HTML": "/en/projects/korpus/full/assets/persona.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Publication",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/publication.pdf",
+      "HTML": "/en/projects/korpus/full/assets/publication.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Data quality",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/quality.pdf",
+      "HTML": "/en/projects/korpus/full/assets/quality.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Versions and releases",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/releases.pdf",
+      "HTML": "/en/projects/korpus/full/assets/releases.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Opportunities and risks",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/risks.pdf",
+      "HTML": "/en/projects/korpus/full/assets/risks.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Getting started",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/starter.pdf",
+      "HTML": "/en/projects/korpus/full/assets/starter.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Project scenarios",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/stories.pdf",
+      "HTML": "/en/projects/korpus/full/assets/stories.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Git strategy",
+    "formats": {
+      "PDF": "/en/projects/korpus/full/assets/strategy.pdf",
+      "HTML": "/en/projects/korpus/full/assets/strategy.html"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Contribution guidelines",
+    "formats": {
+      "Markdown": "/en/projects/korpus/full/beitragsregeln.md"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Filename conventions",
+    "formats": {
+      "Markdown": "/en/projects/korpus/full/dateinamen.md"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Example package",
+    "formats": {
+      "ZIP": "/en/projects/korpus/full/assets/demonstration.zip"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Decision graph",
+    "formats": {
+      "SVG": "/en/projects/korpus/full/assets/entscheidungen.svg"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Working research repository",
+    "formats": {
+      "SVG": "/en/projects/korpus/full/assets/forschungsablage.svg"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Getting started",
+    "formats": {
+      "Markdown": "/en/projects/korpus/full/nutzungsstart.md"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Getting started",
+    "formats": {
+      "ZIP": "/en/projects/korpus/full/assets/nutzungsstart.zip"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Publication repository structure",
+    "formats": {
+      "SVG": "/en/projects/korpus/full/assets/ordnerstruktur.svg"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Maintenance handbook",
+    "formats": {
+      "Markdown": "/en/projects/korpus/full/pflegehandbuch.md"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Publication concept",
+    "formats": {
+      "Markdown": "/en/projects/korpus/full/publikationskonzept.md"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Further reading",
+    "formats": {
+      "Markdown": "/en/projects/korpus/full/quellen.md"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "Repository handbook",
+    "formats": {
+      "Markdown": "/en/projects/korpus/full/repo-handbuch.md"
+    }
+  },
+  {
+    "module": "korpus",
+    "case": "Corpus and publication repository",
+    "title": "strategie",
+    "formats": {
+      "Markdown": "/en/projects/korpus/full/strategie.md"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Repository architecture",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/familie-architektur.pdf",
+      "HTML": "/en/projects/stadt/full/assets/familie-architektur.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Opportunities and risks",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/familie-risiken.pdf",
+      "HTML": "/en/projects/stadt/full/assets/familie-risiken.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Decision graph",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/familie-entscheidungen.pdf",
+      "HTML": "/en/projects/stadt/full/assets/familie-entscheidungen.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Shared working rules",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/familie-regeln.pdf",
+      "HTML": "/en/projects/stadt/full/assets/familie-regeln.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Recommended Git strategy",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/familie-strategie.pdf",
+      "HTML": "/en/projects/stadt/full/assets/familie-strategie.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Project and persona",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/familie-projekt.pdf",
+      "HTML": "/en/projects/stadt/full/assets/familie-projekt.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Project scenarios",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/familie-situationen.pdf",
+      "HTML": "/en/projects/stadt/full/assets/familie-situationen.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Access and participation",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/access.pdf",
+      "HTML": "/en/projects/stadt/full/assets/access.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Repository architecture",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/architecture.pdf",
+      "HTML": "/en/projects/stadt/full/assets/architecture.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Early publication",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/early.pdf",
+      "HTML": "/en/projects/stadt/full/assets/early.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Decision graph",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/graph.pdf",
+      "HTML": "/en/projects/stadt/full/assets/graph.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Handover checklist",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/handover.pdf",
+      "HTML": "/en/projects/stadt/full/assets/handover.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Project handbook",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/manual.pdf",
+      "HTML": "/en/projects/stadt/full/assets/manual.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Project and persona",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/persona.pdf",
+      "HTML": "/en/projects/stadt/full/assets/persona.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Publication",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/publication.pdf",
+      "HTML": "/en/projects/stadt/full/assets/publication.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Git strategy",
+    "formats": {
+      "PDF": "/en/projects/stadt/full/assets/strategy.pdf",
+      "HTML": "/en/projects/stadt/full/assets/strategy.html"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Repository architecture",
+    "formats": {
+      "SVG": "/en/projects/stadt/full/assets/architektur.svg"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Demonstration passage",
+    "formats": {
+      "ZIP": "/en/projects/stadt/full/assets/demostelle.zip"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "entscheidungsgraph",
+    "formats": {
+      "SVG": "/en/projects/stadt/full/assets/entscheidungsgraph.svg"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Frontend development plan",
+    "formats": {
+      "SVG": "/en/projects/stadt/full/assets/frontend-arbeitsplan.svg"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Early publication",
+    "formats": {
+      "Markdown": "/en/projects/stadt/full/fruehe-veroeffentlichung.md"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Textual genesis and Git",
+    "formats": {
+      "SVG": "/en/projects/stadt/full/assets/genese-und-git.svg"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Project handbook",
+    "formats": {
+      "Markdown": "/en/projects/stadt/full/handbuch.md"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Import handover",
+    "formats": {
+      "Markdown": "/en/projects/stadt/full/importuebergabe.md"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Import handover",
+    "formats": {
+      "SVG": "/en/projects/stadt/full/assets/importuebergabe.svg"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Reading edition",
+    "formats": {
+      "Markdown": "/en/projects/stadt/full/lesefassung.md"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Reading-order demonstration",
+    "formats": {
+      "SVG": "/en/projects/stadt/full/assets/lesefolgen-demoseite.svg"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Recommended Git strategy",
+    "formats": {
+      "Markdown": "/en/projects/stadt/full/musterstrategie.md"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Project and persona",
+    "formats": {
+      "Markdown": "/en/projects/stadt/full/persona.md"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Publication versions",
+    "formats": {
+      "SVG": "/en/projects/stadt/full/assets/publikationsstaende.svg"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Further reading",
+    "formats": {
+      "Markdown": "/en/projects/stadt/full/quellen.md"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Project timelines",
+    "formats": {
+      "SVG": "/en/projects/stadt/full/assets/vier-uhren.svg"
+    }
+  },
+  {
+    "module": "stadt",
+    "case": "Grant-funded project with a small team",
+    "title": "Access and handover",
+    "formats": {
+      "Markdown": "/en/projects/stadt/full/zugangsplan.md"
+    }
+  },
+  {
+    "module": "databases",
+    "case": "Git and databases",
+    "title": "Complete guide",
+    "formats": {
+      "HTML": "/en/resources/databases/guide.html",
+      "PDF": "/en/resources/databases/guide.pdf",
+      "Markdown": "/en/resources/databases/guide.md"
+    }
+  },
+  {
+    "module": "databases",
+    "case": "Git and databases",
+    "title": "Recommendations at a glance",
+    "formats": {
+      "HTML": "/en/resources/databases/summary.html",
+      "PDF": "/en/resources/databases/summary.pdf",
+      "Markdown": "/en/resources/databases/summary.md"
+    }
+  },
+  {
+    "module": "databases",
+    "case": "Git and databases",
+    "title": "Decision worksheet",
+    "formats": {
+      "HTML": "/en/resources/databases/worksheet.html",
+      "PDF": "/en/resources/databases/worksheet.pdf",
+      "Markdown": "/en/resources/databases/worksheet.md"
+    }
+  },
+  {
+    "module": "databases",
+    "case": "Git and databases",
+    "title": "Workflow models",
+    "formats": {
+      "HTML": "/en/resources/databases/architecture.html",
+      "PDF": "/en/resources/databases/architecture.pdf",
+      "SVG": "/en/resources/databases/architecture.svg"
+    }
+  },
+  {
+    "module": "databases",
+    "case": "Git and databases",
+    "title": "Decision graph",
+    "formats": {
+      "HTML": "/en/resources/databases/decision.html",
+      "PDF": "/en/resources/databases/decision.pdf",
+      "SVG": "/en/resources/databases/decision.svg"
+    }
+  },
+  {
+    "module": "databases",
+    "case": "Git and databases",
+    "title": "History and preservation",
+    "formats": {
+      "HTML": "/en/resources/databases/preservation.html",
+      "PDF": "/en/resources/databases/preservation.pdf",
+      "SVG": "/en/resources/databases/preservation.svg"
+    }
+  },
+  {
+    "module": "workshop",
+    "case": "Workshop",
+    "title": "Planning a workshop: guide and checklist",
+    "formats": {
+      "HTML": "/en/resources/workshop/guide.html",
+      "PDF": "/en/resources/workshop/guide.pdf",
+      "Markdown": "/en/resources/workshop/guide.md"
+    }
+  }
+]
